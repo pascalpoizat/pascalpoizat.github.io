@@ -4,6 +4,9 @@ _site/
 .sass-cache/
 .jekyll-metadata
 
+# Ruby
+Gemfile.lock
+
 # IntelliJ IDEA
 .idea
 *.iml
