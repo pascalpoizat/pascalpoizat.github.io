@@ -1,4 +1,14 @@
-name: Hank Quinlan, Horrible Cop
-markdown: kramdown
-permalink: /blog/:year/:month/:day/:title
+# Site settings
+title: pascal.poizat
+author: Pascal Poizat
+email: firstname.lastname@gmail.com
+description: > # this means to ignore newlines until "baseurl:"
+  Full Professor at Université Paris Ouest<br/>
+  LIP6 UMR 7606 CNRS
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://pascalpoizat.github.io" # the base hostname & protocol for your site
+twitter_username: pascalpoizat
+github_username:  pascalpoizat
 
+# Build settings
+markdown: kramdown
