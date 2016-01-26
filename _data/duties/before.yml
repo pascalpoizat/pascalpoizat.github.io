@@ -1,0 +1,101 @@
+
+- name: Pedagogic Duties
+  values:
+
+  - period: 2009-2011
+    name: Director of 3rd year of Licence in CS (Applied cursus, MIAGE)
+    at: University of Evry
+
+  - period: 2008-2009
+    name: Director of 3rd year of Licence in CS (General cursus)
+    at: University of Evry
+
+  - period: 2004-2006
+    name: Director of 2nd year of Master of CS as a Complem. Competence
+    at: University of Evry
+
+  - period: 2001-2004
+    name: Dep. Director of 2nd year of Master of CS as a Complem. Competence
+    at: University of Evry
+
+  - period: 2001-2003
+    name: Person in charge of the CS Support Teachers
+    at: University of Evry
+
+- name: Scientific Responsibilities
+  values:
+
+  - period: 2011-2015
+    name: Co-head of the COSMAL Working Group
+    at: Software Engineering Research Group of the CNRS (GDR GPL)
+
+  - period: 2010-2013
+    name: Scientific coordinator for the LRI partner in the ANR PIMI project
+    at: Future Networks and Services Programme, National Agency for Research
+
+  - period: 2007-2010
+    name: Project leader of the ANR PERSO project
+    at: Young Researchers' Programme, National Agency for Research
+
+- name: Administrative Positions
+  values:
+
+  - period: 2015
+    name: Member of the CS Recruitment Committee | CDS Sect. 27
+    at: Paris Sud University
+
+  - period: 2013
+    name: Member of the CS Recruitment Committee | CDS Sect. 27
+    at: Pierre and Marie Curie University
+
+  - period: 2009
+    name: Member of the CS Recruitment Committee | CDS Sect. 27
+    at: University of Nantes
+
+  - period: 2007-2008
+    name: Member of the CS Recruitment Committee | CSE Sect. 27
+    at: University of Evry
+
+  - period: 2004-2007
+    name: Dep. Member of the CS Recruitment Committee | CSE Sect. 27
+    at: University of Evry
+
+  - period: 2004-2007
+    name: External Member of the CS Recruitment Committee | CSE Sect. 27
+    at: CNAM Paris
+
+  - period: 2006-2007
+    name: Member of the Laboratory Council | Conseil de Laboratoire
+    at: IBISC Laboratory
+
+- name: Technical
+  values:
+
+  - period: 2014-2014
+    name: Member of the Publication Support Commission
+    at: LIP6 Laboratory
+
+  - period: 2008-2012
+    name: Member of the Hardware and Software Commission
+    at: LRI Laboratory
+
+  - period: 2006-2008
+    name: Member of the Communication and Documentation Commission
+    at: INRIA Paris
+
+  - period: 2004-2008
+    name: Webmaster of the Plone Web site
+    at: LaMI/IBISC Laboratory
+
+  - period: 2001-2006
+    name: Administrator of the MySQL server
+    at: LaMI Laboratory
+
+  - period: 2001-2006
+    name: Member of the Premises Commission
+    at: LaMI Laboratory
+
+  - period: 2001-2006
+    name: Member of the Web Commission
+    at: LaMI Laboratory
+
