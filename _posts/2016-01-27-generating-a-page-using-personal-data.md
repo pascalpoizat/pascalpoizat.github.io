@@ -52,14 +52,17 @@ with a value being a period, a name (of the duty) and the location it took place
 
 ## From Data to HTML
 
-To generate HTML information for this, one can define an HTML document, `duties.html`,
-or a [Markdown](http://daringfireball.net/projects/markdown/) document, `duties.md`,
+To generate HTML information for this, one can create an HTML document, `duties.html`,
 and use [Liquid templating](http://liquidmarkup.org/) to access the data.
-To generate a list you simply have to type in:
+To generate a list you simply have to type in `duties.html`:
 {: .text-justify}
 
 {% highlight liquid %}
 {% raw %}
+---
+layout: default
+title: duties
+---
 {% for category in site.data.duties.currently %}
 <h3>{{ category.name }}</h3>
 <ul>
@@ -121,6 +124,31 @@ In order to generate both list of duties you now simply have to write in `duties
 
 {% highlight liquid %}
 {% raw %}
+---
+layout: default
+title: duties
+---
+<h2>Currently</h2>
+
+{% assign duties = site.data.duties.currently %}
+{% include print_duties.html %}
+
+<h2>Before</h2>
+
+{% assign duties = site.data.duties.before %}
+{% include print_duties.html %}
+{% endraw %}
+{% endhighlight %}
+
+If you prefer to use Markdown, use instead a `duties.md` file with:
+{: .text-justify}
+
+{% highlight liquid %}
+{% raw %}
+---
+layout: default
+title: duties
+---
 ## Currently
 
 {% assign duties = site.data.duties.currently %}
@@ -141,6 +169,10 @@ You can add the parameter and its value to the import as follows:
 
 {% highlight liquid %}
 {% raw %}
+---
+layout: default
+title: duties
+---
 ## Currently
 
 {% include print_duties.html duties=site.data.duties.currently %}
@@ -151,7 +183,7 @@ You can add the parameter and its value to the import as follows:
 {% endraw %}
 {% endhighlight %}
 
-In the template you just have to prefix the name of the parameter with `include`:
+In the `print_duties.html` template that is in the `_includes` directory, you just have to prefix the name of the parameter with `include`:
 {: .text-justify}
 
 {% highlight liquid %}
