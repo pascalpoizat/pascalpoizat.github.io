@@ -1,5 +1,5 @@
 {% for category in duties %}
-### {{ category.name }}
+<h3>{{ category.name }}</h3>
 <ul>
     {% for duty in category.values %}
     <li>{{ duty.period }} - {{ duty.name }}<br/>
