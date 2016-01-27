@@ -1,4 +1,4 @@
-{% for category in duties %}
+{% for category in include.duties %}
 <h3>{{ category.name }}</h3>
 <ul>
     {% for duty in category.values %}

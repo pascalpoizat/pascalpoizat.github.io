@@ -6,10 +6,8 @@ rank: 3
 
 ## Selected Talks
 
-{% assign talks = site.data.talks.selected %}
-{% include print_talks.html %}
+{% include print_talks.html talks=site.data.talks.selected %}
 
 ## All Talks (since 2001)
 
-{% assign talks = site.data.talks.all %}
-{% include print_talks.html %}
+{% include print_talks.html talks=site.data.talks.all %}

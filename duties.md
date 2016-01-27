@@ -6,12 +6,10 @@ rank: 5
 
 ## Currently
 
-{% assign duties = site.data.duties.currently %}
-{% include print_duties.html %}
+{% include print_duties.html duties=site.data.duties.currently %}
 
 ## Before
 
-{% assign duties = site.data.duties.before %}
-{% include print_duties.html %}
+{% include print_duties.html duties=site.data.duties.before %}
 
 

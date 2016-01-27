@@ -7,6 +7,8 @@ date: 2016-01-26
 New static Web site, now generated using [Jekyll](http://jekyllrb.com/).
 {: .text-justify}
 
+## Static Pages
+
 There are many reasons to prefer static pages over dynamic ones.
 You may find some [here](http://nilclass.com/courses/what-is-a-static-website/#1).
 It turns out you just have to write some HTML/CSS files using your editor or IDE of choice and then send these files to a server.
@@ -24,7 +26,7 @@ Further, what if your pages relate to data you gather with time?
 Of course, you could try to keep your data and your manually edited Web pages synchronized. Not fun.
 {: .text-justify}
 
-## Static page generators
+## Static Page Generators
 
 A solution is to follow a _data-and-generators_ approach.
 Using data, stored in a database or in files, you can generate not only up-to-date Web pages but also resumes, application files, etc.
@@ -35,14 +37,14 @@ Indeed, I had used the [TahChee](https://github.com/sebastien/tahchee) python-ba
 The choice of a generation framework is vast, [see here](https://www.staticgen.com/) for example. 
 {: .text-justify}
 
+## Jekyll
+
 At a first step I would have liked to find one based on the new language I am learning, [Kotlin](https://kotlinlang.org/).
 None.
 [Grain](http://sysgears.com/grain/), based on Groovy, and with support for the [Gradle](http://gradle.org/) build system seems nice too.
 But a bit too young.
 So let's go for [Jekyll](http://jekyllrb.com/).
 {: .text-justify}
-
-## Basics
 
 It's quite simple to have a running Jekyll site:
 {: .text-justify}

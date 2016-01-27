@@ -7,10 +7,10 @@ date: 2016-01-27
 As explained in a [previous post]({{site.url}}/2016/01/26/jekyll-site-launched.html), static page generators such as [Jekyll](http://jekyllrb.com/)
 can use data stored in files to produce the information contained into HTML pages.
 [Jekyll supports JSON, YAML, and CSV files](http://jekyllrb.com/docs/datafiles/).
-{: .text-justify}
-
 We will demonstrate this here by looking at how I have generated my [list of academic duties]({{site.url}}/duties.html).
 {: .text-justify}
+
+## The Data Files
 
 The first step is to define the file(s) that will contain the information.
 As said before, this can be either JSON, YAML, or CSV files.
@@ -49,6 +49,8 @@ You have a list of 2 items, each item containing a name (duty category) and a li
 with a value being a period, a name (of the duty) and the location it took place
 (see [here](https://fr.wikipedia.org/wiki/YAML) for information about the YAML format).
 {: .text-justify}
+
+## From Data to HTML
 
 To generate HTML information for this, one can define an HTML document, `duties.html`,
 or a [Markdown](http://daringfireball.net/projects/markdown/) document, `duties.md`,
@@ -91,9 +93,11 @@ The rest is self-explanatory if you know HTML.
 You can get more information on Liquid templating [here](http://jekyllrb.com/docs/datafiles/) and [here](http://liquidmarkup.org/).
 {: .text-justify}
 
+## Factorizing Things
+
 Now if you want to generate also the list of the old duties, you have to copy-paste the piece of code before,
-and replace `site.data.duties.currently` by `site.data.duties.before`.
-You may also define the code in terms of a variable `duties` as follows:
+and replace `site.data.duties.currently` by `site.data.duties.before`. Too bad.
+A better way to do things is to define the code in terms of a variable `duties` as follows:
 {: .text-justify}
 
 {% highlight liquid %}
@@ -128,3 +132,41 @@ In order to generate both list of duties you now simply have to write in `duties
 {% include print_duties.html %}
 {% endraw %}
 {% endhighlight %}
+
+## Factorizing Things (revisited)
+
+Indeed file inclusion supports parameters (see [here](http://jekyllrb.com/docs/templates/)).
+You can add the parameter and its value to the import as follows:
+{: .text-justify}
+
+{% highlight liquid %}
+{% raw %}
+## Currently
+
+{% include print_duties.html duties=site.data.duties.currently %}
+
+## Before
+
+{% include print_duties.html duties=site.data.duties.before %}
+{% endraw %}
+{% endhighlight %}
+
+In the template you just have to prefix the name of the parameter with `include`:
+{: .text-justify}
+
+{% highlight liquid %}
+{% raw %}
+{% for category in include.duties %}
+<h3>{{ category.name }}</h3>
+<ul>
+    {% for duty in category.values %}
+    <li>{{ duty.period }} - {{ duty.name }}<br/>
+    {{ duty.at }}
+    </li>
+    {% endfor %}
+</ul>
+{% endfor %}
+{% endraw %}
+{% endhighlight %}
+
+

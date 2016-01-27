@@ -1,8 +1,8 @@
-{% assign grouped = talks.grouped %}
+{% assign grouped = include.talks.grouped %}
 {% if grouped %}
 <ul>
 {% endif %}
-{% for group in talks.groups %}
+{% for group in include.talks.groups %}
 {% if grouped %}
 <li><b>{{ group.label }}</b><br/>
 {% endif %}
