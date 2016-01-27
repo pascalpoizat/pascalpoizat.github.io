@@ -14,7 +14,7 @@ github_username:  pascalpoizat
 
 # Build settings
 markdown: kramdown
-highlighter: rouge
+highlighter: pygments # rouge is not supported by GitHub
 
 # Gems
 gems: [rouge]
