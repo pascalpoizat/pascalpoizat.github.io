@@ -17,4 +17,4 @@ markdown: kramdown
 highlighter: pygments # rouge is not supported by GitHub
 
 # Gems
-gems: [rouge]
+# gems: [rouge] # rouge is not supported by GitHub
