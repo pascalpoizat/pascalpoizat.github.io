@@ -7,9 +7,9 @@ rank: 6
 ## Currently
 
 Since September 2012,
-I have a full professor position at [Université Paris Ouest](http://www.u-paris10.fr).
+I have a full professor position at [Université Paris Ouest](http://www.u-paris10.fr).<br/>
 As far as research is concerned, 
-I am a member of the [LIP6](http://www.lip6.fr) lab, located in [Université Pierre et Marie Curie](http://www.upmc.fr).
+I am a member of the [LIP6](http://www.lip6.fr) lab at [Université Pierre et Marie Curie](http://www.upmc.fr).
 {: .text-justify}
 
 ## Before
