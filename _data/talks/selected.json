@@ -1,31 +1,56 @@
-[
-  {
-    "title": "Formal Development of Choreographic Business Processes",
-    "at": "AFSEC WG day on Formal Methods and Business Processes",
-    "where": "Paris",
-    "date": "October 2014",
-    "url": "talkAFSEC2014.pdf",
-    "note": "Note: slides have been done in HTML5 and are open source. To get them, use `git clone` or [download the ZIP file from GitHub](https://github.com/pascalpoizat/talk_afsec2014)."
-  },
-  {
-    "title": "Formal Model-Based Approaches for the Development of Composite Systems",
-    "at": "MeFoSyLoMa Group seminar",
-    "where": "Evry",
-    "date": "February 2012",
-    "url": "talkMeFoSyLoMa2012.pdf"
-  },
-  {
-    "title": "Projet ANR PERSO",
-    "at": "Colloquim of the National Agency for Research",
-    "where": "Lyon",
-    "date": "January 2012",
-    "url": "presentationColloqueSTIC2012.pdf"
-  },
-  {
-    "title": "Extension of Behaviours with Formal Datatypes",
-    "at": "Invited seminar",
-    "where": "University of Extremadura (Spain)",
-    "date": "June 2005",
-    "url": "lecture-06-2005-vCaceres.pdf"
-  }
-]
+{
+  "_comment": "if grouped is false then only one group should be defined for a better result",
+  "grouped": false,
+  "groups": [
+    {
+      "label": "(don't care)",
+      "talks": [
+        {
+          "title": "Formal Development of Choreographic Business Processes",
+          "occurrences": [
+            {
+              "at": "AFSEC WG day on Formal Methods and Business Processes",
+              "where": "Paris",
+              "date": "2014.10"
+            }
+          ],
+          "url": "talkAFSEC2014.pdf",
+          "source": "https://github.com/pascalpoizat/talk_afsec2014",
+        },
+        {
+          "title": "Formal Model-Based Approaches for the Development of Composite Systems",
+          "occurrences": [
+            {
+              "at": "MeFoSyLoMa Group seminar",
+              "where": "Evry",
+              "date": "2012.02"
+            }
+          ],
+          "url": "talkMeFoSyLoMa2012.pdf"
+        },
+        {
+          "title": "Projet ANR PERSO",
+          "occurrences": [
+            {
+              "at": "Colloquim of the National Agency for Research",
+              "where": "Lyon",
+              "date": "2012.01"
+            }
+          ],
+          "url": "presentationColloqueSTIC2012.pdf"
+        },
+        {
+          "title": "Extension of Behaviours with Formal Datatypes",
+          "occurrences": [
+            {
+              "at": "Invited seminar",
+              "where": "University of Extremadura",
+              "date": "2005.06"
+            }
+          ],
+          "url": "lecture-06-2005-vCaceres.pdf"
+        }
+      ]
+    }
+  ]
+}
