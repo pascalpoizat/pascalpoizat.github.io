@@ -14,3 +14,7 @@ github_username:  pascalpoizat
 
 # Build settings
 markdown: kramdown
+highlighter: rouge
+
+# Gems
+gems: [rouge]
