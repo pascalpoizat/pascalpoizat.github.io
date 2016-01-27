@@ -1,7 +1,7 @@
 ---
 layout: default
 title: duties
-rank: 1
+rank: 5
 ---
 
 ## Currently
