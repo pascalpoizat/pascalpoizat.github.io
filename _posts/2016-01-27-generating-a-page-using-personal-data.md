@@ -4,7 +4,7 @@ title: "Generating a Page using Personal Data"
 date: 2016-01-27
 ---
 
-As explained in a [previous post](), static page generators such as [Jekyll](http://jekyllrb.com/)
+As explained in a [previous post]({{site.url}}/2016/01/26/jekyll-site-launched.html), static page generators such as [Jekyll](http://jekyllrb.com/)
 can use data stored in files to produce the information contained into HTML pages.
 [Jekyll supports JSON, YAML, and CSV files](http://jekyllrb.com/docs/datafiles/).
 {: .text-justify}
