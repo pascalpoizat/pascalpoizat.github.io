@@ -8,13 +8,13 @@ rank: 4
 
 For lecture notes and practical work documents, please see [Cours en Ligne](http://coursenligne.u-paris10.fr).
 {: .text-justify}
-<div class="alert alert-danger" role="alert">**Required:**
+<div class="alert alert-danger" role="alert">Required:
 u-paris10.fr account information + registration to the course.
 </div>
 <br/>
 Progressively, these documents are built using the [Miage-Paris-Ouest](https://github.com/Miage-Paris-Ouest) GitHub Education account.
 {: .text-justify}
-<div class="alert alert-danger" role="alert">**Required:**
+<div class="alert alert-danger" role="alert">Required:
 GitHub account information + registration to the repositories.
 </div><br/>
 
