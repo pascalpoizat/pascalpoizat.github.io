@@ -6,8 +6,8 @@
 </description>
     <link>http://pascalpoizat.github.io/</link>
     <atom:link href="http://pascalpoizat.github.io/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Fri, 29 Jan 2016 19:45:34 +0100</pubDate>
-    <lastBuildDate>Fri, 29 Jan 2016 19:45:34 +0100</lastBuildDate>
+    <pubDate>Fri, 29 Jan 2016 19:59:53 +0100</pubDate>
+    <lastBuildDate>Fri, 29 Jan 2016 19:59:53 +0100</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
     
       <item>
@@ -81,6 +81,10 @@ Step 4. is achieved by &lt;code&gt;src/update-site.sh&lt;/code&gt;.&lt;/p&gt;
 &lt;p class=&quot;text-justify&quot;&gt;&lt;strong&gt;Note:&lt;/strong&gt; for the time being, the scripts are copied at the root of the repository in step 4 because Jekyll
 copies them from &lt;code&gt;src&lt;/code&gt; to &lt;code&gt;src/_site&lt;/code&gt; at step 3.
 In further versions, I plan to avoid this. Meanwhile, remember to run scripts that are in &lt;code&gt;src&lt;/code&gt; not at the root of the repository.&lt;/p&gt;
+
+&lt;p class=&quot;text-justify&quot;&gt;&lt;strong&gt;Note:&lt;/strong&gt; Jekyll supports the possibility to tell in its configuration file
+where are the source and the target directories.
+I may use this in the future to simplify things and avoid some file copying.&lt;/p&gt;
 
 </description>
         <pubDate>Fri, 29 Jan 2016 00:00:00 +0100</pubDate>
