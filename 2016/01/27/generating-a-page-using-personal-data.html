@@ -96,7 +96,7 @@ can use data stored in files to produce the information contained into HTML page
 <a href="http://jekyllrb.com/docs/datafiles/">Jekyll supports JSON, YAML, and CSV files</a>.
 We will demonstrate this here by looking at how I have generated my <a href="http://pascalpoizat.github.io/duties.html">list of academic duties</a>.</p>
 
-<h2 id="the-data-files">The Data Files</h2>
+<h2 id="the-data-files">The data files</h2>
 
 <p class="text-justify">The first step is to define the file(s) that will contain the information.
 As said before, this can be either JSON, YAML, or CSV files.
@@ -132,7 +132,7 @@ and another file, <code>before.yml</code>, for the old ones. Here is the <code>c
 with a value being a period, a name (of the duty) and the location it took place
 (see <a href="https://fr.wikipedia.org/wiki/YAML">here</a> for information about the YAML format).</p>
 
-<h2 id="from-data-to-html">From Data to HTML</h2>
+<h2 id="from-data-to-html">From data to HTML</h2>
 
 <p class="text-justify">To generate HTML information for this, one can create an HTML document, <code>duties.html</code>,
 and use <a href="http://liquidmarkup.org/">Liquid templating</a> to access the data.
@@ -168,7 +168,7 @@ This can be read as “the <code>currently</code> file that is in the <code>duti
 
 <p class="text-justify">You can get more information on Liquid templating <a href="http://jekyllrb.com/docs/datafiles/">here</a> and <a href="http://liquidmarkup.org/">here</a>.</p>
 
-<h2 id="factorizing-things">Factorizing Things</h2>
+<h2 id="factorizing-things">Factorizing things</h2>
 
 <p class="text-justify">Now if you want to generate also the list of the old duties, you have to copy-paste the piece of code before,
 and replace <code>site.data.duties.currently</code> by <code>site.data.duties.before</code>. Too bad.
@@ -218,7 +218,7 @@ title: duties
 <span class="p">{%</span><span class="w"> </span><span class="nt">assign</span><span class="w"> </span><span class="na">duties</span><span class="w"> </span><span class="o">=</span><span class="w"> </span>site.data.duties.before<span class="w"> </span><span class="p">%}</span>
 <span class="p">{%</span><span class="w"> </span><span class="nt">include</span><span class="w"> </span>print_duties.html<span class="w"> </span><span class="p">%}</span></code></pre></div>
 
-<h2 id="factorizing-things-revisited">Factorizing Things (revisited)</h2>
+<h2 id="factorizing-things-revisited">Factorizing things (revisited)</h2>
 
 <p class="text-justify">Indeed file inclusion supports parameters (see <a href="http://jekyllrb.com/docs/templates/">here</a>).
 You can add the parameter and its value to the import as follows:</p>

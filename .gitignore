@@ -5,7 +5,7 @@
 **/.jekyll-metadata
 
 # Ruby
-Gemfile.lock
+**/Gemfile.lock
 
 # IntelliJ IDEA
 .idea

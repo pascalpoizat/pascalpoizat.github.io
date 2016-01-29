@@ -7,7 +7,7 @@ date: 2016-01-26
 New static Web site, now generated using [Jekyll](http://jekyllrb.com/).
 {: .text-justify}
 
-## Static Pages
+## Static pages
 
 There are many reasons to prefer static pages over dynamic ones.
 You may find some [here](http://nilclass.com/courses/what-is-a-static-website/#1).
@@ -26,7 +26,7 @@ Further, what if your pages relate to data you gather with time?
 Of course, you could try to keep your data and your manually edited Web pages synchronized. Not fun.
 {: .text-justify}
 
-## Static Page Generators
+## Static page generators
 
 A solution is to follow a _data-and-generators_ approach.
 Using data, stored in a database or in files, you can generate not only up-to-date Web pages but also resumes, application files, etc.

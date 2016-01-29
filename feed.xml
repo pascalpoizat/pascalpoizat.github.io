@@ -6,9 +6,89 @@
 </description>
     <link>http://pascalpoizat.github.io/</link>
     <atom:link href="http://pascalpoizat.github.io/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Fri, 29 Jan 2016 18:28:24 +0100</pubDate>
-    <lastBuildDate>Fri, 29 Jan 2016 18:28:24 +0100</lastBuildDate>
+    <pubDate>Fri, 29 Jan 2016 19:45:34 +0100</pubDate>
+    <lastBuildDate>Fri, 29 Jan 2016 19:45:34 +0100</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
+    
+      <item>
+        <title>GitHub Pages without the Workflow</title>
+        <description>&lt;p class=&quot;text-justify&quot;&gt;&lt;a href=&quot;http://jekyllrb.com/docs/github-pages/&quot;&gt;GitHub Pages with Jekyll&lt;/a&gt; is nice.
+You just have to store your Jekyll &lt;strong&gt;sources&lt;/strong&gt; in a repository &lt;code&gt;username.github.io&lt;/code&gt;,
+where &lt;code&gt;username&lt;/code&gt; is your GitHub user account,
+and you get automatically the &lt;strong&gt;resulting pages&lt;/strong&gt; in &lt;code&gt;http://username.github.io&lt;/code&gt;.
+This is achieved thank to the GitHub Pages workflow that runs each time you push your sources to the repository.
+At least if the build passes.
+If not, you receive an email with the reasons why and no new pages are generated.
+However, this process comes with rules that forbid using Jekyll plugins but for authorized ones.&lt;/p&gt;
+
+&lt;p class=&quot;text-justify&quot;&gt;&lt;strong&gt;Note:&lt;/strong&gt; I am discussing here about User pages on GitHub Pages.
+For Project pages things are a bit different. For example for User pages, pages are on a &lt;code&gt;master&lt;/code&gt; branch.
+For Project pages, pages are on a &lt;code&gt;gh-pages&lt;/code&gt; branch. See &lt;a href=&quot;https://help.github.com/articles/user-organization-and-project-pages/&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;two-choices&quot;&gt;Two choices&lt;/h2&gt;
+
+&lt;p class=&quot;text-justify&quot;&gt;If you want, e.g., to use the &lt;a href=&quot;https://github.com/inukshuk/jekyll-scholar&quot;&gt;Jekyll-Scholar&lt;/a&gt; plugin
+(to generate pages from &lt;code&gt;.bib&lt;/code&gt; BibTeX reference files),
+you will have either not to use GitHub Pages
+(make a simple &lt;code&gt;my-web-pages&lt;/code&gt; repository and sync your pages with a Web server somewhere else)
+or to shortcut the GitHub Pages workflow. This is what we will do here.&lt;/p&gt;
+
+&lt;p class=&quot;text-justify&quot;&gt;This part is based on &lt;a href=&quot;https://github.com/barais/barais.github.io&quot;&gt;Olivier Barais’s template&lt;/a&gt;,
+itself based on &lt;a href=&quot;https://github.com/rudametw/rudametw.github.io&quot;&gt;Walter Rudametkin’s template&lt;/a&gt;.
+I chose not to fork their templates here since my site structure is different and I also
+wanted to build things from scratch to explain how to integrate elements one by one. Yet, without them,
+shortcutting the GitHub Pages workflow would certainly have been much more complicated.
+Please consider forking their templates that are much more advanced than mine for the moment.&lt;/p&gt;
+
+&lt;h2 id=&quot;how-things-work-with-the-github-pages-workflow&quot;&gt;How things work with the GitHub Pages workflow&lt;/h2&gt;
+
+&lt;p class=&quot;text-justify&quot;&gt;Jekyll takes its sources, i.e., files and specific directories (ones beginning by &lt;code&gt;_&lt;/code&gt; in short) in the current path
+and compute pages in subdirectory &lt;code&gt;_src&lt;/code&gt;. See the Jekyll directory structure &lt;a href=&quot;http://jekyllrb.com/docs/structure/&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p class=&quot;text-justify&quot;&gt;GitHub Pages require that your Jekyll sources are in the root directory of &lt;code&gt;username.github.io&lt;/code&gt;.
+Then it runs Jekyll and deploys the resulting pages to &lt;code&gt;http://username.github.io&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p class=&quot;text-justify&quot;&gt;If you want to write your pages directly (e.g, without templates) you would have to put them
+at the root of the &lt;code&gt;username.github.io&lt;/code&gt; repository and add a &lt;code&gt;.nojekyll&lt;/code&gt; empty file to tell GitHub Pages not to
+run Jekyll each time you push things. This is very important if you have directories beginning with &lt;code&gt;_&lt;/code&gt; since
+they have a special treatment with Jekyll (they are not deployed on the Web site).&lt;/p&gt;
+
+&lt;h2 id=&quot;putting-things-together&quot;&gt;Putting things together&lt;/h2&gt;
+
+&lt;p&gt;The solution that is adopted in &lt;a href=&quot;https://github.com/barais/barais.github.io&quot;&gt;Olivier Barais’s template&lt;/a&gt; and
+in &lt;a href=&quot;https://github.com/rudametw/rudametw.github.io&quot;&gt;Walter Rudametkin’s template&lt;/a&gt; is:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;define a &lt;code&gt;src&lt;/code&gt; directory at the root (of the repository) containing the Jekyll sources&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;edit files in &lt;code&gt;src&lt;/code&gt; as usual, and commit+push them to GitHub regularly&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;have Jekyll run on these sources and place them in &lt;code&gt;src/_site&lt;/code&gt; (default)&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;“build” the site regularly by copying the pages from &lt;code&gt;src/_site&lt;/code&gt; to the root of the repository,
+ and then commit+push the new versions of these to GitHub&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p class=&quot;text-justify&quot;&gt;For this one has two scripts that automate steps 3. and 4.
+Step 3. is achieved by &lt;code&gt;src/run-jekyll.sh&lt;/code&gt;. You can have it run in background while doing steps 1. and 2.
+Step 4. is achieved by &lt;code&gt;src/update-site.sh&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p class=&quot;text-justify&quot;&gt;&lt;strong&gt;Note:&lt;/strong&gt; for the time being, the scripts are copied at the root of the repository in step 4 because Jekyll
+copies them from &lt;code&gt;src&lt;/code&gt; to &lt;code&gt;src/_site&lt;/code&gt; at step 3.
+In further versions, I plan to avoid this. Meanwhile, remember to run scripts that are in &lt;code&gt;src&lt;/code&gt; not at the root of the repository.&lt;/p&gt;
+
+</description>
+        <pubDate>Fri, 29 Jan 2016 00:00:00 +0100</pubDate>
+        <link>http://pascalpoizat.github.io/2016/01/29/github-pages-without-the-workflow.html</link>
+        <guid isPermaLink="true">http://pascalpoizat.github.io/2016/01/29/github-pages-without-the-workflow.html</guid>
+        
+        
+      </item>
     
       <item>
         <title>Generating a Page using Personal Data</title>
@@ -17,7 +97,7 @@ can use data stored in files to produce the information contained into HTML page
 &lt;a href=&quot;http://jekyllrb.com/docs/datafiles/&quot;&gt;Jekyll supports JSON, YAML, and CSV files&lt;/a&gt;.
 We will demonstrate this here by looking at how I have generated my &lt;a href=&quot;http://pascalpoizat.github.io/duties.html&quot;&gt;list of academic duties&lt;/a&gt;.&lt;/p&gt;
 
-&lt;h2 id=&quot;the-data-files&quot;&gt;The Data Files&lt;/h2&gt;
+&lt;h2 id=&quot;the-data-files&quot;&gt;The data files&lt;/h2&gt;
 
 &lt;p class=&quot;text-justify&quot;&gt;The first step is to define the file(s) that will contain the information.
 As said before, this can be either JSON, YAML, or CSV files.
@@ -53,7 +133,7 @@ and another file, &lt;code&gt;before.yml&lt;/code&gt;, for the old ones. Here is
 with a value being a period, a name (of the duty) and the location it took place
 (see &lt;a href=&quot;https://fr.wikipedia.org/wiki/YAML&quot;&gt;here&lt;/a&gt; for information about the YAML format).&lt;/p&gt;
 
-&lt;h2 id=&quot;from-data-to-html&quot;&gt;From Data to HTML&lt;/h2&gt;
+&lt;h2 id=&quot;from-data-to-html&quot;&gt;From data to HTML&lt;/h2&gt;
 
 &lt;p class=&quot;text-justify&quot;&gt;To generate HTML information for this, one can create an HTML document, &lt;code&gt;duties.html&lt;/code&gt;,
 and use &lt;a href=&quot;http://liquidmarkup.org/&quot;&gt;Liquid templating&lt;/a&gt; to access the data.
@@ -89,7 +169,7 @@ This can be read as “the &lt;code&gt;currently&lt;/code&gt; file that is in th
 
 &lt;p class=&quot;text-justify&quot;&gt;You can get more information on Liquid templating &lt;a href=&quot;http://jekyllrb.com/docs/datafiles/&quot;&gt;here&lt;/a&gt; and &lt;a href=&quot;http://liquidmarkup.org/&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
 
-&lt;h2 id=&quot;factorizing-things&quot;&gt;Factorizing Things&lt;/h2&gt;
+&lt;h2 id=&quot;factorizing-things&quot;&gt;Factorizing things&lt;/h2&gt;
 
 &lt;p class=&quot;text-justify&quot;&gt;Now if you want to generate also the list of the old duties, you have to copy-paste the piece of code before,
 and replace &lt;code&gt;site.data.duties.currently&lt;/code&gt; by &lt;code&gt;site.data.duties.before&lt;/code&gt;. Too bad.
@@ -139,7 +219,7 @@ title: duties
 &lt;span class=&quot;p&quot;&gt;{%&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;assign&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;na&quot;&gt;duties&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;site.data.duties.before&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;%}&lt;/span&gt;
 &lt;span class=&quot;p&quot;&gt;{%&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;include&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;print_duties.html&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;%}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
-&lt;h2 id=&quot;factorizing-things-revisited&quot;&gt;Factorizing Things (revisited)&lt;/h2&gt;
+&lt;h2 id=&quot;factorizing-things-revisited&quot;&gt;Factorizing things (revisited)&lt;/h2&gt;
 
 &lt;p class=&quot;text-justify&quot;&gt;Indeed file inclusion supports parameters (see &lt;a href=&quot;http://jekyllrb.com/docs/templates/&quot;&gt;here&lt;/a&gt;).
 You can add the parameter and its value to the import as follows:&lt;/p&gt;
@@ -181,7 +261,7 @@ title: duties
         <title>Web Site now using Jekyll</title>
         <description>&lt;p class=&quot;text-justify&quot;&gt;New static Web site, now generated using &lt;a href=&quot;http://jekyllrb.com/&quot;&gt;Jekyll&lt;/a&gt;.&lt;/p&gt;
 
-&lt;h2 id=&quot;static-pages&quot;&gt;Static Pages&lt;/h2&gt;
+&lt;h2 id=&quot;static-pages&quot;&gt;Static pages&lt;/h2&gt;
 
 &lt;p class=&quot;text-justify&quot;&gt;There are many reasons to prefer static pages over dynamic ones.
 You may find some &lt;a href=&quot;http://nilclass.com/courses/what-is-a-static-website/#1&quot;&gt;here&lt;/a&gt;.
@@ -197,7 +277,7 @@ But what you are not one of these?
 Further, what if your pages relate to data you gather with time?
 Of course, you could try to keep your data and your manually edited Web pages synchronized. Not fun.&lt;/p&gt;
 
-&lt;h2 id=&quot;static-page-generators&quot;&gt;Static Page Generators&lt;/h2&gt;
+&lt;h2 id=&quot;static-page-generators&quot;&gt;Static page generators&lt;/h2&gt;
 
 &lt;p class=&quot;text-justify&quot;&gt;A solution is to follow a &lt;em&gt;data-and-generators&lt;/em&gt; approach.
 Using data, stored in a database or in files, you can generate not only up-to-date Web pages but also resumes, application files, etc.

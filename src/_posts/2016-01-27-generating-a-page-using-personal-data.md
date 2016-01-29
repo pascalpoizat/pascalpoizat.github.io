@@ -10,7 +10,7 @@ can use data stored in files to produce the information contained into HTML page
 We will demonstrate this here by looking at how I have generated my [list of academic duties]({{site.url}}/duties.html).
 {: .text-justify}
 
-## The Data Files
+## The data files
 
 The first step is to define the file(s) that will contain the information.
 As said before, this can be either JSON, YAML, or CSV files.
@@ -50,7 +50,7 @@ with a value being a period, a name (of the duty) and the location it took place
 (see [here](https://fr.wikipedia.org/wiki/YAML) for information about the YAML format).
 {: .text-justify}
 
-## From Data to HTML
+## From data to HTML
 
 To generate HTML information for this, one can create an HTML document, `duties.html`,
 and use [Liquid templating](http://liquidmarkup.org/) to access the data.
@@ -96,7 +96,7 @@ The rest is self-explanatory if you know HTML.
 You can get more information on Liquid templating [here](http://jekyllrb.com/docs/datafiles/) and [here](http://liquidmarkup.org/).
 {: .text-justify}
 
-## Factorizing Things
+## Factorizing things
 
 Now if you want to generate also the list of the old duties, you have to copy-paste the piece of code before,
 and replace `site.data.duties.currently` by `site.data.duties.before`. Too bad.
@@ -161,7 +161,7 @@ title: duties
 {% endraw %}
 {% endhighlight %}
 
-## Factorizing Things (revisited)
+## Factorizing things (revisited)
 
 Indeed file inclusion supports parameters (see [here](http://jekyllrb.com/docs/templates/)).
 You can add the parameter and its value to the import as follows:

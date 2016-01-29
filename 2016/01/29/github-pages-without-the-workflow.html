@@ -6,12 +6,12 @@
     <meta name="viewport" content="width=device-width initial-scale=1" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <title>Web Site now using Jekyll</title>
+    <title>GitHub Pages without the Workflow</title>
     <meta name="description" content="Full Professor at Université Paris Ouest<br/> LIP6 UMR 7606 CNRS
 ">
 
     <link rel="stylesheet" href="/css/main.css">
-    <link rel="canonical" href="http://pascalpoizat.github.io/2016/01/26/jekyll-site-launched.html">
+    <link rel="canonical" href="http://pascalpoizat.github.io/2016/01/29/github-pages-without-the-workflow.html">
 </head>
 
 
@@ -86,52 +86,81 @@
         <div class="post">
 
   <header class="post-header">
-    <h1 class="post-title">Web Site now using Jekyll</h1>
-    <p class="post-meta">Jan 26, 2016</p>
+    <h1 class="post-title">GitHub Pages without the Workflow</h1>
+    <p class="post-meta">Jan 29, 2016</p>
   </header>
 
   <article class="post-content">
-    <p class="text-justify">New static Web site, now generated using <a href="http://jekyllrb.com/">Jekyll</a>.</p>
+    <p class="text-justify"><a href="http://jekyllrb.com/docs/github-pages/">GitHub Pages with Jekyll</a> is nice.
+You just have to store your Jekyll <strong>sources</strong> in a repository <code>username.github.io</code>,
+where <code>username</code> is your GitHub user account,
+and you get automatically the <strong>resulting pages</strong> in <code>http://username.github.io</code>.
+This is achieved thank to the GitHub Pages workflow that runs each time you push your sources to the repository.
+At least if the build passes.
+If not, you receive an email with the reasons why and no new pages are generated.
+However, this process comes with rules that forbid using Jekyll plugins but for authorized ones.</p>
 
-<h2 id="static-pages">Static pages</h2>
+<p class="text-justify"><strong>Note:</strong> I am discussing here about User pages on GitHub Pages.
+For Project pages things are a bit different. For example for User pages, pages are on a <code>master</code> branch.
+For Project pages, pages are on a <code>gh-pages</code> branch. See <a href="https://help.github.com/articles/user-organization-and-project-pages/">here</a>.</p>
 
-<p class="text-justify">There are many reasons to prefer static pages over dynamic ones.
-You may find some <a href="http://nilclass.com/courses/what-is-a-static-website/#1">here</a>.
-It turns out you just have to write some HTML/CSS files using your editor or IDE of choice and then send these files to a server.
-You can do this in a responsive way using <a href="http://getbootstrap.com/">BootStrap</a> and with style using available templates,
-see e.g., <a href="http://html5up.net/">HTML5UP</a>.</p>
+<h2 id="two-choices">Two choices</h2>
 
-<p class="text-justify">There are limits to this approach.</p>
+<p class="text-justify">If you want, e.g., to use the <a href="https://github.com/inukshuk/jekyll-scholar">Jekyll-Scholar</a> plugin
+(to generate pages from <code>.bib</code> BibTeX reference files),
+you will have either not to use GitHub Pages
+(make a simple <code>my-web-pages</code> repository and sync your pages with a Web server somewhere else)
+or to shortcut the GitHub Pages workflow. This is what we will do here.</p>
 
-<p class="text-justify">First, changing the style of your Web site over time soon becomes a burden. A solution is never to change this style.
-I am sure you have already seen the nice <em>no-css-no-javascript-HTML-2.0</em> pages that some people like in academia.
-But what you are not one of these?
-Further, what if your pages relate to data you gather with time?
-Of course, you could try to keep your data and your manually edited Web pages synchronized. Not fun.</p>
+<p class="text-justify">This part is based on <a href="https://github.com/barais/barais.github.io">Olivier Barais’s template</a>,
+itself based on <a href="https://github.com/rudametw/rudametw.github.io">Walter Rudametkin’s template</a>.
+I chose not to fork their templates here since my site structure is different and I also
+wanted to build things from scratch to explain how to integrate elements one by one. Yet, without them,
+shortcutting the GitHub Pages workflow would certainly have been much more complicated.
+Please consider forking their templates that are much more advanced than mine for the moment.</p>
 
-<h2 id="static-page-generators">Static page generators</h2>
+<h2 id="how-things-work-with-the-github-pages-workflow">How things work with the GitHub Pages workflow</h2>
 
-<p class="text-justify">A solution is to follow a <em>data-and-generators</em> approach.
-Using data, stored in a database or in files, you can generate not only up-to-date Web pages but also resumes, application files, etc.
-Nothing really new here.
-Indeed, I had used the <a href="https://github.com/sebastien/tahchee">TahChee</a> python-based static Web site generator for some time.</p>
+<p class="text-justify">Jekyll takes its sources, i.e., files and specific directories (ones beginning by <code>_</code> in short) in the current path
+and compute pages in subdirectory <code>_src</code>. See the Jekyll directory structure <a href="http://jekyllrb.com/docs/structure/">here</a>.</p>
 
-<p class="text-justify">The choice of a generation framework is vast, <a href="https://www.staticgen.com/">see here</a> for example.</p>
+<p class="text-justify">GitHub Pages require that your Jekyll sources are in the root directory of <code>username.github.io</code>.
+Then it runs Jekyll and deploys the resulting pages to <code>http://username.github.io</code>.</p>
 
-<h2 id="jekyll">Jekyll</h2>
+<p class="text-justify">If you want to write your pages directly (e.g, without templates) you would have to put them
+at the root of the <code>username.github.io</code> repository and add a <code>.nojekyll</code> empty file to tell GitHub Pages not to
+run Jekyll each time you push things. This is very important if you have directories beginning with <code>_</code> since
+they have a special treatment with Jekyll (they are not deployed on the Web site).</p>
 
-<p class="text-justify">At a first step I would have liked to find one based on the new language I am learning, <a href="https://kotlinlang.org/">Kotlin</a>.
-None.
-<a href="http://sysgears.com/grain/">Grain</a>, based on Groovy, and with support for the <a href="http://gradle.org/">Gradle</a> build system seems nice too.
-But a bit too young.
-So let’s go for <a href="http://jekyllrb.com/">Jekyll</a>.</p>
+<h2 id="putting-things-together">Putting things together</h2>
 
-<p class="text-justify">It’s quite simple to have a running Jekyll site:</p>
+<p>The solution that is adopted in <a href="https://github.com/barais/barais.github.io">Olivier Barais’s template</a> and
+in <a href="https://github.com/rudametw/rudametw.github.io">Walter Rudametkin’s template</a> is:</p>
 
-<ul>
-  <li>if you intend to publish your Web pages using GitHub pages, the good starting point is the very nice <a href="http://jmcglone.com/guides/github-pages/">tutorial by Jonathan McGlone</a></li>
-  <li>if not, you can simply follow the <a href="http://jekyllrb.com/docs/quickstart/">Jekyll quick-start guide</a>.</li>
-</ul>
+<ol>
+  <li>
+    <p>define a <code>src</code> directory at the root (of the repository) containing the Jekyll sources</p>
+  </li>
+  <li>
+    <p>edit files in <code>src</code> as usual, and commit+push them to GitHub regularly</p>
+  </li>
+  <li>
+    <p>have Jekyll run on these sources and place them in <code>src/_site</code> (default)</p>
+  </li>
+  <li>
+    <p>“build” the site regularly by copying the pages from <code>src/_site</code> to the root of the repository,
+ and then commit+push the new versions of these to GitHub</p>
+  </li>
+</ol>
+
+<p class="text-justify">For this one has two scripts that automate steps 3. and 4.
+Step 3. is achieved by <code>src/run-jekyll.sh</code>. You can have it run in background while doing steps 1. and 2.
+Step 4. is achieved by <code>src/update-site.sh</code>.</p>
+
+<p class="text-justify"><strong>Note:</strong> for the time being, the scripts are copied at the root of the repository in step 4 because Jekyll
+copies them from <code>src</code> to <code>src/_site</code> at step 3.
+In further versions, I plan to avoid this. Meanwhile, remember to run scripts that are in <code>src</code> not at the root of the repository.</p>
+
 
   </article>
 
