@@ -1,8 +1,8 @@
 # Jekyll
 
-_site/
-.sass-cache/
-.jekyll-metadata
+**/_site/
+**/.sass-cache/
+**/.jekyll-metadata
 
 # Ruby
 Gemfile.lock
@@ -10,3 +10,10 @@ Gemfile.lock
 # IntelliJ IDEA
 .idea
 *.iml
+
+# Global
+*~
+.DS_Store # this one, for OSX, should be global and in $HOME/.gitignore_global
+
+
+
