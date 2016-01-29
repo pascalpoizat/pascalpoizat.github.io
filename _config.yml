@@ -14,7 +14,10 @@ github_username:  pascalpoizat
 
 # Build settings
 markdown: kramdown
-highlighter: pygments # rouge is not supported by GitHub
 
-# Gems
-# gems: [rouge] # rouge is not supported by GitHub
+highlighter: pygments
+gems: ['jekyll/scholar']
+
+scholar:
+  sort_by: year, month
+  order: descending
