@@ -76,3 +76,8 @@ copies them from `src` to `src/_site` at step 3.
 In further versions, I plan to avoid this. Meanwhile, remember to run scripts that are in `src` not at the root of the repository.
 {: .text-justify}
 
+**Note:** Jekyll supports the possibility to tell in its configuration file
+where are the source and the target directories.
+I may use this in the future to simplify things and avoid some file copying.
+{: .text-justify}
+
