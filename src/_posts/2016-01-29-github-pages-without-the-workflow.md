@@ -71,11 +71,6 @@ Step 3. is achieved by `src/run-jekyll.sh`. You can have it run in background wh
 Step 4. is achieved by `src/update-site.sh`.
 {: .text-justify}
 
-**Note:** for the time being, the scripts are copied at the root of the repository in step 4 because Jekyll
-copies them from `src` to `src/_site` at step 3.
-In further versions, I plan to avoid this. Meanwhile, remember to run scripts that are in `src` not at the root of the repository.
-{: .text-justify}
-
 **Note:** Jekyll supports the possibility to tell in its configuration file
 where are the source and the target directories.
 I may use this in the future to simplify things and avoid some file copying.

@@ -12,6 +12,8 @@ url: "http://pascalpoizat.github.io" # the base hostname & protocol for your sit
 twitter_username: pascalpoizat
 github_username:  pascalpoizat
 
+exclude:  ['Gemfile*', '*.sh', 'update_site.sh']
+
 # Build settings
 markdown: kramdown
 
