@@ -2,7 +2,16 @@
 layout: default
 ---
 <div class="blurb">
-<h1>Hello</h1>
-	<p>I am Professor at Université Paris Ouest. <br/>
-	<a href="/bio.html">More info...</a></p>
+    <h1>Some experiments with Jekyll and Jekyll-Scholar</h1>
+    <p>I am Professor at Université Paris Ouest. <br/>
+        <a href="/bio.html">More info...</a>
+    </p>
+    <p>I do research on composite systems verification, see e.g.:
+    <ul>
+        <li>{% reference PP_HDR %}
+            <br/>see {% cite PP_HDR --relative publications.html %} for more (pdf)</li>
+        <li>{% reference PP_GPSY15 %}
+            <br/>see {% cite PP_GPSY15 --relative publications.html %} for more (doi)</li>
+    </ul>
+    </p>
 </div><!-- /.blurb -->

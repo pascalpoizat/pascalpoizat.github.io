@@ -95,10 +95,10 @@
               <if variable="container-title">
                 <text term="in" text-case="capitalize-first" suffix=": "/>
                 <text macro="editor" suffix=" "/>
-                <group delimiter=". ">
-                  <text variable="container-title"/>
+                <group delimiter=", ">
+                  <text variable="container-title" font-style="italic"/>
                   <text macro="page"/>
-                  <text macro="publisher"/>
+                  <text macro="publisher" suffix=", "/>
                 </group>
               </if>
               <else>

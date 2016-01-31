@@ -11,11 +11,19 @@
 {% endif %}
 
 <div>
-    {% if entry.optdoi %}
-    <span><a href="{{ entry.optdoi }}">doi</a></span>
+    {% if entry.doi %}
+    <span><a href="{{ entry.doi | prepend: 'http://doi.org/' }}">doi</a></span>
     {% endif %}
-    {% if entry.optpdf %}
-    <span><a href="{{ entry.optpdf }}">pdf</a></span>
+    {% if entry.hal_id %}
+    <span><a href="{{ entry.hal_id | prepend: 'http://hal.inria.fr/' }}">hal</a></span>
+    {% endif %}
+    {% if entry.optlink %}
+    <span><a href="{{ entry.optlink }}">link</a></span>
+    {% endif %}
+</div>
+<div>
+    {% if entry.pdf %}
+    <span><a href="{{ entry.pdf }}">pdf</a></span>
     {% endif %}
 </div>
 
