@@ -12,20 +12,20 @@ rank: 2
 
 ## Recent Publications [{{min}}..{{max}}]
 
-{% bibliography -f poizat -q @*[year>={{smin}}] %}
+{% bibliography -q @*[year>={{smin}}] %}
 
 ## Journal Articles
 
-{% bibliography -f poizat -q @article %}
+{% bibliography -q @article %}
 
 ## Book Chapters
 
-{% bibliography -f poizat -q @inbook %}
+{% bibliography -q @inbook %}
 
 ## Conferences and Workshops
 
-{% bibliography -f poizat -q @inproceedings %}
+{% bibliography -q @inproceedings %}
 
 ## Manuscripts
 
-{% bibliography -f poizat -q @phdthesis %}
+{% bibliography -q @phdthesis %}

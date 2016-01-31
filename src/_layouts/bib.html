@@ -1,0 +1,24 @@
+---
+---
+<div class="text-justify">
+    {{reference}}
+</div>
+
+{% if entry.note %}
+<div>
+    <em>{{ entry.note }}</em>
+</div>
+{% endif %}
+
+<div>
+    {% if entry.optdoi %}
+    <span><a href="{{ entry.optdoi }}">doi</a></span>
+    {% endif %}
+    {% if entry.optpdf %}
+    <span><a href="{{ entry.optpdf }}">pdf</a></span>
+    {% endif %}
+</div>
+
+<!--
+<div><pre>{{ entry.bibtex }}</pre></div>
+-->
