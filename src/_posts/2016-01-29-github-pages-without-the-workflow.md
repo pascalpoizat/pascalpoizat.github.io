@@ -16,7 +16,8 @@ However, this process comes with rules that forbid using Jekyll plugins but for 
 
 **Note:** I am discussing here about User pages on GitHub Pages.
 For Project pages things are a bit different. For example for User pages, pages are on a `master` branch.
-For Project pages, pages are on a `gh-pages` branch. See [here](https://help.github.com/articles/user-organization-and-project-pages/).
+For Project pages, pages are on a `gh-pages` branch.
+See [here](https://help.github.com/articles/user-organization-and-project-pages/).
 {: .text-justify}
 
 ## Two choices
