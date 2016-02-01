@@ -33,6 +33,7 @@ In the example we will suppose you have a `_bibliography/references.bib` file.
 
 You can configure the way Jekyll-Scholar works using your `_config.yml` configuration file.
 The default is (see [here](https://github.com/inukshuk/jekyll-scholar) for the meaning of the contents):
+{: .text-justify}
 
 {% highlight yaml %}
 scholar:
@@ -98,12 +99,14 @@ We will see how to achieve the following:
 
 - change the way references are ordered
 - have our own citation style
-- have output generated for additional bibliography fields (notes, DOI, PDF) and BibTeX reference
+- have output generated for additional bibliography fields (notes, DOI, HAL, and PDF)
+  and for the BibTeX reference itself
 
 ### Ordering of references
 
 Say you want to have ordering by date of publication, in descending order.
 Then you have to change your `_config.yml` file to include:
+{: .text-justify}
 
 {% highlight yaml %}
 scholar:
@@ -115,10 +118,30 @@ scholar:
 
 ### Citation styles
 
+You can change the citation style by changing the style name for Jekyll-Scholar in `_config.yml`.
+You can use styles from [the repository for CSL citation styles](https://github.com/citation-style-language/styles).
+You can also define you own style and link to it as follows:
+{: .text-justify}
+
+{% highlight yaml %}
+scholar:
+  ...
+  style: _bibliography/mystyle.csl
+  ...
+{% endhighlight %}
+
+The definition of a style is quite complex. There is few documentation.
+The best I could find is [here](http://docs.citationstyles.org/en/stable/).
+The style I use is a modification of
+[http://www.zotero.org/styles/springer-lecture-notes-in-computer-science](http://www.zotero.org/styles/springer-lecture-notes-in-computer-science)
+which you can see [here](https://github.com/pascalpoizat/pascalpoizat.github.io/blob/master/src/_bibliography/mystyle.csl).
+{: .text-justify}
+
 ### Tuning the generated output
 
 The first thing is to tell Jekyll-Scholar which layout to use for bibliography queries.
 We will have the description of it in `_layouts/bib.html` so we change `config.yml` to have:
+{: .text-justify}
 
 {% highlight yaml %}
 scholar:
@@ -127,7 +150,8 @@ scholar:
   ...
 {% endhighlight %}
 
-Then you have to put the layout file in `_layouts` (the default):
+Then you have to put the `bib.html` layout file in `_layouts` (the default):
+{: .text-justify}
 
 {% highlight html %}
 {% raw %}
@@ -211,5 +235,10 @@ then you can use `entry.bibtex`.
 {: .text-justify}
 
 The overall result (for the reference above) is:
+{: .text-justify}
 
 ![]({{site.url}}/posts_images/2016-02-01-image1.png)
+
+As you can see, Jekyll-Scholar is a really interesting plugin.
+To learn more, see [here](https://github.com/inukshuk/jekyll-scholar).
+{: .text-justify}
