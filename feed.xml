@@ -6,9 +6,202 @@
 </description>
     <link>http://pascalpoizat.github.io/</link>
     <atom:link href="http://pascalpoizat.github.io/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Sun, 31 Jan 2016 20:14:34 +0100</pubDate>
-    <lastBuildDate>Sun, 31 Jan 2016 20:14:34 +0100</lastBuildDate>
+    <pubDate>Mon, 01 Feb 2016 19:53:15 +0100</pubDate>
+    <lastBuildDate>Mon, 01 Feb 2016 19:53:15 +0100</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
+    
+      <item>
+        <title>Jekyll and BibTeX</title>
+        <description>&lt;p class=&quot;text-justify&quot;&gt;With &lt;a href=&quot;http://jekyllrb.com&quot;&gt;Jekyll&lt;/a&gt;, you can generate pages based on your data,
+see &lt;a href=&quot;http://pascalpoizat.github.io/2016/01/29/github-pages-without-the-workflow.html&quot;&gt;this post&lt;/a&gt;.
+We will see that with the help of the &lt;a href=&quot;https://github.com/inukshuk/jekyll-scholar&quot;&gt;Jekyll-Scholar&lt;/a&gt; plugin,
+this may include your BibTeX bibliographies.&lt;/p&gt;
+
+&lt;h2 id=&quot;installing-jekyll-scholar&quot;&gt;Installing Jekyll-Scholar&lt;/h2&gt;
+
+&lt;p class=&quot;text-justify&quot;&gt;First, if you are using GitHub Pages, you should do without the workflow,
+see &lt;a href=&quot;http://pascalpoizat.github.io/2016/01/29/gihub-pages-without-the-workflow.html&quot;&gt;this post&lt;/a&gt;,
+since Jekyll-Scholar is not part of the authorized plugins.&lt;/p&gt;
+
+&lt;p&gt;Installing Jekyll-Scholar is then performed as follows:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;either run &lt;code&gt;gem install jekyll-scholar&lt;/code&gt; and add &lt;code&gt;gems: [&#39;jekyll/scholar&#39;]&lt;/code&gt; in your &lt;code&gt;_config.yml&lt;/code&gt; configuration file&lt;/li&gt;
+  &lt;li&gt;or add &lt;code&gt;gem &#39;jekyll-scholar&#39;&lt;/code&gt; in your &lt;code&gt;Gemfile&lt;/code&gt; file (if you are using the &lt;a href=&quot;http://bundler.io/&quot;&gt;Bundler&lt;/a&gt; package manager)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;basic-example&quot;&gt;Basic example&lt;/h2&gt;
+
+&lt;p class=&quot;text-justify&quot;&gt;You can use a &lt;code&gt;_bibliography&lt;/code&gt; directory to store your bibliography &lt;code&gt;.bib&lt;/code&gt; files.
+The &lt;code&gt;_&lt;/code&gt; in the directory name means that Jekyll will not copy it in the generated site (&lt;code&gt;_site&lt;/code&gt; by default).
+If you want that your bibliography file is visible to your site visitors,
+then you should take this into account and, e.g., store the file in a &lt;code&gt;bibliography&lt;/code&gt; directory instead.
+In the example we will suppose you have a &lt;code&gt;_bibliography/references.bib&lt;/code&gt; file.&lt;/p&gt;
+
+&lt;p&gt;You can configure the way Jekyll-Scholar works using your &lt;code&gt;_config.yml&lt;/code&gt; configuration file.
+The default is (see &lt;a href=&quot;https://github.com/inukshuk/jekyll-scholar&quot;&gt;here&lt;/a&gt; for the meaning of the contents):&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-yaml&quot; data-lang=&quot;yaml&quot;&gt;&lt;span class=&quot;l-Scalar-Plain&quot;&gt;scholar&lt;/span&gt;&lt;span class=&quot;p-Indicator&quot;&gt;:&lt;/span&gt;
+  &lt;span class=&quot;l-Scalar-Plain&quot;&gt;style&lt;/span&gt;&lt;span class=&quot;p-Indicator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;l-Scalar-Plain&quot;&gt;apa&lt;/span&gt;
+  &lt;span class=&quot;l-Scalar-Plain&quot;&gt;locale&lt;/span&gt;&lt;span class=&quot;p-Indicator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;l-Scalar-Plain&quot;&gt;en&lt;/span&gt;
+
+  &lt;span class=&quot;l-Scalar-Plain&quot;&gt;sort_by&lt;/span&gt;&lt;span class=&quot;p-Indicator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;l-Scalar-Plain&quot;&gt;none&lt;/span&gt;
+  &lt;span class=&quot;l-Scalar-Plain&quot;&gt;order&lt;/span&gt;&lt;span class=&quot;p-Indicator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;l-Scalar-Plain&quot;&gt;ascending&lt;/span&gt;
+
+  &lt;span class=&quot;l-Scalar-Plain&quot;&gt;group_by&lt;/span&gt;&lt;span class=&quot;p-Indicator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;l-Scalar-Plain&quot;&gt;none&lt;/span&gt;
+  &lt;span class=&quot;l-Scalar-Plain&quot;&gt;group_order&lt;/span&gt;&lt;span class=&quot;p-Indicator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;l-Scalar-Plain&quot;&gt;ascending&lt;/span&gt;
+
+  &lt;span class=&quot;l-Scalar-Plain&quot;&gt;source&lt;/span&gt;&lt;span class=&quot;p-Indicator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;l-Scalar-Plain&quot;&gt;./_bibliography&lt;/span&gt;
+  &lt;span class=&quot;l-Scalar-Plain&quot;&gt;bibliography&lt;/span&gt;&lt;span class=&quot;p-Indicator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;l-Scalar-Plain&quot;&gt;references.bib&lt;/span&gt;
+  &lt;span class=&quot;l-Scalar-Plain&quot;&gt;bibliography_template&lt;/span&gt;&lt;span class=&quot;p-Indicator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&amp;quot;&amp;quot;&lt;/span&gt;
+
+  &lt;span class=&quot;l-Scalar-Plain&quot;&gt;replace_strings&lt;/span&gt;&lt;span class=&quot;p-Indicator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;l-Scalar-Plain&quot;&gt;true&lt;/span&gt;
+  &lt;span class=&quot;l-Scalar-Plain&quot;&gt;join_strings&lt;/span&gt;&lt;span class=&quot;p-Indicator&quot;&gt;:&lt;/span&gt;    &lt;span class=&quot;l-Scalar-Plain&quot;&gt;true&lt;/span&gt;
+
+  &lt;span class=&quot;l-Scalar-Plain&quot;&gt;use_raw_bibtex_entry&lt;/span&gt;&lt;span class=&quot;p-Indicator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;l-Scalar-Plain&quot;&gt;false&lt;/span&gt;
+
+  &lt;span class=&quot;l-Scalar-Plain&quot;&gt;details_dir&lt;/span&gt;&lt;span class=&quot;p-Indicator&quot;&gt;:&lt;/span&gt;    &lt;span class=&quot;l-Scalar-Plain&quot;&gt;bibliography&lt;/span&gt;
+  &lt;span class=&quot;l-Scalar-Plain&quot;&gt;details_layout&lt;/span&gt;&lt;span class=&quot;p-Indicator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;l-Scalar-Plain&quot;&gt;bibtex.html&lt;/span&gt;
+  &lt;span class=&quot;l-Scalar-Plain&quot;&gt;details_link&lt;/span&gt;&lt;span class=&quot;p-Indicator&quot;&gt;:&lt;/span&gt;   &lt;span class=&quot;l-Scalar-Plain&quot;&gt;Details&lt;/span&gt;
+
+  &lt;span class=&quot;l-Scalar-Plain&quot;&gt;query&lt;/span&gt;&lt;span class=&quot;p-Indicator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&amp;quot;@*&amp;quot;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p class=&quot;text-justify&quot;&gt;You may then perform queries in your &lt;code&gt;.html&lt;/code&gt; or &lt;code&gt;.md&lt;/code&gt; pages as follows:&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-liquid&quot; data-lang=&quot;liquid&quot;&gt;---
+layout: default
+title: publications
+---
+
+## Journal Articles
+
+&lt;span class=&quot;p&quot;&gt;{%&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;bibliography&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;-q&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;@article&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;%}&lt;/span&gt;
+
+## Book Chapters
+
+&lt;span class=&quot;p&quot;&gt;{%&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;bibliography&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;-q&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;@inbook&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;%}&lt;/span&gt;
+
+## Conferences and Workshops
+
+&lt;span class=&quot;p&quot;&gt;{%&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;bibliography&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;-q&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;@inproceedings&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;%}&lt;/span&gt;
+
+## Manuscripts
+
+&lt;span class=&quot;p&quot;&gt;{%&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;bibliography&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;-q&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;@phdthesis&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;%}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p class=&quot;text-justify&quot;&gt;You may find more information about the bibliography queries &lt;a href=&quot;https://github.com/inukshuk/jekyll-scholar&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;tuning-things&quot;&gt;Tuning things&lt;/h2&gt;
+
+&lt;p&gt;We will see how to achieve the following:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;change the way references are ordered&lt;/li&gt;
+  &lt;li&gt;have our own citation style&lt;/li&gt;
+  &lt;li&gt;have output generated for additional bibliography fields (notes, DOI, PDF) and BibTeX reference&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;ordering-of-references&quot;&gt;Ordering of references&lt;/h3&gt;
+
+&lt;p&gt;Say you want to have ordering by date of publication, in descending order.
+Then you have to change your &lt;code&gt;_config.yml&lt;/code&gt; file to include:&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-yaml&quot; data-lang=&quot;yaml&quot;&gt;&lt;span class=&quot;l-Scalar-Plain&quot;&gt;scholar&lt;/span&gt;&lt;span class=&quot;p-Indicator&quot;&gt;:&lt;/span&gt;
+  &lt;span class=&quot;l-Scalar-Plain&quot;&gt;...&lt;/span&gt;
+  &lt;span class=&quot;l-Scalar-Plain&quot;&gt;sort_by&lt;/span&gt;&lt;span class=&quot;p-Indicator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;l-Scalar-Plain&quot;&gt;year, month&lt;/span&gt;
+  &lt;span class=&quot;l-Scalar-Plain&quot;&gt;order&lt;/span&gt;&lt;span class=&quot;p-Indicator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;l-Scalar-Plain&quot;&gt;descending&lt;/span&gt;
+  &lt;span class=&quot;l-Scalar-Plain&quot;&gt;...&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;citation-styles&quot;&gt;Citation styles&lt;/h3&gt;
+
+&lt;h3 id=&quot;tuning-the-generated-output&quot;&gt;Tuning the generated output&lt;/h3&gt;
+
+&lt;p&gt;The first thing is to tell Jekyll-Scholar which layout to use for bibliography queries.
+We will have the description of it in &lt;code&gt;_layouts/bib.html&lt;/code&gt; so we change &lt;code&gt;config.yml&lt;/code&gt; to have:&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-yaml&quot; data-lang=&quot;yaml&quot;&gt;&lt;span class=&quot;l-Scalar-Plain&quot;&gt;scholar&lt;/span&gt;&lt;span class=&quot;p-Indicator&quot;&gt;:&lt;/span&gt;
+  &lt;span class=&quot;l-Scalar-Plain&quot;&gt;...&lt;/span&gt;
+  &lt;span class=&quot;l-Scalar-Plain&quot;&gt;bibliography_template&lt;/span&gt;&lt;span class=&quot;p-Indicator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;l-Scalar-Plain&quot;&gt;bib&lt;/span&gt;
+  &lt;span class=&quot;l-Scalar-Plain&quot;&gt;...&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Then you have to put the layout file in &lt;code&gt;_layouts&lt;/code&gt; (the default):&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;---
+---
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;text-justify&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+    {{reference}}
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+
+{% if entry.note %}
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;div&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;em&amp;gt;&lt;/span&gt;{{ entry.note }}&lt;span class=&quot;nt&quot;&gt;&amp;lt;/em&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+{% endif %}
+
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;div&amp;gt;&lt;/span&gt;
+    {% if entry.doi %}
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;span&amp;gt;&amp;lt;a&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;{{ entry.doi | prepend: &amp;#39;http://doi.org/&amp;#39; }}&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;doi&lt;span class=&quot;nt&quot;&gt;&amp;lt;/a&amp;gt;&amp;lt;/span&amp;gt;&lt;/span&gt;
+    {% endif %}
+    {% if entry.hal_id %}
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;span&amp;gt;&amp;lt;a&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;{{ entry.hal_id | prepend: &amp;#39;http://hal.inria.fr/&amp;#39; }}&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;hal&lt;span class=&quot;nt&quot;&gt;&amp;lt;/a&amp;gt;&amp;lt;/span&amp;gt;&lt;/span&gt;
+    {% endif %}
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;div&amp;gt;&lt;/span&gt;
+    {% if entry.pdf %}
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;span&amp;gt;&amp;lt;a&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;{{ entry.pdf }}&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;pdf&lt;span class=&quot;nt&quot;&gt;&amp;lt;/a&amp;gt;&amp;lt;/span&amp;gt;&lt;/span&gt;
+    {% endif %}
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;div&amp;gt;&amp;lt;pre&amp;gt;&lt;/span&gt;{{ entry.bibtex }}&lt;span class=&quot;nt&quot;&gt;&amp;lt;/pre&amp;gt;&amp;lt;/div&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p class=&quot;text-justify&quot;&gt;The first thing is the layout information used by Jekyll (the two dash lines).
+Then you have the &lt;code&gt;{{ reference }}&lt;/code&gt; tag. It is used to include the reference as generated by Jekyll-Scholar.
+Here we put it in a &lt;code&gt;&amp;lt;div&amp;gt;...&amp;lt;/div&amp;gt;&lt;/code&gt; tag to have it text-justified.&lt;/p&gt;
+
+&lt;p class=&quot;text-justify&quot;&gt;Then we want to generate the reference note if there is some.
+For this we use a Liquid conditional.
+&lt;code&gt;entry&lt;/code&gt; denotes the current reference we are typing out, and
+&lt;code&gt;entry.note&lt;/code&gt; denotes the note field of this entry (if it exists).&lt;/p&gt;
+
+&lt;p class=&quot;text-justify&quot;&gt;Then we have two &lt;code&gt;&amp;lt;div&amp;gt;&lt;/code&gt;s. One for the links (DOI and the HAL open archive) and one for the PDF of the reference.
+This uses respectively the &lt;code&gt;doi&lt;/code&gt; (or &lt;code&gt;DOI&lt;/code&gt;), &lt;code&gt;hal_id&lt;/code&gt; (or &lt;code&gt;HAL_ID&lt;/code&gt;), and &lt;code&gt;pdf&lt;/code&gt; (or &lt;code&gt;PDF&lt;/code&gt;) user-defined fields
+in BibTeX reference files. Typically one would have references such as:&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-latex&quot; data-lang=&quot;latex&quot;&gt;@Article&lt;span class=&quot;nb&quot;&gt;{&lt;/span&gt;PP&lt;span class=&quot;nb&quot;&gt;_&lt;/span&gt;MPS12,
+    author = &lt;span class=&quot;nb&quot;&gt;{&lt;/span&gt;Mateescu, Radu and Poizat, Pascal and Salaün, Gwen&lt;span class=&quot;nb&quot;&gt;}&lt;/span&gt;,
+    year = &lt;span class=&quot;nb&quot;&gt;{&lt;/span&gt;2012&lt;span class=&quot;nb&quot;&gt;}&lt;/span&gt;,
+    title = &lt;span class=&quot;nb&quot;&gt;{{&lt;/span&gt;Adaptation of Service Protocols using Process Algebra and On-the-Fly Reduction Techniques&lt;span class=&quot;nb&quot;&gt;}}&lt;/span&gt;,
+    journal = &lt;span class=&quot;nb&quot;&gt;{&lt;/span&gt;IEEE Transactions on Software Engineering&lt;span class=&quot;nb&quot;&gt;}&lt;/span&gt;,
+    pages = &lt;span class=&quot;nb&quot;&gt;{&lt;/span&gt;755--777&lt;span class=&quot;nb&quot;&gt;}&lt;/span&gt;,
+    volume = &lt;span class=&quot;nb&quot;&gt;{&lt;/span&gt;38&lt;span class=&quot;nb&quot;&gt;}&lt;/span&gt;,
+    number = &lt;span class=&quot;nb&quot;&gt;{&lt;/span&gt;4&lt;span class=&quot;nb&quot;&gt;}&lt;/span&gt;,
+    DOI = &lt;span class=&quot;nb&quot;&gt;{&lt;/span&gt;10.1109/TSE.2011.62&lt;span class=&quot;nb&quot;&gt;}&lt;/span&gt;,
+    HAL&lt;span class=&quot;nb&quot;&gt;_&lt;/span&gt;ID = &lt;span class=&quot;nb&quot;&gt;{&lt;/span&gt;hal-00717252&lt;span class=&quot;nb&quot;&gt;}&lt;/span&gt;,
+    PDF = &lt;span class=&quot;nb&quot;&gt;{&lt;/span&gt;https://hal.inria.fr/hal-00717252/document&lt;span class=&quot;nb&quot;&gt;}&lt;/span&gt;,
+&lt;span class=&quot;nb&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p class=&quot;text-justify&quot;&gt;&lt;strong&gt;Note:&lt;/strong&gt; if you want to use &lt;code&gt;{{ ... }}&lt;/code&gt; in your BibTeX files (to force uppercase titles for example),
+then you have to tell Jekyll-Scholar not to interpret this as Liquid templates.
+This is achieved by putting in your &lt;code&gt;_config.yml&lt;/code&gt; file:&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-yaml&quot; data-lang=&quot;yaml&quot;&gt;&lt;span class=&quot;l-Scalar-Plain&quot;&gt;scholar&lt;/span&gt;&lt;span class=&quot;p-Indicator&quot;&gt;:&lt;/span&gt;
+  &lt;span class=&quot;l-Scalar-Plain&quot;&gt;...&lt;/span&gt;
+  &lt;span class=&quot;l-Scalar-Plain&quot;&gt;use_raw_bibtex_entry&lt;/span&gt;&lt;span class=&quot;p-Indicator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;l-Scalar-Plain&quot;&gt;true&lt;/span&gt;
+  &lt;span class=&quot;l-Scalar-Plain&quot;&gt;...&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p class=&quot;text-justify&quot;&gt;Last, but not least, if you want to end each reference with its BibTex source, e.g., to present them in a Boostrap pop-up),
+then you can use &lt;code&gt;entry.bibtex&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;The overall result (for the reference above) is:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://pascalpoizat.github.io/posts_images/2016-02-01-image1.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+</description>
+        <pubDate>Mon, 01 Feb 2016 00:00:00 +0100</pubDate>
+        <link>http://pascalpoizat.github.io/2016/02/01/jekyll-and-bibtex.html</link>
+        <guid isPermaLink="true">http://pascalpoizat.github.io/2016/02/01/jekyll-and-bibtex.html</guid>
+        
+        
+      </item>
     
       <item>
         <title>GitHub Pages without the Workflow</title>
@@ -23,7 +216,8 @@ However, this process comes with rules that forbid using Jekyll plugins but for 
 
 &lt;p class=&quot;text-justify&quot;&gt;&lt;strong&gt;Note:&lt;/strong&gt; I am discussing here about User pages on GitHub Pages.
 For Project pages things are a bit different. For example for User pages, pages are on a &lt;code&gt;master&lt;/code&gt; branch.
-For Project pages, pages are on a &lt;code&gt;gh-pages&lt;/code&gt; branch. See &lt;a href=&quot;https://help.github.com/articles/user-organization-and-project-pages/&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+For Project pages, pages are on a &lt;code&gt;gh-pages&lt;/code&gt; branch.
+See &lt;a href=&quot;https://help.github.com/articles/user-organization-and-project-pages/&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
 
 &lt;h2 id=&quot;two-choices&quot;&gt;Two choices&lt;/h2&gt;
 
