@@ -117,7 +117,7 @@ If you want that your bibliography file is visible to your site visitors,
 then you should take this into account and, e.g., store the file in a <code>bibliography</code> directory instead.
 In the example we will suppose you have a <code>_bibliography/references.bib</code> file.</p>
 
-<p>You can configure the way Jekyll-Scholar works using your <code>_config.yml</code> configuration file.
+<p class="text-justify">You can configure the way Jekyll-Scholar works using your <code>_config.yml</code> configuration file.
 The default is (see <a href="https://github.com/inukshuk/jekyll-scholar">here</a> for the meaning of the contents):</p>
 
 <div class="highlight"><pre><code class="language-yaml" data-lang="yaml"><span class="l-Scalar-Plain">scholar</span><span class="p-Indicator">:</span>
@@ -177,12 +177,13 @@ title: publications
 <ul>
   <li>change the way references are ordered</li>
   <li>have our own citation style</li>
-  <li>have output generated for additional bibliography fields (notes, DOI, PDF) and BibTeX reference</li>
+  <li>have output generated for additional bibliography fields (notes, DOI, HAL, and PDF)
+and for the BibTeX reference itself</li>
 </ul>
 
 <h3 id="ordering-of-references">Ordering of references</h3>
 
-<p>Say you want to have ordering by date of publication, in descending order.
+<p class="text-justify">Say you want to have ordering by date of publication, in descending order.
 Then you have to change your <code>_config.yml</code> file to include:</p>
 
 <div class="highlight"><pre><code class="language-yaml" data-lang="yaml"><span class="l-Scalar-Plain">scholar</span><span class="p-Indicator">:</span>
@@ -193,9 +194,24 @@ Then you have to change your <code>_config.yml</code> file to include:</p>
 
 <h3 id="citation-styles">Citation styles</h3>
 
+<p class="text-justify">You can change the citation style by changing the style name for Jekyll-Scholar in <code>_config.yml</code>.
+You can use styles from <a href="https://github.com/citation-style-language/styles">the repository for CSL citation styles</a>.
+You can also define you own style and link to it as follows:</p>
+
+<div class="highlight"><pre><code class="language-yaml" data-lang="yaml"><span class="l-Scalar-Plain">scholar</span><span class="p-Indicator">:</span>
+  <span class="l-Scalar-Plain">...</span>
+  <span class="l-Scalar-Plain">style</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">_bibliography/mystyle.csl</span>
+  <span class="l-Scalar-Plain">...</span></code></pre></div>
+
+<p class="text-justify">The definition of a style is quite complex. There is few documentation.
+The best I could find is <a href="http://docs.citationstyles.org/en/stable/">here</a>.
+The style I use is a modification of
+<a href="http://www.zotero.org/styles/springer-lecture-notes-in-computer-science">http://www.zotero.org/styles/springer-lecture-notes-in-computer-science</a>
+which you can see <a href="https://github.com/pascalpoizat/pascalpoizat.github.io/blob/master/src/_bibliography/mystyle.csl">here</a>.</p>
+
 <h3 id="tuning-the-generated-output">Tuning the generated output</h3>
 
-<p>The first thing is to tell Jekyll-Scholar which layout to use for bibliography queries.
+<p class="text-justify">The first thing is to tell Jekyll-Scholar which layout to use for bibliography queries.
 We will have the description of it in <code>_layouts/bib.html</code> so we change <code>config.yml</code> to have:</p>
 
 <div class="highlight"><pre><code class="language-yaml" data-lang="yaml"><span class="l-Scalar-Plain">scholar</span><span class="p-Indicator">:</span>
@@ -203,7 +219,7 @@ We will have the description of it in <code>_layouts/bib.html</code> so we chang
   <span class="l-Scalar-Plain">bibliography_template</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">bib</span>
   <span class="l-Scalar-Plain">...</span></code></pre></div>
 
-<p>Then you have to put the layout file in <code>_layouts</code> (the default):</p>
+<p class="text-justify">Then you have to put the <code>bib.html</code> layout file in <code>_layouts</code> (the default):</p>
 
 <div class="highlight"><pre><code class="language-html" data-lang="html">---
 ---
@@ -271,9 +287,12 @@ This is achieved by putting in your <code>_config.yml</code> file:</p>
 <p class="text-justify">Last, but not least, if you want to end each reference with its BibTex source, e.g., to present them in a Boostrap pop-up),
 then you can use <code>entry.bibtex</code>.</p>
 
-<p>The overall result (for the reference above) is:</p>
+<p class="text-justify">The overall result (for the reference above) is:</p>
 
 <p><img src="http://pascalpoizat.github.io/posts_images/2016-02-01-image1.png" alt="" /></p>
+
+<p class="text-justify">As you can see, Jekyll-Scholar is a really interesting plugin.
+To learn more, see <a href="https://github.com/inukshuk/jekyll-scholar">here</a>.</p>
 
   </article>
 

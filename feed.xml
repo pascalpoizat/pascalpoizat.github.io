@@ -6,8 +6,8 @@
 </description>
     <link>http://pascalpoizat.github.io/</link>
     <atom:link href="http://pascalpoizat.github.io/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Mon, 01 Feb 2016 19:53:15 +0100</pubDate>
-    <lastBuildDate>Mon, 01 Feb 2016 19:53:15 +0100</lastBuildDate>
+    <pubDate>Mon, 01 Feb 2016 20:31:49 +0100</pubDate>
+    <lastBuildDate>Mon, 01 Feb 2016 20:31:49 +0100</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
     
       <item>
@@ -38,7 +38,7 @@ If you want that your bibliography file is visible to your site visitors,
 then you should take this into account and, e.g., store the file in a &lt;code&gt;bibliography&lt;/code&gt; directory instead.
 In the example we will suppose you have a &lt;code&gt;_bibliography/references.bib&lt;/code&gt; file.&lt;/p&gt;
 
-&lt;p&gt;You can configure the way Jekyll-Scholar works using your &lt;code&gt;_config.yml&lt;/code&gt; configuration file.
+&lt;p class=&quot;text-justify&quot;&gt;You can configure the way Jekyll-Scholar works using your &lt;code&gt;_config.yml&lt;/code&gt; configuration file.
 The default is (see &lt;a href=&quot;https://github.com/inukshuk/jekyll-scholar&quot;&gt;here&lt;/a&gt; for the meaning of the contents):&lt;/p&gt;
 
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-yaml&quot; data-lang=&quot;yaml&quot;&gt;&lt;span class=&quot;l-Scalar-Plain&quot;&gt;scholar&lt;/span&gt;&lt;span class=&quot;p-Indicator&quot;&gt;:&lt;/span&gt;
@@ -98,12 +98,13 @@ title: publications
 &lt;ul&gt;
   &lt;li&gt;change the way references are ordered&lt;/li&gt;
   &lt;li&gt;have our own citation style&lt;/li&gt;
-  &lt;li&gt;have output generated for additional bibliography fields (notes, DOI, PDF) and BibTeX reference&lt;/li&gt;
+  &lt;li&gt;have output generated for additional bibliography fields (notes, DOI, HAL, and PDF)
+and for the BibTeX reference itself&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h3 id=&quot;ordering-of-references&quot;&gt;Ordering of references&lt;/h3&gt;
 
-&lt;p&gt;Say you want to have ordering by date of publication, in descending order.
+&lt;p class=&quot;text-justify&quot;&gt;Say you want to have ordering by date of publication, in descending order.
 Then you have to change your &lt;code&gt;_config.yml&lt;/code&gt; file to include:&lt;/p&gt;
 
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-yaml&quot; data-lang=&quot;yaml&quot;&gt;&lt;span class=&quot;l-Scalar-Plain&quot;&gt;scholar&lt;/span&gt;&lt;span class=&quot;p-Indicator&quot;&gt;:&lt;/span&gt;
@@ -114,9 +115,24 @@ Then you have to change your &lt;code&gt;_config.yml&lt;/code&gt; file to includ
 
 &lt;h3 id=&quot;citation-styles&quot;&gt;Citation styles&lt;/h3&gt;
 
+&lt;p class=&quot;text-justify&quot;&gt;You can change the citation style by changing the style name for Jekyll-Scholar in &lt;code&gt;_config.yml&lt;/code&gt;.
+You can use styles from &lt;a href=&quot;https://github.com/citation-style-language/styles&quot;&gt;the repository for CSL citation styles&lt;/a&gt;.
+You can also define you own style and link to it as follows:&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-yaml&quot; data-lang=&quot;yaml&quot;&gt;&lt;span class=&quot;l-Scalar-Plain&quot;&gt;scholar&lt;/span&gt;&lt;span class=&quot;p-Indicator&quot;&gt;:&lt;/span&gt;
+  &lt;span class=&quot;l-Scalar-Plain&quot;&gt;...&lt;/span&gt;
+  &lt;span class=&quot;l-Scalar-Plain&quot;&gt;style&lt;/span&gt;&lt;span class=&quot;p-Indicator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;l-Scalar-Plain&quot;&gt;_bibliography/mystyle.csl&lt;/span&gt;
+  &lt;span class=&quot;l-Scalar-Plain&quot;&gt;...&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p class=&quot;text-justify&quot;&gt;The definition of a style is quite complex. There is few documentation.
+The best I could find is &lt;a href=&quot;http://docs.citationstyles.org/en/stable/&quot;&gt;here&lt;/a&gt;.
+The style I use is a modification of
+&lt;a href=&quot;http://www.zotero.org/styles/springer-lecture-notes-in-computer-science&quot;&gt;http://www.zotero.org/styles/springer-lecture-notes-in-computer-science&lt;/a&gt;
+which you can see &lt;a href=&quot;https://github.com/pascalpoizat/pascalpoizat.github.io/blob/master/src/_bibliography/mystyle.csl&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+
 &lt;h3 id=&quot;tuning-the-generated-output&quot;&gt;Tuning the generated output&lt;/h3&gt;
 
-&lt;p&gt;The first thing is to tell Jekyll-Scholar which layout to use for bibliography queries.
+&lt;p class=&quot;text-justify&quot;&gt;The first thing is to tell Jekyll-Scholar which layout to use for bibliography queries.
 We will have the description of it in &lt;code&gt;_layouts/bib.html&lt;/code&gt; so we change &lt;code&gt;config.yml&lt;/code&gt; to have:&lt;/p&gt;
 
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-yaml&quot; data-lang=&quot;yaml&quot;&gt;&lt;span class=&quot;l-Scalar-Plain&quot;&gt;scholar&lt;/span&gt;&lt;span class=&quot;p-Indicator&quot;&gt;:&lt;/span&gt;
@@ -124,7 +140,7 @@ We will have the description of it in &lt;code&gt;_layouts/bib.html&lt;/code&gt;
   &lt;span class=&quot;l-Scalar-Plain&quot;&gt;bibliography_template&lt;/span&gt;&lt;span class=&quot;p-Indicator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;l-Scalar-Plain&quot;&gt;bib&lt;/span&gt;
   &lt;span class=&quot;l-Scalar-Plain&quot;&gt;...&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
-&lt;p&gt;Then you have to put the layout file in &lt;code&gt;_layouts&lt;/code&gt; (the default):&lt;/p&gt;
+&lt;p class=&quot;text-justify&quot;&gt;Then you have to put the &lt;code&gt;bib.html&lt;/code&gt; layout file in &lt;code&gt;_layouts&lt;/code&gt; (the default):&lt;/p&gt;
 
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;---
 ---
@@ -192,9 +208,12 @@ This is achieved by putting in your &lt;code&gt;_config.yml&lt;/code&gt; file:&l
 &lt;p class=&quot;text-justify&quot;&gt;Last, but not least, if you want to end each reference with its BibTex source, e.g., to present them in a Boostrap pop-up),
 then you can use &lt;code&gt;entry.bibtex&lt;/code&gt;.&lt;/p&gt;
 
-&lt;p&gt;The overall result (for the reference above) is:&lt;/p&gt;
+&lt;p class=&quot;text-justify&quot;&gt;The overall result (for the reference above) is:&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;http://pascalpoizat.github.io/posts_images/2016-02-01-image1.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p class=&quot;text-justify&quot;&gt;As you can see, Jekyll-Scholar is a really interesting plugin.
+To learn more, see &lt;a href=&quot;https://github.com/inukshuk/jekyll-scholar&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
 </description>
         <pubDate>Mon, 01 Feb 2016 00:00:00 +0100</pubDate>
         <link>http://pascalpoizat.github.io/2016/02/01/jekyll-and-bibtex.html</link>
