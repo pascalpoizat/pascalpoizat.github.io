@@ -19,8 +19,8 @@ since Jekyll-Scholar is not part of the authorized plugins.
 
 Installing Jekyll-Scholar is then performed as follows:
 
-- either run `gem install jekyll-scholar` and add `gems: ['jekyll/scholar']` in your `_config.yml` configuration file
-- or add `gem 'jekyll-scholar'` in your `Gemfile` file (if you are using the [Bundler](http://bundler.io/) package manager)
+- run `gem install jekyll-scholar` and add `gems: ['jekyll/scholar']` in your `_config.yml` configuration file
+- add `gem 'jekyll-scholar'` in your `Gemfile` file (if you are using the [Bundler](http://bundler.io/) package manager)
 
 ## Basic example
 
