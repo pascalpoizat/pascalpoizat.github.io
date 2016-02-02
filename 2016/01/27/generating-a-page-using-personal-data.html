@@ -101,32 +101,32 @@ We will demonstrate this here by looking at how I have generated my <a href="htt
 <p class="text-justify">The first step is to define the file(s) that will contain the information.
 As said before, this can be either JSON, YAML, or CSV files.
 Here I chose to use YAML files, but another part of my site, the <a href="http://pascalpoizat.github.io/talks.html">list of talks</a>, uses JSON files.
-Data files have to be put in the <code>_data</code> directory of the Jekyll tree structure.
-Sub-directories can be used to structure your set of data files. So here I put my data within <code>_data/duties</code>.
-Further, we will have one file for the current duties, <code>currently.yml</code>,
-and another file, <code>before.yml</code>, for the old ones. Here is the <code>currently.yml</code> one:</p>
+Data files have to be put in the <code class="highlighter-rouge">_data</code> directory of the Jekyll tree structure.
+Sub-directories can be used to structure your set of data files. So here I put my data within <code class="highlighter-rouge">_data/duties</code>.
+Further, we will have one file for the current duties, <code class="highlighter-rouge">currently.yml</code>,
+and another file, <code class="highlighter-rouge">before.yml</code>, for the old ones. Here is the <code class="highlighter-rouge">currently.yml</code> one:</p>
 
-<div class="highlight"><pre><code class="language-yaml" data-lang="yaml"><span class="p-Indicator">-</span> <span class="l-Scalar-Plain">name</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">Pedagogic Duties</span>
-  <span class="l-Scalar-Plain">values</span><span class="p-Indicator">:</span>
+<figure class="highlight"><pre><code class="language-yaml" data-lang="yaml"><span class="pi">-</span> <span class="s">name</span><span class="pi">:</span> <span class="s">Pedagogic Duties</span>
+  <span class="s">values</span><span class="pi">:</span>
 
-  <span class="p-Indicator">-</span> <span class="l-Scalar-Plain">period</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">since 2012</span>
-    <span class="l-Scalar-Plain">name</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">Director of 1st and 2nd year of Master in CS (Applied cursus, MIAGE)</span>
-    <span class="l-Scalar-Plain">at</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">Paris Ouest University</span>
+  <span class="pi">-</span> <span class="s">period</span><span class="pi">:</span> <span class="s">since 2012</span>
+    <span class="s">name</span><span class="pi">:</span> <span class="s">Director of 1st and 2nd year of Master in CS (Applied cursus, MIAGE)</span>
+    <span class="s">at</span><span class="pi">:</span> <span class="s">Paris Ouest University</span>
 
-<span class="p-Indicator">-</span> <span class="l-Scalar-Plain">name</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">Administrative Positions</span>
-  <span class="l-Scalar-Plain">values</span><span class="p-Indicator">:</span>
+<span class="pi">-</span> <span class="s">name</span><span class="pi">:</span> <span class="s">Administrative Positions</span>
+  <span class="s">values</span><span class="pi">:</span>
 
-  <span class="p-Indicator">-</span> <span class="l-Scalar-Plain">period</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">since 2014</span>
-    <span class="l-Scalar-Plain">name</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">Member of the Nat. Committee for Scientific Research | CoNRS Sect. 6</span>
-    <span class="l-Scalar-Plain">at</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">CNRS</span>
+  <span class="pi">-</span> <span class="s">period</span><span class="pi">:</span> <span class="s">since 2014</span>
+    <span class="s">name</span><span class="pi">:</span> <span class="s">Member of the Nat. Committee for Scientific Research | CoNRS Sect. 6</span>
+    <span class="s">at</span><span class="pi">:</span> <span class="s">CNRS</span>
 
-  <span class="p-Indicator">-</span> <span class="l-Scalar-Plain">period</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">since 2014</span>
-    <span class="l-Scalar-Plain">name</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">Member of the Laboratory Council | Conseil de Laboratoire</span>
-    <span class="l-Scalar-Plain">at</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">LIP6 Laboratory</span>
+  <span class="pi">-</span> <span class="s">period</span><span class="pi">:</span> <span class="s">since 2014</span>
+    <span class="s">name</span><span class="pi">:</span> <span class="s">Member of the Laboratory Council | Conseil de Laboratoire</span>
+    <span class="s">at</span><span class="pi">:</span> <span class="s">LIP6 Laboratory</span>
 
-  <span class="p-Indicator">-</span> <span class="l-Scalar-Plain">period</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">since 2013</span>
-    <span class="l-Scalar-Plain">name</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">Member of the CS Advisory Council | CCD Sect. 27</span>
-    <span class="l-Scalar-Plain">at</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">Paris Ouest University</span></code></pre></div>
+  <span class="pi">-</span> <span class="s">period</span><span class="pi">:</span> <span class="s">since 2013</span>
+    <span class="s">name</span><span class="pi">:</span> <span class="s">Member of the CS Advisory Council | CCD Sect. 27</span>
+    <span class="s">at</span><span class="pi">:</span> <span class="s">Paris Ouest University</span></code></pre></figure>
 
 <p class="text-justify">You have a list of 2 items, each item containing a name (duty category) and a list of values,
 with a value being a period, a name (of the duty) and the location it took place
@@ -134,11 +134,11 @@ with a value being a period, a name (of the duty) and the location it took place
 
 <h2 id="from-data-to-html">From data to HTML</h2>
 
-<p class="text-justify">To generate HTML information for this, one can create an HTML document, <code>duties.html</code>,
+<p class="text-justify">To generate HTML information for this, one can create an HTML document, <code class="highlighter-rouge">duties.html</code>,
 and use <a href="http://liquidmarkup.org/">Liquid templating</a> to access the data.
-To generate a list you simply have to type in <code>duties.html</code>:</p>
+To generate a list you simply have to type in <code class="highlighter-rouge">duties.html</code>:</p>
 
-<div class="highlight"><pre><code class="language-liquid" data-lang="liquid">---
+<figure class="highlight"><pre><code class="language-liquid" data-lang="liquid">---
 layout: default
 title: duties
 ---
@@ -151,18 +151,18 @@ title: duties
     &lt;/li&gt;
     <span class="p">{%</span><span class="w"> </span><span class="nt">endfor</span><span class="w"> </span><span class="p">%}</span>
 &lt;/ul&gt;
-<span class="p">{%</span><span class="w"> </span><span class="nt">endfor</span><span class="w"> </span><span class="p">%}</span></code></pre></div>
+<span class="p">{%</span><span class="w"> </span><span class="nt">endfor</span><span class="w"> </span><span class="p">%}</span></code></pre></figure>
 
-<p class="text-justify">As you can see, to access the data in the file <code>_data/duties/currently.yml</code>, we refer to <code>site.data.duties.currently</code>.
-This can be read as “the <code>currently</code> file that is in the <code>duties</code> subdirectory of the site data directory”.</p>
+<p class="text-justify">As you can see, to access the data in the file <code class="highlighter-rouge">_data/duties/currently.yml</code>, we refer to <code class="highlighter-rouge">site.data.duties.currently</code>.
+This can be read as “the <code class="highlighter-rouge">currently</code> file that is in the <code class="highlighter-rouge">duties</code> subdirectory of the site data directory”.</p>
 
-<p class="text-justify">For loops iterate over a list using some variable <code>v</code>.</p>
+<p class="text-justify">For loops iterate over a list using some variable <code class="highlighter-rouge">v</code>.</p>
 
-<div class="highlight"><pre><code class="language-liquid" data-lang="liquid"><span class="p">{%</span><span class="w"> </span><span class="nt">for</span><span class="w"> </span>v<span class="w"> </span>in<span class="w"> </span>list<span class="w"> </span><span class="p">%}</span>...<span class="p">{%</span><span class="w"> </span><span class="nt">endfor</span><span class="w"> </span><span class="p">%}</span></code></pre></div>
+<figure class="highlight"><pre><code class="language-liquid" data-lang="liquid"><span class="p">{%</span><span class="w"> </span><span class="nt">for</span><span class="w"> </span>v<span class="w"> </span>in<span class="w"> </span>list<span class="w"> </span><span class="p">%}</span>...<span class="p">{%</span><span class="w"> </span><span class="nt">endfor</span><span class="w"> </span><span class="p">%}</span></code></pre></figure>
 
-<p class="text-justify">To access to some attribute <code>a</code> of a variable <code>v</code>, we use double brackets and indexing.</p>
+<p class="text-justify">To access to some attribute <code class="highlighter-rouge">a</code> of a variable <code class="highlighter-rouge">v</code>, we use double brackets and indexing.</p>
 
-<div class="highlight"><pre><code class="language-liquid" data-lang="liquid"><span class="p">{{</span><span class="w"> </span><span class="nv">v</span><span class="p">.</span><span class="nv">a</span><span class="w"> </span><span class="p">}}</span></code></pre></div>
+<figure class="highlight"><pre><code class="language-liquid" data-lang="liquid"><span class="p">{{</span><span class="w"> </span><span class="nv">v</span><span class="p">.</span><span class="nv">a</span><span class="w"> </span><span class="p">}}</span></code></pre></figure>
 
 <p class="text-justify">The rest is self-explanatory if you know HTML.</p>
 
@@ -171,10 +171,10 @@ This can be read as “the <code>currently</code> file that is in the <code>duti
 <h2 id="factorizing-things">Factorizing things</h2>
 
 <p class="text-justify">Now if you want to generate also the list of the old duties, you have to copy-paste the piece of code before,
-and replace <code>site.data.duties.currently</code> by <code>site.data.duties.before</code>. Too bad.
-A better way to do things is to define the code in terms of a variable <code>duties</code> as follows:</p>
+and replace <code class="highlighter-rouge">site.data.duties.currently</code> by <code class="highlighter-rouge">site.data.duties.before</code>. Too bad.
+A better way to do things is to define the code in terms of a variable <code class="highlighter-rouge">duties</code> as follows:</p>
 
-<div class="highlight"><pre><code class="language-liquid" data-lang="liquid"><span class="p">{%</span><span class="w"> </span><span class="nt">for</span><span class="w"> </span>category<span class="w"> </span>in<span class="w"> </span>duties<span class="w"> </span><span class="p">%}</span>
+<figure class="highlight"><pre><code class="language-liquid" data-lang="liquid"><span class="p">{%</span><span class="w"> </span><span class="nt">for</span><span class="w"> </span>category<span class="w"> </span>in<span class="w"> </span>duties<span class="w"> </span><span class="p">%}</span>
 &lt;h3&gt;<span class="p">{{</span><span class="w"> </span><span class="nv">category</span><span class="p">.</span><span class="nv">name</span><span class="w"> </span><span class="p">}}</span>&lt;/h3&gt;
 &lt;ul&gt;
     <span class="p">{%</span><span class="w"> </span><span class="nt">for</span><span class="w"> </span>duty<span class="w"> </span>in<span class="w"> </span>category.values<span class="w"> </span><span class="p">%}</span>
@@ -183,61 +183,61 @@ A better way to do things is to define the code in terms of a variable <code>dut
     &lt;/li&gt;
     <span class="p">{%</span><span class="w"> </span><span class="nt">endfor</span><span class="w"> </span><span class="p">%}</span>
 &lt;/ul&gt;
-<span class="p">{%</span><span class="w"> </span><span class="nt">endfor</span><span class="w"> </span><span class="p">%}</span></code></pre></div>
+<span class="p">{%</span><span class="w"> </span><span class="nt">endfor</span><span class="w"> </span><span class="p">%}</span></code></pre></figure>
 
-<p class="text-justify">Then you put this piece of code, say <code>print_duties.html</code> within the Jekyll include directory, <code>_includes</code>.
-In order to generate both list of duties you now simply have to write in <code>duties.html</code>:</p>
+<p class="text-justify">Then you put this piece of code, say <code class="highlighter-rouge">print_duties.html</code> within the Jekyll include directory, <code class="highlighter-rouge">_includes</code>.
+In order to generate both list of duties you now simply have to write in <code class="highlighter-rouge">duties.html</code>:</p>
 
-<div class="highlight"><pre><code class="language-liquid" data-lang="liquid">---
+<figure class="highlight"><pre><code class="language-liquid" data-lang="liquid">---
 layout: default
 title: duties
 ---
 &lt;h2&gt;Currently&lt;/h2&gt;
 
-<span class="p">{%</span><span class="w"> </span><span class="nt">assign</span><span class="w"> </span><span class="na">duties</span><span class="w"> </span><span class="o">=</span><span class="w"> </span>site.data.duties.currently<span class="w"> </span><span class="p">%}</span>
-<span class="p">{%</span><span class="w"> </span><span class="nt">include</span><span class="w"> </span>print_duties.html<span class="w"> </span><span class="p">%}</span>
+<span class="p">{%</span><span class="w"> </span><span class="nt">assign</span><span class="w"> </span><span class="nv">duties</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nv">site</span><span class="p">.</span><span class="nv">data</span><span class="p">.</span><span class="nv">duties</span><span class="p">.</span><span class="nv">currently</span><span class="w"> </span><span class="p">%}</span>
+<span class="p">{%</span><span class="w"> </span><span class="nt">include</span><span class="w"> </span><span class="na">print_duties</span><span class="p">.</span><span class="na">html</span><span class="w"> </span><span class="p">%}</span>
 
 &lt;h2&gt;Before&lt;/h2&gt;
 
-<span class="p">{%</span><span class="w"> </span><span class="nt">assign</span><span class="w"> </span><span class="na">duties</span><span class="w"> </span><span class="o">=</span><span class="w"> </span>site.data.duties.before<span class="w"> </span><span class="p">%}</span>
-<span class="p">{%</span><span class="w"> </span><span class="nt">include</span><span class="w"> </span>print_duties.html<span class="w"> </span><span class="p">%}</span></code></pre></div>
+<span class="p">{%</span><span class="w"> </span><span class="nt">assign</span><span class="w"> </span><span class="nv">duties</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nv">site</span><span class="p">.</span><span class="nv">data</span><span class="p">.</span><span class="nv">duties</span><span class="p">.</span><span class="nv">before</span><span class="w"> </span><span class="p">%}</span>
+<span class="p">{%</span><span class="w"> </span><span class="nt">include</span><span class="w"> </span><span class="na">print_duties</span><span class="p">.</span><span class="na">html</span><span class="w"> </span><span class="p">%}</span></code></pre></figure>
 
-<p class="text-justify">If you prefer to use Markdown, use instead a <code>duties.md</code> file with:</p>
+<p class="text-justify">If you prefer to use Markdown, use instead a <code class="highlighter-rouge">duties.md</code> file with:</p>
 
-<div class="highlight"><pre><code class="language-liquid" data-lang="liquid">---
+<figure class="highlight"><pre><code class="language-liquid" data-lang="liquid">---
 layout: default
 title: duties
 ---
 ## Currently
 
-<span class="p">{%</span><span class="w"> </span><span class="nt">assign</span><span class="w"> </span><span class="na">duties</span><span class="w"> </span><span class="o">=</span><span class="w"> </span>site.data.duties.currently<span class="w"> </span><span class="p">%}</span>
-<span class="p">{%</span><span class="w"> </span><span class="nt">include</span><span class="w"> </span>print_duties.html<span class="w"> </span><span class="p">%}</span>
+<span class="p">{%</span><span class="w"> </span><span class="nt">assign</span><span class="w"> </span><span class="nv">duties</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nv">site</span><span class="p">.</span><span class="nv">data</span><span class="p">.</span><span class="nv">duties</span><span class="p">.</span><span class="nv">currently</span><span class="w"> </span><span class="p">%}</span>
+<span class="p">{%</span><span class="w"> </span><span class="nt">include</span><span class="w"> </span><span class="na">print_duties</span><span class="p">.</span><span class="na">html</span><span class="w"> </span><span class="p">%}</span>
 
 ## Before
 
-<span class="p">{%</span><span class="w"> </span><span class="nt">assign</span><span class="w"> </span><span class="na">duties</span><span class="w"> </span><span class="o">=</span><span class="w"> </span>site.data.duties.before<span class="w"> </span><span class="p">%}</span>
-<span class="p">{%</span><span class="w"> </span><span class="nt">include</span><span class="w"> </span>print_duties.html<span class="w"> </span><span class="p">%}</span></code></pre></div>
+<span class="p">{%</span><span class="w"> </span><span class="nt">assign</span><span class="w"> </span><span class="nv">duties</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nv">site</span><span class="p">.</span><span class="nv">data</span><span class="p">.</span><span class="nv">duties</span><span class="p">.</span><span class="nv">before</span><span class="w"> </span><span class="p">%}</span>
+<span class="p">{%</span><span class="w"> </span><span class="nt">include</span><span class="w"> </span><span class="na">print_duties</span><span class="p">.</span><span class="na">html</span><span class="w"> </span><span class="p">%}</span></code></pre></figure>
 
 <h2 id="factorizing-things-revisited">Factorizing things (revisited)</h2>
 
 <p class="text-justify">Indeed file inclusion supports parameters (see <a href="http://jekyllrb.com/docs/templates/">here</a>).
 You can add the parameter and its value to the import as follows:</p>
 
-<div class="highlight"><pre><code class="language-liquid" data-lang="liquid">---
+<figure class="highlight"><pre><code class="language-liquid" data-lang="liquid">---
 layout: default
 title: duties
 ---
 ## Currently
 
-<span class="p">{%</span><span class="w"> </span><span class="nt">include</span><span class="w"> </span>print_duties.html<span class="w"> </span><span class="na">duties</span><span class="o">=</span>site.data.duties.currently<span class="w"> </span><span class="p">%}</span>
+<span class="p">{%</span><span class="w"> </span><span class="nt">include</span><span class="w"> </span><span class="na">print_duties</span><span class="p">.</span><span class="na">html</span><span class="w"> </span><span class="na">duties</span><span class="o">=</span><span class="nv">site</span><span class="p">.</span><span class="nv">data</span><span class="p">.</span><span class="nv">duties</span><span class="p">.</span><span class="na">currently %}
 
 ## Before
 
-<span class="p">{%</span><span class="w"> </span><span class="nt">include</span><span class="w"> </span>print_duties.html<span class="w"> </span><span class="na">duties</span><span class="o">=</span>site.data.duties.before<span class="w"> </span><span class="p">%}</span></code></pre></div>
+{% include print_duties</span><span class="p">.</span><span class="na">html</span><span class="w"> </span><span class="na">duties</span><span class="o">=</span><span class="nv">site</span><span class="p">.</span><span class="nv">data</span><span class="p">.</span><span class="nv">duties</span><span class="p">.</span><span class="nv">before</span><span class="w"> </span><span class="p">%}</span></code></pre></figure>
 
-<p class="text-justify">In the <code>print_duties.html</code> template that is in the <code>_includes</code> directory, you just have to prefix the name of the parameter with <code>include</code>:</p>
+<p class="text-justify">In the <code class="highlighter-rouge">print_duties.html</code> template that is in the <code class="highlighter-rouge">_includes</code> directory, you just have to prefix the name of the parameter with <code class="highlighter-rouge">include</code>:</p>
 
-<div class="highlight"><pre><code class="language-liquid" data-lang="liquid"><span class="p">{%</span><span class="w"> </span><span class="nt">for</span><span class="w"> </span>category<span class="w"> </span>in<span class="w"> </span>include.duties<span class="w"> </span><span class="p">%}</span>
+<figure class="highlight"><pre><code class="language-liquid" data-lang="liquid"><span class="p">{%</span><span class="w"> </span><span class="nt">for</span><span class="w"> </span>category<span class="w"> </span>in<span class="w"> </span>include.duties<span class="w"> </span><span class="p">%}</span>
 &lt;h3&gt;<span class="p">{{</span><span class="w"> </span><span class="nv">category</span><span class="p">.</span><span class="nv">name</span><span class="w"> </span><span class="p">}}</span>&lt;/h3&gt;
 &lt;ul&gt;
     <span class="p">{%</span><span class="w"> </span><span class="nt">for</span><span class="w"> </span>duty<span class="w"> </span>in<span class="w"> </span>category.values<span class="w"> </span><span class="p">%}</span>
@@ -246,7 +246,7 @@ title: duties
     &lt;/li&gt;
     <span class="p">{%</span><span class="w"> </span><span class="nt">endfor</span><span class="w"> </span><span class="p">%}</span>
 &lt;/ul&gt;
-<span class="p">{%</span><span class="w"> </span><span class="nt">endfor</span><span class="w"> </span><span class="p">%}</span></code></pre></div>
+<span class="p">{%</span><span class="w"> </span><span class="nt">endfor</span><span class="w"> </span><span class="p">%}</span></code></pre></figure>
 
 
   </article>

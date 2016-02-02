@@ -92,25 +92,25 @@
 
   <article class="post-content">
     <p class="text-justify"><a href="http://jekyllrb.com/docs/github-pages/">GitHub Pages with Jekyll</a> is nice.
-You just have to store your Jekyll <strong>sources</strong> in a repository <code>username.github.io</code>,
-where <code>username</code> is your GitHub user account,
-and you get automatically the <strong>resulting pages</strong> in <code>http://username.github.io</code>.
+You just have to store your Jekyll <strong>sources</strong> in a repository <code class="highlighter-rouge">username.github.io</code>,
+where <code class="highlighter-rouge">username</code> is your GitHub user account,
+and you get automatically the <strong>resulting pages</strong> in <code class="highlighter-rouge">http://username.github.io</code>.
 This is achieved thank to the GitHub Pages workflow that runs each time you push your sources to the repository.
 At least if the build passes.
 If not, you receive an email with the reasons why and no new pages are generated.
 However, this process comes with rules that forbid using Jekyll plugins but for authorized ones.</p>
 
 <p class="text-justify"><strong>Note:</strong> I am discussing here about User pages on GitHub Pages.
-For Project pages things are a bit different. For example for User pages, pages are on a <code>master</code> branch.
-For Project pages, pages are on a <code>gh-pages</code> branch.
+For Project pages things are a bit different. For example for User pages, pages are on a <code class="highlighter-rouge">master</code> branch.
+For Project pages, pages are on a <code class="highlighter-rouge">gh-pages</code> branch.
 See <a href="https://help.github.com/articles/user-organization-and-project-pages/">here</a>.</p>
 
 <h2 id="two-choices">Two choices</h2>
 
 <p class="text-justify">If you want, e.g., to use the <a href="https://github.com/inukshuk/jekyll-scholar">Jekyll-Scholar</a> plugin
-(to generate pages from <code>.bib</code> BibTeX reference files),
+(to generate pages from <code class="highlighter-rouge">.bib</code> BibTeX reference files),
 you will have either not to use GitHub Pages
-(make a simple <code>my-web-pages</code> repository and sync your pages with a Web server somewhere else)
+(make a simple <code class="highlighter-rouge">my-web-pages</code> repository and sync your pages with a Web server somewhere else)
 or to shortcut the GitHub Pages workflow. This is what we will do here.</p>
 
 <p class="text-justify">This part is based on <a href="https://github.com/barais/barais.github.io">Olivier Barais’s template</a>,
@@ -122,15 +122,15 @@ Please consider forking their templates that are much more advanced than mine fo
 
 <h2 id="how-things-work-with-the-github-pages-workflow">How things work with the GitHub Pages workflow</h2>
 
-<p class="text-justify">Jekyll takes its sources, i.e., files and specific directories (ones beginning by <code>_</code> in short) in the current path
-and compute pages in subdirectory <code>_src</code>. See the Jekyll directory structure <a href="http://jekyllrb.com/docs/structure/">here</a>.</p>
+<p class="text-justify">Jekyll takes its sources, i.e., files and specific directories (ones beginning by <code class="highlighter-rouge">_</code> in short) in the current path
+and compute pages in subdirectory <code class="highlighter-rouge">_src</code>. See the Jekyll directory structure <a href="http://jekyllrb.com/docs/structure/">here</a>.</p>
 
-<p class="text-justify">GitHub Pages require that your Jekyll sources are in the root directory of <code>username.github.io</code>.
-Then it runs Jekyll and deploys the resulting pages to <code>http://username.github.io</code>.</p>
+<p class="text-justify">GitHub Pages require that your Jekyll sources are in the root directory of <code class="highlighter-rouge">username.github.io</code>.
+Then it runs Jekyll and deploys the resulting pages to <code class="highlighter-rouge">http://username.github.io</code>.</p>
 
 <p class="text-justify">If you want to write your pages directly (e.g, without templates) you would have to put them
-at the root of the <code>username.github.io</code> repository and add a <code>.nojekyll</code> empty file to tell GitHub Pages not to
-run Jekyll each time you push things. This is very important if you have directories beginning with <code>_</code> since
+at the root of the <code class="highlighter-rouge">username.github.io</code> repository and add a <code class="highlighter-rouge">.nojekyll</code> empty file to tell GitHub Pages not to
+run Jekyll each time you push things. This is very important if you have directories beginning with <code class="highlighter-rouge">_</code> since
 they have a special treatment with Jekyll (they are not deployed on the Web site).</p>
 
 <h2 id="putting-things-together">Putting things together</h2>
@@ -140,23 +140,23 @@ in <a href="https://github.com/rudametw/rudametw.github.io">Walter Rudametkin’
 
 <ol>
   <li>
-    <p>define a <code>src</code> directory at the root (of the repository) containing the Jekyll sources</p>
+    <p>define a <code class="highlighter-rouge">src</code> directory at the root (of the repository) containing the Jekyll sources</p>
   </li>
   <li>
-    <p>edit files in <code>src</code> as usual, and commit+push them to GitHub regularly</p>
+    <p>edit files in <code class="highlighter-rouge">src</code> as usual, and commit+push them to GitHub regularly</p>
   </li>
   <li>
-    <p>have Jekyll run on these sources and place them in <code>src/_site</code> (default)</p>
+    <p>have Jekyll run on these sources and place them in <code class="highlighter-rouge">src/_site</code> (default)</p>
   </li>
   <li>
-    <p>“build” the site regularly by copying the pages from <code>src/_site</code> to the root of the repository,
+    <p>“build” the site regularly by copying the pages from <code class="highlighter-rouge">src/_site</code> to the root of the repository,
  and then commit+push the new versions of these to GitHub</p>
   </li>
 </ol>
 
 <p class="text-justify">For this one has two scripts that automate steps 3. and 4.
-Step 3. is achieved by <code>src/run-jekyll.sh</code>. You can have it run in background while doing steps 1. and 2.
-Step 4. is achieved by <code>src/update-site.sh</code>.</p>
+Step 3. is achieved by <code class="highlighter-rouge">src/run-jekyll.sh</code>. You can have it run in background while doing steps 1. and 2.
+Step 4. is achieved by <code class="highlighter-rouge">src/update-site.sh</code>.</p>
 
 <p class="text-justify"><strong>Note:</strong> Jekyll supports the possibility to tell in its configuration file
 where are the source and the target directories.
