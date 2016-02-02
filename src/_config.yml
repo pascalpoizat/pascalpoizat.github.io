@@ -13,12 +13,15 @@ twitter_username: pascalpoizat
 github_username:  pascalpoizat
 
 exclude:  ['Gemfile*', '*.sh', 'update_site.sh']
+gems: ['jekyll/scholar']
 
 # Build settings
 markdown: kramdown
+highlighter: rouge
 
-highlighter: pygments
-gems: ['jekyll/scholar']
+kramdown:
+     # input: GFM
+     syntax_highlighter: rouge
 
 scholar:
   style: _bibliography/mystyle.csl
