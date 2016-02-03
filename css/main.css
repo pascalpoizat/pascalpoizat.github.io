@@ -5844,6 +5844,9 @@ from : https://gist.github.com/matthiasg/6153853
 body {
   padding-top: 70px; }
 
+.jumbotron {
+  background: transparent; }
+
 .starter-template {
   padding: 0px 15px;
   text-align: center; }
