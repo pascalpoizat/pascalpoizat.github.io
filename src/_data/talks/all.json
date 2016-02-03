@@ -3,7 +3,7 @@
   "grouped": true,
   "groups": [
     {
-      "label": "Formal Methods applied to Software Engineering (synthesis of results 2006-2014)",
+      "label": "Formal Methods applied to Software Engineering<br/>(synthesis of results 2006-2014)",
       "talks": [
         {
           "title": "Formal Development of Choreographic Business Processes",
@@ -32,21 +32,6 @@
               "at": "Habilitation thesis",
               "where": "Paris Sud University",
               "date": "2011.11"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "label": "Projects",
-      "talks": [
-        {
-          "title": "Projet ANR PERSO",
-          "occurrences": [
-            {
-              "at": "Colloquim of the National Agency for Research",
-              "where": "Lyon",
-              "date": "2012.01"
             }
           ]
         }
@@ -207,6 +192,21 @@
               "at": "LaMI Seminar",
               "where": "Evry",
               "date": "2002.12"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Projects",
+      "talks": [
+        {
+          "title": "Projet ANR PERSO",
+          "occurrences": [
+            {
+              "at": "Colloquim of the National Agency for Research",
+              "where": "Lyon",
+              "date": "2012.01"
             }
           ]
         }

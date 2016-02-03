@@ -4,15 +4,17 @@ title: bio
 rank: 6
 ---
 
-## Currently
+<div class="starter-template">
+    <h1>Pascal Poizat</h1>
+    <p class="lead">Professeur des Universités | Full Professor<br/>
+    Université Paris Ouest Nanterre la Défense<br/>
+    LIP6 UMR 7606 CNRS
+    </p>
+</div>
 
-Since September 2012,
-I have a full professor position at [Université Paris Ouest](http://www.u-paris10.fr).<br/>
-As far as research is concerned, 
-I am a member of the [LIP6](http://www.lip6.fr) lab at [Université Pierre et Marie Curie](http://www.upmc.fr).
-{: .text-justify}
-
-## Before
+- **since 2012** - Full professor<br/>
+    [Université Paris Ouest](http://www.u-paris10.fr) +
+    [LIP6](http://www.lip6.fr) lab at [Université Pierre et Marie Curie](http://www.upmc.fr)
 
 - **2011** - _Habilitation à diriger des recherches_ (what is this? [see here](http://en.wikipedia.org/wiki/Habilitation))<br/>
     [Université Paris Sud](http://www.u-psud.fr)

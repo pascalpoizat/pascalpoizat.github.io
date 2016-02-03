@@ -1,0 +1,26 @@
+---
+layout: default
+title: duties
+rank: 5
+---
+
+<div class="row">
+
+    <div class="col-md-6">
+
+        <h2><span class="label label-primary">Currently</span></h2>
+
+        {% include print_duties.html duties=site.data.duties.currently %}
+
+    </div>
+
+    <div class="col-md-6">
+
+        <h2><span class="label label-primary">Before</span></h2>
+
+        {% include print_duties.html duties=site.data.duties.before %}
+
+    </div>
+
+</div>
+

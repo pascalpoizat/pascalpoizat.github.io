@@ -51,3 +51,7 @@ It's quite simple to have a running Jekyll site:
 
 - if you intend to publish your Web pages using GitHub pages, the good starting point is the very nice [tutorial by Jonathan McGlone](http://jmcglone.com/guides/github-pages/)
 - if not, you can simply follow the [Jekyll quick-start guide](http://jekyllrb.com/docs/quickstart/).
+
+**Update:** just found the [Jekyll Tips](http://jekyll.tips/) site.
+Lots of interesting information here too.
+{: .text-justify}

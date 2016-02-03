@@ -1,14 +1,11 @@
 {% assign grouped = include.talks.grouped %}
-{% if grouped %}
-<ul>
-{% endif %}
 {% for group in include.talks.groups %}
 {% if grouped %}
-<li><b>{{ group.label }}</b><br/>
+<h3>{{ group.label }}</h3>
 {% endif %}
 <ul>
     {% for talk in group.talks %}
-    <li><em>{{ talk.title }}</em>.<br/>
+    <li><b>{{ talk.title }}</b>.<br/>
     {% for occurrence in talk.occurrences %}
             {{ occurrence.date }} - {{ occurrence.at }}, {{ occurrence.where }}.<br/>
     {% endfor %}
@@ -20,15 +17,10 @@
     -
     {% endif %}
     {% if talk.source %}
-        <a href="{{ talk.source }}">get source</a><br/>
+        <a href="{{ talk.source }}">get source</a>
     {% endif %}
+    {{ include.suffix }}
     </li>
     {% endfor %}
 </ul>
-{% if grouped %}
-</li>
-{% endif %}
 {% endfor %}
-{% if grouped %}
-</ul>
-{% endif %}

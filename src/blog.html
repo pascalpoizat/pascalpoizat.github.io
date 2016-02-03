@@ -3,7 +3,14 @@ layout: default
 title: blog
 rank: 7
 ---
-<ul class="posts">
+
+<div class="starter-template">
+    <h1>Blog posts</h1>
+    <p class="lead">Notes on very different things.
+    </p>
+</div>
+
+<ul>
   {% for post in site.posts %}
 	<li><span>{{ post.date | date_to_string }}</span> » <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></li>
   {% endfor %}
