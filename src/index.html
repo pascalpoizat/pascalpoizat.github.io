@@ -1,21 +1,65 @@
 ---
-layout: default
+layout: index
 ---
-<div class="blurb">
-    <h1>Some experiments with Jekyll and Jekyll-Scholar</h1>
-    <p>I am Professor at Université Paris Ouest. <br/>
-        <a href="/bio.html">More info...</a>
-    </p>
-    <p>I do research on composite systems verification, see e.g.:
-    <ul>
-        <li>
-            <span class="text-justify">{% reference PP_HDR %}</span>
-            <br/>see {% cite PP_HDR --relative publications.html %} for more (pdf)
-        </li>
-        <li>
-            <span class="text-justify">{% reference PP_GPSY15 %}</span>
-            <br/>see {% cite PP_GPSY15 --relative publications.html %} for more (doi)
-        </li>
-    </ul>
-    </p>
-</div><!-- /.blurb -->
+
+<div class="jumbotron">
+
+    <div class="container">
+
+        <div class="row">
+
+            <div class="col-md-2">
+                <img src="{{site.picture}}" width="80%">
+            </div>
+
+            <div class="col-md-6">
+                <h3>Professor | Professeur des Universités</h3>
+                <p class="lead">
+                    Dr HDR<a href="https://en.wikipedia.org/wiki/Habilitation">*</a><br/>
+                    <a href="https://www.u-paris10.fr">Université Paris Ouest Nanterre la Défense</a><br/>
+                    <a href="http://www.lip6.fr">LIP6 UMR 7606 CNRS</a>
+                </p>
+            </div>
+            <div class="col-md-4">
+
+            </div>
+        </div>
+
+
+        <div class="row row-padded homepage-grid row-bordered p-t text-center">
+
+            <div class="col-sm-4">
+                <i class="glyphicon glyphicon-education"></i>
+                <h4><strong>Research</strong></h4>
+                <p class="text-muted">
+                    Application of formal methods to software engineering,
+                    with a focus on composite and interacting systems.
+                </p>
+            </div>
+
+            <div class="col-sm-4">
+                <i class="glyphicon glyphicon-education"></i>
+                <h4><strong>Teaching</strong></h4>
+                <p class="text-muted">
+                    Software engineering & development,<br/>
+                    from
+                    modelling and model verification,<br/>
+                    to
+                    implementation and test.
+                </p>
+            </div>
+
+            <div class="col-sm-4">
+                <i class="glyphicon glyphicon-education"></i>
+                <h4><strong>Duties</strong></h4>
+                <p class="text-muted">
+                    Director of Master MIAGE<br/>
+                    Nat. Committee of Scientific Research<br/>
+                    LIP6 Council
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+</div>

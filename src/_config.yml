@@ -2,11 +2,12 @@
 
 title: pascal.poizat
 author: Pascal Poizat
+picture: images/poizat_2015b.jpg
 email: firstname.lastname@gmail.com
 email1: firstname.lastname@u-paris10.fr
 email2: firstname.lastname@lip6.fr
 description: > # this means to ignore newlines until "baseurl:"
-  Full Professor at Université Paris Ouest<br/>
+  Professor at Université Paris Ouest<br/>
   LIP6 UMR 7606 CNRS
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://pascalpoizat.github.io" # the base hostname & protocol for your site

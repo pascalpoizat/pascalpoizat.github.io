@@ -6,7 +6,7 @@ rank: 6
 
 <div class="starter-template">
     <h1>Pascal Poizat</h1>
-    <p class="lead">Professeur des Universités | Full Professor<br/>
+    <p class="lead">
     Université Paris Ouest Nanterre la Défense<br/>
     LIP6 UMR 7606 CNRS
     </p>
