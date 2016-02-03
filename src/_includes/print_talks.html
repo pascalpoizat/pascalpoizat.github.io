@@ -6,20 +6,27 @@
 <ul>
     {% for talk in group.talks %}
     <li><b>{{ talk.title }}</b>.<br/>
-    {% for occurrence in talk.occurrences %}
-            {{ occurrence.date }} - {{ occurrence.at }}, {{ occurrence.where }}.<br/>
-    {% endfor %}
-    {{ talk.note }}
-    {% if talk.url %}
-        <a href="documents/talks/{{ talk.url }}">get slides</a>
-    {% endif %}
-    {% if talk.url and talk.source %}
-    -
-    {% endif %}
-    {% if talk.source %}
-        <a href="{{ talk.source }}">get source</a>
-    {% endif %}
-    {{ include.suffix }}
+        {% for occurrence in talk.occurrences %}
+        {{ occurrence.date }} - {{ occurrence.at }}, {{ occurrence.where }}.<br/>
+        {% endfor %}
+        {{ talk.note }}
+        {% if talk.url or talk.source %}
+        <div class="btn-group">
+            <button type="button" class="btn {{site.link_btn_color}} dropdown-toggle {{site.link_btn_size}}" data-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false">
+                files <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu">
+                {% if talk.url %}
+                <li><a href="documents/talks/{{ talk.url }}">slides</a></li>
+                {% endif %}
+                {% if talk.source %}
+                <li><a href="{{ talk.source }}">source</a></li>
+                {% endif %}
+            </ul>
+        </div>
+        {% endif %}
     </li>
     {% endfor %}
 </ul>

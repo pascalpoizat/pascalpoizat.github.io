@@ -1,4 +1,5 @@
 # Site settings
+
 title: pascal.poizat
 author: Pascal Poizat
 email: firstname.lastname@gmail.com
@@ -12,10 +13,15 @@ url: "http://pascalpoizat.github.io" # the base hostname & protocol for your sit
 twitter_username: pascalpoizat
 github_username:  pascalpoizat
 
-exclude:  ['Gemfile*', '*.sh', 'update_site.sh']
-gems: ['jekyll/scholar']
+link_btn_size: btn-xs
+link_btn_color: btn-primary
 
 # Build settings
+
+exclude:  ['Gemfile*', '*.sh', 'update_site.sh']
+
+gems: ['jekyll/scholar']
+
 markdown: kramdown
 highlighter: rouge
 
