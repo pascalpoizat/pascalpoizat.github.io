@@ -3,6 +3,16 @@ body {
   // padding-bottom: 70px;
 }
 
+// trick to deal with <a href="#id"> not going to the good place
+// solution by Chris Coyier found here: https://css-tricks.com/hash-tag-links-padding/
+h2:before {
+  display: block;
+  content: " ";
+  margin-top: -70px;
+  height: 70px;
+  visibility: hidden;
+}
+
 .jumbotron {
   background:transparent;
 }
