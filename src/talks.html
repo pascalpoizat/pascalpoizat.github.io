@@ -19,17 +19,19 @@ rank: 3
 
     <div class="col-md-6">
 
-        <h2><span class="label label-primary">Selected talks</span></h2><br/>
+        <h2><span class="label label-primary">Selected talks</span></h2>
+        <p><br/></p>
 
-        {% include print_talks.html talks=site.data.talks.selected suffix="<br/><br/>" %}
+        {% include print_talks.html talks=site.data.talks.selected suffix="<br/>" %}
 
     </div>
 
     <div class="col-md-6">
 
         <h2><span class="label label-primary">All talks since 2001</span></h2>
+        <p><br/></p>
 
-        {% include print_talks.html talks=site.data.talks.all suffix="" %}
+        {% include print_talks.html talks=site.data.talks.all suffix="<br/>" %}
 
     </div>
 

@@ -1,7 +1,7 @@
 {% assign grouped = include.talks.grouped %}
 {% for group in include.talks.groups %}
 {% if grouped %}
-<h3>{{ group.label }}</h3>
+<h4>{{ group.label }}</h4>
 {% endif %}
 <ul>
     {% for talk in group.talks %}
@@ -27,7 +27,7 @@
             </ul>
         </div>
         {% endif %}
-    </li>
+    </li>{{ include.suffix }}
     {% endfor %}
 </ul>
 {% endfor %}
