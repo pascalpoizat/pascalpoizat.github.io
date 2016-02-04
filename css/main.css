@@ -11697,6 +11697,12 @@ pre code {
   overflow-wrap: normal;
   white-space: pre; }
 
+.personal-picture {
+  width: 80%;
+  max-width: 160px;
+  height: auto;
+  float: left; }
+
 /**
  * Syntax highlighting styles
  */
