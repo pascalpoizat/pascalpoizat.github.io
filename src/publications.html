@@ -1,0 +1,111 @@
+---
+layout: default
+title: publications
+rank: 2
+---
+
+<div class="bs-callout bs-callout-warning">
+    <h4><i class="glyphicon glyphicon-wrench"></i> Works ahead!</h4>
+    <p class="text-justify">
+        This page is experimental and uses a bibtex file that is not up to date.<br/>
+        Meanwhile, you can look at my <a href="{{site.dblp.site}}/{{site.dblp.user}}.html">list of publications at
+        DBLP</a>.
+    </p>
+</div>
+
+{% assign max='now'|date:"%Y" %}
+{% assign min=max|minus: 5 %}
+{% assign smin=min|plus: "" %}
+
+<noscript>
+    <div class="bs-callout bs-callout-danger">
+        <h4><i class="glyphicon glyphicon-exclamation-sign"></i> Javascript deactivated!</h4>
+        <p class="text-justify">
+            Your browser does not seem to support Javascript.<br/>
+            You will not be able to get references or pdfs for the publications.<br/>
+            Please consider installing a selective Javascript-blocker rather than blocking all Javascript.
+        </p>
+    </div>
+
+    <div class="btn-group" role="group" aria-label="publication categories">
+        <a href="#publications_nojs_recent">
+            <button type="button" class="btn btn-primary">Recent Publications</button>
+        </a>
+        <a href="#publications_nojs_article">
+            <button type="button" class="btn btn-primary">Journal Articles</button>
+        </a>
+        <a href="#publications_nojs_inbook">
+            <button type="button" class="btn btn-primary">Book Chapters</button>
+        </a>
+        <a href="#publications_nojs_inproceedings">
+            <button type="button" class="btn btn-primary">Conferences and Workshops</button>
+        </a>
+        <a href="#publications_nojs_manuscript">
+            <button type="button" class="btn btn-primary">Manuscripts</button>
+        </a>
+    </div>
+
+    <h2 id="publications_nojs_recent">Recent Publications ({{min}}..{{max}})</h2>
+
+    {% bibliography -q @*[year>={{smin}}] %}
+
+    <h2 id="publications_nojs_article">Journal Articles</h2>
+
+    {% bibliography -q @article %}
+
+    <h2 id="publications_nojs_inbook">Book Chapters</h2>
+
+    {% bibliography -q @inbook %}
+
+    <h2 id="publications_nojs_inproceedings">Conferences and Workshops</h2>
+
+    {% bibliography -q @inproceedings %}
+
+    <h2 id="publications_nojs_manuscript">Manuscripts</h2>
+
+    {% bibliography -q @phdthesis %}
+</noscript>
+
+<div class="ifjavascript">
+    <div class="tabbable tabs-top"><!-- Only required for left/right tabs -->
+        <ul class="nav nav-tabs">
+            <li class="active"><a href="#publications_recent" data-toggle="tab">
+                Recent Publications
+            </a></li>
+            <li><a href="#publications_article" data-toggle="tab">
+                Journal Articles
+            </a></li>
+            <li><a href="#publications_inbook" data-toggle="tab">
+                Book Chapters
+            </a></li>
+            <li><a href="#publications_inproceedings" data-toggle="tab">
+                Conferences and Workshops
+            </a></li>
+            <li><a href="#publications_manuscript" data-toggle="tab">
+                Manuscripts
+            </a></li>
+        </ul>
+        <div class="tab-content">
+            <div class="tab-pane active" id="publications_recent">
+                <br/>
+                {% bibliography -q @*[year>={{smin}}] %}
+            </div>
+            <div class="tab-pane" id="publications_article">
+                <br/>
+                {% bibliography -q @article %}
+            </div>
+            <div class="tab-pane" id="publications_inbook">
+                <br/>
+                {% bibliography -q @inbook %}
+            </div>
+            <div class="tab-pane" id="publications_inproceedings">
+                <br/>
+                {% bibliography -q @inproceedings %}
+            </div>
+            <div class="tab-pane" id="publications_manuscript">
+                <br/>
+                {% bibliography -q @phdthesis %}
+            </div>
+        </div>
+    </div>
+</div>
