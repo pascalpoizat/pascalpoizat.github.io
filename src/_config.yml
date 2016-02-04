@@ -13,6 +13,9 @@ baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://pascalpoizat.github.io" # the base hostname & protocol for your site
 twitter_username: pascalpoizat
 github_username:  pascalpoizat
+dblp:
+  site: http://www.informatik.uni-trier.de/~ley/pers/hd
+  user: p/Poizat:Pascal
 
 link_btn_size: btn-xs
 link_btn_color: btn-primary
