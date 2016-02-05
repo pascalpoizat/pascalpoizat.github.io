@@ -11703,6 +11703,9 @@ pre code {
   height: auto;
   float: left; }
 
+.post-meta {
+  color: #828282; }
+
 /**
  * Syntax highlighting styles
  */

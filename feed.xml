@@ -6,8 +6,8 @@
 </description>
     <link>http://pascalpoizat.github.io/</link>
     <atom:link href="http://pascalpoizat.github.io/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Fri, 05 Feb 2016 10:41:53 +0100</pubDate>
-    <lastBuildDate>Fri, 05 Feb 2016 10:41:53 +0100</lastBuildDate>
+    <pubDate>Fri, 05 Feb 2016 16:51:51 +0100</pubDate>
+    <lastBuildDate>Fri, 05 Feb 2016 16:51:51 +0100</lastBuildDate>
     <generator>Jekyll v3.0.2</generator>
     
       <item>
@@ -216,9 +216,15 @@ then you can use &lt;code class=&quot;highlighter-rouge&quot;&gt;entry.bibtex&lt
 To learn more, see &lt;a href=&quot;https://github.com/inukshuk/jekyll-scholar&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
 </description>
         <pubDate>Mon, 01 Feb 2016 00:00:00 +0100</pubDate>
-        <link>http://pascalpoizat.github.io/2016/02/01/jekyll-and-bibtex.html</link>
-        <guid isPermaLink="true">http://pascalpoizat.github.io/2016/02/01/jekyll-and-bibtex.html</guid>
+        <link>http://pascalpoizat.github.io/jekyll/bibtex/jekyll-scholar/2016/02/01/jekyll-and-bibtex.html</link>
+        <guid isPermaLink="true">http://pascalpoizat.github.io/jekyll/bibtex/jekyll-scholar/2016/02/01/jekyll-and-bibtex.html</guid>
         
+        
+        <category>jekyll</category>
+        
+        <category>bibtex</category>
+        
+        <category>jekyll-scholar</category>
         
       </item>
     
@@ -297,9 +303,13 @@ I may use this in the future to simplify things and avoid some file copying.&lt;
 
 </description>
         <pubDate>Fri, 29 Jan 2016 00:00:00 +0100</pubDate>
-        <link>http://pascalpoizat.github.io/2016/01/29/github-pages-without-the-workflow.html</link>
-        <guid isPermaLink="true">http://pascalpoizat.github.io/2016/01/29/github-pages-without-the-workflow.html</guid>
+        <link>http://pascalpoizat.github.io/jekyll/github-pages/2016/01/29/github-pages-without-the-workflow.html</link>
+        <guid isPermaLink="true">http://pascalpoizat.github.io/jekyll/github-pages/2016/01/29/github-pages-without-the-workflow.html</guid>
         
+        
+        <category>jekyll</category>
+        
+        <category>github-pages</category>
         
       </item>
     
@@ -464,9 +474,17 @@ title: duties
 
 </description>
         <pubDate>Wed, 27 Jan 2016 00:00:00 +0100</pubDate>
-        <link>http://pascalpoizat.github.io/2016/01/27/generating-a-page-using-personal-data.html</link>
-        <guid isPermaLink="true">http://pascalpoizat.github.io/2016/01/27/generating-a-page-using-personal-data.html</guid>
+        <link>http://pascalpoizat.github.io/jekyll/liquid/templates/yaml/2016/01/27/generating-a-page-using-personal-data.html</link>
+        <guid isPermaLink="true">http://pascalpoizat.github.io/jekyll/liquid/templates/yaml/2016/01/27/generating-a-page-using-personal-data.html</guid>
         
+        
+        <category>jekyll</category>
+        
+        <category>liquid</category>
+        
+        <category>templates</category>
+        
+        <category>yaml</category>
         
       </item>
     
@@ -518,9 +536,13 @@ So let’s go for &lt;a href=&quot;http://jekyllrb.com/&quot;&gt;Jekyll&lt;/a&gt
 Lots of interesting information here too.&lt;/p&gt;
 </description>
         <pubDate>Tue, 26 Jan 2016 00:00:00 +0100</pubDate>
-        <link>http://pascalpoizat.github.io/2016/01/26/jekyll-site-launched.html</link>
-        <guid isPermaLink="true">http://pascalpoizat.github.io/2016/01/26/jekyll-site-launched.html</guid>
+        <link>http://pascalpoizat.github.io/jekyll/github-pages/2016/01/26/jekyll-site-launched.html</link>
+        <guid isPermaLink="true">http://pascalpoizat.github.io/jekyll/github-pages/2016/01/26/jekyll-site-launched.html</guid>
         
+        
+        <category>jekyll</category>
+        
+        <category>github-pages</category>
         
       </item>
     

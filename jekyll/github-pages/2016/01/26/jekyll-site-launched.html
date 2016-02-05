@@ -9,11 +9,11 @@
     <meta name="description" content="Professor at Université Paris Ouest<br/> LIP6 UMR 7606 CNRS
 ">
     <meta name="author" content="Pascal Poizat">
-    <title>blog</title>
+    <title>Web Site now using Jekyll</title>
 
     <!-- Bootstrap -->
     <link rel="stylesheet" href="/css/main.css">
-    <link rel="canonical" href="http://pascalpoizat.github.io/blog.html">
+    <link rel="canonical" href="http://pascalpoizat.github.io/jekyll/github-pages/2016/01/26/jekyll-site-launched.html">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="/font-awesome-4.5.0/css/font-awesome.min.css">
 
@@ -97,7 +97,7 @@
                 
                 
                 
-                <li class="active">
+                <li >
                     <a class="page-link" href="/blog.html">blog</a>
                 </li>
                 
@@ -115,23 +115,71 @@
 
 
     <div class="container">
-        <div class="starter-template">
-    <h1>Blog posts</h1>
-    <p class="lead">Notes on very different things.
+        <div class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">Web Site now using Jekyll</h1>
+    <p class="post-meta">
+      Jan 26, 2016<br/>
+      by Pascal Poizat<br/>
+      
+      
+      <a href="http://pascalpoizat.github.io/jekyll"><button class="btn btn-xs btn-primary">jekyll</button></a>
+      
+      <a href="http://pascalpoizat.github.io/github-pages"><button class="btn btn-xs btn-primary">github-pages</button></a>
+      
     </p>
-</div>
+  </header>
+
+  <article class="post-content">
+    <p class="text-justify">New static Web site, now generated using <a href="http://jekyllrb.com/">Jekyll</a>.</p>
+
+<h2 id="static-pages">Static pages</h2>
+
+<p class="text-justify">There are many reasons to prefer static pages over dynamic ones.
+You may find some <a href="http://nilclass.com/courses/what-is-a-static-website/#1">here</a>.
+It turns out you just have to write some HTML/CSS files using your editor or IDE of choice and then send these files to a server.
+You can do this in a responsive way using <a href="http://getbootstrap.com/">BootStrap</a> and with style using available templates,
+see e.g., <a href="http://html5up.net/">HTML5UP</a>.</p>
+
+<p class="text-justify">There are limits to this approach.</p>
+
+<p class="text-justify">First, changing the style of your Web site over time soon becomes a burden. A solution is never to change this style.
+I am sure you have already seen the nice <em>no-css-no-javascript-HTML-2.0</em> pages that some people like in academia.
+But what you are not one of these?
+Further, what if your pages relate to data you gather with time?
+Of course, you could try to keep your data and your manually edited Web pages synchronized. Not fun.</p>
+
+<h2 id="static-page-generators">Static page generators</h2>
+
+<p class="text-justify">A solution is to follow a <em>data-and-generators</em> approach.
+Using data, stored in a database or in files, you can generate not only up-to-date Web pages but also resumes, application files, etc.
+Nothing really new here.
+Indeed, I had used the <a href="https://github.com/sebastien/tahchee">TahChee</a> python-based static Web site generator for some time.</p>
+
+<p class="text-justify">The choice of a generation framework is vast, <a href="https://www.staticgen.com/">see here</a> for example.</p>
+
+<h2 id="jekyll">Jekyll</h2>
+
+<p class="text-justify">At a first step I would have liked to find one based on the new language I am learning, <a href="https://kotlinlang.org/">Kotlin</a>.
+None.
+<a href="http://sysgears.com/grain/">Grain</a>, based on Groovy, and with support for the <a href="http://gradle.org/">Gradle</a> build system seems nice too.
+But a bit too young.
+So let’s go for <a href="http://jekyllrb.com/">Jekyll</a>.</p>
+
+<p class="text-justify">It’s quite simple to have a running Jekyll site:</p>
 
 <ul>
-  
-	<li><span>01 Feb 2016</span> » <a href="/jekyll/bibtex/jekyll-scholar/2016/02/01/jekyll-and-bibtex.html" title="Jekyll and BibTeX">Jekyll and BibTeX</a></li>
-  
-	<li><span>29 Jan 2016</span> » <a href="/jekyll/github-pages/2016/01/29/github-pages-without-the-workflow.html" title="GitHub Pages without the Workflow">GitHub Pages without the Workflow</a></li>
-  
-	<li><span>27 Jan 2016</span> » <a href="/jekyll/liquid/templates/yaml/2016/01/27/generating-a-page-using-personal-data.html" title="Generating a Page using Personal Data">Generating a Page using Personal Data</a></li>
-  
-	<li><span>26 Jan 2016</span> » <a href="/jekyll/github-pages/2016/01/26/jekyll-site-launched.html" title="Web Site now using Jekyll">Web Site now using Jekyll</a></li>
-  
+  <li>if you intend to publish your Web pages using GitHub pages, the good starting point is the very nice <a href="http://jmcglone.com/guides/github-pages/">tutorial by Jonathan McGlone</a></li>
+  <li>if not, you can simply follow the <a href="http://jekyllrb.com/docs/quickstart/">Jekyll quick-start guide</a>.</li>
 </ul>
+
+<p class="text-justify"><strong>Update:</strong> just found the <a href="http://jekyll.tips/">Jekyll Tips</a> site.
+Lots of interesting information here too.</p>
+
+  </article>
+
+</div>
 
     </div>
 
