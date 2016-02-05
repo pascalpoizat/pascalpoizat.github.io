@@ -2,6 +2,7 @@
 layout: post
 title: "Jekyll and BibTeX"
 date: 2016-02-01
+categories: [jekyll, bibtex, jekyll-scholar]
 ---
 
 With [Jekyll](http://jekyllrb.com), you can generate pages based on your data,

@@ -2,6 +2,7 @@
 layout: post
 title: "Web Site now using Jekyll"
 date: 2016-01-26
+categories: [jekyll, github-pages]
 ---
 
 New static Web site, now generated using [Jekyll](http://jekyllrb.com/).

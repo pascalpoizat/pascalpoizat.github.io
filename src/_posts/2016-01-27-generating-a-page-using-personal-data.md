@@ -2,6 +2,7 @@
 layout: post
 title: "Generating a Page using Personal Data"
 date: 2016-01-27
+categories: [jekyll, liquid, templates, yaml]
 ---
 
 As explained in a [previous post]({{site.url}}/2016/01/26/jekyll-site-launched.html), static page generators such as [Jekyll](http://jekyllrb.com/)

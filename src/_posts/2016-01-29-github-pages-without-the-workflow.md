@@ -2,6 +2,7 @@
 layout: post
 title: "GitHub Pages without the Workflow"
 date: 2016-01-29
+categories: [jekyll, github-pages]
 ---
 
 [GitHub Pages with Jekyll](http://jekyllrb.com/docs/github-pages/) is nice.
