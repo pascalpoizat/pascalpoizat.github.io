@@ -51,15 +51,57 @@ rank: 2
 
     <h2 id="publications_nojs_article">Journal Articles</h2>
 
+    {% if site.kind.separate.article %}
+
+    <h3>International</h3>
+
+    {% bibliography -q @article[{{ site.kind.label }}!=national] %}
+
+    <h3>National</h3>
+
+    {% bibliography -q @article[{{ site.kind.label }}=national] %}
+
+    {% else %}
+
     {% bibliography -q @article %}
+
+    {% endif %}
 
     <h2 id="publications_nojs_inbook">Book Chapters</h2>
 
+    {% if site.kind.separate.inbook %}
+
+    <h3>International</h3>
+
+    {% bibliography -q @inbook[{{ site.kind.label }}!=national] %}
+
+    <h3>National</h3>
+
+    {% bibliography -q @inbook[{{ site.kind.label }}=national] %}
+
+    {% else %}
+
     {% bibliography -q @inbook %}
+
+    {% endif %}
 
     <h2 id="publications_nojs_inproceedings">Conferences and Workshops</h2>
 
+    {% if site.kind.separate.inproceedings %}
+
+    <h3>International</h3>
+
+    {% bibliography -q @inproceedings[{{ site.kind.label }}!=national] %}
+
+    <h3>National</h3>
+
+    {% bibliography -q @inproceedings[{{ site.kind.label }}=national] %}
+
+    {% else %}
+
     {% bibliography -q @inproceedings %}
+
+    {% endif %}
 
     <h2 id="publications_nojs_manuscript">Manuscripts</h2>
 
@@ -92,15 +134,63 @@ rank: 2
             </div>
             <div class="tab-pane" id="publications_article">
                 <br/>
+
+                {% if site.kind.separate.article %}
+
+                <p><b>International</b><br/></p>
+
+                {% bibliography -q @article[{{ site.kind.label }}!=national] %}
+
+                <p><b>National</b><br/></p>
+
+                {% bibliography -q @article[{{ site.kind.label }}=national] %}
+
+                {% else %}
+
                 {% bibliography -q @article %}
+
+                {% endif %}
+
             </div>
             <div class="tab-pane" id="publications_inbook">
                 <br/>
+
+                {% if site.kind.separate.inbook %}
+
+                <p><b>International</b><br/></p>
+
+                {% bibliography -q @inbook[{{ site.kind.label }}!=national] %}
+
+                <p><b>National</b><br/></p>
+
+                {% bibliography -q @inbook[{{ site.kind.label }}=national] %}
+
+                {% else %}
+
                 {% bibliography -q @inbook %}
+
+                {% endif %}
+
             </div>
             <div class="tab-pane" id="publications_inproceedings">
                 <br/>
+
+                {% if site.kind.separate.inproceedings %}
+
+                <p><b>International</b><br/></p>
+
+                {% bibliography -q @inproceedings[{{ site.kind.label }}!=national] %}
+
+                <p><b>National</b><br/></p>
+
+                {% bibliography -q @inproceedings[{{ site.kind.label }}=national] %}
+
+                {% else %}
+
                 {% bibliography -q @inproceedings %}
+
+                {% endif %}
+
             </div>
             <div class="tab-pane" id="publications_manuscript">
                 <br/>
