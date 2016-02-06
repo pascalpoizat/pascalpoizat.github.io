@@ -11,23 +11,41 @@
         {% endfor %}
         {{ talk.note }}
         {% if talk.url or talk.source %}
-        <div class="btn-group">
-            <button type="button" class="btn {{site.link_btn_color}} dropdown-toggle {{site.link_btn_size}}" data-toggle="dropdown"
-                    aria-haspopup="true"
-                    aria-expanded="false">
-                files <span class="caret"></span>
-            </button>
-            <ul class="dropdown-menu">
+        <noscript>
+            <div class="btn-group">
                 {% if talk.url %}
-                <li><a href="documents/talks/{{ talk.url }}">slides</a></li>
+                <a href="documents/talks/{{ talk.url }}">
+                    <button type="button" class="btn {{site.link_btn_color}} {{site.link_btn_size}}">slides</button>
+                </a>
                 {% endif %}
                 {% if talk.source %}
-                <li><a href="{{ talk.source }}">source</a></li>
+                <a href="{{ talk.source }}">
+                    <button type="button" class="btn {{site.link_btn_color}} {{site.link_btn_size}}">source</button>
+                </a>
                 {% endif %}
-            </ul>
+            </div>
+        </noscript>
+        <div class="ifjavascript">
+            <div class="btn-group">
+                <button type="button" class="btn {{site.link_btn_color}} dropdown-toggle {{site.link_btn_size}}"
+                        data-toggle="dropdown"
+                        aria-haspopup="true"
+                        aria-expanded="false">
+                    files <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu">
+                    {% if talk.url %}
+                    <li><a href="documents/talks/{{ talk.url }}">slides</a></li>
+                    {% endif %}
+                    {% if talk.source %}
+                    <li><a href="{{ talk.source }}">source</a></li>
+                    {% endif %}
+                </ul>
+            </div>
         </div>
         {% endif %}
-    </li>{{ include.suffix }}
+    </li>
+    {{ include.suffix }}
     {% endfor %}
 </ul>
 {% endfor %}
