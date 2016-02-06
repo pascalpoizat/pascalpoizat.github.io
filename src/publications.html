@@ -18,14 +18,16 @@ rank: 2
 {% assign smin=min|plus: "" %}
 
 <noscript>
-    <div class="bs-callout bs-callout-danger">
-        <h4><i class="glyphicon glyphicon-exclamation-sign"></i> Javascript deactivated!</h4>
+    {% if site.alerts.no-javascript.warning %}
+    <div class="bs-callout bs-callout-info">
+        <h4><i class="glyphicon glyphicon-info-sign"></i> No-JS version</h4>
         <p class="text-justify">
-            Your browser does not seem to support Javascript.<br/>
-            You will not be able to get references or pdfs for the publications.<br/>
-            Please consider installing a selective Javascript-blocker rather than blocking all Javascript.
+            <i class="glyphicon glyphicon-remove-sign text-danger"></i> information { bibtex entries },
+            <i class="glyphicon glyphicon-remove-sign text-danger"></i> presentation<br/>
+            Please consider using a selective javascript blocker.
         </p>
     </div>
+    {% endif %}
 
     <div class="btn-group" role="group" aria-label="publication categories">
         <a href="#publications_nojs_recent">
@@ -47,7 +49,7 @@ rank: 2
 
     <h2 id="publications_nojs_recent">Recent Publications ({{min}}..{{max}})</h2>
 
-    {% bibliography -q @*[year>={{smin}}] %}
+    {% bibliography -q @*[year>={{smin}}] -T bib-noscript %}
 
     <h2 id="publications_nojs_article">Journal Articles</h2>
 
@@ -55,15 +57,15 @@ rank: 2
 
     <h3>International</h3>
 
-    {% bibliography -q @article[{{ site.kind.label }}!=national] %}
+    {% bibliography -q @article[{{ site.kind.label }}!=national] -T bib-noscript %}
 
     <h3>National</h3>
 
-    {% bibliography -q @article[{{ site.kind.label }}=national] %}
+    {% bibliography -q @article[{{ site.kind.label }}=national] -T bib-noscript %}
 
     {% else %}
 
-    {% bibliography -q @article %}
+    {% bibliography -q @article -T bib-noscript %}
 
     {% endif %}
 
@@ -73,15 +75,15 @@ rank: 2
 
     <h3>International</h3>
 
-    {% bibliography -q @inbook[{{ site.kind.label }}!=national] %}
+    {% bibliography -q @inbook[{{ site.kind.label }}!=national] -T bib-noscript %}
 
     <h3>National</h3>
 
-    {% bibliography -q @inbook[{{ site.kind.label }}=national] %}
+    {% bibliography -q @inbook[{{ site.kind.label }}=national] -T bib-noscript %}
 
     {% else %}
 
-    {% bibliography -q @inbook %}
+    {% bibliography -q @inbook -T bib-noscript %}
 
     {% endif %}
 
@@ -91,21 +93,21 @@ rank: 2
 
     <h3>International</h3>
 
-    {% bibliography -q @inproceedings[{{ site.kind.label }}!=national] %}
+    {% bibliography -q @inproceedings[{{ site.kind.label }}!=national] -T bib-noscript %}
 
     <h3>National</h3>
 
-    {% bibliography -q @inproceedings[{{ site.kind.label }}=national] %}
+    {% bibliography -q @inproceedings[{{ site.kind.label }}=national] -T bib-noscript %}
 
     {% else %}
 
-    {% bibliography -q @inproceedings %}
+    {% bibliography -q @inproceedings -T bib-noscript %}
 
     {% endif %}
 
     <h2 id="publications_nojs_manuscript">Manuscripts</h2>
 
-    {% bibliography -q @phdthesis %}
+    {% bibliography -q @phdthesis -T bib-noscript %}
 </noscript>
 
 <div class="ifjavascript">

@@ -30,6 +30,14 @@ dblp:
 link_btn_size: btn-xs
 link_btn_color: btn-primary
 
+# alerts
+
+alerts:
+  no-javascript:
+    danger: true
+    warning: true
+    information:  true
+
 # bibliography
 
 kind:

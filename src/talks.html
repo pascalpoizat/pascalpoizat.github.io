@@ -5,14 +5,16 @@ rank: 3
 ---
 
 <noscript>
+    {% if site.alerts.no-javascript.information %}
     <div class="bs-callout bs-callout-info">
-        <h4><i class="glyphicon glyphicon-info-sign"></i> No-javascript version</h4>
+        <h4><i class="glyphicon glyphicon-info-sign"></i> No-JS version</h4>
         <p class="text-justify">
             <i class="glyphicon glyphicon-ok-sign text-success"></i> information,
-            <i class="glyphicon glyphicon-remove-sign text-danger"></i> presentation { Selected talks }<br/>
+            <i class="glyphicon glyphicon-remove-sign text-danger"></i> presentation<br/>
             Please consider using a selective javascript blocker.
         </p>
     </div>
+    {% endif %}
 </noscript>
 
 <div class="row">
