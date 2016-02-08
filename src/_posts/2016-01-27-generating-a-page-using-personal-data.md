@@ -5,7 +5,7 @@ date: 2016-01-27
 categories: [jekyll, liquid, templates, yaml]
 ---
 
-As explained in a [previous post]({{site.url}}/2016/01/26/jekyll-site-launched.html), static page generators such as [Jekyll](http://jekyllrb.com/)
+As explained in a [previous post]({% post_url 2016-01-26-jekyll-site-launched %}), static page generators such as [Jekyll](http://jekyllrb.com/)
 can use data stored in files to produce the information contained into HTML pages.
 [Jekyll supports JSON, YAML, and CSV files](http://jekyllrb.com/docs/datafiles/).
 We will demonstrate this here by looking at how I have generated my [list of academic duties]({{site.url}}/duties.html).

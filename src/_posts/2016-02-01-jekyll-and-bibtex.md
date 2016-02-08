@@ -6,7 +6,7 @@ categories: [jekyll, bibtex, jekyll-scholar]
 ---
 
 With [Jekyll](http://jekyllrb.com), you can generate pages based on your data,
-see [this post]({{site.url}}/2016/01/29/github-pages-without-the-workflow.html).
+see [this post]({% post_url 2016-01-27-generating-a-page-using-personal-data %}).
 We will see that with the help of the [Jekyll-Scholar](https://github.com/inukshuk/jekyll-scholar) plugin,
 this may include your BibTeX bibliographies.
 {: .text-justify}
@@ -14,7 +14,7 @@ this may include your BibTeX bibliographies.
 ## Installing Jekyll-Scholar
 
 First, if you are using GitHub Pages, you should do without the workflow,
-see [this post]({{site.url}}/2016/01/29/gihub-pages-without-the-workflow.html),
+see [this post]({% post_url 2016-01-29-github-pages-without-the-workflow %}),
 since Jekyll-Scholar is not part of the authorized plugins.
 {: .text-justify}
 
@@ -235,7 +235,7 @@ Last, but not least, if you want to end each reference with its BibTex source, e
 then you can use `entry.bibtex`.
 {: .text-justify}
 
-The overall result (for the reference above) is:
+The overall result for the reference above (**at the time of this post**) is:
 {: .text-justify}
 
 ![]({{site.url}}/posts_images/2016-02-01-image1.png)
