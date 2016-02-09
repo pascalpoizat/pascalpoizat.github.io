@@ -5,14 +5,9 @@ date: 2016-01-29
 categories: [jekyll, github-pages]
 ---
 
-[GitHub Pages with Jekyll](http://jekyllrb.com/docs/github-pages/) is nice.
-You just have to store your Jekyll **sources** in a repository `username.github.io`,
-where `username` is your GitHub user account,
-and you get automatically the **resulting pages** in `http://username.github.io`.
-This is achieved thank to the GitHub Pages workflow that runs each time you push your sources to the repository.
-At least if the build passes.
-If not, you receive an email with the reasons why and no new pages are generated.
-However, this process comes with rules that forbid using Jekyll plugins but for authorized ones.
+Jekyll nicely [integrates with GitHub Pages](http://jekyllrb.com/docs/github-pages/).
+However, this comes with rules that forbid using Jekyll plugins but for authorized ones.<br/>
+We will see here how to deal with this limit.
 {: .text-justify}
 
 **Note:** I am discussing here about User pages on GitHub Pages.

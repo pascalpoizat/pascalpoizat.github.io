@@ -5,9 +5,9 @@ date: 2016-02-01
 categories: [jekyll, bibtex, jekyll-scholar]
 ---
 
-With [Jekyll](http://jekyllrb.com), you can generate pages based on your data,
-see [this post]({% post_url 2016-01-27-generating-a-page-using-personal-data %}).
-We will see that with the help of the [Jekyll-Scholar](https://github.com/inukshuk/jekyll-scholar) plugin,
+Using [Jekyll](http://jekyllrb.com),
+you can [generate pages based on your data]({% post_url 2016-01-27-generating-a-page-using-personal-data %}).<br/>
+With the additional help of [Jekyll-Scholar](https://github.com/inukshuk/jekyll-scholar),
 this may include your BibTeX bibliographies.
 {: .text-justify}
 

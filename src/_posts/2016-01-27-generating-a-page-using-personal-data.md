@@ -5,17 +5,16 @@ date: 2016-01-27
 categories: [jekyll, liquid, templates, yaml]
 ---
 
-As explained in a [previous post]({% post_url 2016-01-26-jekyll-site-launched %}), static page generators such as [Jekyll](http://jekyllrb.com/)
-can use data stored in files to produce the information contained into HTML pages.
-[Jekyll supports JSON, YAML, and CSV files](http://jekyllrb.com/docs/datafiles/).
-We will demonstrate this here by looking at how I have generated my [list of academic duties]({{site.url}}/duties.html).
+Static page generators such as [Jekyll](http://jekyllrb.com/) can
+use data stored in files to produce the information contained into HTML pages.<br/>
+We will have a look at this using a simple example.
 {: .text-justify}
 
 ## The data files
 
 The first step is to define the file(s) that will contain the information.
-As said before, this can be either JSON, YAML, or CSV files.
-Here I chose to use YAML files, but another part of my site, the [list of talks]({{site.url}}/talks.html), uses JSON files.
+This can be either JSON, YAML, or CSV files.
+For [my list of academic duties]({{site.url}}/duties.html) I chose to use YAML files, but another part of my site, the [list of talks]({{site.url}}/talks.html), uses JSON files.
 Data files have to be put in the `_data` directory of the Jekyll tree structure.
 Sub-directories can be used to structure your set of data files. So here I put my data within `_data/duties`.
 Further, we will have one file for the current duties, `currently.yml`,
