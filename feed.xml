@@ -6,21 +6,21 @@
 </description>
     <link>http://pascalpoizat.github.io/</link>
     <atom:link href="http://pascalpoizat.github.io/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Sat, 06 Feb 2016 19:00:52 +0100</pubDate>
-    <lastBuildDate>Sat, 06 Feb 2016 19:00:52 +0100</lastBuildDate>
+    <pubDate>Tue, 09 Feb 2016 08:56:33 +0100</pubDate>
+    <lastBuildDate>Tue, 09 Feb 2016 08:56:33 +0100</lastBuildDate>
     <generator>Jekyll v3.0.2</generator>
     
       <item>
         <title>Jekyll and BibTeX</title>
-        <description>&lt;p class=&quot;text-justify&quot;&gt;With &lt;a href=&quot;http://jekyllrb.com&quot;&gt;Jekyll&lt;/a&gt;, you can generate pages based on your data,
-see &lt;a href=&quot;http://pascalpoizat.github.io/2016/01/29/github-pages-without-the-workflow.html&quot;&gt;this post&lt;/a&gt;.
-We will see that with the help of the &lt;a href=&quot;https://github.com/inukshuk/jekyll-scholar&quot;&gt;Jekyll-Scholar&lt;/a&gt; plugin,
+        <description>&lt;p class=&quot;text-justify&quot;&gt;Using &lt;a href=&quot;http://jekyllrb.com&quot;&gt;Jekyll&lt;/a&gt;,
+you can &lt;a href=&quot;/blog/posts/2016/01/27/generating-a-page-using-personal-data/&quot;&gt;generate pages based on your data&lt;/a&gt;.&lt;br /&gt;
+With the additional help of &lt;a href=&quot;https://github.com/inukshuk/jekyll-scholar&quot;&gt;Jekyll-Scholar&lt;/a&gt;,
 this may include your BibTeX bibliographies.&lt;/p&gt;
 
 &lt;h2 id=&quot;installing-jekyll-scholar&quot;&gt;Installing Jekyll-Scholar&lt;/h2&gt;
 
 &lt;p class=&quot;text-justify&quot;&gt;First, if you are using GitHub Pages, you should do without the workflow,
-see &lt;a href=&quot;http://pascalpoizat.github.io/2016/01/29/gihub-pages-without-the-workflow.html&quot;&gt;this post&lt;/a&gt;,
+see &lt;a href=&quot;/blog/posts/2016/01/29/github-pages-without-the-workflow/&quot;&gt;this post&lt;/a&gt;,
 since Jekyll-Scholar is not part of the authorized plugins.&lt;/p&gt;
 
 &lt;p&gt;Installing Jekyll-Scholar is then performed as follows:&lt;/p&gt;
@@ -208,7 +208,7 @@ This is achieved by putting in your &lt;code class=&quot;highlighter-rouge&quot;
 &lt;p class=&quot;text-justify&quot;&gt;Last, but not least, if you want to end each reference with its BibTex source, e.g., to present them in a Boostrap pop-up),
 then you can use &lt;code class=&quot;highlighter-rouge&quot;&gt;entry.bibtex&lt;/code&gt;.&lt;/p&gt;
 
-&lt;p class=&quot;text-justify&quot;&gt;The overall result (for the reference above) is:&lt;/p&gt;
+&lt;p class=&quot;text-justify&quot;&gt;The overall result for the reference above (&lt;strong&gt;at the time of this post&lt;/strong&gt;) is:&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;http://pascalpoizat.github.io/posts_images/2016-02-01-image1.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
@@ -216,8 +216,8 @@ then you can use &lt;code class=&quot;highlighter-rouge&quot;&gt;entry.bibtex&lt
 To learn more, see &lt;a href=&quot;https://github.com/inukshuk/jekyll-scholar&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
 </description>
         <pubDate>Mon, 01 Feb 2016 00:00:00 +0100</pubDate>
-        <link>http://pascalpoizat.github.io/jekyll/bibtex/jekyll-scholar/2016/02/01/jekyll-and-bibtex.html</link>
-        <guid isPermaLink="true">http://pascalpoizat.github.io/jekyll/bibtex/jekyll-scholar/2016/02/01/jekyll-and-bibtex.html</guid>
+        <link>http://pascalpoizat.github.io/blog/posts/2016/02/01/jekyll-and-bibtex/</link>
+        <guid isPermaLink="true">http://pascalpoizat.github.io/blog/posts/2016/02/01/jekyll-and-bibtex/</guid>
         
         
         <category>jekyll</category>
@@ -230,14 +230,9 @@ To learn more, see &lt;a href=&quot;https://github.com/inukshuk/jekyll-scholar&q
     
       <item>
         <title>GitHub Pages without the Workflow</title>
-        <description>&lt;p class=&quot;text-justify&quot;&gt;&lt;a href=&quot;http://jekyllrb.com/docs/github-pages/&quot;&gt;GitHub Pages with Jekyll&lt;/a&gt; is nice.
-You just have to store your Jekyll &lt;strong&gt;sources&lt;/strong&gt; in a repository &lt;code class=&quot;highlighter-rouge&quot;&gt;username.github.io&lt;/code&gt;,
-where &lt;code class=&quot;highlighter-rouge&quot;&gt;username&lt;/code&gt; is your GitHub user account,
-and you get automatically the &lt;strong&gt;resulting pages&lt;/strong&gt; in &lt;code class=&quot;highlighter-rouge&quot;&gt;http://username.github.io&lt;/code&gt;.
-This is achieved thank to the GitHub Pages workflow that runs each time you push your sources to the repository.
-At least if the build passes.
-If not, you receive an email with the reasons why and no new pages are generated.
-However, this process comes with rules that forbid using Jekyll plugins but for authorized ones.&lt;/p&gt;
+        <description>&lt;p class=&quot;text-justify&quot;&gt;Jekyll nicely &lt;a href=&quot;http://jekyllrb.com/docs/github-pages/&quot;&gt;integrates with GitHub Pages&lt;/a&gt;.
+However, this comes with rules that forbid using Jekyll plugins but for authorized ones.&lt;br /&gt;
+We will see here how to deal with this limit.&lt;/p&gt;
 
 &lt;p class=&quot;text-justify&quot;&gt;&lt;strong&gt;Note:&lt;/strong&gt; I am discussing here about User pages on GitHub Pages.
 For Project pages things are a bit different. For example for User pages, pages are on a &lt;code class=&quot;highlighter-rouge&quot;&gt;master&lt;/code&gt; branch.
@@ -303,8 +298,8 @@ I may use this in the future to simplify things and avoid some file copying.&lt;
 
 </description>
         <pubDate>Fri, 29 Jan 2016 00:00:00 +0100</pubDate>
-        <link>http://pascalpoizat.github.io/jekyll/github-pages/2016/01/29/github-pages-without-the-workflow.html</link>
-        <guid isPermaLink="true">http://pascalpoizat.github.io/jekyll/github-pages/2016/01/29/github-pages-without-the-workflow.html</guid>
+        <link>http://pascalpoizat.github.io/blog/posts/2016/01/29/github-pages-without-the-workflow/</link>
+        <guid isPermaLink="true">http://pascalpoizat.github.io/blog/posts/2016/01/29/github-pages-without-the-workflow/</guid>
         
         
         <category>jekyll</category>
@@ -315,16 +310,15 @@ I may use this in the future to simplify things and avoid some file copying.&lt;
     
       <item>
         <title>Generating a Page using Personal Data</title>
-        <description>&lt;p class=&quot;text-justify&quot;&gt;As explained in a &lt;a href=&quot;http://pascalpoizat.github.io/2016/01/26/jekyll-site-launched.html&quot;&gt;previous post&lt;/a&gt;, static page generators such as &lt;a href=&quot;http://jekyllrb.com/&quot;&gt;Jekyll&lt;/a&gt;
-can use data stored in files to produce the information contained into HTML pages.
-&lt;a href=&quot;http://jekyllrb.com/docs/datafiles/&quot;&gt;Jekyll supports JSON, YAML, and CSV files&lt;/a&gt;.
-We will demonstrate this here by looking at how I have generated my &lt;a href=&quot;http://pascalpoizat.github.io/duties.html&quot;&gt;list of academic duties&lt;/a&gt;.&lt;/p&gt;
+        <description>&lt;p class=&quot;text-justify&quot;&gt;Static page generators such as &lt;a href=&quot;http://jekyllrb.com/&quot;&gt;Jekyll&lt;/a&gt; can
+use data stored in files to produce the information contained into HTML pages.&lt;br /&gt;
+We will have a look at this using a simple example.&lt;/p&gt;
 
 &lt;h2 id=&quot;the-data-files&quot;&gt;The data files&lt;/h2&gt;
 
 &lt;p class=&quot;text-justify&quot;&gt;The first step is to define the file(s) that will contain the information.
-As said before, this can be either JSON, YAML, or CSV files.
-Here I chose to use YAML files, but another part of my site, the &lt;a href=&quot;http://pascalpoizat.github.io/talks.html&quot;&gt;list of talks&lt;/a&gt;, uses JSON files.
+This can be either JSON, YAML, or CSV files.
+For &lt;a href=&quot;http://pascalpoizat.github.io/duties.html&quot;&gt;my list of academic duties&lt;/a&gt; I chose to use YAML files, but another part of my site, the &lt;a href=&quot;http://pascalpoizat.github.io/talks.html&quot;&gt;list of talks&lt;/a&gt;, uses JSON files.
 Data files have to be put in the &lt;code class=&quot;highlighter-rouge&quot;&gt;_data&lt;/code&gt; directory of the Jekyll tree structure.
 Sub-directories can be used to structure your set of data files. So here I put my data within &lt;code class=&quot;highlighter-rouge&quot;&gt;_data/duties&lt;/code&gt;.
 Further, we will have one file for the current duties, &lt;code class=&quot;highlighter-rouge&quot;&gt;currently.yml&lt;/code&gt;,
@@ -474,8 +468,8 @@ title: duties
 
 </description>
         <pubDate>Wed, 27 Jan 2016 00:00:00 +0100</pubDate>
-        <link>http://pascalpoizat.github.io/jekyll/liquid/templates/yaml/2016/01/27/generating-a-page-using-personal-data.html</link>
-        <guid isPermaLink="true">http://pascalpoizat.github.io/jekyll/liquid/templates/yaml/2016/01/27/generating-a-page-using-personal-data.html</guid>
+        <link>http://pascalpoizat.github.io/blog/posts/2016/01/27/generating-a-page-using-personal-data/</link>
+        <guid isPermaLink="true">http://pascalpoizat.github.io/blog/posts/2016/01/27/generating-a-page-using-personal-data/</guid>
         
         
         <category>jekyll</category>
@@ -536,8 +530,8 @@ So let’s go for &lt;a href=&quot;http://jekyllrb.com/&quot;&gt;Jekyll&lt;/a&gt
 Lots of interesting information here too.&lt;/p&gt;
 </description>
         <pubDate>Tue, 26 Jan 2016 00:00:00 +0100</pubDate>
-        <link>http://pascalpoizat.github.io/jekyll/github-pages/2016/01/26/jekyll-site-launched.html</link>
-        <guid isPermaLink="true">http://pascalpoizat.github.io/jekyll/github-pages/2016/01/26/jekyll-site-launched.html</guid>
+        <link>http://pascalpoizat.github.io/blog/posts/2016/01/26/jekyll-site-launched/</link>
+        <guid isPermaLink="true">http://pascalpoizat.github.io/blog/posts/2016/01/26/jekyll-site-launched/</guid>
         
         
         <category>jekyll</category>

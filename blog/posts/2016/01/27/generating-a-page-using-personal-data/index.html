@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="Professor at Université Paris Ouest<br/> LIP6 UMR 7606 CNRS
+">
+    <meta name="author" content="Pascal Poizat">
+    <title>Generating a Page using Personal Data</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="canonical" href="http://pascalpoizat.github.io/blog/posts/2016/01/27/generating-a-page-using-personal-data/">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="/font-awesome-4.5.0/css/font-awesome.min.css">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- management of blocked Javascript -->
+    <noscript>
+        <style> .ifjavascript {
+            display: none
+        } </style>
+    </noscript>
+</head>
+
+
+  <body>
+
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+                    aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/index.html">pascal.poizat</a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+            <ul class="nav navbar-nav">
+                <li >
+                    <a class="page-link" href="/index.html">home</a>
+                </li>
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                <li >
+                    <a class="page-link" href="/research/">research</a>
+                </li>
+                
+                
+                
+                <li >
+                    <a class="page-link" href="/publications/">publications</a>
+                </li>
+                
+                
+                
+                <li >
+                    <a class="page-link" href="/talks/">talks</a>
+                </li>
+                
+                
+                
+                <li >
+                    <a class="page-link" href="/teaching/">teaching</a>
+                </li>
+                
+                
+                
+                <li >
+                    <a class="page-link" href="/duties/">duties</a>
+                </li>
+                
+                
+                
+                <li >
+                    <a class="page-link" href="/bio/">bio</a>
+                </li>
+                
+                
+                
+                <li >
+                    <a class="page-link" href="/blog/">blog</a>
+                </li>
+                
+                
+                
+                <li >
+                    <a class="page-link" href="/contact/">contact</a>
+                </li>
+                
+                
+            </ul>
+        </div><!--/.nav-collapse -->
+    </div>
+</nav>
+
+
+    <div class="container">
+        <div class="post">
+
+    <header class="post-header">
+        <h1 class="post-title">Generating a Page using Personal Data</h1>
+        <p>
+<a href="http://pascalpoizat.github.io/jekyll">
+    <button class="btn btn-xs btn-primary">jekyll</button>
+</a>
+
+<a href="http://pascalpoizat.github.io/liquid">
+    <button class="btn btn-xs btn-primary">liquid</button>
+</a>
+
+<a href="http://pascalpoizat.github.io/templates">
+    <button class="btn btn-xs btn-primary">templates</button>
+</a>
+
+<a href="http://pascalpoizat.github.io/yaml">
+    <button class="btn btn-xs btn-primary">yaml</button>
+</a>
+</p>
+        <p class="post-meta">
+            27 Jan 2016<br/>
+            
+        </p>
+        <hr>
+    </header>
+
+    <article class="post-content">
+        <p class="text-justify">Static page generators such as <a href="http://jekyllrb.com/">Jekyll</a> can
+use data stored in files to produce the information contained into HTML pages.<br />
+We will have a look at this using a simple example.</p>
+
+<h2 id="the-data-files">The data files</h2>
+
+<p class="text-justify">The first step is to define the file(s) that will contain the information.
+This can be either JSON, YAML, or CSV files.
+For <a href="http://pascalpoizat.github.io/duties.html">my list of academic duties</a> I chose to use YAML files, but another part of my site, the <a href="http://pascalpoizat.github.io/talks.html">list of talks</a>, uses JSON files.
+Data files have to be put in the <code class="highlighter-rouge">_data</code> directory of the Jekyll tree structure.
+Sub-directories can be used to structure your set of data files. So here I put my data within <code class="highlighter-rouge">_data/duties</code>.
+Further, we will have one file for the current duties, <code class="highlighter-rouge">currently.yml</code>,
+and another file, <code class="highlighter-rouge">before.yml</code>, for the old ones. Here is the <code class="highlighter-rouge">currently.yml</code> one:</p>
+
+<figure class="highlight"><pre><code class="language-yaml" data-lang="yaml"><span class="pi">-</span> <span class="s">name</span><span class="pi">:</span> <span class="s">Pedagogic Duties</span>
+  <span class="s">values</span><span class="pi">:</span>
+
+  <span class="pi">-</span> <span class="s">period</span><span class="pi">:</span> <span class="s">since 2012</span>
+    <span class="s">name</span><span class="pi">:</span> <span class="s">Director of 1st and 2nd year of Master in CS (Applied cursus, MIAGE)</span>
+    <span class="s">at</span><span class="pi">:</span> <span class="s">Paris Ouest University</span>
+
+<span class="pi">-</span> <span class="s">name</span><span class="pi">:</span> <span class="s">Administrative Positions</span>
+  <span class="s">values</span><span class="pi">:</span>
+
+  <span class="pi">-</span> <span class="s">period</span><span class="pi">:</span> <span class="s">since 2014</span>
+    <span class="s">name</span><span class="pi">:</span> <span class="s">Member of the Nat. Committee for Scientific Research | CoNRS Sect. 6</span>
+    <span class="s">at</span><span class="pi">:</span> <span class="s">CNRS</span>
+
+  <span class="pi">-</span> <span class="s">period</span><span class="pi">:</span> <span class="s">since 2014</span>
+    <span class="s">name</span><span class="pi">:</span> <span class="s">Member of the Laboratory Council | Conseil de Laboratoire</span>
+    <span class="s">at</span><span class="pi">:</span> <span class="s">LIP6 Laboratory</span>
+
+  <span class="pi">-</span> <span class="s">period</span><span class="pi">:</span> <span class="s">since 2013</span>
+    <span class="s">name</span><span class="pi">:</span> <span class="s">Member of the CS Advisory Council | CCD Sect. 27</span>
+    <span class="s">at</span><span class="pi">:</span> <span class="s">Paris Ouest University</span></code></pre></figure>
+
+<p class="text-justify">You have a list of 2 items, each item containing a name (duty category) and a list of values,
+with a value being a period, a name (of the duty) and the location it took place
+(see <a href="https://fr.wikipedia.org/wiki/YAML">here</a> for information about the YAML format).</p>
+
+<h2 id="from-data-to-html">From data to HTML</h2>
+
+<p class="text-justify">To generate HTML information for this, one can create an HTML document, <code class="highlighter-rouge">duties.html</code>,
+and use <a href="http://liquidmarkup.org/">Liquid templating</a> to access the data.
+To generate a list you simply have to type in <code class="highlighter-rouge">duties.html</code>:</p>
+
+<figure class="highlight"><pre><code class="language-liquid" data-lang="liquid">---
+layout: default
+title: duties
+---
+<span class="p">{%</span><span class="w"> </span><span class="nt">for</span><span class="w"> </span>category<span class="w"> </span>in<span class="w"> </span>site.data.duties.currently<span class="w"> </span><span class="p">%}</span>
+&lt;h3&gt;<span class="p">{{</span><span class="w"> </span><span class="nv">category</span><span class="p">.</span><span class="nv">name</span><span class="w"> </span><span class="p">}}</span>&lt;/h3&gt;
+&lt;ul&gt;
+    <span class="p">{%</span><span class="w"> </span><span class="nt">for</span><span class="w"> </span>duty<span class="w"> </span>in<span class="w"> </span>category.values<span class="w"> </span><span class="p">%}</span>
+    &lt;li&gt;<span class="p">{{</span><span class="w"> </span><span class="nv">duty</span><span class="p">.</span><span class="nv">period</span><span class="w"> </span><span class="p">}}</span> - <span class="p">{{</span><span class="w"> </span><span class="nv">duty</span><span class="p">.</span><span class="nv">name</span><span class="w"> </span><span class="p">}}</span>&lt;br/&gt;
+    <span class="p">{{</span><span class="w"> </span><span class="nv">duty</span><span class="p">.</span><span class="nv">at</span><span class="w"> </span><span class="p">}}</span>
+    &lt;/li&gt;
+    <span class="p">{%</span><span class="w"> </span><span class="nt">endfor</span><span class="w"> </span><span class="p">%}</span>
+&lt;/ul&gt;
+<span class="p">{%</span><span class="w"> </span><span class="nt">endfor</span><span class="w"> </span><span class="p">%}</span></code></pre></figure>
+
+<p class="text-justify">As you can see, to access the data in the file <code class="highlighter-rouge">_data/duties/currently.yml</code>, we refer to <code class="highlighter-rouge">site.data.duties.currently</code>.
+This can be read as “the <code class="highlighter-rouge">currently</code> file that is in the <code class="highlighter-rouge">duties</code> subdirectory of the site data directory”.</p>
+
+<p class="text-justify">For loops iterate over a list using some variable <code class="highlighter-rouge">v</code>.</p>
+
+<figure class="highlight"><pre><code class="language-liquid" data-lang="liquid"><span class="p">{%</span><span class="w"> </span><span class="nt">for</span><span class="w"> </span>v<span class="w"> </span>in<span class="w"> </span>list<span class="w"> </span><span class="p">%}</span>...<span class="p">{%</span><span class="w"> </span><span class="nt">endfor</span><span class="w"> </span><span class="p">%}</span></code></pre></figure>
+
+<p class="text-justify">To access to some attribute <code class="highlighter-rouge">a</code> of a variable <code class="highlighter-rouge">v</code>, we use double brackets and indexing.</p>
+
+<figure class="highlight"><pre><code class="language-liquid" data-lang="liquid"><span class="p">{{</span><span class="w"> </span><span class="nv">v</span><span class="p">.</span><span class="nv">a</span><span class="w"> </span><span class="p">}}</span></code></pre></figure>
+
+<p class="text-justify">The rest is self-explanatory if you know HTML.</p>
+
+<p class="text-justify">You can get more information on Liquid templating <a href="http://jekyllrb.com/docs/datafiles/">here</a> and <a href="http://liquidmarkup.org/">here</a>.</p>
+
+<h2 id="factorizing-things">Factorizing things</h2>
+
+<p class="text-justify">Now if you want to generate also the list of the old duties, you have to copy-paste the piece of code before,
+and replace <code class="highlighter-rouge">site.data.duties.currently</code> by <code class="highlighter-rouge">site.data.duties.before</code>. Too bad.
+A better way to do things is to define the code in terms of a variable <code class="highlighter-rouge">duties</code> as follows:</p>
+
+<figure class="highlight"><pre><code class="language-liquid" data-lang="liquid"><span class="p">{%</span><span class="w"> </span><span class="nt">for</span><span class="w"> </span>category<span class="w"> </span>in<span class="w"> </span>duties<span class="w"> </span><span class="p">%}</span>
+&lt;h3&gt;<span class="p">{{</span><span class="w"> </span><span class="nv">category</span><span class="p">.</span><span class="nv">name</span><span class="w"> </span><span class="p">}}</span>&lt;/h3&gt;
+&lt;ul&gt;
+    <span class="p">{%</span><span class="w"> </span><span class="nt">for</span><span class="w"> </span>duty<span class="w"> </span>in<span class="w"> </span>category.values<span class="w"> </span><span class="p">%}</span>
+    &lt;li&gt;<span class="p">{{</span><span class="w"> </span><span class="nv">duty</span><span class="p">.</span><span class="nv">period</span><span class="w"> </span><span class="p">}}</span> - <span class="p">{{</span><span class="w"> </span><span class="nv">duty</span><span class="p">.</span><span class="nv">name</span><span class="w"> </span><span class="p">}}</span>&lt;br/&gt;
+    <span class="p">{{</span><span class="w"> </span><span class="nv">duty</span><span class="p">.</span><span class="nv">at</span><span class="w"> </span><span class="p">}}</span>
+    &lt;/li&gt;
+    <span class="p">{%</span><span class="w"> </span><span class="nt">endfor</span><span class="w"> </span><span class="p">%}</span>
+&lt;/ul&gt;
+<span class="p">{%</span><span class="w"> </span><span class="nt">endfor</span><span class="w"> </span><span class="p">%}</span></code></pre></figure>
+
+<p class="text-justify">Then you put this piece of code, say <code class="highlighter-rouge">print_duties.html</code> within the Jekyll include directory, <code class="highlighter-rouge">_includes</code>.
+In order to generate both list of duties you now simply have to write in <code class="highlighter-rouge">duties.html</code>:</p>
+
+<figure class="highlight"><pre><code class="language-liquid" data-lang="liquid">---
+layout: default
+title: duties
+---
+&lt;h2&gt;Currently&lt;/h2&gt;
+
+<span class="p">{%</span><span class="w"> </span><span class="nt">assign</span><span class="w"> </span><span class="nv">duties</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nv">site</span><span class="p">.</span><span class="nv">data</span><span class="p">.</span><span class="nv">duties</span><span class="p">.</span><span class="nv">currently</span><span class="w"> </span><span class="p">%}</span>
+<span class="p">{%</span><span class="w"> </span><span class="nt">include</span><span class="w"> </span><span class="na">print_duties</span><span class="p">.</span><span class="na">html</span><span class="w"> </span><span class="p">%}</span>
+
+&lt;h2&gt;Before&lt;/h2&gt;
+
+<span class="p">{%</span><span class="w"> </span><span class="nt">assign</span><span class="w"> </span><span class="nv">duties</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nv">site</span><span class="p">.</span><span class="nv">data</span><span class="p">.</span><span class="nv">duties</span><span class="p">.</span><span class="nv">before</span><span class="w"> </span><span class="p">%}</span>
+<span class="p">{%</span><span class="w"> </span><span class="nt">include</span><span class="w"> </span><span class="na">print_duties</span><span class="p">.</span><span class="na">html</span><span class="w"> </span><span class="p">%}</span></code></pre></figure>
+
+<p class="text-justify">If you prefer to use Markdown, use instead a <code class="highlighter-rouge">duties.md</code> file with:</p>
+
+<figure class="highlight"><pre><code class="language-liquid" data-lang="liquid">---
+layout: default
+title: duties
+---
+## Currently
+
+<span class="p">{%</span><span class="w"> </span><span class="nt">assign</span><span class="w"> </span><span class="nv">duties</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nv">site</span><span class="p">.</span><span class="nv">data</span><span class="p">.</span><span class="nv">duties</span><span class="p">.</span><span class="nv">currently</span><span class="w"> </span><span class="p">%}</span>
+<span class="p">{%</span><span class="w"> </span><span class="nt">include</span><span class="w"> </span><span class="na">print_duties</span><span class="p">.</span><span class="na">html</span><span class="w"> </span><span class="p">%}</span>
+
+## Before
+
+<span class="p">{%</span><span class="w"> </span><span class="nt">assign</span><span class="w"> </span><span class="nv">duties</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nv">site</span><span class="p">.</span><span class="nv">data</span><span class="p">.</span><span class="nv">duties</span><span class="p">.</span><span class="nv">before</span><span class="w"> </span><span class="p">%}</span>
+<span class="p">{%</span><span class="w"> </span><span class="nt">include</span><span class="w"> </span><span class="na">print_duties</span><span class="p">.</span><span class="na">html</span><span class="w"> </span><span class="p">%}</span></code></pre></figure>
+
+<h2 id="factorizing-things-revisited">Factorizing things (revisited)</h2>
+
+<p class="text-justify">Indeed file inclusion supports parameters (see <a href="http://jekyllrb.com/docs/templates/">here</a>).
+You can add the parameter and its value to the import as follows:</p>
+
+<figure class="highlight"><pre><code class="language-liquid" data-lang="liquid">---
+layout: default
+title: duties
+---
+## Currently
+
+<span class="p">{%</span><span class="w"> </span><span class="nt">include</span><span class="w"> </span><span class="na">print_duties</span><span class="p">.</span><span class="na">html</span><span class="w"> </span><span class="na">duties</span><span class="o">=</span><span class="nv">site</span><span class="p">.</span><span class="nv">data</span><span class="p">.</span><span class="nv">duties</span><span class="p">.</span><span class="na">currently %}
+
+## Before
+
+{% include print_duties</span><span class="p">.</span><span class="na">html</span><span class="w"> </span><span class="na">duties</span><span class="o">=</span><span class="nv">site</span><span class="p">.</span><span class="nv">data</span><span class="p">.</span><span class="nv">duties</span><span class="p">.</span><span class="nv">before</span><span class="w"> </span><span class="p">%}</span></code></pre></figure>
+
+<p class="text-justify">In the <code class="highlighter-rouge">print_duties.html</code> template that is in the <code class="highlighter-rouge">_includes</code> directory, you just have to prefix the name of the parameter with <code class="highlighter-rouge">include</code>:</p>
+
+<figure class="highlight"><pre><code class="language-liquid" data-lang="liquid"><span class="p">{%</span><span class="w"> </span><span class="nt">for</span><span class="w"> </span>category<span class="w"> </span>in<span class="w"> </span>include.duties<span class="w"> </span><span class="p">%}</span>
+&lt;h3&gt;<span class="p">{{</span><span class="w"> </span><span class="nv">category</span><span class="p">.</span><span class="nv">name</span><span class="w"> </span><span class="p">}}</span>&lt;/h3&gt;
+&lt;ul&gt;
+    <span class="p">{%</span><span class="w"> </span><span class="nt">for</span><span class="w"> </span>duty<span class="w"> </span>in<span class="w"> </span>category.values<span class="w"> </span><span class="p">%}</span>
+    &lt;li&gt;<span class="p">{{</span><span class="w"> </span><span class="nv">duty</span><span class="p">.</span><span class="nv">period</span><span class="w"> </span><span class="p">}}</span> - <span class="p">{{</span><span class="w"> </span><span class="nv">duty</span><span class="p">.</span><span class="nv">name</span><span class="w"> </span><span class="p">}}</span>&lt;br/&gt;
+    <span class="p">{{</span><span class="w"> </span><span class="nv">duty</span><span class="p">.</span><span class="nv">at</span><span class="w"> </span><span class="p">}}</span>
+    &lt;/li&gt;
+    <span class="p">{%</span><span class="w"> </span><span class="nt">endfor</span><span class="w"> </span><span class="p">%}</span>
+&lt;/ul&gt;
+<span class="p">{%</span><span class="w"> </span><span class="nt">endfor</span><span class="w"> </span><span class="p">%}</span></code></pre></figure>
+
+
+    </article>
+
+</div>
+
+    </div>
+
+    <div class="navbar navbar-default navbar-bottom">
+    <div class="container">
+            <h4>pascal.poizat</h4>
+            <div class="row">
+                <div class="col-md-4">
+                    <p>Professor at Université Paris Ouest<br/> LIP6 UMR 7606 CNRS
+</p>
+                </div>
+                <div class="col-md-3">
+                    <p><a href="mailto:firstname.lastname@u-paris10.fr">firstname.lastname@u-paris10.fr</a><br/>
+                        <a href="mailto:firstname.lastname@lip6.fr">firstname.lastname@lip6.fr</a>
+                    </p>
+                </div>
+                <div class="col-md-3">
+                    <p>
+                        
+                        <i class="fa fa-github-alt"></i>
+                        <a href="https://github.com/pascalpoizat">pascalpoizat</a><br/>
+                        
+                        
+                        <i class="fa fa-twitter"></i>
+                        <a href="https://twitter.com/pascalpoizat">pascalpoizat</a><br/>
+                        
+                    </p>
+                </div>
+            </div>
+            <div class="footer-col-wrapper">
+                <div class="footer-col-thanks">
+                    made with {
+                    <a href="http://getbootstrap.com/">Bootstrap</a>,
+                    <a href="https://github.com/">GitHub</a>,
+                    <a href="http://www.jetbrains.com/idea/">IntelliJ IDEA</a>,
+                    <a href="http://jekyllrb.com/">Jekyll</a>,
+                    <a href="https://github.com/inukshuk/jekyll-scholar">Jekyll-Scholar</a>
+                    },
+                    source code of these pages available <a
+                        href="http://github.com/pascalpoizat/pascalpoizat.github.io">here</a>.
+                </div>
+            </div>
+    </div>
+</div>
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="javascripts/bootstrap.min.js"></script>
+
+
+  </body>
+
+</html>
