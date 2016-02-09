@@ -14,7 +14,8 @@ We will have a look at this using a simple example.
 
 The first step is to define the file(s) that will contain the information.
 This can be either JSON, YAML, or CSV files.
-For [my list of academic duties]({{site.url}}/duties.html) I chose to use YAML files, but another part of my site, the [list of talks]({{site.url}}/talks.html), uses JSON files.
+For [my list of academic duties]({{site.url}}/duties/) I chose to use YAML files, but another part of my site,
+the [list of talks]({{site.url}}/talks/), uses JSON files.
 Data files have to be put in the `_data` directory of the Jekyll tree structure.
 Sub-directories can be used to structure your set of data files. So here I put my data within `_data/duties`.
 Further, we will have one file for the current duties, `currently.yml`,
