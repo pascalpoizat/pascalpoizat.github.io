@@ -6,8 +6,8 @@
 </description>
     <link>http://pascalpoizat.github.io/</link>
     <atom:link href="http://pascalpoizat.github.io/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Tue, 09 Feb 2016 08:56:33 +0100</pubDate>
-    <lastBuildDate>Tue, 09 Feb 2016 08:56:33 +0100</lastBuildDate>
+    <pubDate>Tue, 09 Feb 2016 09:07:17 +0100</pubDate>
+    <lastBuildDate>Tue, 09 Feb 2016 09:07:17 +0100</lastBuildDate>
     <generator>Jekyll v3.0.2</generator>
     
       <item>
@@ -318,7 +318,8 @@ We will have a look at this using a simple example.&lt;/p&gt;
 
 &lt;p class=&quot;text-justify&quot;&gt;The first step is to define the file(s) that will contain the information.
 This can be either JSON, YAML, or CSV files.
-For &lt;a href=&quot;http://pascalpoizat.github.io/duties.html&quot;&gt;my list of academic duties&lt;/a&gt; I chose to use YAML files, but another part of my site, the &lt;a href=&quot;http://pascalpoizat.github.io/talks.html&quot;&gt;list of talks&lt;/a&gt;, uses JSON files.
+For &lt;a href=&quot;http://pascalpoizat.github.io/duties/&quot;&gt;my list of academic duties&lt;/a&gt; I chose to use YAML files, but another part of my site,
+the &lt;a href=&quot;http://pascalpoizat.github.io/talks/&quot;&gt;list of talks&lt;/a&gt;, uses JSON files.
 Data files have to be put in the &lt;code class=&quot;highlighter-rouge&quot;&gt;_data&lt;/code&gt; directory of the Jekyll tree structure.
 Sub-directories can be used to structure your set of data files. So here I put my data within &lt;code class=&quot;highlighter-rouge&quot;&gt;_data/duties&lt;/code&gt;.
 Further, we will have one file for the current duties, &lt;code class=&quot;highlighter-rouge&quot;&gt;currently.yml&lt;/code&gt;,
