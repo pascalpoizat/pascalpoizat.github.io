@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 
-<head>
+  <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -9,11 +9,11 @@
     <meta name="description" content="Professor at Université Paris Ouest<br/> LIP6 UMR 7606 CNRS
 ">
     <meta name="author" content="Pascal Poizat">
-    <title>pascal.poizat</title>
+    <title>GitHub Pages without the Workflow</title>
 
     <!-- Bootstrap -->
     <link rel="stylesheet" href="/css/main.css">
-    <link rel="canonical" href="http://pascalpoizat.github.io/">
+    <link rel="canonical" href="http://pascalpoizat.github.io/blog/posts/2016/01/29/github-pages-without-the-workflow/">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="/font-awesome-4.5.0/css/font-awesome.min.css">
 
@@ -33,9 +33,9 @@
 </head>
 
 
-<body>
+  <body>
 
-<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
     <div class="container">
         <div class="navbar-header">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
@@ -49,7 +49,7 @@
         </div>
         <div id="navbar" class="collapse navbar-collapse">
             <ul class="nav navbar-nav">
-                <li class="active">
+                <li >
                     <a class="page-link" href="/index.html">home</a>
                 </li>
                 
@@ -128,78 +128,102 @@
 </nav>
 
 
-<div class="jumbotron">
-
     <div class="container">
+        <div class="post">
 
-        <div class="row">
+    <header class="post-header">
+        <h1 class="post-title">GitHub Pages without the Workflow</h1>
+        <p>
+<a href="/blog/categories/jekyll">
+    <button class="btn btn-xs btn-primary">jekyll</button>
+</a>
 
-            <div class="col-sm-4 col-md-2">
-                <div class="media">
-                    <img class="personal-picture" src="images/poizat_2015b.jpg" alt="picture">
-                </div>
-            </div>
+<a href="/blog/categories/github-pages">
+    <button class="btn btn-xs btn-primary">github-pages</button>
+</a>
+</p>
+        <p class="post-meta">
+            29 Jan 2016<br/>
+            
+        </p>
+        <hr>
+    </header>
 
-            <div class="col-sm-8 col-md-6">
-                <h3>Professor | Professeur des Universités</h3>
-                <p class="lead">
-                    Dr HDR<a href="https://en.wikipedia.org/wiki/Habilitation">*</a><br/>
-                    <a href="https://www.u-paris10.fr">Université Paris Ouest Nanterre la Défense</a><br/>
-                    <a href="http://www.lip6.fr">LIP6 UMR 7606 CNRS</a>
-                </p>
-            </div>
-        </div>
+    <article class="post-content">
+        <p class="text-justify">Jekyll nicely <a href="http://jekyllrb.com/docs/github-pages/">integrates with GitHub Pages</a>.
+However, this comes with rules that forbid using Jekyll plugins but for authorized ones.<br />
+We will see here how to deal with this limit.</p>
+
+<p class="text-justify"><strong>Note:</strong> I am discussing here about User pages on GitHub Pages.
+For Project pages things are a bit different. For example for User pages, pages are on a <code class="highlighter-rouge">master</code> branch.
+For Project pages, pages are on a <code class="highlighter-rouge">gh-pages</code> branch.
+See <a href="https://help.github.com/articles/user-organization-and-project-pages/">here</a>.</p>
+
+<h2 id="two-choices">Two choices</h2>
+
+<p class="text-justify">If you want, e.g., to use the <a href="https://github.com/inukshuk/jekyll-scholar">Jekyll-Scholar</a> plugin
+(to generate pages from <code class="highlighter-rouge">.bib</code> BibTeX reference files),
+you will have either not to use GitHub Pages
+(make a simple <code class="highlighter-rouge">my-web-pages</code> repository and sync your pages with a Web server somewhere else)
+or to shortcut the GitHub Pages workflow. This is what we will do here.</p>
+
+<p class="text-justify">This part is based on <a href="https://github.com/barais/barais.github.io">Olivier Barais’s template</a>,
+itself based on <a href="https://github.com/rudametw/rudametw.github.io">Walter Rudametkin’s template</a>.
+I chose not to fork their templates here since my site structure is different and I also
+wanted to build things from scratch to explain how to integrate elements one by one. Yet, without them,
+shortcutting the GitHub Pages workflow would certainly have been much more complicated.
+Please consider forking their templates that are much more advanced than mine for the moment.</p>
+
+<h2 id="how-things-work-with-the-github-pages-workflow">How things work with the GitHub Pages workflow</h2>
+
+<p class="text-justify">Jekyll takes its sources, i.e., files and specific directories (ones beginning by <code class="highlighter-rouge">_</code> in short) in the current path
+and compute pages in subdirectory <code class="highlighter-rouge">_src</code>. See the Jekyll directory structure <a href="http://jekyllrb.com/docs/structure/">here</a>.</p>
+
+<p class="text-justify">GitHub Pages require that your Jekyll sources are in the root directory of <code class="highlighter-rouge">username.github.io</code>.
+Then it runs Jekyll and deploys the resulting pages to <code class="highlighter-rouge">http://username.github.io</code>.</p>
+
+<p class="text-justify">If you want to write your pages directly (e.g, without templates) you would have to put them
+at the root of the <code class="highlighter-rouge">username.github.io</code> repository and add a <code class="highlighter-rouge">.nojekyll</code> empty file to tell GitHub Pages not to
+run Jekyll each time you push things. This is very important if you have directories beginning with <code class="highlighter-rouge">_</code> since
+they have a special treatment with Jekyll (they are not deployed on the Web site).</p>
+
+<h2 id="putting-things-together">Putting things together</h2>
+
+<p>The solution that is adopted in <a href="https://github.com/barais/barais.github.io">Olivier Barais’s template</a> and
+in <a href="https://github.com/rudametw/rudametw.github.io">Walter Rudametkin’s template</a> is:</p>
+
+<ol>
+  <li>
+    <p>define a <code class="highlighter-rouge">src</code> directory at the root (of the repository) containing the Jekyll sources</p>
+  </li>
+  <li>
+    <p>edit files in <code class="highlighter-rouge">src</code> as usual, and commit+push them to GitHub regularly</p>
+  </li>
+  <li>
+    <p>have Jekyll run on these sources and place them in <code class="highlighter-rouge">src/_site</code> (default)</p>
+  </li>
+  <li>
+    <p>“build” the site regularly by copying the pages from <code class="highlighter-rouge">src/_site</code> to the root of the repository,
+ and then commit+push the new versions of these to GitHub</p>
+  </li>
+</ol>
+
+<p class="text-justify">For this one has two scripts that automate steps 3. and 4.
+Step 3. is achieved by <code class="highlighter-rouge">src/run-jekyll.sh</code>. You can have it run in background while doing steps 1. and 2.
+Step 4. is achieved by <code class="highlighter-rouge">src/update-site.sh</code>.</p>
+
+<p class="text-justify"><strong>Note:</strong> Jekyll supports the possibility to tell in its configuration file
+where are the source and the target directories.
+I may use this in the future to simplify things and avoid some file copying.</p>
 
 
-        <div class="row text-center">
-
-            <hr class="light">
-
-            <div class="col-sm-4">
-                <h4><strong>Research</strong></h4>
-                <p class="text-muted">
-                    Application of formal methods to software engineering,
-                    with a focus on composite and interacting systems.
-                </p>
-                <a href="research.html">
-                    <button class="btn btn-primary">learn more</button>
-                </a>
-            </div>
-
-            <div class="col-sm-4">
-                <h4><strong>Duties</strong></h4>
-                <p class="text-muted">
-                    Director of master MIAGE<br/>
-                    Section 6 (CS) of the CoNRS<br/>
-                    LIP6 laboratory council
-                </p>
-                <a href="duties/duties.html">
-                    <button class="btn btn-primary">learn more</button>
-                </a>
-            </div>
-
-            <div class="col-sm-4">
-                <h4><strong>Teaching</strong></h4>
-                <p class="text-muted">
-                    Software engineering & development,<br/>
-                    from
-                    modelling and model verification,<br/>
-                    to
-                    implementation and test.
-                </p>
-                <a href="teaching/teaching.html">
-                    <button class="btn btn-primary">learn more</button>
-                </a>
-            </div>
-
-        </div>
-
-    </div>
+    </article>
 
 </div>
 
+    </div>
 
-<div class="navbar navbar-default navbar-bottom">
+    <div class="navbar navbar-default navbar-bottom">
     <div class="container">
             <h4>pascal.poizat</h4>
             <div class="row">
@@ -242,12 +266,12 @@
 </div>
 
 
-<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="javascripts/bootstrap.min.js"></script>
 
 
-</body>
+  </body>
 
 </html>
