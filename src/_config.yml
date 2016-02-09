@@ -6,7 +6,10 @@
 
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://pascalpoizat.github.io" # the base hostname & protocol for your site
+blog_dir: /blog
 permalink: /blog/posts/:year/:month/:day/:title/ # prefixed style
+category_dir: /blog/categories/
+category_title_prefix: "category: "
 
 # author information
 

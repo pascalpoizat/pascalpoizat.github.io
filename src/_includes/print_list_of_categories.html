@@ -1,0 +1,10 @@
+<div class="well">
+    <h4>categories</h4>
+    <p>
+        <a href="{{ site.blog_dir }}"><b>all</b></a><br/>
+        {% assign sorted_categories = site.categories | sort: %}
+        {% for category in sorted_categories %}
+        <a href="{{ category | first | prepend: site.category_dir }}/">{{ category | first }}</a><br/>
+        {% endfor %}
+    <p>
+</div>

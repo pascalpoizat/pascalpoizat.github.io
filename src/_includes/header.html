@@ -17,7 +17,7 @@
                 </li>
                 {% assign sorted_pages = site.pages | sort:"rank" %}
                 {% for apage in sorted_pages %}
-                {% if apage.title %}
+                {% if apage.title and apage.rank %}
                 <li {% if apage.url == page.url %}class="active"{% endif %}>
                     <a class="page-link" href="{{ apage.url | prepend: site.baseurl }}">{{ apage.title }}</a>
                 </li>

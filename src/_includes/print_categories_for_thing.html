@@ -1,5 +1,5 @@
 {% for category in include.thing.categories %}
-<a href="{{ site.url }}/{{ category }}">
+<a href="{{ category | prepend: site.category_dir }}">
     <button class="btn {{ site.link_btn_size }} {{ site.link_btn_color }}">{{ category }}</button>
 </a>
 {% endfor %}
