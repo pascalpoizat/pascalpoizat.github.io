@@ -1,0 +1,20 @@
+<h2><span class="label label-primary">{{ include.title }}</span></h2><br/>
+
+<address>{{ include.contact.address }}</address>
+
+<p><a href="mailto:{{ include.contact.email }}">{{ include.contact.email }}</a><br/>
+    <em>please replace firstname and lastname with their values</em>
+</p>
+
+<div class="bs-callout bs-callout-info">
+    <h4>Directions | Pour venir</h4>
+    <p>{{ include.contact.direction.address }}</p>
+
+    <p>public transport: {{ include.contact.direction.public_transportation.stop }}<br/>
+        <i class="fa fa-subway"></i>
+        <a href="{{ include.contact.direction.public_transportation.link }}">compute route</a><br/>
+        <i class="glyphicon glyphicon-map-marker"></i>
+        <a href="{{ include.contact.direction.map }}">map</a>
+    </p>
+</div>
+
