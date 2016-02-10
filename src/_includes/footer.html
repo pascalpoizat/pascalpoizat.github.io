@@ -1,40 +1,53 @@
 <div class="navbar navbar-default navbar-bottom">
     <div class="container">
-            <h4>{{ site.title }}</h4>
-            <div class="row">
-                <div class="col-md-4">
-                    <p>{{ site.description }}</p>
-                </div>
-                <div class="col-md-3">
-                    <p><a href="mailto:{{ site.email1 }}">{{ site.email1 }}</a><br/>
-                        <a href="mailto:{{ site.email2 }}">{{ site.email2 }}</a>
-                    </p>
-                </div>
-                <div class="col-md-3">
-                    <p>
-                        {% if site.github_username %}
-                        <i class="fa fa-github-alt"></i>
-                        <a href="https://github.com/{{ site.github_username }}">{{ site.github_username }}</a><br/>
-                        {% endif %}
-                        {% if site.twitter_username %}
-                        <i class="fa fa-twitter"></i>
-                        <a href="https://twitter.com/{{ site.twitter_username }}">{{ site.twitter_username }}</a><br/>
-                        {% endif %}
-                    </p>
-                </div>
+        <h4>{{ site.title }}</h4>
+        <div class="row">
+            <div class="col-md-4">
+                <p>{{ site.description }}</p>
             </div>
-            <div class="footer-col-wrapper">
-                <div class="footer-col-thanks">
-                    made with {
-                    <a href="http://getbootstrap.com/">Bootstrap</a>,
-                    <a href="https://github.com/">GitHub</a>,
-                    <a href="http://www.jetbrains.com/idea/">IntelliJ IDEA</a>,
-                    <a href="http://jekyllrb.com/">Jekyll</a>,
-                    <a href="https://github.com/inukshuk/jekyll-scholar">Jekyll-Scholar</a>
-                    },
-                    source code of these pages available <a
-                        href="http://github.com/pascalpoizat/pascalpoizat.github.io">here</a>.
-                </div>
+            <div class="col-md-3">
+                <p>
+                    {% if site.contacts.research %}
+                    <a href="mailto:{{ site.contacts.research.email }}">
+                        {{ site.contacts.research.email }}
+                    </a><br/>
+                    {% endif %}
+                    {% if site.contacts.teaching %}
+                    <a href="mailto:{{ site.contacts.teaching.email }}">
+                        {{ site.contacts.teaching.email }}
+                    </a>
+                    {% endif %}
+                </p>
             </div>
+            <div class="col-md-3">
+                <p>
+                    {% if site.networks.github %}
+                    <i class="fa fa-github-alt"></i>
+                    <a href="{{ site.networks.github.username | prepend: site.networks.github.url }}">
+                        {{ site.networks.github.username }}
+                    </a><br/>
+                    {% endif %}
+                    {% if site.networks.twitter %}
+                    <i class="fa fa-twitter"></i>
+                    <a href="{{ site.networks.twitter.username | prepend: site.networks.twitter.url }}">
+                        {{ site.networks.twitter.username }}
+                    </a><br/>
+                    {% endif %}
+                </p>
+            </div>
+        </div>
+        <div class="footer-col-wrapper">
+            <div class="footer-col-thanks">
+                made with {
+                <a href="http://getbootstrap.com/">Bootstrap</a>,
+                <a href="https://github.com/">GitHub</a>,
+                <a href="http://www.jetbrains.com/idea/">IntelliJ IDEA</a>,
+                <a href="http://jekyllrb.com/">Jekyll</a>,
+                <a href="https://github.com/inukshuk/jekyll-scholar">Jekyll-Scholar</a>
+                },
+                source code of these pages available <a
+                    href="http://github.com/pascalpoizat/pascalpoizat.github.io">here</a>.
+            </div>
+        </div>
     </div>
 </div>
