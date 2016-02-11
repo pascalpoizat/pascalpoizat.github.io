@@ -13,16 +13,19 @@
         <div id="navbar" class="collapse navbar-collapse">
             <ul class="nav navbar-nav">
                 <li {% if page.url == "/" %}class="active"{% endif %}>
-                    <a class="page-link" href="{{ site.baseurl }}/index.html">home</a>
+                    <a class="navbar-link" href="{{ site.baseurl }}/index.html">home</a>
                 </li>
                 {% assign sorted_pages = site.pages | sort:"rank" %}
                 {% for apage in sorted_pages %}
                 {% if apage.title and apage.rank %}
                 <li {% if apage.url == page.url %}class="active"{% endif %}>
-                    <a class="page-link" href="{{ apage.url | prepend: site.baseurl }}">{{ apage.title }}</a>
+                    <a class="navbar-link" href="{{ apage.url | prepend: site.baseurl }}">{{ apage.title }}</a>
                 </li>
                 {% endif %}
                 {% endfor %}
+                <li>
+                    <a class="navbar-link" href="{{ site.baseurl }}/index.html#contact">contact</a>
+                </li>
             </ul>
         </div><!--/.nav-collapse -->
     </div>
