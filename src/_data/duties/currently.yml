@@ -1,0 +1,25 @@
+- name: Pedagogic
+  values:
+
+  - period: since 2012
+    name: Master MIAGE
+    role: Director
+    at: Paris Ouest University
+
+- name: Scientific
+  values:
+
+  - period: since 2014
+    name: Nat. Committee for Scientific Research | CoNRS 6
+    role: Member
+    at: CNRS
+
+  - period: since 2014
+    name: Laboratory Council | Conseil de Laboratoire
+    role: Member
+    at: LIP6 Laboratory
+
+  - period: since 2013
+    name: CS Advisory Council | CCD Sect. 27
+    role: Member
+    at: Paris Ouest University

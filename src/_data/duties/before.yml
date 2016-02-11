@@ -3,102 +3,124 @@
   values:
 
   - period: 2009-2011
-    name: Director of 3rd year of Licence in CS (Applied cursus, MIAGE)
+    name: 3rd year of Licence MIAGE
+    role: Director
     at: University of Evry
 
   - period: 2008-2009
-    name: Director of 3rd year of Licence in CS (General cursus)
+    name: 3rd year of Licence Informatique
+    role: Director
     at: University of Evry
 
   - period: 2004-2006
-    name: Director of 2nd year of Master of CS as a Complem. Competence
+    name: 2nd year of Master CCI
+    role: Director
     at: University of Evry
 
   - period: 2001-2004
-    name: Dep. Director of 2nd year of Master of CS as a Complem. Competence
+    name: 2nd year of Master CCI
+    role: Deputy director
     at: University of Evry
 
   - period: 2001-2003
-    name: Person in charge of the CS Support Teachers
+    name: CS Support Teachers
+    role: Responsible
     at: University of Evry
 
 - name: Scientific (Projects and Working Groups)
   values:
 
   - period: 2011-2015
-    name: Co-head of the COSMAL Working Group
+    name: COSMAL Working Group
+    role: Co-head
     at: Software Engineering Research Group of the CNRS (GDR GPL)
 
   - period: 2010-2013
-    name: Scientific coordinator for the LRI partner in the ANR PIMI project
+    name: ANR PIMI project
+    role: Scientific coordinator for the LRI lab.
     at: Future Networks and Services Programme, National Agency for Research
 
   - period: 2007-2010
-    name: Project leader of the ANR PERSO project
+    name: ANR PERSO project
+    role: Project leader
     at: Young Researchers' Programme, National Agency for Research
 
 - name: Scientific (Positions)
   values:
 
     - period: 2006-2007
-      name: Member of the Laboratory Council | Conseil de Laboratoire
+      name: Laboratory Council | Conseil de Laboratoire
+      role: Member
       at: IBISC Laboratory
 
 - name: Scientific (Recruiting Committees)
   values:
 
   - period: 2015
-    name: Member of the CS Recruitment Committee | CDS Sect. 27
+    name: CS Recruitment Committee | CDS Sect. 27
+    role: Member
     at: Paris Sud University
 
   - period: 2013
-    name: Member of the CS Recruitment Committee | CDS Sect. 27
+    name: CS Recruitment Committee | CDS Sect. 27
+    role: Member
     at: Pierre and Marie Curie University
 
   - period: 2009
-    name: Member of the CS Recruitment Committee | CDS Sect. 27
+    name: CS Recruitment Committee | CDS Sect. 27
+    role: Member
     at: University of Nantes
 
   - period: 2007-2008
-    name: Member of the CS Recruitment Committee | CSE Sect. 27
+    name: CS Recruitment Committee | CSE Sect. 27
+    role: Member
     at: University of Evry
 
   - period: 2004-2007
-    name: Dep. Member of the CS Recruitment Committee | CSE Sect. 27
+    name: CS Recruitment Committee | CSE Sect. 27
+    role: Deputy member
     at: University of Evry
 
   - period: 2004-2007
-    name: External Member of the CS Recruitment Committee | CSE Sect. 27
+    name: CS Recruitment Committee | CSE Sect. 27
+    role: External member
     at: CNAM Paris
 
 - name: Technical
   values:
 
   - period: 2014
-    name: Member of the Publication Support Commission
+    name: Publication Support Commission
+    role: Member
     at: LIP6 Laboratory
 
   - period: 2008-2012
-    name: Member of the Hardware and Software Commission
+    name: Hardware and Software Commission
+    role: Member
     at: LRI Laboratory
 
   - period: 2006-2008
-    name: Member of the Communication and Documentation Commission
+    name: Communication and Documentation Commission
+    role: Member
     at: INRIA Paris
 
   - period: 2004-2008
-    name: Webmaster of the Plone Web site
+    name: Plone Web site
+    role: Webmaster
     at: LaMI/IBISC Laboratory
 
   - period: 2001-2006
-    name: Administrator of the MySQL server
+    name: MySQL server
+    role: Administrator
     at: LaMI Laboratory
 
   - period: 2001-2006
-    name: Member of the Premises Commission
+    name: Premises Commission
+    role: Member
     at: LaMI Laboratory
 
   - period: 2001-2006
-    name: Member of the Web Commission
+    name: Web Commission
+    role: Member
     at: LaMI Laboratory
 
