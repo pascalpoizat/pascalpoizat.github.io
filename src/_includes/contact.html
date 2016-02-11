@@ -1,20 +1,26 @@
-<h2><span class="label label-primary">{{ include.title }}</span></h2><br/>
-
-<address>{{ include.contact.address }}</address>
-
-<p><a href="mailto:{{ include.contact.email }}">{{ include.contact.email }}</a><br/>
-    <em>please replace firstname and lastname with their values</em>
-</p>
-
-<div class="bs-callout bs-callout-info">
-    <h4>Directions | Pour venir</h4>
-    <p>{{ include.contact.direction.address }}</p>
-
-    <p>public transport: {{ include.contact.direction.public_transportation.stop }}<br/>
-        <i class="fa fa-subway"></i>
-        <a href="{{ include.contact.direction.public_transportation.link }}">compute route</a><br/>
-        <i class="glyphicon glyphicon-map-marker"></i>
-        <a href="{{ include.contact.direction.map }}">map</a>
+<div class="starter-template">
+    <hr class="light">
+    <h3><i class="fa fa-hand-o-right"></i> Contact</h3>
+    <p class="lead">depending on your concerns, please select one:
     </p>
 </div>
 
+<div class="row">
+
+    <div class="col-sm-offset-0 col-md-3"></div>
+
+    <div class="col-sm-6 col-md-3">
+        <h4>Research | Recherche</h4>
+        {% include print_contact.html contact=site.contacts.research %}
+        <br/>
+    </div>
+
+    <div class="col-sm-6 col-md-3">
+        <h4>Teaching | Enseignement</h4>
+        {% include print_contact.html contact=site.contacts.teaching %}
+        <br/>
+    </div>
+
+    <div class="col-sm-offset-0 col-md-3"></div>
+
+</div>

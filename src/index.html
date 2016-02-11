@@ -8,22 +8,20 @@ layout: index
 
         <div class="row">
 
-            <div class="col-sm-4 col-md-2">
-                <div class="media">
-                    <img class="personal-picture" src="{{site.picture}}" alt="picture">
-                </div>
+            <div class="col-sm-4 right">
+                <div class="media personal-picture"><img src={{site.picture}} alt="personal picture"/></div>
             </div>
 
-            <div class="col-sm-8 col-md-6">
+            <div class="col-sm-8">
                 <h3>Professor | Professeur des Universités</h3>
                 <p class="lead">
                     Dr HDR<a href="https://en.wikipedia.org/wiki/Habilitation">*</a><br/>
-                    <a href="https://www.u-paris10.fr">Université Paris Ouest Nanterre la Défense</a><br/>
+                    <a href="https://www.u-paris10.fr">Université Paris Ouest<script>Nanterre la Défense</script></a><br/>
                     <a href="http://www.lip6.fr">LIP6 UMR 7606 CNRS</a>
                 </p>
             </div>
-        </div>
 
+        </div> <!-- information row -->
 
         <div class="row text-center">
 
@@ -32,42 +30,47 @@ layout: index
             <div class="col-sm-4">
                 <h4><strong>Research</strong></h4>
                 <p class="text-muted">
-                    Application of formal methods to software engineering,
-                    with a focus on composite and interacting systems.
+                    Formal methods<br/>
+                    for software engineering<br/>
+                    Software composition<br/>
                 </p>
                 <a href="research">
-                    <button class="btn {{ site.link_btn_color }}">learn more</button>
+                    <button class="btn {{ site.link_btn_color }}">learn more <i class="fa fa-chevron-circle-right"></i></button>
                 </a>
             </div>
 
             <div class="col-sm-4">
-                <h4><strong>Offices</strong></h4>
+                <h4><strong>Duties</strong></h4>
                 <p class="text-muted">
-                    Director of master MIAGE<br/>
-                    Section 6 (CS) of the CoNRS<br/>
+                    Dir. Master MIAGE<br/>
+                    CoNRS section 6<br/>
                     LIP6 laboratory council
                 </p>
-                <a href="offices">
-                    <button class="btn {{ site.link_btn_color }}">learn more</button>
+                <a href="duties">
+                    <button class="btn {{ site.link_btn_color }}">learn more <i class="fa fa-chevron-circle-right"></i></button>
                 </a>
             </div>
 
             <div class="col-sm-4">
                 <h4><strong>Teaching</strong></h4>
                 <p class="text-muted">
-                    Software engineering & development,<br/>
-                    from
-                    modelling and model verification,<br/>
-                    to
-                    implementation and test.
+                    Software engineering<br/>
+                    Software development<br/>
+                    Verification<br/>
                 </p>
                 <a href="teaching">
-                    <button class="btn {{ site.link_btn_color }}">learn more</button>
+                    <button class="btn {{ site.link_btn_color }}">learn more <i class="fa fa-chevron-circle-right"></i></button>
                 </a>
             </div>
 
-        </div>
+        </div> <!-- abstracts row -->
 
-    </div>
+    </div> <!-- container -->
 
+</div>
+
+<div class="container">
+    <section id="contact">
+        {% include contact.html %}
+    </section>
 </div>
