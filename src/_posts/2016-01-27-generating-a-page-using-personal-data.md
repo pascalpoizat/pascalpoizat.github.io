@@ -14,23 +14,23 @@ We will have a look at this using a simple example.
 
 The first step is to define the file(s) that will contain the information.
 This can be either JSON, YAML, or CSV files.
-For [my list of academic duties]({{site.url}}/duties/) I chose to use YAML files, but another part of my site,
+For [my list of offices]({{site.url}}/offices/) I chose to use YAML files, but another part of my site,
 the [list of talks]({{site.url}}/talks/), uses JSON files.
 Data files have to be put in the `_data` directory of the Jekyll tree structure.
-Sub-directories can be used to structure your set of data files. So here I put my data within `_data/duties`.
-Further, we will have one file for the current duties, `currently.yml`,
+Sub-directories can be used to structure your set of data files. So here I put my data within `_data/offices`.
+Further, we will have one file for the current offices, `currently.yml`,
 and another file, `before.yml`, for the old ones. Here is the `currently.yml` one:
 {: .text-justify}
 
 {% highlight yaml %}
-- name: Pedagogic Duties
+- name: Pedagogic
   values:
 
   - period: since 2012
     name: Director of 1st and 2nd year of Master in CS (Applied cursus, MIAGE)
     at: Paris Ouest University
 
-- name: Administrative Positions
+- name: Scientific
   values:
 
   - period: since 2014
@@ -46,30 +46,30 @@ and another file, `before.yml`, for the old ones. Here is the `currently.yml` on
     at: Paris Ouest University
 {% endhighlight %}
 
-You have a list of 2 items, each item containing a name (duty category) and a list of values,
-with a value being a period, a name (of the duty) and the location it took place
+You have a list of 2 items, each item containing a name (category) and a list of values,
+with a value being a period, a name, and the location it took place
 (see [here](https://fr.wikipedia.org/wiki/YAML) for information about the YAML format).
 {: .text-justify}
 
 ## From data to HTML
 
-To generate HTML information for this, one can create an HTML document, `duties.html`,
+To generate HTML information for this, one can create an HTML document, `offices.html`,
 and use [Liquid templating](http://liquidmarkup.org/) to access the data.
-To generate a list you simply have to type in `duties.html`:
+To generate a list you simply have to type in `offices.html`:
 {: .text-justify}
 
 {% highlight liquid %}
 {% raw %}
 ---
 layout: default
-title: duties
+title: offices
 ---
-{% for category in site.data.duties.currently %}
+{% for category in site.data.offices.currently %}
 <h3>{{ category.name }}</h3>
 <ul>
-    {% for duty in category.values %}
-    <li>{{ duty.period }} - {{ duty.name }}<br/>
-    {{ duty.at }}
+    {% for office in category.values %}
+    <li>{{ office.period }} - {{ office.name }}<br/>
+    {{ office.at }}
     </li>
     {% endfor %}
 </ul>
@@ -77,8 +77,8 @@ title: duties
 {% endraw %}
 {% endhighlight %}
 
-As you can see, to access the data in the file `_data/duties/currently.yml`, we refer to `site.data.duties.currently`.
-This can be read as "the `currently` file that is in the `duties` subdirectory of the site data directory".
+As you can see, to access the data in the file `_data/offices/currently.yml`, we refer to `site.data.offices.currently`.
+This can be read as "the `currently` file that is in the `offices` subdirectory of the site data directory".
 {: .text-justify}
 
 For loops iterate over a list using some variable `v`.
@@ -99,19 +99,19 @@ You can get more information on Liquid templating [here](http://jekyllrb.com/doc
 
 ## Factorizing things
 
-Now if you want to generate also the list of the old duties, you have to copy-paste the piece of code before,
-and replace `site.data.duties.currently` by `site.data.duties.before`. Too bad.
-A better way to do things is to define the code in terms of a variable `duties` as follows:
+Now if you want to generate also the list of the old offices, you have to copy-paste the piece of code before,
+and replace `site.data.offices.currently` by `site.data.offices.before`. Too bad.
+A better way to do things is to define the code in terms of a variable `offices` as follows:
 {: .text-justify}
 
 {% highlight liquid %}
 {% raw %}
-{% for category in duties %}
+{% for category in offices %}
 <h3>{{ category.name }}</h3>
 <ul>
-    {% for duty in category.values %}
-    <li>{{ duty.period }} - {{ duty.name }}<br/>
-    {{ duty.at }}
+    {% for office in category.values %}
+    <li>{{ office.period }} - {{ office.name }}<br/>
+    {{ office.at }}
     </li>
     {% endfor %}
 </ul>
@@ -119,46 +119,46 @@ A better way to do things is to define the code in terms of a variable `duties` 
 {% endraw %}
 {% endhighlight %}
 
-Then you put this piece of code, say `print_duties.html` within the Jekyll include directory, `_includes`.
-In order to generate both list of duties you now simply have to write in `duties.html`:
+Then you put this piece of code, say `print_offices` within the Jekyll include directory, `_includes`.
+In order to generate both list of offices you now simply have to write in `offices.html`:
 {: .text-justify}
 
 {% highlight liquid %}
 {% raw %}
 ---
 layout: default
-title: duties
+title: offices
 ---
 <h2>Currently</h2>
 
-{% assign duties = site.data.duties.currently %}
-{% include print_duties.html %}
+{% assign offices = site.data.offices.currently %}
+{% include print_offices.html %}
 
 <h2>Before</h2>
 
-{% assign duties = site.data.duties.before %}
-{% include print_duties.html %}
+{% assign offices = site.data.offices.before %}
+{% include print_offices.html %}
 {% endraw %}
 {% endhighlight %}
 
-If you prefer to use Markdown, use instead a `duties.md` file with:
+If you prefer to use Markdown, use instead a `offices.md` file with:
 {: .text-justify}
 
 {% highlight liquid %}
 {% raw %}
 ---
 layout: default
-title: duties
+title: offices
 ---
 ## Currently
 
-{% assign duties = site.data.duties.currently %}
-{% include print_duties.html %}
+{% assign offices = site.data.offices.currently %}
+{% include print_offices.html %}
 
 ## Before
 
-{% assign duties = site.data.duties.before %}
-{% include print_duties.html %}
+{% assign offices = site.data.offices.before %}
+{% include print_offices.html %}
 {% endraw %}
 {% endhighlight %}
 
@@ -172,29 +172,29 @@ You can add the parameter and its value to the import as follows:
 {% raw %}
 ---
 layout: default
-title: duties
+title: offices
 ---
 ## Currently
 
-{% include print_duties.html duties=site.data.duties.currently %}
+{% include print_offices.html offices=site.data.offices.currently %}
 
 ## Before
 
-{% include print_duties.html duties=site.data.duties.before %}
+{% include print_offices.html offices=site.data.offices.before %}
 {% endraw %}
 {% endhighlight %}
 
-In the `print_duties.html` template that is in the `_includes` directory, you just have to prefix the name of the parameter with `include`:
+In the `print_offices.html` template that is in the `_includes` directory, you just have to prefix the name of the parameter with `include`:
 {: .text-justify}
 
 {% highlight liquid %}
 {% raw %}
-{% for category in include.duties %}
+{% for category in include.offices %}
 <h3>{{ category.name }}</h3>
 <ul>
-    {% for duty in category.values %}
-    <li>{{ duty.period }} - {{ duty.name }}<br/>
-    {{ duty.at }}
+    {% for offices in category.values %}
+    <li>{{ office.period }} - {{ office.name }}<br/>
+    {{ office.at }}
     </li>
     {% endfor %}
 </ul>

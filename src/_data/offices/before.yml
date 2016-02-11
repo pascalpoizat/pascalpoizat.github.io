@@ -1,5 +1,5 @@
 
-- name: Pedagogic Duties
+- name: Pedagogic
   values:
 
   - period: 2009-2011
@@ -22,7 +22,7 @@
     name: Person in charge of the CS Support Teachers
     at: University of Evry
 
-- name: Scientific Responsibilities
+- name: Scientific (Projects and Working Groups)
   values:
 
   - period: 2011-2015
@@ -37,7 +37,14 @@
     name: Project leader of the ANR PERSO project
     at: Young Researchers' Programme, National Agency for Research
 
-- name: Administrative Positions
+- name: Scientific (Positions)
+  values:
+
+    - period: 2006-2007
+      name: Member of the Laboratory Council | Conseil de Laboratoire
+      at: IBISC Laboratory
+
+- name: Scientific (Recruiting Committees)
   values:
 
   - period: 2015
@@ -64,14 +71,10 @@
     name: External Member of the CS Recruitment Committee | CSE Sect. 27
     at: CNAM Paris
 
-  - period: 2006-2007
-    name: Member of the Laboratory Council | Conseil de Laboratoire
-    at: IBISC Laboratory
-
 - name: Technical
   values:
 
-  - period: 2014-2014
+  - period: 2014
     name: Member of the Publication Support Commission
     at: LIP6 Laboratory
 

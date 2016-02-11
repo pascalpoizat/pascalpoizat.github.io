@@ -1,0 +1,10 @@
+{% for category in include.offices %}
+<h3>{{ category.name }}</h3>
+<ul>
+    {% for office in category.values %}
+    <li>{{ office.period }} - {{ office.name }}<br/>
+    {{ office.at }}
+    </li>
+    {% endfor %}
+</ul>
+{% endfor %}
