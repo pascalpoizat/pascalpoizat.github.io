@@ -36,10 +36,20 @@ pre code {
 }
 
 .personal-picture {
-  width:80%;
-  max-width: 160px;
-  height:auto;
-  float:left;
+  display: block;
+  width: $site-picture-circle-size;
+  height: $site-picture-circle-size;
+  background: $grey-color-light;
+  -moz-border-radius: $site-picture-circle-size;
+  -webkit-border-radius: $site-picture-circle-size;
+  border-radius: $site-picture-circle-size;
+}
+
+.personal-picture > img {
+  width: $site-picture-picture-size;
+  height: auto;
+  margin-left: $site-picture-picture-leftmargin;
+  margin-top: $site-picture-picture-topmargin;
 }
 
 .post-meta {
