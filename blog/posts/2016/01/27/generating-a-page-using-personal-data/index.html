@@ -50,7 +50,7 @@
         <div id="navbar" class="collapse navbar-collapse">
             <ul class="nav navbar-nav">
                 <li >
-                    <a class="page-link" href="/index.html">home</a>
+                    <a class="navbar-link" href="/index.html">home</a>
                 </li>
                 
                 
@@ -76,52 +76,37 @@
                 
                 
                 <li >
-                    <a class="page-link" href="/research/">research</a>
+                    <a class="navbar-link" href="/research/">research</a>
                 </li>
                 
                 
                 
                 <li >
-                    <a class="page-link" href="/publications/">publications</a>
+                    <a class="navbar-link" href="/duties/">duties</a>
                 </li>
                 
                 
                 
                 <li >
-                    <a class="page-link" href="/talks/">talks</a>
+                    <a class="navbar-link" href="/teaching/">teaching</a>
                 </li>
                 
                 
                 
                 <li >
-                    <a class="page-link" href="/teaching/">teaching</a>
+                    <a class="navbar-link" href="/bio/">bio</a>
                 </li>
                 
                 
                 
                 <li >
-                    <a class="page-link" href="/offices/">offices</a>
+                    <a class="navbar-link" href="/blog/">blog</a>
                 </li>
                 
                 
-                
-                <li >
-                    <a class="page-link" href="/bio/">bio</a>
+                <li>
+                    <a class="navbar-link" href="/index.html#contact">contact</a>
                 </li>
-                
-                
-                
-                <li >
-                    <a class="page-link" href="/blog/">blog</a>
-                </li>
-                
-                
-                
-                <li >
-                    <a class="page-link" href="/contact/">contact</a>
-                </li>
-                
-                
             </ul>
         </div><!--/.nav-collapse -->
     </div>
@@ -135,19 +120,27 @@
         <h1 class="post-title">Generating a Page using Personal Data</h1>
         <p>
 <a href="/blog/categories/jekyll">
-    <button class="btn btn-xs btn-primary">jekyll</button>
+    <button class="btn btn-xs btn-primary">
+        jekyll <span class="badge">4</span>
+    </button>
 </a>
 
 <a href="/blog/categories/liquid">
-    <button class="btn btn-xs btn-primary">liquid</button>
+    <button class="btn btn-xs btn-primary">
+        liquid <span class="badge">1</span>
+    </button>
 </a>
 
 <a href="/blog/categories/templates">
-    <button class="btn btn-xs btn-primary">templates</button>
+    <button class="btn btn-xs btn-primary">
+        templates <span class="badge">1</span>
+    </button>
 </a>
 
 <a href="/blog/categories/yaml">
-    <button class="btn btn-xs btn-primary">yaml</button>
+    <button class="btn btn-xs btn-primary">
+        yaml <span class="badge">1</span>
+    </button>
 </a>
 </p>
         <p class="post-meta">
@@ -166,11 +159,11 @@ We will have a look at this using a simple example.</p>
 
 <p class="text-justify">The first step is to define the file(s) that will contain the information.
 This can be either JSON, YAML, or CSV files.
-For <a href="http://pascalpoizat.github.io/offices/">my list of offices</a> I chose to use YAML files, but another part of my site,
+For <a href="http://pascalpoizat.github.io/duties/">my list of duties</a> I chose to use YAML files, but another part of my site,
 the <a href="http://pascalpoizat.github.io/talks/">list of talks</a>, uses JSON files.
 Data files have to be put in the <code class="highlighter-rouge">_data</code> directory of the Jekyll tree structure.
-Sub-directories can be used to structure your set of data files. So here I put my data within <code class="highlighter-rouge">_data/offices</code>.
-Further, we will have one file for the current offices, <code class="highlighter-rouge">currently.yml</code>,
+Sub-directories can be used to structure your set of data files. So here I put my data within <code class="highlighter-rouge">_data/duties</code>.
+Further, we will have one file for the current duties, <code class="highlighter-rouge">currently.yml</code>,
 and another file, <code class="highlighter-rouge">before.yml</code>, for the old ones. Here is the <code class="highlighter-rouge">currently.yml</code> one:</p>
 
 <figure class="highlight"><pre><code class="language-yaml" data-lang="yaml"><span class="pi">-</span> <span class="s">name</span><span class="pi">:</span> <span class="s">Pedagogic</span>
@@ -201,27 +194,27 @@ with a value being a period, a name, and the location it took place
 
 <h2 id="from-data-to-html">From data to HTML</h2>
 
-<p class="text-justify">To generate HTML information for this, one can create an HTML document, <code class="highlighter-rouge">offices.html</code>,
+<p class="text-justify">To generate HTML information for this, one can create an HTML document, <code class="highlighter-rouge">duties.html</code>,
 and use <a href="http://liquidmarkup.org/">Liquid templating</a> to access the data.
-To generate a list you simply have to type in <code class="highlighter-rouge">offices.html</code>:</p>
+To generate a list you simply have to type in <code class="highlighter-rouge">duties.html</code>:</p>
 
 <figure class="highlight"><pre><code class="language-liquid" data-lang="liquid">---
 layout: default
-title: offices
+title: duties
 ---
-<span class="p">{%</span><span class="w"> </span><span class="nt">for</span><span class="w"> </span>category<span class="w"> </span>in<span class="w"> </span>site.data.offices.currently<span class="w"> </span><span class="p">%}</span>
+<span class="p">{%</span><span class="w"> </span><span class="nt">for</span><span class="w"> </span>category<span class="w"> </span>in<span class="w"> </span>site.data.duties.currently<span class="w"> </span><span class="p">%}</span>
 &lt;h3&gt;<span class="p">{{</span><span class="w"> </span><span class="nv">category</span><span class="p">.</span><span class="nv">name</span><span class="w"> </span><span class="p">}}</span>&lt;/h3&gt;
 &lt;ul&gt;
-    <span class="p">{%</span><span class="w"> </span><span class="nt">for</span><span class="w"> </span>office<span class="w"> </span>in<span class="w"> </span>category.values<span class="w"> </span><span class="p">%}</span>
-    &lt;li&gt;<span class="p">{{</span><span class="w"> </span><span class="nv">office</span><span class="p">.</span><span class="nv">period</span><span class="w"> </span><span class="p">}}</span> - <span class="p">{{</span><span class="w"> </span><span class="nv">office</span><span class="p">.</span><span class="nv">name</span><span class="w"> </span><span class="p">}}</span>&lt;br/&gt;
-    <span class="p">{{</span><span class="w"> </span><span class="nv">office</span><span class="p">.</span><span class="nv">at</span><span class="w"> </span><span class="p">}}</span>
+    <span class="p">{%</span><span class="w"> </span><span class="nt">for</span><span class="w"> </span>duty<span class="w"> </span>in<span class="w"> </span>category.values<span class="w"> </span><span class="p">%}</span>
+    &lt;li&gt;<span class="p">{{</span><span class="w"> </span><span class="nv">duty</span><span class="p">.</span><span class="nv">period</span><span class="w"> </span><span class="p">}}</span> - <span class="p">{{</span><span class="w"> </span><span class="nv">duty</span><span class="p">.</span><span class="nv">name</span><span class="w"> </span><span class="p">}}</span>&lt;br/&gt;
+    <span class="p">{{</span><span class="w"> </span><span class="nv">duty</span><span class="p">.</span><span class="nv">at</span><span class="w"> </span><span class="p">}}</span>
     &lt;/li&gt;
     <span class="p">{%</span><span class="w"> </span><span class="nt">endfor</span><span class="w"> </span><span class="p">%}</span>
 &lt;/ul&gt;
 <span class="p">{%</span><span class="w"> </span><span class="nt">endfor</span><span class="w"> </span><span class="p">%}</span></code></pre></figure>
 
-<p class="text-justify">As you can see, to access the data in the file <code class="highlighter-rouge">_data/offices/currently.yml</code>, we refer to <code class="highlighter-rouge">site.data.offices.currently</code>.
-This can be read as “the <code class="highlighter-rouge">currently</code> file that is in the <code class="highlighter-rouge">offices</code> subdirectory of the site data directory”.</p>
+<p class="text-justify">As you can see, to access the data in the file <code class="highlighter-rouge">_data/duties/currently.yml</code>, we refer to <code class="highlighter-rouge">site.data.duties.currently</code>.
+This can be read as “the <code class="highlighter-rouge">currently</code> file that is in the <code class="highlighter-rouge">duties</code> subdirectory of the site data directory”.</p>
 
 <p class="text-justify">For loops iterate over a list using some variable <code class="highlighter-rouge">v</code>.</p>
 
@@ -237,53 +230,53 @@ This can be read as “the <code class="highlighter-rouge">currently</code> file
 
 <h2 id="factorizing-things">Factorizing things</h2>
 
-<p class="text-justify">Now if you want to generate also the list of the old offices, you have to copy-paste the piece of code before,
-and replace <code class="highlighter-rouge">site.data.offices.currently</code> by <code class="highlighter-rouge">site.data.offices.before</code>. Too bad.
-A better way to do things is to define the code in terms of a variable <code class="highlighter-rouge">offices</code> as follows:</p>
+<p class="text-justify">Now if you want to generate also the list of the old duties, you have to copy-paste the piece of code before,
+and replace <code class="highlighter-rouge">site.data.duties.currently</code> by <code class="highlighter-rouge">site.data.duties.before</code>. Too bad.
+A better way to do things is to define the code in terms of a variable <code class="highlighter-rouge">duties</code> as follows:</p>
 
-<figure class="highlight"><pre><code class="language-liquid" data-lang="liquid"><span class="p">{%</span><span class="w"> </span><span class="nt">for</span><span class="w"> </span>category<span class="w"> </span>in<span class="w"> </span>offices<span class="w"> </span><span class="p">%}</span>
+<figure class="highlight"><pre><code class="language-liquid" data-lang="liquid"><span class="p">{%</span><span class="w"> </span><span class="nt">for</span><span class="w"> </span>category<span class="w"> </span>in<span class="w"> </span>duties<span class="w"> </span><span class="p">%}</span>
 &lt;h3&gt;<span class="p">{{</span><span class="w"> </span><span class="nv">category</span><span class="p">.</span><span class="nv">name</span><span class="w"> </span><span class="p">}}</span>&lt;/h3&gt;
 &lt;ul&gt;
-    <span class="p">{%</span><span class="w"> </span><span class="nt">for</span><span class="w"> </span>office<span class="w"> </span>in<span class="w"> </span>category.values<span class="w"> </span><span class="p">%}</span>
-    &lt;li&gt;<span class="p">{{</span><span class="w"> </span><span class="nv">office</span><span class="p">.</span><span class="nv">period</span><span class="w"> </span><span class="p">}}</span> - <span class="p">{{</span><span class="w"> </span><span class="nv">office</span><span class="p">.</span><span class="nv">name</span><span class="w"> </span><span class="p">}}</span>&lt;br/&gt;
-    <span class="p">{{</span><span class="w"> </span><span class="nv">office</span><span class="p">.</span><span class="nv">at</span><span class="w"> </span><span class="p">}}</span>
+    <span class="p">{%</span><span class="w"> </span><span class="nt">for</span><span class="w"> </span>duty<span class="w"> </span>in<span class="w"> </span>category.values<span class="w"> </span><span class="p">%}</span>
+    &lt;li&gt;<span class="p">{{</span><span class="w"> </span><span class="nv">duty</span><span class="p">.</span><span class="nv">period</span><span class="w"> </span><span class="p">}}</span> - <span class="p">{{</span><span class="w"> </span><span class="nv">duty</span><span class="p">.</span><span class="nv">name</span><span class="w"> </span><span class="p">}}</span>&lt;br/&gt;
+    <span class="p">{{</span><span class="w"> </span><span class="nv">duty</span><span class="p">.</span><span class="nv">at</span><span class="w"> </span><span class="p">}}</span>
     &lt;/li&gt;
     <span class="p">{%</span><span class="w"> </span><span class="nt">endfor</span><span class="w"> </span><span class="p">%}</span>
 &lt;/ul&gt;
 <span class="p">{%</span><span class="w"> </span><span class="nt">endfor</span><span class="w"> </span><span class="p">%}</span></code></pre></figure>
 
-<p class="text-justify">Then you put this piece of code, say <code class="highlighter-rouge">print_offices</code> within the Jekyll include directory, <code class="highlighter-rouge">_includes</code>.
-In order to generate both list of offices you now simply have to write in <code class="highlighter-rouge">offices.html</code>:</p>
+<p class="text-justify">Then you put this piece of code, say <code class="highlighter-rouge">print_duties</code> within the Jekyll include directory, <code class="highlighter-rouge">_includes</code>.
+In order to generate both lists of duties you now simply have to write in <code class="highlighter-rouge">duties.html</code>:</p>
 
 <figure class="highlight"><pre><code class="language-liquid" data-lang="liquid">---
 layout: default
-title: offices
+title: duties
 ---
 &lt;h2&gt;Currently&lt;/h2&gt;
 
-<span class="p">{%</span><span class="w"> </span><span class="nt">assign</span><span class="w"> </span><span class="nv">offices</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nv">site</span><span class="p">.</span><span class="nv">data</span><span class="p">.</span><span class="nv">offices</span><span class="p">.</span><span class="nv">currently</span><span class="w"> </span><span class="p">%}</span>
-<span class="p">{%</span><span class="w"> </span><span class="nt">include</span><span class="w"> </span><span class="na">print_offices</span><span class="p">.</span><span class="na">html</span><span class="w"> </span><span class="p">%}</span>
+<span class="p">{%</span><span class="w"> </span><span class="nt">assign</span><span class="w"> </span><span class="nv">duties</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nv">site</span><span class="p">.</span><span class="nv">data</span><span class="p">.</span><span class="nv">duties</span><span class="p">.</span><span class="nv">currently</span><span class="w"> </span><span class="p">%}</span>
+<span class="p">{%</span><span class="w"> </span><span class="nt">include</span><span class="w"> </span><span class="na">print_duties</span><span class="p">.</span><span class="na">html</span><span class="w"> </span><span class="p">%}</span>
 
 &lt;h2&gt;Before&lt;/h2&gt;
 
-<span class="p">{%</span><span class="w"> </span><span class="nt">assign</span><span class="w"> </span><span class="nv">offices</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nv">site</span><span class="p">.</span><span class="nv">data</span><span class="p">.</span><span class="nv">offices</span><span class="p">.</span><span class="nv">before</span><span class="w"> </span><span class="p">%}</span>
-<span class="p">{%</span><span class="w"> </span><span class="nt">include</span><span class="w"> </span><span class="na">print_offices</span><span class="p">.</span><span class="na">html</span><span class="w"> </span><span class="p">%}</span></code></pre></figure>
+<span class="p">{%</span><span class="w"> </span><span class="nt">assign</span><span class="w"> </span><span class="nv">duties</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nv">site</span><span class="p">.</span><span class="nv">data</span><span class="p">.</span><span class="nv">duties</span><span class="p">.</span><span class="nv">before</span><span class="w"> </span><span class="p">%}</span>
+<span class="p">{%</span><span class="w"> </span><span class="nt">include</span><span class="w"> </span><span class="na">print_duties</span><span class="p">.</span><span class="na">html</span><span class="w"> </span><span class="p">%}</span></code></pre></figure>
 
-<p class="text-justify">If you prefer to use Markdown, use instead a <code class="highlighter-rouge">offices.md</code> file with:</p>
+<p class="text-justify">If you prefer to use Markdown, use instead a <code class="highlighter-rouge">duties.md</code> file with:</p>
 
 <figure class="highlight"><pre><code class="language-liquid" data-lang="liquid">---
 layout: default
-title: offices
+title: duties
 ---
 ## Currently
 
-<span class="p">{%</span><span class="w"> </span><span class="nt">assign</span><span class="w"> </span><span class="nv">offices</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nv">site</span><span class="p">.</span><span class="nv">data</span><span class="p">.</span><span class="nv">offices</span><span class="p">.</span><span class="nv">currently</span><span class="w"> </span><span class="p">%}</span>
-<span class="p">{%</span><span class="w"> </span><span class="nt">include</span><span class="w"> </span><span class="na">print_offices</span><span class="p">.</span><span class="na">html</span><span class="w"> </span><span class="p">%}</span>
+<span class="p">{%</span><span class="w"> </span><span class="nt">assign</span><span class="w"> </span><span class="nv">duties</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nv">site</span><span class="p">.</span><span class="nv">data</span><span class="p">.</span><span class="nv">duties</span><span class="p">.</span><span class="nv">currently</span><span class="w"> </span><span class="p">%}</span>
+<span class="p">{%</span><span class="w"> </span><span class="nt">include</span><span class="w"> </span><span class="na">print_duties</span><span class="p">.</span><span class="na">html</span><span class="w"> </span><span class="p">%}</span>
 
 ## Before
 
-<span class="p">{%</span><span class="w"> </span><span class="nt">assign</span><span class="w"> </span><span class="nv">offices</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nv">site</span><span class="p">.</span><span class="nv">data</span><span class="p">.</span><span class="nv">offices</span><span class="p">.</span><span class="nv">before</span><span class="w"> </span><span class="p">%}</span>
-<span class="p">{%</span><span class="w"> </span><span class="nt">include</span><span class="w"> </span><span class="na">print_offices</span><span class="p">.</span><span class="na">html</span><span class="w"> </span><span class="p">%}</span></code></pre></figure>
+<span class="p">{%</span><span class="w"> </span><span class="nt">assign</span><span class="w"> </span><span class="nv">duties</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nv">site</span><span class="p">.</span><span class="nv">data</span><span class="p">.</span><span class="nv">duties</span><span class="p">.</span><span class="nv">before</span><span class="w"> </span><span class="p">%}</span>
+<span class="p">{%</span><span class="w"> </span><span class="nt">include</span><span class="w"> </span><span class="na">print_duties</span><span class="p">.</span><span class="na">html</span><span class="w"> </span><span class="p">%}</span></code></pre></figure>
 
 <h2 id="factorizing-things-revisited">Factorizing things (revisited)</h2>
 
@@ -292,24 +285,24 @@ You can add the parameter and its value to the import as follows:</p>
 
 <figure class="highlight"><pre><code class="language-liquid" data-lang="liquid">---
 layout: default
-title: offices
+title: duties
 ---
 ## Currently
 
-<span class="p">{%</span><span class="w"> </span><span class="nt">include</span><span class="w"> </span><span class="na">print_offices</span><span class="p">.</span><span class="na">html</span><span class="w"> </span><span class="na">offices</span><span class="o">=</span><span class="nv">site</span><span class="p">.</span><span class="nv">data</span><span class="p">.</span><span class="nv">offices</span><span class="p">.</span><span class="na">currently %}
+<span class="p">{%</span><span class="w"> </span><span class="nt">include</span><span class="w"> </span><span class="na">print_duties</span><span class="p">.</span><span class="na">html</span><span class="w"> </span><span class="na">duties</span><span class="o">=</span><span class="nv">site</span><span class="p">.</span><span class="nv">data</span><span class="p">.</span><span class="nv">duties</span><span class="p">.</span><span class="na">currently %}
 
 ## Before
 
-{% include print_offices</span><span class="p">.</span><span class="na">html</span><span class="w"> </span><span class="na">offices</span><span class="o">=</span><span class="nv">site</span><span class="p">.</span><span class="nv">data</span><span class="p">.</span><span class="nv">offices</span><span class="p">.</span><span class="nv">before</span><span class="w"> </span><span class="p">%}</span></code></pre></figure>
+{% include print_duties</span><span class="p">.</span><span class="na">html</span><span class="w"> </span><span class="na">duties</span><span class="o">=</span><span class="nv">site</span><span class="p">.</span><span class="nv">data</span><span class="p">.</span><span class="nv">duties</span><span class="p">.</span><span class="nv">before</span><span class="w"> </span><span class="p">%}</span></code></pre></figure>
 
-<p class="text-justify">In the <code class="highlighter-rouge">print_offices.html</code> template that is in the <code class="highlighter-rouge">_includes</code> directory, you just have to prefix the name of the parameter with <code class="highlighter-rouge">include</code>:</p>
+<p class="text-justify">In the <code class="highlighter-rouge">print_duties.html</code> template that is in the <code class="highlighter-rouge">_includes</code> directory, you just have to prefix the name of the parameter with <code class="highlighter-rouge">include</code>:</p>
 
-<figure class="highlight"><pre><code class="language-liquid" data-lang="liquid"><span class="p">{%</span><span class="w"> </span><span class="nt">for</span><span class="w"> </span>category<span class="w"> </span>in<span class="w"> </span>include.offices<span class="w"> </span><span class="p">%}</span>
+<figure class="highlight"><pre><code class="language-liquid" data-lang="liquid"><span class="p">{%</span><span class="w"> </span><span class="nt">for</span><span class="w"> </span>category<span class="w"> </span>in<span class="w"> </span>include.duties<span class="w"> </span><span class="p">%}</span>
 &lt;h3&gt;<span class="p">{{</span><span class="w"> </span><span class="nv">category</span><span class="p">.</span><span class="nv">name</span><span class="w"> </span><span class="p">}}</span>&lt;/h3&gt;
 &lt;ul&gt;
-    <span class="p">{%</span><span class="w"> </span><span class="nt">for</span><span class="w"> </span>offices<span class="w"> </span>in<span class="w"> </span>category.values<span class="w"> </span><span class="p">%}</span>
-    &lt;li&gt;<span class="p">{{</span><span class="w"> </span><span class="nv">office</span><span class="p">.</span><span class="nv">period</span><span class="w"> </span><span class="p">}}</span> - <span class="p">{{</span><span class="w"> </span><span class="nv">office</span><span class="p">.</span><span class="nv">name</span><span class="w"> </span><span class="p">}}</span>&lt;br/&gt;
-    <span class="p">{{</span><span class="w"> </span><span class="nv">office</span><span class="p">.</span><span class="nv">at</span><span class="w"> </span><span class="p">}}</span>
+    <span class="p">{%</span><span class="w"> </span><span class="nt">for</span><span class="w"> </span>duties<span class="w"> </span>in<span class="w"> </span>category.values<span class="w"> </span><span class="p">%}</span>
+    &lt;li&gt;<span class="p">{{</span><span class="w"> </span><span class="nv">duty</span><span class="p">.</span><span class="nv">period</span><span class="w"> </span><span class="p">}}</span> - <span class="p">{{</span><span class="w"> </span><span class="nv">duty</span><span class="p">.</span><span class="nv">name</span><span class="w"> </span><span class="p">}}</span>&lt;br/&gt;
+    <span class="p">{{</span><span class="w"> </span><span class="nv">duty</span><span class="p">.</span><span class="nv">at</span><span class="w"> </span><span class="p">}}</span>
     &lt;/li&gt;
     <span class="p">{%</span><span class="w"> </span><span class="nt">endfor</span><span class="w"> </span><span class="p">%}</span>
 &lt;/ul&gt;
@@ -363,15 +356,14 @@ title: offices
         </div>
         <div class="footer-col-wrapper">
             <div class="footer-col-thanks">
-                made with {
-                <a href="http://getbootstrap.com/">Bootstrap</a>,
-                <a href="https://github.com/">GitHub</a>,
-                <a href="http://www.jetbrains.com/idea/">IntelliJ IDEA</a>,
-                <a href="http://jekyllrb.com/">Jekyll</a>,
-                <a href="https://github.com/inukshuk/jekyll-scholar">Jekyll-Scholar</a>
-                },
-                source code of these pages available <a
-                    href="http://github.com/pascalpoizat/pascalpoizat.github.io">here</a>.
+                <p>
+                    pages made with <a href="http://jekyllrb.com">Jekyll</a>,
+                    <a class="button" href="http://github.com/pascalpoizat/pascalpoizat.github.io">
+                        <button class="btn btn-xs btn-primary"><i
+                                class="fa fa-download"></i> get source code
+                        </button>
+                    </a>
+                </p>
             </div>
         </div>
     </div>

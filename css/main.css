@@ -11698,10 +11698,19 @@ pre code {
   white-space: pre; }
 
 .personal-picture {
-  width: 80%;
-  max-width: 160px;
+  display: block;
+  width: 160px;
+  height: 160px;
+  background: #e8e8e8;
+  -moz-border-radius: 160px;
+  -webkit-border-radius: 160px;
+  border-radius: 160px; }
+
+.personal-picture > img {
+  width: 180px;
   height: auto;
-  float: left; }
+  margin-left: -14px;
+  margin-top: 0px; }
 
 .post-meta {
   color: #828282; }

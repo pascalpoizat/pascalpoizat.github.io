@@ -50,7 +50,7 @@
         <div id="navbar" class="collapse navbar-collapse">
             <ul class="nav navbar-nav">
                 <li >
-                    <a class="page-link" href="/index.html">home</a>
+                    <a class="navbar-link" href="/index.html">home</a>
                 </li>
                 
                 
@@ -76,52 +76,37 @@
                 
                 
                 <li >
-                    <a class="page-link" href="/research/">research</a>
+                    <a class="navbar-link" href="/research/">research</a>
                 </li>
                 
                 
                 
                 <li >
-                    <a class="page-link" href="/publications/">publications</a>
+                    <a class="navbar-link" href="/duties/">duties</a>
                 </li>
                 
                 
                 
                 <li >
-                    <a class="page-link" href="/talks/">talks</a>
+                    <a class="navbar-link" href="/teaching/">teaching</a>
                 </li>
                 
                 
                 
                 <li >
-                    <a class="page-link" href="/teaching/">teaching</a>
+                    <a class="navbar-link" href="/bio/">bio</a>
                 </li>
                 
                 
                 
                 <li >
-                    <a class="page-link" href="/offices/">offices</a>
+                    <a class="navbar-link" href="/blog/">blog</a>
                 </li>
                 
                 
-                
-                <li >
-                    <a class="page-link" href="/bio/">bio</a>
+                <li>
+                    <a class="navbar-link" href="/index.html#contact">contact</a>
                 </li>
-                
-                
-                
-                <li >
-                    <a class="page-link" href="/blog/">blog</a>
-                </li>
-                
-                
-                
-                <li >
-                    <a class="page-link" href="/contact/">contact</a>
-                </li>
-                
-                
             </ul>
         </div><!--/.nav-collapse -->
     </div>
@@ -141,15 +126,21 @@
         <div><h2><a href="/blog/posts/2016/02/01/jekyll-and-bibtex/">Jekyll and BibTeX</a></h2>
             <p>
 <a href="/blog/categories/jekyll">
-    <button class="btn btn-xs btn-primary">jekyll</button>
+    <button class="btn btn-xs btn-primary">
+        jekyll <span class="badge">4</span>
+    </button>
 </a>
 
 <a href="/blog/categories/bibtex">
-    <button class="btn btn-xs btn-primary">bibtex</button>
+    <button class="btn btn-xs btn-primary">
+        bibtex <span class="badge">1</span>
+    </button>
 </a>
 
 <a href="/blog/categories/jekyll-scholar">
-    <button class="btn btn-xs btn-primary">jekyll-scholar</button>
+    <button class="btn btn-xs btn-primary">
+        jekyll-scholar <span class="badge">1</span>
+    </button>
 </a>
 </p>
             <p class="text-muted">01 Feb 2016</p>
@@ -170,25 +161,76 @@ this may include your BibTeX bibliographies.</p>
     <div class="col-md-2">
         <div class="well">
     <h4>categories</h4>
-    <p>
-        <a href="/blog"><b>all</b></a><br/>
+    <div class="btn-group-vertical" role="group" aria-label="categories">
+
+        <div class="btn-group" role="group">
+            <a href="/blog">
+                <button class="btn btn-xs btn-primary">
+                    <strong>all</strong> <span class="badge">4</span>
+                </button>
+            </a>
+        </div>
+
         
         
-        <a href="/blog/categories/bibtex/">bibtex</a><br/>
+        <div class="btn-group" role="group">
+            <a href="/blog/categories/bibtex/">
+                <button class="btn btn-xs btn-primary">
+                    bibtex <span class="badge">1</span>
+                </button>
+            </a>
+        </div>
         
-        <a href="/blog/categories/github-pages/">github-pages</a><br/>
+        <div class="btn-group" role="group">
+            <a href="/blog/categories/github-pages/">
+                <button class="btn btn-xs btn-primary">
+                    github-pages <span class="badge">2</span>
+                </button>
+            </a>
+        </div>
         
-        <a href="/blog/categories/jekyll/">jekyll</a><br/>
+        <div class="btn-group" role="group">
+            <a href="/blog/categories/jekyll/">
+                <button class="btn btn-xs btn-primary">
+                    jekyll <span class="badge">4</span>
+                </button>
+            </a>
+        </div>
         
-        <a href="/blog/categories/jekyll-scholar/">jekyll-scholar</a><br/>
+        <div class="btn-group" role="group">
+            <a href="/blog/categories/jekyll-scholar/">
+                <button class="btn btn-xs btn-primary">
+                    jekyll-scholar <span class="badge">1</span>
+                </button>
+            </a>
+        </div>
         
-        <a href="/blog/categories/liquid/">liquid</a><br/>
+        <div class="btn-group" role="group">
+            <a href="/blog/categories/liquid/">
+                <button class="btn btn-xs btn-primary">
+                    liquid <span class="badge">1</span>
+                </button>
+            </a>
+        </div>
         
-        <a href="/blog/categories/templates/">templates</a><br/>
+        <div class="btn-group" role="group">
+            <a href="/blog/categories/templates/">
+                <button class="btn btn-xs btn-primary">
+                    templates <span class="badge">1</span>
+                </button>
+            </a>
+        </div>
         
-        <a href="/blog/categories/yaml/">yaml</a><br/>
+        <div class="btn-group" role="group">
+            <a href="/blog/categories/yaml/">
+                <button class="btn btn-xs btn-primary">
+                    yaml <span class="badge">1</span>
+                </button>
+            </a>
+        </div>
         
-    <p>
+
+    </div>
 </div>
     </div>
 </div>
@@ -236,15 +278,14 @@ this may include your BibTeX bibliographies.</p>
         </div>
         <div class="footer-col-wrapper">
             <div class="footer-col-thanks">
-                made with {
-                <a href="http://getbootstrap.com/">Bootstrap</a>,
-                <a href="https://github.com/">GitHub</a>,
-                <a href="http://www.jetbrains.com/idea/">IntelliJ IDEA</a>,
-                <a href="http://jekyllrb.com/">Jekyll</a>,
-                <a href="https://github.com/inukshuk/jekyll-scholar">Jekyll-Scholar</a>
-                },
-                source code of these pages available <a
-                    href="http://github.com/pascalpoizat/pascalpoizat.github.io">here</a>.
+                <p>
+                    pages made with <a href="http://jekyllrb.com">Jekyll</a>,
+                    <a class="button" href="http://github.com/pascalpoizat/pascalpoizat.github.io">
+                        <button class="btn btn-xs btn-primary"><i
+                                class="fa fa-download"></i> get source code
+                        </button>
+                    </a>
+                </p>
             </div>
         </div>
     </div>
