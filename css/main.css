@@ -11706,6 +11706,17 @@ pre code {
   -webkit-border-radius: 160px;
   border-radius: 160px; }
 
+.circle-picture {
+  display: block;
+  width: 160px;
+  height: 160px;
+  background: #fff;
+  -moz-border-radius: 160px;
+  -webkit-border-radius: 160px;
+  border-radius: 160px;
+  border-style: solid;
+  border-color: #424242; }
+
 .personal-picture > img {
   width: 180px;
   height: auto;
