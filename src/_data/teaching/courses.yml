@@ -6,7 +6,7 @@
   name: Conception et modélisation orientée-objet
   note: 1st year of master - Object Oriented Design and Modelling
   parts: [lectures, practical work]
-  contents: [UML, UML to Java, Model-Driven Engineering, Domain Specific Languages]
+  contents: [UML, Model-Driven Engineering, Domain Specific Languages]
 
 - year: 2015
   cursus: M1C MIAGE
@@ -63,7 +63,7 @@
   name: Conception et modélisation orientée-objet
   note: 1st year of master - Object Oriented Design and Modelling
   parts: [lectures, practical work]
-  contents: [UML, UML to Java, Model-Driven Engineering, Domain Specific Languages]
+  contents: [UML, Model-Driven Engineering, Domain Specific Languages]
 
 - year: 2014
   cursus: M1C MIAGE
