@@ -1,6 +1,8 @@
 <dl class="dl-horizontal">
     {% for item in include.items %}
-    <dt>{{ item.period }}</dt>
+    <dt>
+        {{ item.period }}
+    </dt>
     <dd>
         {% if item.kind == 'diploma' %}
         <span class="text-primary"><em>{{ item.role }}</em></span>
