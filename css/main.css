@@ -11704,6 +11704,8 @@ pre code {
   background: #e8e8e8;
   -moz-border-radius: 160px;
   -webkit-border-radius: 160px;
+  -ms-border-radius: 160px;
+  -o-border-radius: 160px;
   border-radius: 160px; }
 
 .circle-picture {
@@ -11713,6 +11715,8 @@ pre code {
   background: #fff;
   -moz-border-radius: 160px;
   -webkit-border-radius: 160px;
+  -ms-border-radius: 160px;
+  -o-border-radius: 160px;
   border-radius: 160px;
   border-style: solid;
   border-color: #424242; }
