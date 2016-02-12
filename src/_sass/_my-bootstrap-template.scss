@@ -39,10 +39,22 @@ pre code {
   display: block;
   width: $site-picture-circle-size;
   height: $site-picture-circle-size;
-  background: $grey-color-light;
+  background: $site-picture-circle-color;
   -moz-border-radius: $site-picture-circle-size;
   -webkit-border-radius: $site-picture-circle-size;
   border-radius: $site-picture-circle-size;
+}
+
+.circle-picture {
+  display: block;
+  width: $site-circle-circle-size;
+  height: $site-circle-circle-size;
+  background: $site-circle-circle-color;
+  -moz-border-radius: $site-circle-circle-size;
+  -webkit-border-radius: $site-circle-circle-size;
+  border-radius: $site-circle-circle-size;
+  border-style: solid;
+  border-color: $grey-color-dark;
 }
 
 .personal-picture > img {

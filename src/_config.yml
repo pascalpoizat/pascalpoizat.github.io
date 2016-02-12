@@ -32,6 +32,9 @@ networks:
     url: http://www.informatik.uni-trier.de/~ley/pers/hd/
     username: p/Poizat:Pascal
 
+bio:
+  with-logos: false
+
 contacts:
   research:
     email: firstname.lastname@lip6.fr

@@ -11,16 +11,26 @@
         {% endif %}
         {% if item.note %}<em>{{ item.note }}</em>{% endif %}
         <br/>
-        {% if item.at %}{{ item.at }}<br/>{% endif %}
-        {% if item.sub-periods %}<dl>{% endif %}
+        {% if item.at %}
+        {% if site.bio.with-logos and item.logo %}
+        <div class="circle-picture">
+            <img src="{{ item.logo[0] }}"
+                 style="width: {{ item.logo[1]}}; margin-left: {{ item.logo[2] }}; margin-top: {{ item.logo[3] }};"/>
+        </div>
+        {% endif %}
+        {{ item.at }}<br/>
+        {% endif %}
+        {% if item.sub-periods %}
+        <dl>{% endif %}
             {% for subitem in item.sub-periods %}
-            <dt>{{ subitem.period }}</dt>
-            <dd>
-                {% if subitem.role %}{{ subitem.role }}<br/>{% endif %}{{ subitem.at }}
-            </dd>
-            {% endfor %}
-        {% if item.sub-periods %}</dl>{% endif %}
+    <dt>{{ subitem.period }}</dt>
+    <dd>
+        {% if subitem.role %}{{ subitem.role }}<br/>{% endif %}{{ subitem.at }}
     </dd>
-    <br/>
     {% endfor %}
+    {% if item.sub-periods %}
+</dl>{% endif %}
+</dd>
+<br/>
+{% endfor %}
 </dl>
