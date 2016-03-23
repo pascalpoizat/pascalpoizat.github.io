@@ -91,19 +91,6 @@ kind:
     inbook: false
     inproceedings: true
 
-# Build settings
-
-exclude:  ['Gemfile*', '*.sh', 'update_site.sh']
-
-gems: ['jekyll/scholar']
-
-markdown: kramdown
-highlighter: rouge
-
-kramdown:
-     # input: GFM
-     syntax_highlighter: rouge
-
 scholar:
   style: _bibliography/mystyle.csl
   locale: en
@@ -122,3 +109,16 @@ scholar:
   # details_layout: bibtex.html
   # details_link:   Details
   query: "@*"
+
+# other settings
+
+exclude:  ['Gemfile*', '*.sh', 'update_site.sh']
+
+gems: ['jekyll/scholar']
+
+markdown: kramdown
+highlighter: rouge
+
+kramdown:
+     # input: GFM
+     syntax_highlighter: rouge
