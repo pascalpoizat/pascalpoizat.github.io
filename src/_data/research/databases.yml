@@ -1,10 +1,10 @@
 - name: DBLP
   url: http://www.informatik.uni-trier.de/%7Eley/pers/hd/p/Poizat:Pascal.html
 
-- name: Google Scholar
+- name: GS
   url: http://scholar.google.com/citations?user=D31qw90AAAAJ&hl=en
 
-- name: Research Gate
+- name: RG
   url: https://www.researchgate.net/profile/Pascal_Poizat/
 
 - name: ORCID
