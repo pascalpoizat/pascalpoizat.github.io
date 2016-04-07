@@ -1,4 +1,4 @@
-- name: Pedagogic
+- name: pedagogic
   values:
 
   - period: since 2012
@@ -6,7 +6,7 @@
     role: Director
     at: Paris Ouest University
 
-- name: Scientific
+- name: scientific
   values:
 
   - period: since 2014

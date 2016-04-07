@@ -1,5 +1,5 @@
 
-- name: Pedagogic
+- name: pedagogic
   values:
 
   - period: 2009-2011
@@ -27,7 +27,7 @@
     role: Responsible
     at: University of Evry
 
-- name: Scientific (Projects and Working Groups)
+- name: scientific (projects and working groups)
   values:
 
   - period: 2011-2015
@@ -45,7 +45,7 @@
     role: Project leader
     at: Young Researchers' Programme, National Agency for Research
 
-- name: Scientific (Positions)
+- name: scientific (positions)
   values:
 
     - period: 2006-2007
@@ -53,7 +53,7 @@
       role: Member
       at: IBISC Laboratory
 
-- name: Scientific (Recruiting Committees)
+- name: scientific (recruiting committees)
   values:
 
   - period: 2015
@@ -86,7 +86,7 @@
     role: External member
     at: CNAM Paris
 
-- name: Technical
+- name: technical
   values:
 
   - period: 2014
