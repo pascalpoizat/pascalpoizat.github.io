@@ -1,5 +1,17 @@
 - year: 2016
   values:
+    - name: WETICE
+      url: http://wetice2016.lip6.fr/
+      role: PCC
+      category: INTCONF
+    - name: VeryComp
+      url: http://verycomp2016.disim.univaq.it/
+      role: PC
+      category: INTWK
+    - name: IWAISE
+      url: http://iwaise16.univ-lille1.fr/
+      role: PCC
+      category: INTWK
     - name: CAL
       url: http://cal-conference.fr/
       role: PC
@@ -18,6 +30,14 @@
       category: NATCONF
 - year: 2015
   values:
+    - name: WAS4FI
+      url: http://was4fi.lcc.uma.es/
+      role: PC
+      category: INTWK
+    - name: ModComp
+      url: http://www.mrtc.mdh.se/ModComp15/
+      role: PC
+      category: INTWK
     - name: ICSOC
       url: http://www.icsoc.org/
       role: PC
@@ -65,7 +85,7 @@
       role: PC
       category: INTWK
     - name: WAS4FI
-      url: http://was4fi.lcc.uma.es/
+      url: http://was4fi.lcc.uma.es/was4fi2014/
       role: PC
       category: INTWK
     - name: WS-FMDS
