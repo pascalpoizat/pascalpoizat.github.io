@@ -1,24 +1,29 @@
 ---
 layout: default
 title: teaching
-rank: 4
+rank: 1
 ---
 
-<div class="bs-callout bs-callout-danger">
-    <h4><i class="glyphicon glyphicon-exclamation-sign"></i> Supports pédagogiques</h4>
-    <p class="text-justify">
-        Les supports de cours, TD et examens sont disponibles sur
-        <a href="http://coursenligne.u-paris10.fr">Cours en ligne</a>.<br/>
-        Vous devez vous inscrire administrativement et activer <b>dans le mois qui suit la rentrée</b> votre compte
-        étudiant pour y accéder.
-    </p>
+<div class="starter-template">
+    <h1>Teaching</h1>
 </div>
 
 <div class="row">
 
     <div class="col-md-6">
 
-        <h2><span class="label label-primary">Currently</span></h2><br/>
+        <h2><span class="text-primary">Currently</span></h2>
+
+        <div class="bs-callout bs-callout-danger">
+            <h4><i class="glyphicon glyphicon-exclamation-sign"></i> Supports pédagogiques</h4>
+            <p class="text-justify">
+                Les supports de cours, TD et examens sont disponibles sur
+                <a href="http://coursenligne.u-paris10.fr">Cours en ligne</a>.<br/>
+                Vous devez vous inscrire administrativement et activer <b>dans le mois qui suit la rentrée</b> votre
+                compte
+                étudiant pour y accéder.
+            </p>
+        </div>
 
         {% include courses.html courses=site.data.teaching.courses year=2015 %}
 
@@ -26,56 +31,41 @@ rank: 4
 
     <div class="col-md-6">
 
-        <h2><span class="label label-primary">Before</span></h2>
+        <h2><span class="text-primary">Before</span></h2><br/>
 
-        <div class="bs-callout bs-callout-info">
-            <h4><i class="glyphicon glyphicon-info-sign"></i> Where?</h4>
-            <p class="text-justify">
-                Previous teaching experience has been achieved at:
-            <ul>
-                <li>since 2012: UFR SEGMI, Université Paris Ouest</li>
-                <li>2001-2012: UFR SFA, Université d'Evry</li>
-                <li>2000-2001: Département Informatique, IUT de Nantes</li>
-                <li>1997-2000: UFR ST, Université de Nantes</li>
-            </ul>
-            </p>
-        </div>
-
-        <h3>Lectures | Cours magistraux</h3>
-
+        <p class="text-justify"><strong>Where? </strong>
+            Previous teaching experience has been achieved at:
         <ul>
-
-            <li> Formal methods (transition systems, process algebras, Petri nets)</li>
-
-            <li> Software Engineering (UML)</li>
-
-            <li> Programming (imperative, Web, distributed)</li>
-
-            <li> Databases (principles and querying)</li>
-
-            <li> Operating Systems (principles and Unix)</li>
-
-            <li> Networking (principles)</li>
-
+            <li>since 2012: UFR SEGMI, Université Paris Ouest</li>
+            <li>2001-2012: UFR SFA, Université d'Evry</li>
+            <li>2000-2001: Département Informatique, IUT de Nantes</li>
+            <li>1997-2000: UFR ST, Université de Nantes</li><br/>
         </ul>
+        </p>
 
-        <h3>Practical Work | TD/TP</h3>
+        <p><strong><span class="text-primary">Formal methods</span></strong><br/>
+            Transition systems, process algebras, Petri nets
+        </p>
 
-        <ul>
+        <p><strong><span class="text-primary">Software engineering</span></strong><br/>
+            UML, Merise, Grafcet
+        </p>
 
-            <li> Formal Methods (transition systems, process algebras, Petri nets)</li>
+        <p><strong><span class="text-primary">Programming</span></strong><br/>
+            Imperative, functional, object-oriented, Web, distributed
+        </p>
 
-            <li> Software Engineering (UML, Merise, Grafcet)</li>
+        <p><strong><span class="text-primary">Databases</span></strong><br/>
+            Principles, SQL
+        </p>
 
-            <li> Programming (imperative, functional, object-oriented, Web, distributed)</li>
+        <p><strong><span class="text-primary">Computer architecture, operating systems, networking</span></strong><br/>
+            Principles, assembly language, Unix, network setup
+        </p>
 
-            <li> Databases (principles and querying)</li>
-
-            <li> Computer Architecture, Operating Systems, Networking (assembly language, Unix, network setup)</li>
-
-            <li> Computer and Internet Certificate (use of an office suite)</li>
-
-        </ul>
+        <p><strong><span class="text-primary">Computer and Internet Certificate</span></strong><br/>
+            Use of an office suite
+        </p>
 
     </div>
 
