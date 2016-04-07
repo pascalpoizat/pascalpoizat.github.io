@@ -10,7 +10,7 @@
 </div>
 
 {% assign max='now'|date:"%Y" %}
-{% assign min=max|minus: 5 %}
+{% assign min=max|minus: include.nbyears|plus: 1 %}
 {% assign smin=min|plus: "" %}
 
 <noscript>
@@ -43,19 +43,21 @@
         </a>
     </div>
 
-    <h2 id="publications_nojs_recent">Recent Publications ({{min}}..{{max}})</h2>
+    <h3 id="publications_nojs_recent">Recent Publications</h3>
+
+    <p><span class="text-muted">last {{include.nbyears}} years</span></p>
 
     {% bibliography -q @*[year>={{smin}}] -T bib-noscript %}
 
-    <h2 id="publications_nojs_article">Journal Articles</h2>
+    <h3 id="publications_nojs_article">Journal Articles</h3>
 
     {% if site.kind.separate.article %}
 
-    <h3>International</h3>
+    <h4>International</h4>
 
     {% bibliography -q @article[{{ site.kind.label }}!=national] -T bib-noscript %}
 
-    <h3>National</h3>
+    <h4>National</h4>
 
     {% bibliography -q @article[{{ site.kind.label }}=national] -T bib-noscript %}
 
@@ -65,15 +67,15 @@
 
     {% endif %}
 
-    <h2 id="publications_nojs_inproceedings">Conferences and Workshops</h2>
+    <h3 id="publications_nojs_inproceedings">Conferences and Workshops</h3>
 
     {% if site.kind.separate.inproceedings %}
 
-    <h3>International</h3>
+    <h4>International</h4>
 
     {% bibliography -q @inproceedings[{{ site.kind.label }}!=national] -T bib-noscript %}
 
-    <h3>National</h3>
+    <h4>National</h4>
 
     {% bibliography -q @inproceedings[{{ site.kind.label }}=national] -T bib-noscript %}
 
@@ -83,15 +85,15 @@
 
     {% endif %}
 
-    <h2 id="publications_nojs_inbook">Book Chapters</h2>
+    <h3 id="publications_nojs_inbook">Book Chapters</h3>
 
     {% if site.kind.separate.inbook %}
 
-    <h3>International</h3>
+    <h4>International</h4>
 
     {% bibliography -q @inbook[{{ site.kind.label }}!=national] -T bib-noscript %}
 
-    <h3>National</h3>
+    <h4>National</h4>
 
     {% bibliography -q @inbook[{{ site.kind.label }}=national] -T bib-noscript %}
 
@@ -101,7 +103,7 @@
 
     {% endif %}
 
-    <h2 id="publications_nojs_manuscript">Manuscripts</h2>
+    <h3 id="publications_nojs_manuscript">Manuscripts</h3>
 
     {% bibliography -q @phdthesis -T bib-noscript %}
 </noscript>

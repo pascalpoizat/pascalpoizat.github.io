@@ -67,12 +67,27 @@ contacts:
         stop: Nanterre Université
         link: http://www.ratp.fr/itineraires/en/ratp/recherche-avancee?end=Nanterre-Universite+%28RER%29%2C+Nanterre
 
+# research
+
+research:
+  presentation:
+    overview: true
+    publications: true
+    talks:  true
+    conferences: true
+  restriction:
+      publications: 5
+      conferences: 5
+
 # apparence of posts
 
 # apparence of buttons
 
 link_btn_size: btn-xs
 link_btn_color: btn-primary
+publications_btn_size: btn-xs
+publications_btn_color: btn-default
+publications_btn_textcolor: text-primary
 
 # alerts
 
