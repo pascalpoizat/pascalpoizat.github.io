@@ -16,10 +16,10 @@
         <div class="ifjavascript">
             <div class="btn-group">
                 <button type="button"
-                        class="btn {{site.link_btn_color}} dropdown-toggle {{site.link_btn_size}}"
+                        class="btn {{site.publications_btn_color}} dropdown-toggle {{site.publications_btn_size}}"
                         data-toggle="dropdown" aria-haspopup="true"
                         aria-expanded="false">
-                    bib entry <span class="caret"></span>
+                    <span class="{{site.publications_btn_textcolor}}">bib entry <span class="caret"></span></span>
                 </button>
                 <ul class="dropdown-menu">
                     <li>
@@ -30,10 +30,10 @@
 
             <div class="btn-group">
                 <button type="button"
-                        class="btn {% if entry.doi or entry.hal_id or entry.optlink %}{{site.link_btn_color}}{% else %}btn-default disabled{% endif %} dropdown-toggle {{site.link_btn_size}}"
+                        class="btn {% if entry.doi or entry.hal_id or entry.optlink %}{{site.publications_btn_color}} {% else %}btn-default disabled{% endif %} dropdown-toggle {{site.publications_btn_size}}"
                         data-toggle="dropdown" aria-haspopup="true"
                         aria-expanded="false">
-                    references <span class="caret"></span>
+                    <span class="{% if entry.doi or entry.hal_id or entry.optlink %}{{site.publications_btn_textcolor}}{% endif %}">references <span class="caret"></span></span>
                 </button>
                 <ul class="dropdown-menu">
                     {% if entry.doi %}
@@ -50,10 +50,10 @@
 
             <div class="btn-group">
                 <button type="button"
-                        class="btn {% if entry.pdf %}{{site.link_btn_color}}{% else %}btn-default disabled{% endif %} dropdown-toggle {{site.link_btn_size}}"
+                        class="btn {% if entry.pdf %}{{site.publications_btn_color}} {% else %}btn-default disabled{% endif %} dropdown-toggle {{site.publications_btn_size}}"
                         data-toggle="dropdown" aria-haspopup="true"
                         aria-expanded="false">
-                    files <span class="caret"></span>
+                    <span class="{% if entry.pdf %}{{site.publications_btn_textcolor}}{% endif %}">files <span class="caret"></span></span>
                 </button>
                 <ul class="dropdown-menu">
                     {% if entry.pdf %}
