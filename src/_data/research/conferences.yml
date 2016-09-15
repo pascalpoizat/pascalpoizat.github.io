@@ -1,5 +1,23 @@
+- year: 2017
+  values:
+    - name: ICSE-Posters
+      url: http://icse2017.gatech.edu/posters
+      role: PC
+      category: INTWK
+    - name: PetriNets
+      url: http://pn2017.unizar.es
+      role: PC
+      category: INTCONF
+    - name: WETICE
+      url: http://wetice2017.ue.poznan.pl/
+      role: SC
+      category: INTCONF
 - year: 2016
   values:
+    - name: ModComp
+      url: http://www.mrtc.mdh.se/ModComp16/
+      role: PC
+      category: INTWK
     - name: WETICE
       url: http://wetice2016.lip6.fr/
       role: PCC
