@@ -3,7 +3,7 @@
     <div class="btn-group-vertical" role="group" aria-label="categories">
 
         <div class="btn-group" role="group">
-            <a href="{{ site.blog_dir }}">
+            <a href="{{ site.blog_dir | prepend: site.baseurl }}">
                 <button class="btn {{ site.link_btn_size }} {{ site.link_btn_color }}">
                     <strong>all</strong> <span class="badge">{{ site.posts.size }}</span>
                 </button>
