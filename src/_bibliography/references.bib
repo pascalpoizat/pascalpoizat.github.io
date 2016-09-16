@@ -4,6 +4,24 @@
 % THIS LIST IS NOT COMPLETE
 %
 
+% SPECIFIC FIELDS FOR THE WEB PAGES GENERATION ARE:
+% - DOI : the DOI of the bib item
+% - HAL_ID : the HAL URL of the bib item
+% - OPTLINK : the link to a page about the bib item (if not on DOI or HAL)
+% - PDF : the link to the PDF of the bib item
+% - PP_KIND : the kind of bib item (for sorting based on it) {international, national}
+% - PP_RANK : the rank of the bib item in the year (for sorting based on it)
+% - PP_SHORTBOOKTITLE : for conferences/workshops, abbreviation of it
+
+%
+%    DOI = {xxxx/xxxx},
+%    HAL_ID = {hal-xxxx},
+%    OPTLINK = {http://...},
+%    PDF = {https://hal.inria.fr/hal-xxxx/document},
+%    PP_KIND = {international/national},
+%    PP_RANK = {1/2/3...},
+%    PP_SHORTBOOKTITLE = {xxx},
+
 @String{LNCS = "Lecture Notes in Computer Science"}
 
 @String{ACM = "ACM"}
@@ -30,6 +48,7 @@
     PP_RANK = {1},
 }
 
+% TODO : add PDF on HAL
 @Article{PP_KPS14,
     author = {Khéfifi, Rania and Poizat, Pascal and Saïs, Fatiha},
     year = {2014},
@@ -58,6 +77,7 @@
     PP_KIND = {international},
 }
 
+% TODO : add PDF on HAL
 @Article{PP_CPS08,
     author = {Canal, Carlos and Poizat, Pascal and Salaün, Gwen},
     year = {2008},
@@ -99,6 +119,7 @@
     PP_KIND = {international},
 }
 
+% TODO : move PDF to HAL
 @Article{PP_CMP06b,
     author = {Canal, Carlos and Murillo, Juan Manuel and Poizat, Pascal},
     year = {2006},
@@ -132,23 +153,26 @@
 % ----- CONFERENCES -----
 %
 
+% TODO : put PDF on HAL
+% TODO : give DOI
 @InProceedings{PP_PSK16,
     author = {Poizat, Pascal and Salaün, Gwen and Krishna, Ajay},
     title = {Checking Business Process Evolution},
     booktitle = {13th International Conference on Formal Aspects of Component Software (FACS)},
     series = LNCS,
+    publisher = SPRINGER,
     volume = {},
     pages = {},
     year = {2016},
-    publisher = SPRINGER,
-    OPTDOI = {},
-    OPTHAL_ID = {},
+    note = {to appear},
+    OPTDOI = {xxxx/xxxx},
+    HAL_ID = {hal-01366641},
     PP_KIND = {international},
-    PP_SHORTBOOKTITLE = {FACS},
     PP_RANK = {2},
-    note = {to appear}
+    PP_SHORTBOOKTITLE = {FACS},
 }
 
+% TODO : move PDF to HAL
 @InProceedings{PP_NPZ13,
     author = {Nguyen, Huu Nghia and Poizat, Pascal and Zaïdi, Fatiha},
     title = {Automatic Skeleton Generation for Data-Aware Service Choreographies},
@@ -157,11 +181,14 @@
     year = {2013},
     publisher = IEEE,
     DOI = {10.1109/ISSRE.2013.6698885},
+    HAL_ID = {hal-01216413},
+    PDF = {../documents/publications/NPZ13.pdf},
     PP_KIND = {international},
     PP_SHORTBOOKTITLE = {ISSRE},
     PP_RANK = {3},
 }
 
+% TODO : move PDF to HAL
 @InProceedings{PP_KPS13,
     author = {Rania Khéfifi and Pascal Poizat and Fatiha Saïs},
     title = {Automatic Composition of Form-Based Services in a Context-Aware Personal Information Space},
@@ -172,12 +199,14 @@
     year = {2013},
     publisher = SPRINGER,
     DOI = {10.1007/978-3-642-45005-1_48},
+    HAL_ID = {hal-01216430},
+    PDF = {../documents/publications/KPS13.pdf},
     PP_KIND = {international},
     PP_SHORTBOOKTITLE = {ICSOC},
     PP_RANK = {2},
 }
 
-@InProceedings{GPSD13,
+@InProceedings{PP_GPSD13,
     author = {Matthias Güdemann and Pascal Poizat and Gwen Salaün and Alexandre Dumont},
     title = {VerChor: A Framework for Verifying Choreographies},
     booktitle = {16th International Conference on Fundamental Approaches to Software Engineering (FASE)},
@@ -187,12 +216,17 @@
     year = {2013},
     publisher = SPRINGER,
     DOI = {10.1007/978-3-642-37057-1_16},
+    HAL_ID = {hal-00806788},
+    PDF = {https://hal.inria.fr/hal-00806788/document},
     PP_KIND = {international},
     PP_SHORTBOOKTITLE = {FASE},
     PP_RANK = {1},
 }
 
-@InProceedings{NPZ12c,
+% TODO : add SOS-DLWD'13
+
+% TODO : check updated
+@InProceedings{PP_NPZ12c,
     author = {Nguyen, Huu Nghia and Poizat, Pascal and Zaïdi, Fatiha},
     title = {Online Verification of Value-Passing Choreographies through Property-Oriented Passive Testing},
     booktitle = {9th International Symposium on High-Assurance Systems Engineering (HASE)},
@@ -200,11 +234,15 @@
     year = {2012},
     publisher = IEEECS,
     DOI = {10.1109/HASE.2012.15},
+    HAL_ID = {hal-01367296},
+    PDF = {https://hal.inria.fr/hal-01367296/document},
     PP_KIND = {international},
     PP_SHORTBOOKTITLE = {HASE},
+    PP_RANK = {6},
 }
 
-@InProceedings{NPZ12b,
+% TODO : check updated
+@InProceedings{PP_NPZ12b,
     author = {Nguyen, Huu Nghia and Poizat, Pascal and Zaïdi, Fatiha},
     title = {A Symbolic Framework for the Conformance Checking of Value-Passing Choreographies},
     booktitle = {10th International Conference on Service-Oriented Computing (ICSOC)},
@@ -213,8 +251,14 @@
     pages = {525--532},
     year = {2012},
     DOI = {10.1109/HASE.2012.15},
+    HAL_ID = {hal-01367296},
+    PDF = {https://hal.inria.fr/hal-01367296/document},
+    PP_KIND = {international},
     PP_SHORTBOOKTITLE = {ICSOC},
+    PP_RANK = {5},
 }
+
+% TODO : add DEXA'12
 
 @InProceedings{PP_PS12,
   author = 	 {Poizat, Pascal and Salaün, Gwen},
@@ -223,9 +267,15 @@
   pages =	 {1927--1934},
   year =	 {2012},
   publisher = ACM,
+  DOI = {10.1145/2245276.2232095},
+  HAL_ID = {hal-00685393},
+  PDF = {https://hal.inria.fr/hal-00685393/document},
+  PP_KIND = {international},
   PP_SHORTBOOKTITLE = {SAC},
+  PP_RANK = {3},
 }
 
+% TODO : check updated
 @InProceedings{PP_NPZ12a,
   author = 	 {Nguyen, Huu Nghia and Poizat, Pascal and Zaïdi, Fatiha},
   title = 	 {Passive Conformance Testing of Service Choreographies},
@@ -233,8 +283,19 @@
   pages =	 {1528--1535},
   year =	 {2012},
   publisher = ACM,
+  DOI = {10.1145/2245276.2232020},
+  HAL_ID = {hal-01367307},
+  PDF = {https://hal.inria.fr/hal-01367307/document},
+  PP_KIND = {international},
   PP_SHORTBOOKTITLE = {SAC},
+  PP_RANK = {2},
 }
+
+% TODO : add EGC'12
+
+%
+% TODO : continue here
+%
 
 @InProceedings{PP_BPZ11,
   author = 	 {Lina Bentakouk and Pascal Poizat and Fatiha Zaïdi},
@@ -575,6 +636,7 @@
     PP_RANK = {2},
 }
 
+% TODO : add on HAL
 @InBook{PP_PV11,
     author = {Pascal Poizat and Thomas Vergnaud},
     year = {2011},
@@ -582,8 +644,8 @@
     chapter = {5},
     title = {Architecture Description Languages},
     publisher = {Wiley},
-    PP_KIND = {national},
     OPTLINK = {http://www.iste.co.uk/index.php?f=a&ACTION=View&id=416},
+    PP_KIND = {national},
 }
 
 @InBook{PP_Poi06,
@@ -594,6 +656,7 @@
     title = {SDL},
     publisher = {ISTE, Hermes Science Publishing},
     note = {reedition of the chapter writen in 2000},
+    HAL_ID = {hal-00342154},
     OPTLINK = {http://iste.co.uk/index.php?f=a&ACTION=View&id=100},
 }
 
@@ -604,6 +667,7 @@
     chapter = {19},
     title = {A Comparison of the Specification Methods},
     publisher = {ISTE, Hermes Science Publishing},
+    HAL_ID = {hal-00342080},
     OPTLINK = {http://iste.co.uk/index.php?f=a&ACTION=View&id=100},
 }
 
@@ -614,6 +678,7 @@
     chapter = {20},
     title = {Glossary},
     publisher = {ISTE, Hermes Science Publishing},
+    HAL_ID = {hal-00342085},
     OPTLINK = {http://iste.co.uk/index.php?f=a&ACTION=View&id=100},
 }
 
@@ -624,9 +689,11 @@
     chapter = {5},
     title = {Langages de description d'architecture},
     publisher = {Hermes, Lavoisier},
+    HAL_ID = {hal-00342165},
     OPTLINK = {http://eol.lavoisier.fr/fr/ebook/9782746214477/methodes-formelles-pour-les-systemes-repartis-et-cooperatifs-traite-ic2-serie-informatique-et-systemes-d-information},
 }
 
+% TODO : add on HAL
 @InBook{PP_Poi00,
     author = {Pascal Poizat},
     year = {2000},
