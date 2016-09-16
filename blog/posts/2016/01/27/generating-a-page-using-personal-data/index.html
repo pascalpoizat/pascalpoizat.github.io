@@ -13,7 +13,10 @@
 
     <!-- Bootstrap -->
     <link rel="stylesheet" href="/css/main.css">
-    <link rel="canonical" href="http://pascalpoizat.github.io/blog/posts/2016/01/27/generating-a-page-using-personal-data/">
+    <!-- OLD TODO : remove
+    <link rel="canonical" href="/blog/posts/2016/01/27/generating-a-page-using-personal-data/">
+    -->
+    <link rel="canonical" href="/blog/posts/2016/01/27/generating-a-page-using-personal-data/">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="/font-awesome-4.5.0/css/font-awesome.min.css">
 
@@ -166,8 +169,8 @@ We will have a look at this using a simple example.</p>
 
 <p class="text-justify">The first step is to define the file(s) that will contain the information.
 This can be either JSON, YAML, or CSV files.
-For <a href="http://pascalpoizat.github.io/duties/">my list of duties</a> I chose to use YAML files, but another part of my site,
-the <a href="http://pascalpoizat.github.io/talks/">list of talks</a>, uses JSON files.
+For <a href="/duties/">my list of duties</a> I chose to use YAML files, but another part of my site,
+the <a href="/talks/">list of talks</a>, uses JSON files.
 Data files have to be put in the <code class="highlighter-rouge">_data</code> directory of the Jekyll tree structure.
 Sub-directories can be used to structure your set of data files. So here I put my data within <code class="highlighter-rouge">_data/duties</code>.
 Further, we will have one file for the current duties, <code class="highlighter-rouge">currently.yml</code>,

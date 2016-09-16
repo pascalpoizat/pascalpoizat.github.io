@@ -9,8 +9,7 @@ description: > # this means to ignore newlines until the next tag
   Professor at Université Paris Ouest<br/>
   LIP6 UMR 7606 CNRS
 author: Pascal Poizat
-baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://pascalpoizat.github.io" # the base hostname & protocol for your site
+baseurl: ""
 blog_dir: /blog
 permalink: /blog/posts/:year/:month/:day/:title/ # prefixed style
 category_dir: /blog/categories/
