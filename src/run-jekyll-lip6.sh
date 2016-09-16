@@ -1,3 +1,2 @@
 #!/usr/bin/env bash
-# from https://github.com/rudametw/rudametw.github.io
-bundle exec jekyll server --baseurl "https://pages.lip6.fr/Pascal.Poizat"
+bundle exec jekyll build --config _config_lip6.yml

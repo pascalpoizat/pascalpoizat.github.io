@@ -1,3 +1,2 @@
 #!/usr/bin/env bash
-# from https://github.com/rudametw/rudametw.github.io
-bundle exec jekyll server
+bundle exec jekyll serve --config _config.yml

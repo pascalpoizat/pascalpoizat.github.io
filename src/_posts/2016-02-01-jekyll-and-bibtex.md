@@ -238,7 +238,7 @@ then you can use `entry.bibtex`.
 The overall result for the reference above (**at the time of this post**) is:
 {: .text-justify}
 
-![]({{site.url}}/posts_images/2016-02-01-image1.png)
+![]({{site.baseurl}}/posts_images/2016-02-01-image1.png)
 
 As you can see, Jekyll-Scholar is a really interesting plugin.
 To learn more, see [here](https://github.com/inukshuk/jekyll-scholar).
