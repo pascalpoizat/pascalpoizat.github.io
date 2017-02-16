@@ -4,6 +4,10 @@
       url: http://icse2017.gatech.edu/posters
       role: PC
       category: INTWK
+    - name: ICSOC
+      url: http://www.icsoc.spilab.es
+      role: PC
+      category: INTCONF
     - name: PetriNets
       url: http://pn2017.unizar.es
       role: PC
