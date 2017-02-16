@@ -79,7 +79,7 @@ research:
     conferences: true
   restriction:
       publications: 5
-      conferences: 5
+      conferences: 10
 
 # apparence of posts
 
