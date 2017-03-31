@@ -6,7 +6,7 @@
 
 title: pascal.poizat
 description: > # this means to ignore newlines until the next tag
-  Professor at Université Paris Ouest<br/>
+  Professor at Université Paris Nanterre<br/>
   LIP6 UMR 7606 CNRS
 author: Pascal Poizat
 # base of your site relative to the root of the Web site, eg /Pascal.Poizat or ""
@@ -57,7 +57,7 @@ contacts:
     email: firstname.lastname@u-paris10.fr
     address: >
       Dept. Math-Info, UFR SEGMI<br/>
-      Université Paris Ouest<br/>
+      Université Paris Nanterre<br/>
       200 avenue de la République<br/>
       92001 NANTERRE<br/>
       France
