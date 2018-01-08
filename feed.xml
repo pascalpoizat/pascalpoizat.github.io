@@ -6,9 +6,9 @@
 </description>
     <link>http://pascalpoizat.github.io/</link>
     <atom:link href="http://pascalpoizat.github.io/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Fri, 31 Mar 2017 16:03:05 +0200</pubDate>
-    <lastBuildDate>Fri, 31 Mar 2017 16:03:05 +0200</lastBuildDate>
-    <generator>Jekyll v3.0.2</generator>
+    <pubDate>Mon, 08 Jan 2018 14:39:43 +0100</pubDate>
+    <lastBuildDate>Mon, 08 Jan 2018 14:39:43 +0100</lastBuildDate>
+    <generator>Jekyll v3.6.2</generator>
     
       <item>
         <title>Jekyll and BibTeX</title>
@@ -26,8 +26,8 @@ since Jekyll-Scholar is not part of the authorized plugins.&lt;/p&gt;
 &lt;p&gt;Installing Jekyll-Scholar is then performed as follows:&lt;/p&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;run &lt;code class=&quot;highlighter-rouge&quot;&gt;gem install jekyll-scholar&lt;/code&gt; and add &lt;code class=&quot;highlighter-rouge&quot;&gt;gems: [&#39;jekyll/scholar&#39;]&lt;/code&gt; in your &lt;code class=&quot;highlighter-rouge&quot;&gt;_config.yml&lt;/code&gt; configuration file&lt;/li&gt;
-  &lt;li&gt;add &lt;code class=&quot;highlighter-rouge&quot;&gt;gem &#39;jekyll-scholar&#39;&lt;/code&gt; in your &lt;code class=&quot;highlighter-rouge&quot;&gt;Gemfile&lt;/code&gt; file (if you are using the &lt;a href=&quot;http://bundler.io/&quot;&gt;Bundler&lt;/a&gt; package manager)&lt;/li&gt;
+  &lt;li&gt;run &lt;code class=&quot;highlighter-rouge&quot;&gt;gem install jekyll-scholar&lt;/code&gt; and add &lt;code class=&quot;highlighter-rouge&quot;&gt;gems: ['jekyll/scholar']&lt;/code&gt; in your &lt;code class=&quot;highlighter-rouge&quot;&gt;_config.yml&lt;/code&gt; configuration file&lt;/li&gt;
+  &lt;li&gt;add &lt;code class=&quot;highlighter-rouge&quot;&gt;gem 'jekyll-scholar'&lt;/code&gt; in your &lt;code class=&quot;highlighter-rouge&quot;&gt;Gemfile&lt;/code&gt; file (if you are using the &lt;a href=&quot;http://bundler.io/&quot;&gt;Bundler&lt;/a&gt; package manager)&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h2 id=&quot;basic-example&quot;&gt;Basic example&lt;/h2&gt;
@@ -41,30 +41,30 @@ In the example we will suppose you have a &lt;code class=&quot;highlighter-rouge
 &lt;p class=&quot;text-justify&quot;&gt;You can configure the way Jekyll-Scholar works using your &lt;code class=&quot;highlighter-rouge&quot;&gt;_config.yml&lt;/code&gt; configuration file.
 The default is (see &lt;a href=&quot;https://github.com/inukshuk/jekyll-scholar&quot;&gt;here&lt;/a&gt; for the meaning of the contents):&lt;/p&gt;
 
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-yaml&quot; data-lang=&quot;yaml&quot;&gt;&lt;span class=&quot;s&quot;&gt;scholar&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
-  &lt;span class=&quot;s&quot;&gt;style&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;apa&lt;/span&gt;
-  &lt;span class=&quot;s&quot;&gt;locale&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;en&lt;/span&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-yaml&quot; data-lang=&quot;yaml&quot;&gt;&lt;span class=&quot;na&quot;&gt;scholar&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;style&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;apa&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;locale&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;en&lt;/span&gt;
 
-  &lt;span class=&quot;s&quot;&gt;sort_by&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;none&lt;/span&gt;
-  &lt;span class=&quot;s&quot;&gt;order&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;ascending&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;sort_by&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;none&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;order&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;ascending&lt;/span&gt;
 
-  &lt;span class=&quot;s&quot;&gt;group_by&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;none&lt;/span&gt;
-  &lt;span class=&quot;s&quot;&gt;group_order&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;ascending&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;group_by&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;none&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;group_order&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;ascending&lt;/span&gt;
 
-  &lt;span class=&quot;s&quot;&gt;source&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;./_bibliography&lt;/span&gt;
-  &lt;span class=&quot;s&quot;&gt;bibliography&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;references.bib&lt;/span&gt;
-  &lt;span class=&quot;s&quot;&gt;bibliography_template&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;source&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;./_bibliography&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;bibliography&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;references.bib&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;bibliography_template&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;&lt;/span&gt;
 
-  &lt;span class=&quot;s&quot;&gt;replace_strings&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;true&lt;/span&gt;
-  &lt;span class=&quot;s&quot;&gt;join_strings&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;    &lt;span class=&quot;s&quot;&gt;true&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;replace_strings&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;true&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;join_strings&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;    &lt;span class=&quot;no&quot;&gt;true&lt;/span&gt;
 
-  &lt;span class=&quot;s&quot;&gt;use_raw_bibtex_entry&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;false&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;use_raw_bibtex_entry&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;false&lt;/span&gt;
 
-  &lt;span class=&quot;s&quot;&gt;details_dir&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;    &lt;span class=&quot;s&quot;&gt;bibliography&lt;/span&gt;
-  &lt;span class=&quot;s&quot;&gt;details_layout&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;bibtex.html&lt;/span&gt;
-  &lt;span class=&quot;s&quot;&gt;details_link&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;   &lt;span class=&quot;s&quot;&gt;Details&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;details_dir&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;    &lt;span class=&quot;s&quot;&gt;bibliography&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;details_layout&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;bibtex.html&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;details_link&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;   &lt;span class=&quot;s&quot;&gt;Details&lt;/span&gt;
 
-  &lt;span class=&quot;s&quot;&gt;query&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;@*&quot;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+  &lt;span class=&quot;na&quot;&gt;query&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;@*&quot;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
 &lt;p class=&quot;text-justify&quot;&gt;You may then perform queries in your &lt;code class=&quot;highlighter-rouge&quot;&gt;.html&lt;/code&gt; or &lt;code class=&quot;highlighter-rouge&quot;&gt;.md&lt;/code&gt; pages as follows:&lt;/p&gt;
 
@@ -107,10 +107,10 @@ and for the BibTeX reference itself&lt;/li&gt;
 &lt;p class=&quot;text-justify&quot;&gt;Say you want to have ordering by date of publication, in descending order.
 Then you have to change your &lt;code class=&quot;highlighter-rouge&quot;&gt;_config.yml&lt;/code&gt; file to include:&lt;/p&gt;
 
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-yaml&quot; data-lang=&quot;yaml&quot;&gt;&lt;span class=&quot;s&quot;&gt;scholar&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-yaml&quot; data-lang=&quot;yaml&quot;&gt;&lt;span class=&quot;na&quot;&gt;scholar&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
   &lt;span class=&quot;s&quot;&gt;...&lt;/span&gt;
   &lt;span class=&quot;s&quot;&gt;sort_by&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;year, month&lt;/span&gt;
-  &lt;span class=&quot;s&quot;&gt;order&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;descending&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;order&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;descending&lt;/span&gt;
   &lt;span class=&quot;s&quot;&gt;...&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
 &lt;h3 id=&quot;citation-styles&quot;&gt;Citation styles&lt;/h3&gt;
@@ -119,7 +119,7 @@ Then you have to change your &lt;code class=&quot;highlighter-rouge&quot;&gt;_co
 You can use styles from &lt;a href=&quot;https://github.com/citation-style-language/styles&quot;&gt;the repository for CSL citation styles&lt;/a&gt;.
 You can also define you own style and link to it as follows:&lt;/p&gt;
 
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-yaml&quot; data-lang=&quot;yaml&quot;&gt;&lt;span class=&quot;s&quot;&gt;scholar&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-yaml&quot; data-lang=&quot;yaml&quot;&gt;&lt;span class=&quot;na&quot;&gt;scholar&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
   &lt;span class=&quot;s&quot;&gt;...&lt;/span&gt;
   &lt;span class=&quot;s&quot;&gt;style&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;_bibliography/mystyle.csl&lt;/span&gt;
   &lt;span class=&quot;s&quot;&gt;...&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
@@ -135,7 +135,7 @@ which you can see &lt;a href=&quot;https://github.com/pascalpoizat/pascalpoizat.
 &lt;p class=&quot;text-justify&quot;&gt;The first thing is to tell Jekyll-Scholar which layout to use for bibliography queries.
 We will have the description of it in &lt;code class=&quot;highlighter-rouge&quot;&gt;_layouts/bib.html&lt;/code&gt; so we change &lt;code class=&quot;highlighter-rouge&quot;&gt;config.yml&lt;/code&gt; to have:&lt;/p&gt;
 
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-yaml&quot; data-lang=&quot;yaml&quot;&gt;&lt;span class=&quot;s&quot;&gt;scholar&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-yaml&quot; data-lang=&quot;yaml&quot;&gt;&lt;span class=&quot;na&quot;&gt;scholar&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
   &lt;span class=&quot;s&quot;&gt;...&lt;/span&gt;
   &lt;span class=&quot;s&quot;&gt;bibliography_template&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;bib&lt;/span&gt;
   &lt;span class=&quot;s&quot;&gt;...&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
@@ -156,10 +156,10 @@ We will have the description of it in &lt;code class=&quot;highlighter-rouge&quo
 
 &lt;span class=&quot;nt&quot;&gt;&amp;lt;div&amp;gt;&lt;/span&gt;
     {% if entry.doi %}
-    &lt;span class=&quot;nt&quot;&gt;&amp;lt;span&amp;gt;&amp;lt;a&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;{{ entry.doi | prepend: &#39;http://doi.org/&#39; }}&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;doi&lt;span class=&quot;nt&quot;&gt;&amp;lt;/a&amp;gt;&amp;lt;/span&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;span&amp;gt;&amp;lt;a&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;{{ entry.doi | prepend: 'http://doi.org/' }}&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;doi&lt;span class=&quot;nt&quot;&gt;&amp;lt;/a&amp;gt;&amp;lt;/span&amp;gt;&lt;/span&gt;
     {% endif %}
     {% if entry.hal_id %}
-    &lt;span class=&quot;nt&quot;&gt;&amp;lt;span&amp;gt;&amp;lt;a&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;{{ entry.hal_id | prepend: &#39;http://hal.inria.fr/&#39; }}&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;hal&lt;span class=&quot;nt&quot;&gt;&amp;lt;/a&amp;gt;&amp;lt;/span&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;span&amp;gt;&amp;lt;a&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;{{ entry.hal_id | prepend: 'http://hal.inria.fr/' }}&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;hal&lt;span class=&quot;nt&quot;&gt;&amp;lt;/a&amp;gt;&amp;lt;/span&amp;gt;&lt;/span&gt;
     {% endif %}
 &lt;span class=&quot;nt&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
 &lt;span class=&quot;nt&quot;&gt;&amp;lt;div&amp;gt;&lt;/span&gt;
@@ -171,7 +171,7 @@ We will have the description of it in &lt;code class=&quot;highlighter-rouge&quo
 &lt;span class=&quot;nt&quot;&gt;&amp;lt;div&amp;gt;&amp;lt;pre&amp;gt;&lt;/span&gt;{{ entry.bibtex }}&lt;span class=&quot;nt&quot;&gt;&amp;lt;/pre&amp;gt;&amp;lt;/div&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
 &lt;p class=&quot;text-justify&quot;&gt;The first thing is the layout information used by Jekyll (the two dash lines).
-Then you have the &lt;code class=&quot;highlighter-rouge&quot;&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;reference&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;}&lt;/span&gt;&lt;/code&gt; tag. It is used to include the reference as generated by Jekyll-Scholar.
+Then you have the &lt;code class=&quot;highlighter-rouge&quot;&gt;{{ reference }}&lt;/code&gt; tag. It is used to include the reference as generated by Jekyll-Scholar.
 Here we put it in a &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;div&amp;gt;...&amp;lt;/div&amp;gt;&lt;/code&gt; tag to have it text-justified.&lt;/p&gt;
 
 &lt;p class=&quot;text-justify&quot;&gt;Then we want to generate the reference note if there is some.
@@ -196,13 +196,13 @@ in BibTeX reference files. Typically one would have references such as:&lt;/p&gt
     PDF = &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;https://hal.inria.fr/hal-00717252/document&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;,
 &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
-&lt;p class=&quot;text-justify&quot;&gt;&lt;strong&gt;Note:&lt;/strong&gt; if you want to use &lt;code class=&quot;highlighter-rouge&quot;&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;...&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;}&lt;/span&gt;&lt;/code&gt; in your BibTeX files (to force uppercase titles for example),
+&lt;p class=&quot;text-justify&quot;&gt;&lt;strong&gt;Note:&lt;/strong&gt; if you want to use &lt;code class=&quot;highlighter-rouge&quot;&gt;{{ ... }}&lt;/code&gt; in your BibTeX files (to force uppercase titles for example),
 then you have to tell Jekyll-Scholar not to interpret this as Liquid templates.
 This is achieved by putting in your &lt;code class=&quot;highlighter-rouge&quot;&gt;_config.yml&lt;/code&gt; file:&lt;/p&gt;
 
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-yaml&quot; data-lang=&quot;yaml&quot;&gt;&lt;span class=&quot;s&quot;&gt;scholar&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-yaml&quot; data-lang=&quot;yaml&quot;&gt;&lt;span class=&quot;na&quot;&gt;scholar&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
   &lt;span class=&quot;s&quot;&gt;...&lt;/span&gt;
-  &lt;span class=&quot;s&quot;&gt;use_raw_bibtex_entry&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;true&lt;/span&gt;
+  &lt;span class=&quot;s&quot;&gt;use_raw_bibtex_entry&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;true&lt;/span&gt;
   &lt;span class=&quot;s&quot;&gt;...&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
 &lt;p class=&quot;text-justify&quot;&gt;Last, but not least, if you want to end each reference with its BibTex source, e.g., to present them in a Boostrap pop-up),
@@ -325,27 +325,27 @@ Sub-directories can be used to structure your set of data files. So here I put m
 Further, we will have one file for the current duties, &lt;code class=&quot;highlighter-rouge&quot;&gt;currently.yml&lt;/code&gt;,
 and another file, &lt;code class=&quot;highlighter-rouge&quot;&gt;before.yml&lt;/code&gt;, for the old ones. Here is the &lt;code class=&quot;highlighter-rouge&quot;&gt;currently.yml&lt;/code&gt; one:&lt;/p&gt;
 
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-yaml&quot; data-lang=&quot;yaml&quot;&gt;&lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;Pedagogic&lt;/span&gt;
-  &lt;span class=&quot;s&quot;&gt;values&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-yaml&quot; data-lang=&quot;yaml&quot;&gt;&lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;Pedagogic&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;values&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
 
-  &lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;period&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;since 2012&lt;/span&gt;
-    &lt;span class=&quot;s&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;Director of 1st and 2nd year of Master in CS (Applied cursus, MIAGE)&lt;/span&gt;
-    &lt;span class=&quot;s&quot;&gt;at&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;Paris Ouest University&lt;/span&gt;
+  &lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;period&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;since 2012&lt;/span&gt;
+    &lt;span class=&quot;na&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;Director of 1st and 2nd year of Master in CS (Applied cursus, MIAGE)&lt;/span&gt;
+    &lt;span class=&quot;na&quot;&gt;at&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;Paris Ouest University&lt;/span&gt;
 
-&lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;Scientific&lt;/span&gt;
-  &lt;span class=&quot;s&quot;&gt;values&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
+&lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;Scientific&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;values&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
 
-  &lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;period&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;since 2014&lt;/span&gt;
-    &lt;span class=&quot;s&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;Member of the Nat. Committee for Scientific Research | CoNRS Sect. 6&lt;/span&gt;
-    &lt;span class=&quot;s&quot;&gt;at&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;CNRS&lt;/span&gt;
+  &lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;period&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;since 2014&lt;/span&gt;
+    &lt;span class=&quot;na&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;Member of the Nat. Committee for Scientific Research | CoNRS Sect. 6&lt;/span&gt;
+    &lt;span class=&quot;na&quot;&gt;at&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;CNRS&lt;/span&gt;
 
-  &lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;period&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;since 2014&lt;/span&gt;
-    &lt;span class=&quot;s&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;Member of the Laboratory Council | Conseil de Laboratoire&lt;/span&gt;
-    &lt;span class=&quot;s&quot;&gt;at&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;LIP6 Laboratory&lt;/span&gt;
+  &lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;period&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;since 2014&lt;/span&gt;
+    &lt;span class=&quot;na&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;Member of the Laboratory Council | Conseil de Laboratoire&lt;/span&gt;
+    &lt;span class=&quot;na&quot;&gt;at&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;LIP6 Laboratory&lt;/span&gt;
 
-  &lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;period&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;since 2013&lt;/span&gt;
-    &lt;span class=&quot;s&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;Member of the CS Advisory Council | CCD Sect. 27&lt;/span&gt;
-    &lt;span class=&quot;s&quot;&gt;at&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;Paris Ouest University&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+  &lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;period&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;since 2013&lt;/span&gt;
+    &lt;span class=&quot;na&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;Member of the CS Advisory Council | CCD Sect. 27&lt;/span&gt;
+    &lt;span class=&quot;na&quot;&gt;at&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;Paris Ouest University&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
 &lt;p class=&quot;text-justify&quot;&gt;You have a list of 2 items, each item containing a name (category) and a list of values,
 with a value being a period, a name, and the location it took place

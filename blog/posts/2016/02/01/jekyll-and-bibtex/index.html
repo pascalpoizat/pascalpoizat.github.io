@@ -102,13 +102,13 @@
                 
                 
                 <li >
-                    <a class="navbar-link" href="/contact/">contact</a>
+                    <a class="navbar-link" href="/blog/">blog</a>
                 </li>
                 
                 
                 
                 <li >
-                    <a class="navbar-link" href="/blog/">blog</a>
+                    <a class="navbar-link" href="/contact/">contact</a>
                 </li>
                 
                 
@@ -184,30 +184,30 @@ In the example we will suppose you have a <code class="highlighter-rouge">_bibli
 <p class="text-justify">You can configure the way Jekyll-Scholar works using your <code class="highlighter-rouge">_config.yml</code> configuration file.
 The default is (see <a href="https://github.com/inukshuk/jekyll-scholar">here</a> for the meaning of the contents):</p>
 
-<figure class="highlight"><pre><code class="language-yaml" data-lang="yaml"><span class="s">scholar</span><span class="pi">:</span>
-  <span class="s">style</span><span class="pi">:</span> <span class="s">apa</span>
-  <span class="s">locale</span><span class="pi">:</span> <span class="s">en</span>
+<figure class="highlight"><pre><code class="language-yaml" data-lang="yaml"><span class="na">scholar</span><span class="pi">:</span>
+  <span class="na">style</span><span class="pi">:</span> <span class="s">apa</span>
+  <span class="na">locale</span><span class="pi">:</span> <span class="s">en</span>
 
-  <span class="s">sort_by</span><span class="pi">:</span> <span class="s">none</span>
-  <span class="s">order</span><span class="pi">:</span> <span class="s">ascending</span>
+  <span class="na">sort_by</span><span class="pi">:</span> <span class="s">none</span>
+  <span class="na">order</span><span class="pi">:</span> <span class="s">ascending</span>
 
-  <span class="s">group_by</span><span class="pi">:</span> <span class="s">none</span>
-  <span class="s">group_order</span><span class="pi">:</span> <span class="s">ascending</span>
+  <span class="na">group_by</span><span class="pi">:</span> <span class="s">none</span>
+  <span class="na">group_order</span><span class="pi">:</span> <span class="s">ascending</span>
 
-  <span class="s">source</span><span class="pi">:</span> <span class="s">./_bibliography</span>
-  <span class="s">bibliography</span><span class="pi">:</span> <span class="s">references.bib</span>
-  <span class="s">bibliography_template</span><span class="pi">:</span> <span class="s2">"</span><span class="s">"</span>
+  <span class="na">source</span><span class="pi">:</span> <span class="s">./_bibliography</span>
+  <span class="na">bibliography</span><span class="pi">:</span> <span class="s">references.bib</span>
+  <span class="na">bibliography_template</span><span class="pi">:</span> <span class="s2">"</span><span class="s">"</span>
 
-  <span class="s">replace_strings</span><span class="pi">:</span> <span class="s">true</span>
-  <span class="s">join_strings</span><span class="pi">:</span>    <span class="s">true</span>
+  <span class="na">replace_strings</span><span class="pi">:</span> <span class="no">true</span>
+  <span class="na">join_strings</span><span class="pi">:</span>    <span class="no">true</span>
 
-  <span class="s">use_raw_bibtex_entry</span><span class="pi">:</span> <span class="s">false</span>
+  <span class="na">use_raw_bibtex_entry</span><span class="pi">:</span> <span class="no">false</span>
 
-  <span class="s">details_dir</span><span class="pi">:</span>    <span class="s">bibliography</span>
-  <span class="s">details_layout</span><span class="pi">:</span> <span class="s">bibtex.html</span>
-  <span class="s">details_link</span><span class="pi">:</span>   <span class="s">Details</span>
+  <span class="na">details_dir</span><span class="pi">:</span>    <span class="s">bibliography</span>
+  <span class="na">details_layout</span><span class="pi">:</span> <span class="s">bibtex.html</span>
+  <span class="na">details_link</span><span class="pi">:</span>   <span class="s">Details</span>
 
-  <span class="s">query</span><span class="pi">:</span> <span class="s2">"</span><span class="s">@*"</span></code></pre></figure>
+  <span class="na">query</span><span class="pi">:</span> <span class="s2">"</span><span class="s">@*"</span></code></pre></figure>
 
 <p class="text-justify">You may then perform queries in your <code class="highlighter-rouge">.html</code> or <code class="highlighter-rouge">.md</code> pages as follows:</p>
 
@@ -250,10 +250,10 @@ and for the BibTeX reference itself</li>
 <p class="text-justify">Say you want to have ordering by date of publication, in descending order.
 Then you have to change your <code class="highlighter-rouge">_config.yml</code> file to include:</p>
 
-<figure class="highlight"><pre><code class="language-yaml" data-lang="yaml"><span class="s">scholar</span><span class="pi">:</span>
+<figure class="highlight"><pre><code class="language-yaml" data-lang="yaml"><span class="na">scholar</span><span class="pi">:</span>
   <span class="s">...</span>
   <span class="s">sort_by</span><span class="pi">:</span> <span class="s">year, month</span>
-  <span class="s">order</span><span class="pi">:</span> <span class="s">descending</span>
+  <span class="na">order</span><span class="pi">:</span> <span class="s">descending</span>
   <span class="s">...</span></code></pre></figure>
 
 <h3 id="citation-styles">Citation styles</h3>
@@ -262,7 +262,7 @@ Then you have to change your <code class="highlighter-rouge">_config.yml</code> 
 You can use styles from <a href="https://github.com/citation-style-language/styles">the repository for CSL citation styles</a>.
 You can also define you own style and link to it as follows:</p>
 
-<figure class="highlight"><pre><code class="language-yaml" data-lang="yaml"><span class="s">scholar</span><span class="pi">:</span>
+<figure class="highlight"><pre><code class="language-yaml" data-lang="yaml"><span class="na">scholar</span><span class="pi">:</span>
   <span class="s">...</span>
   <span class="s">style</span><span class="pi">:</span> <span class="s">_bibliography/mystyle.csl</span>
   <span class="s">...</span></code></pre></figure>
@@ -278,7 +278,7 @@ which you can see <a href="https://github.com/pascalpoizat/pascalpoizat.github.i
 <p class="text-justify">The first thing is to tell Jekyll-Scholar which layout to use for bibliography queries.
 We will have the description of it in <code class="highlighter-rouge">_layouts/bib.html</code> so we change <code class="highlighter-rouge">config.yml</code> to have:</p>
 
-<figure class="highlight"><pre><code class="language-yaml" data-lang="yaml"><span class="s">scholar</span><span class="pi">:</span>
+<figure class="highlight"><pre><code class="language-yaml" data-lang="yaml"><span class="na">scholar</span><span class="pi">:</span>
   <span class="s">...</span>
   <span class="s">bibliography_template</span><span class="pi">:</span> <span class="s">bib</span>
   <span class="s">...</span></code></pre></figure>
@@ -314,7 +314,7 @@ We will have the description of it in <code class="highlighter-rouge">_layouts/b
 <span class="nt">&lt;div&gt;&lt;pre&gt;</span>{{ entry.bibtex }}<span class="nt">&lt;/pre&gt;&lt;/div&gt;</span></code></pre></figure>
 
 <p class="text-justify">The first thing is the layout information used by Jekyll (the two dash lines).
-Then you have the <code class="highlighter-rouge"><span class="p">{</span><span class="err">{</span><span class="w"> </span><span class="err">reference</span><span class="w"> </span><span class="p">}</span><span class="err">}</span></code> tag. It is used to include the reference as generated by Jekyll-Scholar.
+Then you have the <code class="highlighter-rouge">{{ reference }}</code> tag. It is used to include the reference as generated by Jekyll-Scholar.
 Here we put it in a <code class="highlighter-rouge">&lt;div&gt;...&lt;/div&gt;</code> tag to have it text-justified.</p>
 
 <p class="text-justify">Then we want to generate the reference note if there is some.
@@ -339,13 +339,13 @@ in BibTeX reference files. Typically one would have references such as:</p>
     PDF = <span class="p">{</span>https://hal.inria.fr/hal-00717252/document<span class="p">}</span>,
 <span class="p">}</span></code></pre></figure>
 
-<p class="text-justify"><strong>Note:</strong> if you want to use <code class="highlighter-rouge"><span class="p">{</span><span class="err">{</span><span class="w"> </span><span class="err">...</span><span class="w"> </span><span class="p">}</span><span class="err">}</span></code> in your BibTeX files (to force uppercase titles for example),
+<p class="text-justify"><strong>Note:</strong> if you want to use <code class="highlighter-rouge">{{ ... }}</code> in your BibTeX files (to force uppercase titles for example),
 then you have to tell Jekyll-Scholar not to interpret this as Liquid templates.
 This is achieved by putting in your <code class="highlighter-rouge">_config.yml</code> file:</p>
 
-<figure class="highlight"><pre><code class="language-yaml" data-lang="yaml"><span class="s">scholar</span><span class="pi">:</span>
+<figure class="highlight"><pre><code class="language-yaml" data-lang="yaml"><span class="na">scholar</span><span class="pi">:</span>
   <span class="s">...</span>
-  <span class="s">use_raw_bibtex_entry</span><span class="pi">:</span> <span class="s">true</span>
+  <span class="s">use_raw_bibtex_entry</span><span class="pi">:</span> <span class="no">true</span>
   <span class="s">...</span></code></pre></figure>
 
 <p class="text-justify">Last, but not least, if you want to end each reference with its BibTex source, e.g., to present them in a Boostrap pop-up),
