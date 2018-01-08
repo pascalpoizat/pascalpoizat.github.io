@@ -131,7 +131,7 @@ scholar:
 
 exclude:  ['Gemfile*', '*.sh', 'update_site.sh']
 
-gems: ['jekyll/scholar']
+plugins: ['jekyll/scholar']
 
 markdown: kramdown
 highlighter: rouge
