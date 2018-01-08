@@ -14,8 +14,8 @@
               "date": "2014.10"
             }
           ],
-          "url": "talkAFSEC2014.pdf",
-          "source": "https://github.com/pascalpoizat/talk_afsec2014",
+          "weburl": "https://pascalpoizat.github.io/slides-formal-choreographies/",
+          "source": "https://github.com/pascalpoizat/slides-formal-choreographies"
         },
         {
           "title": "Formal Model-Based Approaches for the Development of Composite Systems",
@@ -26,7 +26,7 @@
               "date": "2012.02"
             }
           ],
-          "url": "talkMeFoSyLoMa2012.pdf"
+          "localurl": "talkMeFoSyLoMa2012.pdf"
         },
         {
           "title": "Extension of Behaviours with Formal Datatypes",
@@ -37,7 +37,7 @@
               "date": "2005.06"
             }
           ],
-          "url": "lecture-06-2005-vCaceres.pdf"
+          "localurl": "lecture-06-2005-vCaceres.pdf"
         }
       ]
     }
