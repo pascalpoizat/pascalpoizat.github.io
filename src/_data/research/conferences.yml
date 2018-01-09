@@ -1,5 +1,25 @@
 - year: 2017
   values:
+    - name: MoSEBIn
+      url: https://www.informatik.uni-hamburg.de/TGI/events/mosebin17/
+      role: PC
+      category: INTWK
+    - name: VBSP
+      url: http://wbsp2017.lip6.fr
+      role: PC
+      category: INTWK
+    - name: ICSOC PhD Symposium
+      url: http://www.icsoc.spilab.es/call-for-phd-symposium/
+      role: PC
+      category: INTWK
+    - name: AFADL
+      url: http://afadl2017.imag.fr
+      role: PC
+      category: NATWK  
+    - name: FOCLASA
+      url: http://foclasa.lcc.uma.es
+      role: PC
+      category: INTWK
     - name: ICSE-Posters
       url: http://icse2017.gatech.edu/posters
       role: PC
