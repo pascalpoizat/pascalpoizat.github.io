@@ -1,3 +1,13 @@
+- year: 2018
+  values:
+    - name: PetriNets
+      url: http://interes.institute/petrinets2018/
+      role: PC
+      category: INTCONF
+    - name: AFADL
+      url: https://afadl2018.ls2n.fr/
+      role: PC
+      category: NATCONF
 - year: 2017
   values:
     - name: MoSEBIn
