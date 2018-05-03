@@ -3,11 +3,16 @@
   "grouped": true,
   "groups": [
     {
-      "label": "Formal Methods applied to Software Engineering<br/>(synthesis of results 2006-2014)",
+      "label": "Formal Methods applied to Software Engineering<br/>(synthesis of results 2006-2017)",
       "talks": [
         {
           "title": "Formal Development of Choreographic Business Processes",
           "occurrences": [
+            {
+              "at": "LIMOS lab annual days",
+              "where": "Clermont-Ferrand",
+              "date": "2017.06"
+            },
             {
               "at": "AFSEC WG day on Formal Methods and Business Processes",
               "where": "Paris",
