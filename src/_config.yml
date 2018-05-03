@@ -75,7 +75,7 @@ research:
   presentation:
     overview: true
     publications: true
-    talks:  false
+    talks:  true
     conferences: true
   restriction:
       publications: 5
