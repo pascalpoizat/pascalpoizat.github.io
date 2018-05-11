@@ -1,5 +1,21 @@
 - year: 2018
   values:
+    - name: CIEL
+      url: https://ciel2018.sciencesconf.org
+      role: SC
+      category: NATCONF
+    - name: ICSOC
+      url: http://www.icsoc.org
+      role: PC
+      category: INTCONF
+    - name: FOCLASA
+      url: http://pages.di.unipi.it/foclasa/
+      role: PC
+      category: INTWK
+    - name: PNSE
+      url: http://www.informatik.uni-hamburg.de/TGI/events/pnse/
+      role: PC
+      category: INTWK
     - name: PetriNets
       url: http://interes.institute/petrinets2018/
       role: PC
@@ -10,6 +26,14 @@
       category: NATCONF
 - year: 2017
   values:
+    - name: CIEL
+      url: https://ciel2017.sciencesconf.org
+      role: SC
+      category: NATCONF
+    - name: ModComp
+      url: http://www.mrtc.mdh.se/ModComp17/
+      role: PC
+      category: INTWK
     - name: MoSEBIn
       url: https://www.informatik.uni-hamburg.de/TGI/events/mosebin17/
       role: PC
@@ -48,6 +72,10 @@
       category: INTCONF
 - year: 2016
   values:
+    - name: CIEL
+      url: https://ciel2016.sciencesconf.org
+      role: SC
+      category: NATCONF
     - name: ModComp
       url: http://www.mrtc.mdh.se/ModComp16/
       role: PC
