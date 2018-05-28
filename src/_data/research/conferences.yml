@@ -49,7 +49,7 @@
     - name: AFADL
       url: http://afadl2017.imag.fr
       role: PC
-      category: NATWK  
+      category: NATCONF
     - name: FOCLASA
       url: http://foclasa.lcc.uma.es
       role: PC
