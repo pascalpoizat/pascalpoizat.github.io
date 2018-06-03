@@ -33,3 +33,11 @@
     name: CS Consultative Committee | Comité Consultatif de Discipline Sect. 27
     role: Member
     at: Université Paris Nanterre
+
+- name: technical
+  values:
+
+  - period: since 2017
+    name: CS Experts Commission | Commission d'Experts du Numérique
+    role: Member
+    at: Université Paris Nanterre
