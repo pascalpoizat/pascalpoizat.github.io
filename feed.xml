@@ -4,10 +4,10 @@
     <title>pascal.poizat</title>
     <description>Professor at Université Paris Nanterre&lt;br/&gt; LIP6 UMR 7606 CNRS
 </description>
-    <link>http://pascalpoizat.github.io/</link>
-    <atom:link href="http://pascalpoizat.github.io/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Sun, 03 Jun 2018 20:37:52 +0200</pubDate>
-    <lastBuildDate>Sun, 03 Jun 2018 20:37:52 +0200</lastBuildDate>
+    <link>https://pages.lip6.fr/Pascal.Poizat/</link>
+    <atom:link href="https://pages.lip6.fr/Pascal.Poizat/feed.xml" rel="self" type="application/rss+xml" />
+    <pubDate>Sun, 03 Jun 2018 20:40:13 +0200</pubDate>
+    <lastBuildDate>Sun, 03 Jun 2018 20:40:13 +0200</lastBuildDate>
     <generator>Jekyll v3.6.2</generator>
     
       <item>
@@ -210,14 +210,14 @@ then you can use &lt;code class=&quot;highlighter-rouge&quot;&gt;entry.bibtex&lt
 
 &lt;p class=&quot;text-justify&quot;&gt;The overall result for the reference above (&lt;strong&gt;at the time of this post&lt;/strong&gt;) is:&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/posts_images/2016-02-01-image1.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/Pascal.Poizat/posts_images/2016-02-01-image1.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
 &lt;p class=&quot;text-justify&quot;&gt;As you can see, Jekyll-Scholar is a really interesting plugin.
 To learn more, see &lt;a href=&quot;https://github.com/inukshuk/jekyll-scholar&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
 </description>
         <pubDate>Mon, 01 Feb 2016 00:00:00 +0100</pubDate>
-        <link>http://pascalpoizat.github.io/blog/posts/2016/02/01/jekyll-and-bibtex/</link>
-        <guid isPermaLink="true">http://pascalpoizat.github.io/blog/posts/2016/02/01/jekyll-and-bibtex/</guid>
+        <link>https://pages.lip6.fr/Pascal.Poizat/blog/posts/2016/02/01/jekyll-and-bibtex/</link>
+        <guid isPermaLink="true">https://pages.lip6.fr/Pascal.Poizat/blog/posts/2016/02/01/jekyll-and-bibtex/</guid>
         
         
         <category>jekyll</category>
@@ -298,8 +298,8 @@ I may use this in the future to simplify things and avoid some file copying.&lt;
 
 </description>
         <pubDate>Fri, 29 Jan 2016 00:00:00 +0100</pubDate>
-        <link>http://pascalpoizat.github.io/blog/posts/2016/01/29/github-pages-without-the-workflow/</link>
-        <guid isPermaLink="true">http://pascalpoizat.github.io/blog/posts/2016/01/29/github-pages-without-the-workflow/</guid>
+        <link>https://pages.lip6.fr/Pascal.Poizat/blog/posts/2016/01/29/github-pages-without-the-workflow/</link>
+        <guid isPermaLink="true">https://pages.lip6.fr/Pascal.Poizat/blog/posts/2016/01/29/github-pages-without-the-workflow/</guid>
         
         
         <category>jekyll</category>
@@ -318,7 +318,7 @@ We will have a look at this using a simple example.&lt;/p&gt;
 
 &lt;p class=&quot;text-justify&quot;&gt;The first step is to define the file(s) that will contain the information.
 This can be either JSON, YAML, or CSV files.
-For &lt;a href=&quot;/duties/&quot;&gt;my list of duties&lt;/a&gt; I chose to use YAML files, but another part of my site,
+For &lt;a href=&quot;/Pascal.Poizat/duties/&quot;&gt;my list of duties&lt;/a&gt; I chose to use YAML files, but another part of my site,
 the list of talks, used to rely on JSON files.
 Data files have to be put in the &lt;code class=&quot;highlighter-rouge&quot;&gt;_data&lt;/code&gt; directory of the Jekyll tree structure.
 Sub-directories can be used to structure your set of data files. So here I put my data within &lt;code class=&quot;highlighter-rouge&quot;&gt;_data/duties&lt;/code&gt;.
@@ -469,8 +469,8 @@ title: duties
 
 </description>
         <pubDate>Wed, 27 Jan 2016 00:00:00 +0100</pubDate>
-        <link>http://pascalpoizat.github.io/blog/posts/2016/01/27/generating-a-page-using-personal-data/</link>
-        <guid isPermaLink="true">http://pascalpoizat.github.io/blog/posts/2016/01/27/generating-a-page-using-personal-data/</guid>
+        <link>https://pages.lip6.fr/Pascal.Poizat/blog/posts/2016/01/27/generating-a-page-using-personal-data/</link>
+        <guid isPermaLink="true">https://pages.lip6.fr/Pascal.Poizat/blog/posts/2016/01/27/generating-a-page-using-personal-data/</guid>
         
         
         <category>jekyll</category>
@@ -531,8 +531,8 @@ So let’s go for &lt;a href=&quot;http://jekyllrb.com/&quot;&gt;Jekyll&lt;/a&gt
 Lots of interesting information here too.&lt;/p&gt;
 </description>
         <pubDate>Tue, 26 Jan 2016 00:00:00 +0100</pubDate>
-        <link>http://pascalpoizat.github.io/blog/posts/2016/01/26/jekyll-site-launched/</link>
-        <guid isPermaLink="true">http://pascalpoizat.github.io/blog/posts/2016/01/26/jekyll-site-launched/</guid>
+        <link>https://pages.lip6.fr/Pascal.Poizat/blog/posts/2016/01/26/jekyll-site-launched/</link>
+        <guid isPermaLink="true">https://pages.lip6.fr/Pascal.Poizat/blog/posts/2016/01/26/jekyll-site-launched/</guid>
         
         
         <category>jekyll</category>
