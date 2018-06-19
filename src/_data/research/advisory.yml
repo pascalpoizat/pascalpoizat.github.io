@@ -4,6 +4,15 @@
 # first of the advisors is the director
 # references refer to references.bib in _bibliography
 
+- name: "Sara Houhou"
+  title: "Vérification paramétrée et dérivation de code à partir de spécifications formelles pour les systèmes embarqués"
+  begin: "01/2017"
+  end: "12/2019"
+  funding: "co-funding with Algeria + ANR PARDI project"
+  advisors: ["Laid Kahloul": 50, "Pascal Poizat": 25, "Souheib Baarir": 25]
+  publication: []
+  url: "" # TODO
+
 - name: "Rania Khéfifi"
   title: "Informations personnelles sensibles aux contextes : modélisation, interrogation et composition"
   begin: "10/2010"
