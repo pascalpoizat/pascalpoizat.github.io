@@ -3,6 +3,11 @@
 <dl class="dl-horizontal">
     <dt>
         {{ course.cursus }} / {{ course.code }}<br/>
+        {% if course.volume %}
+        volume: {{ course.volume.total }}<br/>
+        <em>service: {{ course.volume.eqtd }}</em><br/>
+        <span class="small"><em>{{ course.volume.cm }} x 1.5 + {{ course.volume.td}}</em></span>
+        {% endif %}
     </dt>
     <dd>
         <strong><span class="text-primary">{{ course.name }}</span></strong><br/>

@@ -6,8 +6,9 @@
 
 title: pascal.poizat
 description: > # this means to ignore newlines until the next tag
-  Professor at Université Paris Nanterre<br/>
-  LIP6 UMR 7606 CNRS
+  Professor<br/>
+  Université Paris Nanterre<br/>
+  LIP6 (Sorbonne Université, CNRS)
 author: Pascal Poizat
 # base of your site relative to the root of the Web site, eg /Pascal.Poizat or ""
 baseurl: ""
@@ -54,7 +55,7 @@ contacts:
         stop: Jussieu
         link: http://www.ratp.fr/itineraires/en/ratp/recherche-avancee?end=Jussieu+%28METRO%29%2C+Paris
   teaching:
-    email: firstname.lastname@u-paris10.fr
+    email: firstname.lastname@parisnanterre.fr
     address: >
       Dept. Math-Info, UFR SEGMI<br/>
       Université Paris Nanterre<br/>
