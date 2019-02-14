@@ -43,13 +43,13 @@ contacts:
     email: firstname.lastname@lip6.fr
     address: >
       LIP6 - CNRS UMR 7606<br/>
-      Université Pierre et Marie Curie<br/>
+      Sorbonne Université<br/>
       4 place Jussieu<br/>
       75252 PARIS Cedex 05<br/>
       France
     direction:
       address: >
-        aisle 25-26, office 215
+        aisle 25-26, office 209
       map: http://maps.google.fr/maps?q=LIP6,+Place+Jussieu,+Paris&hl=fr&ll=48.846954,2.354357&spn=0.003392,0.004823&sll=48.847111,2.357037&sspn=0.006785,0.009645&oq=LIP6&hq=LIP6,+Place+Jussieu,+Paris&radius=15000&t=m&z=18
       public_transportation:
         stop: Jussieu
