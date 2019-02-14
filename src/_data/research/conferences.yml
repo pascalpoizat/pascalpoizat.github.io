@@ -1,3 +1,21 @@
+- year: 2019
+  values:
+    - name: PetriNets
+      url: http://www.petrinets2019.de/
+      role: PC
+      category: INTCONF
+    - name: FOCLASA
+      url: http://pages.di.unipi.it/foclasa/
+      role: PC
+      category: INTWK
+    - name: PNSE
+      url: http://www.informatik.uni-hamburg.de/TGI/events/pnse/pnse19/
+      role: PC
+      category: INTWK
+    - name: AFADL
+      url: https://afadl2019.sciencesconf.org/
+      role: PC
+      category: NATCONF
 - year: 2018
   values:
     - name: CIEL
