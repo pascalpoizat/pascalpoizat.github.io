@@ -1,3 +1,20 @@
+- name: "Georges Ouffoué"
+  type: PHD
+  role: REVIEWER
+  title: "Attack Tolerance for Services-based Applications in the Cloud
+"
+  institution: "Université Paris Saclay"
+  country: "France"
+  date: 2018/12/21
+
+- name: "Pamela Carvallo"
+  type: PHD
+  role: CHAIR
+  title: "Sécurité dans le cloud : Framework de détection de menaces internes basé sur l'analyse d'anomalies"
+  institution: "Université Paris Saclay"
+  country: "France"
+  date: 2018/12/17
+
 - name: "Aurélie Hurault"
   type: Habilitation
   role: REVIEWER
@@ -5,6 +22,7 @@
   institution: "Institut National Polytechnique de Toulouse"
   country: "France"
   date: 2018/07/06
+
 - name: "Imen Boudhiba"
   type: PHD
   role: REVIEWER
