@@ -48,6 +48,11 @@
 - name: scientific (positions)
   values:
 
+    - period: 2014-2019
+      name: Laboratory Council | Conseil de Laboratoire
+      role: Member
+      at: LIP6 Laboratory
+
     - period: 2014-2016
       name: Nat. Committee for Scientific Research | CoNRS 6
       role: Member
