@@ -1,3 +1,11 @@
+- name: "Claudio Pompilio"
+  type: PHD
+  role: REVIEWER
+  title: "Aiding the Development of Adaptable and Evolvable Choreographies through the Automated Synthesis of Distributed Coordinators"
+  institution: "Università degli Studi dell'Aquila"
+  country: "Italy"
+  date: 2019 # TODO: préciser la date
+
 - name: "Georges Ouffoué"
   type: PHD
   role: REVIEWER

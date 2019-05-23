@@ -1,5 +1,9 @@
 - year: 2019
   values:
+    - name: ASYDE
+      url: http://asyde2019.disim.univaq.it
+      role: PC
+      category: INTWK
     - name: PetriNets
       url: http://www.petrinets2019.de/
       role: PC
