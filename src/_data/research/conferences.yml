@@ -1,5 +1,13 @@
 - year: 2019
   values:
+    - name: CIEL
+      url: http://researchers.lille.inria.fr/~nanqueti/CIEL19/
+      role: SC
+      category: NATCONF
+    - name: ICSOC
+      url: http://www.icsoc.org
+      role: PC
+      category: INTCONF
     - name: ASYDE
       url: http://asyde2019.disim.univaq.it
       role: PC
