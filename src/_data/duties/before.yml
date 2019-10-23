@@ -48,6 +48,11 @@
 - name: scientific (positions)
   values:
 
+    - period: 2016-2019
+      name: Academic Council | Conseil Académique
+      role: Member, Member of the Research Committee
+      at: Université Paris Lumières (COMUE)
+
     - period: 2014-2019
       name: Laboratory Council | Conseil de Laboratoire
       role: Member

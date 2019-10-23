@@ -1,3 +1,13 @@
+- year: 2020
+  values:
+    - name: BPM
+      url: https://congreso.us.es/bpm2020/index.html
+      role: PC
+      category: INTCONF
+    - name: PNSE
+      url: http://www.informatik.uni-hamburg.de/TGI/events/pnse/
+      role: PC
+      category: INTWK
 - year: 2019
   values:
     - name: CIEL
