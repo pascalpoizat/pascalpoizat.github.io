@@ -8,6 +8,8 @@
       url: http://www.informatik.uni-hamburg.de/TGI/events/pnse/
       role: PC
       category: INTWK
+    - name: AFADL
+      url: "?" # TODO:
 - year: 2019
   values:
     - name: CIEL

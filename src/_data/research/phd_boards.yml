@@ -1,3 +1,19 @@
+- name: "Mattias Roux"
+  type: PHD
+  role: REVIEWER
+  title: "Extensions de l'algorithme d'atteignabilité arrière dans le cadre de la vérification de modèles modulo théories"
+  institution: "Université Paris Saclay"
+  country: "France"
+  date: 2019/12/19
+
+- name: "Abdenour Kifouche"
+  type: PHD
+  role: CHAIR
+  title: "Ingénierie dirigée par les modèles pour la conception et la mise en oeuvre des réseaux de capteurs"
+  institution: "Université Paris Est"
+  country: "France"
+  date: 2019/09/11
+
 - name: "Claudio Pompilio"
   type: PHD
   role: REVIEWER
@@ -9,8 +25,7 @@
 - name: "Georges Ouffoué"
   type: PHD
   role: REVIEWER
-  title: "Attack Tolerance for Services-based Applications in the Cloud
-"
+  title: "Attack Tolerance for Services-based Applications in the Cloud"
   institution: "Université Paris Saclay"
   country: "France"
   date: 2018/12/21
