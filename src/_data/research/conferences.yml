@@ -1,5 +1,9 @@
 - year: 2020
   values:
+    - name: FOCLASA
+      url: http://pages.di.unipi.it/foclasa/
+      role: PC
+      category: INTWK
     - name: BPM
       url: https://congreso.us.es/bpm2020/index.html
       role: PC
