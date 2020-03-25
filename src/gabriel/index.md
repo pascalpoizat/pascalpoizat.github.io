@@ -7,8 +7,13 @@ title: blog de continuité pédagogique de Gabriel
     <h1>blog de continuité pédagogique de Gabriel</h1>
 </div>
 
+<center>
+<IMG SRC="/gabriel/images/20200325-1.jpg" width="50%">
+</center>
+
 ### Jours
 
+- [25 mars](2020-03-25)
 - [24 mars](2020-03-24)
 
 <!--
