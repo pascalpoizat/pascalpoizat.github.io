@@ -13,6 +13,7 @@ title: blog de continuité pédagogique de Gabriel
 
 ### Jours
 
+- [27 mars](2020-03-27)
 - [26 mars](2020-03-26)
 - [25 mars](2020-03-25)
 - [24 mars](2020-03-24)
