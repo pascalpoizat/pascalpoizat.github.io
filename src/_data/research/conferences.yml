@@ -1,5 +1,9 @@
 - year: 2020
   values:
+    - name: ICSOC
+      url: http://www.icsoc.org
+      role: PC
+      category: INTCONF
     - name: FOCLASA
       url: http://pages.di.unipi.it/foclasa/
       role: PC

@@ -1,3 +1,11 @@
+- name: "Lorenzo Rossi"
+  type: PHD
+  role: REVIEWER
+  title: "Formalization and Animation of Business Process Collaborations"
+  institution: "Università degli Studi di Camerino"
+  country: "Italy"
+  date: "2020/06/23"
+
 - name: "Mattias Roux"
   type: PHD
   role: REVIEWER

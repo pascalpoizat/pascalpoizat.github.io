@@ -2,6 +2,11 @@
 - name: pedagogic
   values:
 
+  - period: 2012-2020
+    name: Master MIAGE (Formation initiale et formation professionnelle)
+    role: Director
+    at: Université Paris Nanterre
+
   - period: 2009-2011
     name: 3rd year of Licence MIAGE
     role: Director
@@ -68,8 +73,13 @@
       role: Member
       at: IBISC Laboratory
 
-- name: scientific (recruiting committees)
+- name: scientific (other)
   values:
+
+  - period: 2014-2020
+    name: CS Consultative Commission | Commission Consultative de Spécialistes de l'Université Sect. 27
+    role: Member
+    at: Université Paris Sud
 
   - period: 2015
     name: CS Recruitment Committee | CDS Sect. 27

@@ -1,3 +1,190 @@
+# 2020-2021
+
+- year: 2020
+  cursus: M1C MIAGE
+  code: MODL
+  volume:
+    total: 42h 
+    eqtd: 46.5h
+    cm: 9h
+    td: 33h
+  name: Méthodes et outils du développement logiciel
+  note: 1st year of master - Methods and Tools for Software Development
+  parts: [lectures, practical work]
+  contents: [Software Testing, Code Quality, DevOps]
+
+- year: 2020
+  cursus: M1C MIAGE
+  code: MAPC
+  volume:
+    total: 36h
+    eqtd: 45h
+    cm: 18h
+    td: 18h
+  name: Modélisation architecturale et patrons de conception
+  note: 1st year of master - Architectural Modelling and Design Patterns
+  parts: [lectures, practical work]
+  contents: [Software Architecture, Design Patterns]
+
+- year: 2020
+  cursus: M1C MIAGE
+  code: PF
+  volume:
+    total: 24h 
+    eqtd: 30h
+    cm: 12h
+    td: 12h
+  name: Programmation fonctionnelle
+  note: 1st year of master - Functional Programming
+  parts: [lectures, practical work]
+  contents: [Functionnal Programming over the JVM, Java 8+, Kotlin, Scala]
+
+- year: 2020
+  cursus: L3C MIAGE
+  code: MODC
+  volume:
+    total: 49.5h 
+    eqtd: 57.75h
+    cm: 16.5h
+    td: 33h
+  name: Modélisation constructive
+  note: 1st year of master - Software Modelling with UML
+  parts: [lectures, practical work (2 groups)]
+  contents: [UML]
+
+- year: 2020
+  cursus: M1C MIAGE
+  code: PRJ1
+  volume:
+    total: 12h 
+    eqtd: 12h
+    cm: 0h
+    td: 12h
+  name: Projet collaboratif 1
+  note: 1st year of master - Project
+  parts: [project]
+  contents: [Project (Java, JS or Python), Scrum]
+
+- year: 2020
+  cursus: M1C MIAGE
+  code: PRJ2
+  volume:
+    total: 12h 
+    eqtd: 12h
+    cm: 0h
+    td: 12h
+  name: Projet collaboratif 2
+  note: 1st year of master - Project
+  parts: [project]
+  contents: [Project (Java, JS or Python), Scrum]
+
+- year: 2020
+  cursus: M2A MIAGE
+  code: PRJ3
+  volume:
+    total: 8h 
+    eqtd: 8h
+    cm: 0h
+    td: 8h
+  name: Projet collaboratif 3
+  note: 2nd year of master - Project
+  parts: [project]
+  contents: [Project (Java, JS or Python), Scrum]
+
+- year: 2020
+  cursus: MIAGE
+  code: TUTORAT
+  name: Tutorat
+  note: Enterprise Internship Supervision
+  contents: ["<i class=\"glyphicon glyphicon-hand-right\"></i> <a href=\"http://www.cfa-afia.fr\">CFA AFIA</a>"]
+
+# 2019-2020
+
+- year: 2019
+  cursus: M1C MIAGE
+  code: CMO
+  volume:
+    total: 48h
+    eqtd: 58.5h
+    cm: 21h
+    td: 27h
+  name: Conception et modélisation orientée-objet
+  note: 1st year of master - Object Oriented Design and Modelling
+  parts: [lectures, practical work]
+  contents: [UML, Model-Driven Engineering, Domain Specific Languages]
+
+- year: 2019
+  cursus: M1C MIAGE
+  code: POA
+  volume:
+    total: 36h
+    eqtd: 45h
+    cm: 18h
+    td: 18h
+  name: Programmation orientée-objet avancée
+  note: 1st year of master - Advanced Object Oriented Programming
+  parts: [lectures, practical work]
+  contents: [Design Patterns, Test Driven Development, Code Quality, Continuous Integration]
+
+- year: 2019
+  cursus: M2C MIAGE
+  code: PROCS
+  volume: 
+    total: 12h
+    eqtd: 15h
+    cm: 6h
+    td: 6h
+  name: Programmation répartie
+  note: 1st year of master - Distributed Applications
+  parts: [lectures, practical work]
+  contents: [Part relative to Web services]
+
+- year: 2019
+  cursus: M1A MIAGE
+  code: SIA1
+  volume: 
+    total: 12h
+    eqtd: 15h
+    cm: 6h
+    td: 6h
+  name: Systèmes d'information agiles 1
+  note: 1st year of master - Information Systems
+  parts: [lectures, practical work]
+  contents: [Part relative to the use of formal methods in information systems design]
+
+- year: 2019
+  cursus: M1C MIAGE
+  code: SIA1
+  volume: 
+    total: 12h
+    eqtd: 15h
+    cm: 6h
+    td: 6h
+  name: Systèmes d'information agiles 1
+  note: 1st year of master - Information Systems
+  parts: [lectures, practical work]
+  contents: [Part relative to the use of formal methods in information systems design]
+
+- year: 2019
+  cursus: M1C MIAGE
+  code: PRJ1
+  volume: 
+    total: 36h
+    eqtd: 36h
+    cm: 0h
+    td: 36h
+  name: Projet informatique 1
+  note: 1st year of master - Project
+  parts: [project]
+  contents: [Project (Java, JS or Python), scrum]
+
+- year: 2019
+  cursus: MIAGE
+  code: TUTORAT
+  name: Tutorat
+  note: Enterprise Internship Supervision
+  contents: ["<i class=\"glyphicon glyphicon-hand-right\"></i> <a href=\"http://www.cfa-afia.fr\">CFA AFIA</a>"]
+
 # 2018-2019
 
 - year: 2018

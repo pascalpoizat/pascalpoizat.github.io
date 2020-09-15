@@ -1,10 +1,5 @@
-- name: pedagogic
-  values:
-
-  - period: since 2012
-    name: Master MIAGE (Formation initiale et formation professionnelle)
-    role: Director
-    at: Université Paris Nanterre
+#- name: pedagogic
+#  values:
 
 - name: scientific
   values:
@@ -19,11 +14,6 @@
     role: Scientific coordinator for the LIP6 lab.
     at: Generic Programme, National Agency for Research
 
-  - period: since 2014
-    name: CS Consultative Commission | Commission Consultative de Spécialistes de l'Université Sect. 27
-    role: Member
-    at: Université Paris Sud
-
   - period: since 2013
     name: CS Consultative Committee | Comité Consultatif de Discipline Sect. 27
     role: Member
@@ -33,6 +23,6 @@
   values:
 
   - period: since 2017
-    name: CS Experts Commission | Commission d'Experts du Numérique
+    name: Digital Experts Commission | Commission d'Experts du Numérique
     role: Member
     at: Université Paris Nanterre
