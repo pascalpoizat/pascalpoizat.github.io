@@ -1,5 +1,10 @@
-#- name: pedagogic
-#  values:
+- name: pedagogic
+  values:
+
+    - period: since 2020
+      name: Départment de Mathématiques et Informatique
+      role: Deputy Director (Computer Science)
+      at: Université Paris Nanterre
 
 - name: scientific
   values:
