@@ -9,11 +9,6 @@
 - name: scientific
   values:
 
-  - period: since 2018
-    name: Gilles Kahn PhD Price | Prix de thèse Gilles Kahn
-    role: Member of the jury
-    at: Société Informatique de France
-
   - period: since 2017
     name: ANR PARDI project # http://pardi.enseeiht.fr
     role: Scientific coordinator for the LIP6 lab.
