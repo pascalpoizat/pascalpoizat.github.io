@@ -1,3 +1,21 @@
+- year: 2021
+  values:
+    - name: BPM
+      url: https://bpm2021.diag.uniroma1.it
+      role: PC
+      category: INTCONF
+    - name: PNSE
+      url: http://www.informatik.uni-hamburg.de/TGI/events/pnse/
+      role: PC
+      category: INTWK
+    - name: AFADL
+      url: "?" # TODO:
+      role: PC
+      category: NATCONF
+    - name: CIEL
+      url: "?" # TODO:
+      role: SC
+      category: NATCONF
 - year: 2020
   values:
     - name: ICSOC
@@ -16,8 +34,18 @@
       url: http://www.informatik.uni-hamburg.de/TGI/events/pnse/
       role: PC
       category: INTWK
+    - name: ModComp
+      url: http://www.es.mdh.se/ModComp/
+      role: PC
+      category: INTWK
     - name: AFADL
-      url: "?" # TODO:
+      url: http://www.lirmm.fr/afadl2020/
+      role: PC
+      category: NATCONF
+    - name: CIEL
+      url: https://ciel2020.wp.imt.fr
+      role: SC
+      category: NATCONF
 - year: 2019
   values:
     - name: CIEL
