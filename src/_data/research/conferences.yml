@@ -1,5 +1,17 @@
 - year: 2021
   values:
+    - name: ModDiT
+      url: https://gemoc.org/events/moddit2021
+      role: PC
+      category: INTWK
+    - name: EduSymp
+      url: https://conf.researchr.org/track/models-2021/models-2021-educators-symposium
+      role: PC
+      category: INTWK
+    - name: ICSOC
+      url: http://icsoc2021.josueonline.com
+      role: PC
+      category: INTCONF
     - name: BPM
       url: https://bpm2021.diag.uniroma1.it
       role: PC
@@ -9,11 +21,11 @@
       role: PC
       category: INTWK
     - name: AFADL
-      url: "?" # TODO:
+      url: http://www.lirmm.fr/afadl2021/
       role: PC
       category: NATCONF
     - name: CIEL
-      url: "?" # TODO:
+      url: https://ciel2021.wp.imt.fr
       role: SC
       category: NATCONF
 - year: 2020

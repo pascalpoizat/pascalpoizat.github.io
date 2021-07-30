@@ -76,6 +76,11 @@
 - name: scientific (other)
   values:
 
+  - period: 2020-2021
+    name: GDR GPL PhD Price | Prix de thèse du GDR GPL
+    role: Co-President of the Jury
+    at: GDR GPL
+
   - period: 2018-2021
     name: Gilles Kahn PhD Price | Prix de thèse Gilles Kahn
     role: Member of the jury

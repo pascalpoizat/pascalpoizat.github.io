@@ -9,6 +9,11 @@
 - name: scientific
   values:
 
+  - period: since 2021
+    name: GDR GPL PhD Price | Prix de thèse du GDR GPL
+    role: President of the Jury
+    at: GDR GPL
+
   - period: since 2017
     name: ANR PARDI project # http://pardi.enseeiht.fr
     role: Scientific coordinator for the LIP6 lab.
