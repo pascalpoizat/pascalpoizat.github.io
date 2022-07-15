@@ -9,15 +9,15 @@
 - name: scientific
   values:
 
+  - period: since 2022
+    name: CS Consultative Commission | Commission Consultative de Spécialistes de l'Université Sect. 27
+    role: Member
+    at: Université Paris Sud
+
   - period: since 2021
     name: GDR GPL PhD Price | Prix de thèse du GDR GPL
     role: President of the Jury
     at: GDR GPL
-
-  - period: since 2017
-    name: ANR PARDI project # http://pardi.enseeiht.fr
-    role: Scientific coordinator for the LIP6 lab.
-    at: Generic Programme, National Agency for Research
 
   - period: since 2013
     name: CS Consultative Committee | Comité Consultatif de Discipline Sect. 27

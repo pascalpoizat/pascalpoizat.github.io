@@ -80,7 +80,7 @@ research:
   presentation:
     overview: true
     publications: true
-    talks:  true
+    talks:  false
     conferences: true
   restriction:
       publications: 5

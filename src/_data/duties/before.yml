@@ -35,6 +35,11 @@
 - name: scientific (projects and working groups)
   values:
 
+  - period: 2017-2021
+    name: ANR PARDI project # http://pardi.enseeiht.fr
+    role: Scientific coordinator for the LIP6 lab.
+    at: Generic Programme, National Agency for Research
+
   - period: 2011-2015
     name: COSMAL Working Group
     role: Co-head

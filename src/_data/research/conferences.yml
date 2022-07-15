@@ -1,3 +1,21 @@
+- year: 2022
+  values:
+    - name: BPM
+      url: https://bpm2022.uni-muenster.de
+      role: PC
+      category: INTCONF
+    - name: PNSE
+      url: http://www.informatik.uni-hamburg.de/TGI/events/pnse/
+      role: PC
+      category: INTWK
+    - name: CoMinDs
+      url: http://www.discotec.org/2022/cominds.html
+      role: PC
+      category: INTWK
+    - name: AFADL
+      url: https://afadl2022.ls2n.fr
+      role: PC
+      category: NATCONF
 - year: 2021
   values:
     - name: ModDiT
