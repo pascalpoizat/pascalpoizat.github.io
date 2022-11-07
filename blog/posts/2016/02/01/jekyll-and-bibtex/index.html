@@ -19,6 +19,8 @@
     <link rel="canonical" href="http://pascalpoizat.github.io/blog/posts/2016/02/01/jekyll-and-bibtex/">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="/font-awesome-4.5.0/css/font-awesome.min.css">
+    <!-- Mastodon -->
+    <link rel="me" href="https://mastodon.xyz/@pascalpoizat">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -169,19 +171,19 @@ since Jekyll-Scholar is not part of the authorized plugins.</p>
 <p>Installing Jekyll-Scholar is then performed as follows:</p>
 
 <ul>
-  <li>run <code class="highlighter-rouge">gem install jekyll-scholar</code> and add <code class="highlighter-rouge">gems: ['jekyll/scholar']</code> in your <code class="highlighter-rouge">_config.yml</code> configuration file</li>
-  <li>add <code class="highlighter-rouge">gem 'jekyll-scholar'</code> in your <code class="highlighter-rouge">Gemfile</code> file (if you are using the <a href="http://bundler.io/">Bundler</a> package manager)</li>
+  <li>run <code class="language-plaintext highlighter-rouge">gem install jekyll-scholar</code> and add <code class="language-plaintext highlighter-rouge">gems: ['jekyll/scholar']</code> in your <code class="language-plaintext highlighter-rouge">_config.yml</code> configuration file</li>
+  <li>add <code class="language-plaintext highlighter-rouge">gem 'jekyll-scholar'</code> in your <code class="language-plaintext highlighter-rouge">Gemfile</code> file (if you are using the <a href="http://bundler.io/">Bundler</a> package manager)</li>
 </ul>
 
 <h2 id="basic-example">Basic example</h2>
 
-<p class="text-justify">You can use a <code class="highlighter-rouge">_bibliography</code> directory to store your bibliography <code class="highlighter-rouge">.bib</code> files.
-The <code class="highlighter-rouge">_</code> in the directory name means that Jekyll will not copy it in the generated site (<code class="highlighter-rouge">_site</code> by default).
+<p class="text-justify">You can use a <code class="language-plaintext highlighter-rouge">_bibliography</code> directory to store your bibliography <code class="language-plaintext highlighter-rouge">.bib</code> files.
+The <code class="language-plaintext highlighter-rouge">_</code> in the directory name means that Jekyll will not copy it in the generated site (<code class="language-plaintext highlighter-rouge">_site</code> by default).
 If you want that your bibliography file is visible to your site visitors,
-then you should take this into account and, e.g., store the file in a <code class="highlighter-rouge">bibliography</code> directory instead.
-In the example we will suppose you have a <code class="highlighter-rouge">_bibliography/references.bib</code> file.</p>
+then you should take this into account and, e.g., store the file in a <code class="language-plaintext highlighter-rouge">bibliography</code> directory instead.
+In the example we will suppose you have a <code class="language-plaintext highlighter-rouge">_bibliography/references.bib</code> file.</p>
 
-<p class="text-justify">You can configure the way Jekyll-Scholar works using your <code class="highlighter-rouge">_config.yml</code> configuration file.
+<p class="text-justify">You can configure the way Jekyll-Scholar works using your <code class="language-plaintext highlighter-rouge">_config.yml</code> configuration file.
 The default is (see <a href="https://github.com/inukshuk/jekyll-scholar">here</a> for the meaning of the contents):</p>
 
 <figure class="highlight"><pre><code class="language-yaml" data-lang="yaml"><span class="na">scholar</span><span class="pi">:</span>
@@ -209,7 +211,7 @@ The default is (see <a href="https://github.com/inukshuk/jekyll-scholar">here</a
 
   <span class="na">query</span><span class="pi">:</span> <span class="s2">"</span><span class="s">@*"</span></code></pre></figure>
 
-<p class="text-justify">You may then perform queries in your <code class="highlighter-rouge">.html</code> or <code class="highlighter-rouge">.md</code> pages as follows:</p>
+<p class="text-justify">You may then perform queries in your <code class="language-plaintext highlighter-rouge">.html</code> or <code class="language-plaintext highlighter-rouge">.md</code> pages as follows:</p>
 
 <figure class="highlight"><pre><code class="language-liquid" data-lang="liquid">---
 layout: default
@@ -218,19 +220,19 @@ title: publications
 
 ## Journal Articles
 
-<span class="p">{%</span><span class="w"> </span><span class="nt">bibliography</span><span class="w"> </span>-q<span class="w"> </span>@article<span class="w"> </span><span class="p">%}</span>
+<span class="p">{%</span><span class="w"> </span><span class="nt">bibliography</span><span class="w"> </span><span class="o">-</span>q<span class="w"> </span>@article<span class="w"> </span><span class="p">%}</span>
 
 ## Book Chapters
 
-<span class="p">{%</span><span class="w"> </span><span class="nt">bibliography</span><span class="w"> </span>-q<span class="w"> </span>@inbook<span class="w"> </span><span class="p">%}</span>
+<span class="p">{%</span><span class="w"> </span><span class="nt">bibliography</span><span class="w"> </span><span class="o">-</span>q<span class="w"> </span>@inbook<span class="w"> </span><span class="p">%}</span>
 
 ## Conferences and Workshops
 
-<span class="p">{%</span><span class="w"> </span><span class="nt">bibliography</span><span class="w"> </span>-q<span class="w"> </span>@inproceedings<span class="w"> </span><span class="p">%}</span>
+<span class="p">{%</span><span class="w"> </span><span class="nt">bibliography</span><span class="w"> </span><span class="o">-</span>q<span class="w"> </span>@inproceedings<span class="w"> </span><span class="p">%}</span>
 
 ## Manuscripts
 
-<span class="p">{%</span><span class="w"> </span><span class="nt">bibliography</span><span class="w"> </span>-q<span class="w"> </span>@phdthesis<span class="w"> </span><span class="p">%}</span></code></pre></figure>
+<span class="p">{%</span><span class="w"> </span><span class="nt">bibliography</span><span class="w"> </span><span class="o">-</span>q<span class="w"> </span>@phdthesis<span class="w"> </span><span class="p">%}</span></code></pre></figure>
 
 <p class="text-justify">You may find more information about the bibliography queries <a href="https://github.com/inukshuk/jekyll-scholar">here</a>.</p>
 
@@ -248,7 +250,7 @@ and for the BibTeX reference itself</li>
 <h3 id="ordering-of-references">Ordering of references</h3>
 
 <p class="text-justify">Say you want to have ordering by date of publication, in descending order.
-Then you have to change your <code class="highlighter-rouge">_config.yml</code> file to include:</p>
+Then you have to change your <code class="language-plaintext highlighter-rouge">_config.yml</code> file to include:</p>
 
 <figure class="highlight"><pre><code class="language-yaml" data-lang="yaml"><span class="na">scholar</span><span class="pi">:</span>
   <span class="s">...</span>
@@ -258,7 +260,7 @@ Then you have to change your <code class="highlighter-rouge">_config.yml</code> 
 
 <h3 id="citation-styles">Citation styles</h3>
 
-<p class="text-justify">You can change the citation style by changing the style name for Jekyll-Scholar in <code class="highlighter-rouge">_config.yml</code>.
+<p class="text-justify">You can change the citation style by changing the style name for Jekyll-Scholar in <code class="language-plaintext highlighter-rouge">_config.yml</code>.
 You can use styles from <a href="https://github.com/citation-style-language/styles">the repository for CSL citation styles</a>.
 You can also define you own style and link to it as follows:</p>
 
@@ -276,14 +278,14 @@ which you can see <a href="https://github.com/pascalpoizat/pascalpoizat.github.i
 <h3 id="tuning-the-generated-output">Tuning the generated output</h3>
 
 <p class="text-justify">The first thing is to tell Jekyll-Scholar which layout to use for bibliography queries.
-We will have the description of it in <code class="highlighter-rouge">_layouts/bib.html</code> so we change <code class="highlighter-rouge">config.yml</code> to have:</p>
+We will have the description of it in <code class="language-plaintext highlighter-rouge">_layouts/bib.html</code> so we change <code class="language-plaintext highlighter-rouge">config.yml</code> to have:</p>
 
 <figure class="highlight"><pre><code class="language-yaml" data-lang="yaml"><span class="na">scholar</span><span class="pi">:</span>
   <span class="s">...</span>
   <span class="s">bibliography_template</span><span class="pi">:</span> <span class="s">bib</span>
   <span class="s">...</span></code></pre></figure>
 
-<p class="text-justify">Then you have to put the <code class="highlighter-rouge">bib.html</code> layout file in <code class="highlighter-rouge">_layouts</code> (the default):</p>
+<p class="text-justify">Then you have to put the <code class="language-plaintext highlighter-rouge">bib.html</code> layout file in <code class="language-plaintext highlighter-rouge">_layouts</code> (the default):</p>
 
 <figure class="highlight"><pre><code class="language-html" data-lang="html">---
 ---
@@ -314,16 +316,16 @@ We will have the description of it in <code class="highlighter-rouge">_layouts/b
 <span class="nt">&lt;div&gt;&lt;pre&gt;</span>{{ entry.bibtex }}<span class="nt">&lt;/pre&gt;&lt;/div&gt;</span></code></pre></figure>
 
 <p class="text-justify">The first thing is the layout information used by Jekyll (the two dash lines).
-Then you have the <code class="highlighter-rouge">{{ reference }}</code> tag. It is used to include the reference as generated by Jekyll-Scholar.
-Here we put it in a <code class="highlighter-rouge">&lt;div&gt;...&lt;/div&gt;</code> tag to have it text-justified.</p>
+Then you have the <code class="language-plaintext highlighter-rouge">{{ reference }}</code> tag. It is used to include the reference as generated by Jekyll-Scholar.
+Here we put it in a <code class="language-plaintext highlighter-rouge">&lt;div&gt;...&lt;/div&gt;</code> tag to have it text-justified.</p>
 
 <p class="text-justify">Then we want to generate the reference note if there is some.
 For this we use a Liquid conditional.
-<code class="highlighter-rouge">entry</code> denotes the current reference we are typing out, and
-<code class="highlighter-rouge">entry.note</code> denotes the note field of this entry (if it exists).</p>
+<code class="language-plaintext highlighter-rouge">entry</code> denotes the current reference we are typing out, and
+<code class="language-plaintext highlighter-rouge">entry.note</code> denotes the note field of this entry (if it exists).</p>
 
-<p class="text-justify">Then we have two <code class="highlighter-rouge">&lt;div&gt;</code>s. One for the links (DOI and the HAL open archive) and one for the PDF of the reference.
-This uses respectively the <code class="highlighter-rouge">doi</code> (or <code class="highlighter-rouge">DOI</code>), <code class="highlighter-rouge">hal_id</code> (or <code class="highlighter-rouge">HAL_ID</code>), and <code class="highlighter-rouge">pdf</code> (or <code class="highlighter-rouge">PDF</code>) user-defined fields
+<p class="text-justify">Then we have two <code class="language-plaintext highlighter-rouge">&lt;div&gt;</code>s. One for the links (DOI and the HAL open archive) and one for the PDF of the reference.
+This uses respectively the <code class="language-plaintext highlighter-rouge">doi</code> (or <code class="language-plaintext highlighter-rouge">DOI</code>), <code class="language-plaintext highlighter-rouge">hal_id</code> (or <code class="language-plaintext highlighter-rouge">HAL_ID</code>), and <code class="language-plaintext highlighter-rouge">pdf</code> (or <code class="language-plaintext highlighter-rouge">PDF</code>) user-defined fields
 in BibTeX reference files. Typically one would have references such as:</p>
 
 <figure class="highlight"><pre><code class="language-latex" data-lang="latex">@Article<span class="p">{</span>PP<span class="p">_</span>MPS12,
@@ -339,9 +341,9 @@ in BibTeX reference files. Typically one would have references such as:</p>
     PDF = <span class="p">{</span>https://hal.inria.fr/hal-00717252/document<span class="p">}</span>,
 <span class="p">}</span></code></pre></figure>
 
-<p class="text-justify"><strong>Note:</strong> if you want to use <code class="highlighter-rouge">{{ ... }}</code> in your BibTeX files (to force uppercase titles for example),
+<p class="text-justify"><strong>Note:</strong> if you want to use <code class="language-plaintext highlighter-rouge">{{ ... }}</code> in your BibTeX files (to force uppercase titles for example),
 then you have to tell Jekyll-Scholar not to interpret this as Liquid templates.
-This is achieved by putting in your <code class="highlighter-rouge">_config.yml</code> file:</p>
+This is achieved by putting in your <code class="language-plaintext highlighter-rouge">_config.yml</code> file:</p>
 
 <figure class="highlight"><pre><code class="language-yaml" data-lang="yaml"><span class="na">scholar</span><span class="pi">:</span>
   <span class="s">...</span>
@@ -349,7 +351,7 @@ This is achieved by putting in your <code class="highlighter-rouge">_config.yml<
   <span class="s">...</span></code></pre></figure>
 
 <p class="text-justify">Last, but not least, if you want to end each reference with its BibTex source, e.g., to present them in a Boostrap pop-up),
-then you can use <code class="highlighter-rouge">entry.bibtex</code>.</p>
+then you can use <code class="language-plaintext highlighter-rouge">entry.bibtex</code>.</p>
 
 <p class="text-justify">The overall result for the reference above (<strong>at the time of this post</strong>) is:</p>
 
