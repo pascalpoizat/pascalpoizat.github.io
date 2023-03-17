@@ -1,3 +1,168 @@
+# 2022-2023
+
+- year: 2022
+  cursus: M1A MIAGE
+  code: MODEL
+  volume:
+    total: 38h 
+    eqtd: 42.5h
+    cm: 9h
+    td: 29h
+  name: Méthodes et outils du développement logiciel
+  note: 1st year of master - Methods and Tools for Software Development
+  parts: [lectures, practical work]
+  contents: [Software Testing, Code Quality, DevOps]
+
+- year: 2022
+  cursus: M1C MIAGE
+  code: MODEL
+  volume:
+    total: 40h 
+    eqtd: 44.5h
+    cm: 9h
+    td: 31h
+  name: Méthodes et outils du développement logiciel
+  note: 1st year of master - Methods and Tools for Software Development
+  parts: [lectures, practical work]
+  contents: [Software Testing, Code Quality, DevOps]
+
+- year: 2022
+  cursus: M1A MIAGE
+  code: MAPC
+  volume:
+    total: 36h
+    eqtd: 45h
+    cm: 18h
+    td: 18h
+  name: Modélisation architecturale et patrons de conception
+  note: 1st year of master - Architectural Modelling and Design Patterns
+  parts: [lectures, practical work]
+  contents: [Software Architecture, Design Patterns]
+
+- year: 2022
+  cursus: M1C MIAGE
+  code: PROF
+  volume:
+    total: 24h 
+    eqtd: 30h
+    cm: 12h
+    td: 12h
+  name: Programmation fonctionnelle
+  note: 1st year of master - Functional Programming
+  parts: [lectures, practical work]
+  contents: [Functionnal Programming over the JVM, Java 8+, Kotlin, Scala]
+
+- year: 2022
+  cursus: M1A MIAGE
+  code: PRJ1
+  volume:
+    total: 20h 
+    eqtd: 20h
+    cm: 0h
+    td: 20h
+  name: Projet collaboratif 1
+  note: 1st year of master - Project
+  parts: [project]
+  contents: [Project (Java, JS or Python), Scrum]
+
+- year: 2022
+  cursus: M1C MIAGE
+  code: PRJ1
+  volume:
+    total: 11h 
+    eqtd: 11h
+    cm: 0h
+    td: 11h
+  name: Projet collaboratif 1
+  note: 1st year of master - Project
+  parts: [project]
+  contents: [Project (Java, JS or Python), Scrum]
+
+- year: 2022
+  cursus: M1A MIAGE
+  code: PRJ2
+  volume:
+    total: 20h 
+    eqtd: 20h
+    cm: 0h
+    td: 20h
+  name: Projet collaboratif 2
+  note: 1st year of master - Project
+  parts: [project]
+  contents: [Project (Java, JS or Python), Scrum]
+
+- year: 2022
+  cursus: M1C MIAGE
+  code: PRJ2
+  volume:
+    total: 11h 
+    eqtd: 11h
+    cm: 0h
+    td: 11h
+  name: Projet collaboratif 2
+  note: 1st year of master - Project
+  parts: [project]
+  contents: [Project (Java, JS or Python), Scrum]
+
+- year: 2022
+  cursus: M2A MIAGE
+  code: PSID
+  volume:
+    total: 38h
+    eqtd: 38h
+    cm: 0h
+    td: 38h
+  name: Projet Système d'Information et Données
+  note: 2nd year of master - Project
+  parts: [project]
+  contents: [Data analysis and machine learning project]
+
+- year: 2022
+  cursus: M2C MIAGE
+  code: PSID
+  volume:
+    total: 14h 
+    eqtd: 14h
+    cm: 0h
+    td: 14h
+  name: Projet Système d'Information et Données
+  note: 2nd year of master - Project
+  parts: [project]
+  contents: [Data analysis and machine learning project]
+
+- year: 2022
+  cursus: M1A MIAGE
+  code: METH
+  volume:
+    total: 2h
+    eqtd: 2h
+    cm: 0h
+    td: 2h
+  name: Méthodologie
+  note: 1st year of master - Methodology
+  parts: [lectures]
+  contents: [Bibliographic studies, experiment management, report writing]
+
+- year: 2022
+  cursus: M1M MIAGE
+  code: METH
+  volume:
+    total: 6h
+    eqtd: 6h
+    cm: 0h
+    td: 6h
+  name: Méthodologie
+  note: 1st year of master - Methodology
+  parts: [lectures, practical work]
+  contents: [Bibliographic studies, experiment management, report writing]
+
+- year: 2021
+  cursus: MIAGE
+  code: TUTORAT
+  name: Tutorat
+  note: Enterprise Internship Supervision
+  contents: ["<i class=\"glyphicon glyphicon-hand-right\"></i> <a href=\"http://www.cfa-afia.fr\">CFA AFIA</a>"]
+
 # 2021-2022
 
 - year: 2021
