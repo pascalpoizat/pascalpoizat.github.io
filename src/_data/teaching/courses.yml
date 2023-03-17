@@ -82,10 +82,10 @@
   cursus: M2A MIAGE
   code: PSID
   volume:
-    total: 34h 
-    eqtd: 34h
+    total: 32h  # 34h 
+    eqtd: 32h   # 34h
     cm: 0h
-    td: 34h
+    td: 32h     # 34h
   name: Projet Système d'Information et Données
   note: 2nd year of master - Project
   parts: [project]
@@ -108,12 +108,12 @@
   cursus: M1 and M2 MIAGE
   code: METH
   volume:
-    total: 12h
-    eqtd: 12h
+    total: 8h
+    eqtd: 8h
     cm: 0h
-    td: 4x3h
+    td: 4x2h
   name: Méthodologie
-  note: 1st year of master - Methodology
+  note: 1st and 2nd year of master - Methodology
   parts: [lectures, practical work]
   contents: [Bibliographic studies, experiment management, report writing]
 
