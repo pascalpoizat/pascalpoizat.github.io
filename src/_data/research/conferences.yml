@@ -12,6 +12,10 @@
       url: https://fm-bpm2023.github.io
       role: PC
       category: INTWK
+    - name: AFADL
+      url: https://gdrgpl2023.sciencesconf.org/resource/page/id/1
+      role: PC
+      category: NATCONF
 - year: 2022
   values:
     - name: BPM
