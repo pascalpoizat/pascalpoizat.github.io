@@ -1,3 +1,9 @@
+- year: 2024
+  values:
+    - name: BPM
+      url: https://bpm2024.agh.edu.pl
+      role: PC
+      category: INTCONF
 - year: 2023
   values:
     - name: BPM
@@ -7,6 +13,14 @@
     - name: PNSE
       url: https://www.informatik.uni-hamburg.de/TGI/events/pnse/
       role: PC
+      category: INTWK
+    - name: CoMinDs
+      url: https://pros.unicam.it/cominds/
+      role: PC
+      category: INTWK
+    - name: ASYDE
+      url: https://asyde-series.github.io/asyde2023/
+      role: SC
       category: INTWK
     - name: FM-BPM
       url: https://fm-bpm2023.github.io
@@ -26,6 +40,10 @@
       url: http://www.informatik.uni-hamburg.de/TGI/events/pnse/
       role: PC
       category: INTWK
+    - name: ASYDE
+      url: https://asyde-series.github.io/asyde2022/
+      role: SC
+      category: INTWK
     - name: CoMinDs
       url: http://www.discotec.org/2022/cominds.html
       role: PC
@@ -43,6 +61,10 @@
     - name: EduSymp
       url: https://conf.researchr.org/track/models-2021/models-2021-educators-symposium
       role: PC
+      category: INTWK
+    - name: ASYDE
+      url: https://asyde-series.github.io/asyde2021/
+      role: SC
       category: INTWK
     - name: ICSOC
       url: http://icsoc2021.josueonline.com
@@ -85,6 +107,10 @@
     - name: ModComp
       url: http://www.es.mdh.se/ModComp/
       role: PC
+      category: INTWK
+    - name: ASYDE
+      url: https://asyde-series.github.io/asyde2020/
+      role: SC
       category: INTWK
     - name: AFADL
       url: http://www.lirmm.fr/afadl2020/
