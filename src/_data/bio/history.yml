@@ -2,7 +2,7 @@
   kind: position
   role: Professor | Professeur des universités
   at: Université Paris Nanterre, LIP6 lab.
-  logo: [../images/logo_upn.png, 90px, 7px, 38px]
+  logo: [../images/logo_universite_paris_nanterre.png, 30px, 4px, 8px, 4px]
 
 - period: 2011
   kind: diploma
@@ -14,7 +14,7 @@
   kind: position
   role: Associate Professor | Maître de conférences
   at: Université d'Evry
-  logo: [../images/logo_ueve.png, 68px, 16px, 14px]
+  logo: [../images/logo_universite_evry_couleur.png, 60px, -6px, 4px, 0px]
   sub-periods:
     - period: 2008-2012
       at: LRI lab.
@@ -28,7 +28,7 @@
   kind: position
   role: Temporary Assistant Professor | ATER
   at: IUT de Nantes, IRIN lab. (now LS2N)
-  logo: [../images/logo_un2.jpg, 86px, 8px, 25px]
+  logo: [../images/logo_nantes_universite.png, 40px, -6px, 4px, 0px]
 
 - period: 2000
   kind: diploma
@@ -39,5 +39,5 @@
   kind: position
   role: PhD Candidate
   at: Université de Nantes, IRIN lab. (now LS2N)
-  logo: [../images/logo_un2.jpg, 86px, 8px, 25px]
+  logo: [../images/logo_nantes_universite.png, 40px, -6px, 4px, 0px]
 

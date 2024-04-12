@@ -15,9 +15,9 @@
         <br/>
         {% if item.at %}
         {% if site.bio.with-logos and item.logo %}
-        <div class="circle-picture">
+        <div>
             <img src="{{ item.logo[0] }}"
-                 style="width: {{ item.logo[1]}}; margin-left: {{ item.logo[2] }}; margin-top: {{ item.logo[3] }};"/>
+                 style="height: {{ item.logo[1]}}; margin-left: {{ item.logo[2] }}; margin-top: {{ item.logo[3] }}; margin-bottom: {{ item.logo[4] }};"/>
         </div>
         {% endif %}
         <div>{{ item.at }}</div>

@@ -36,11 +36,11 @@ networks:
     url: https://github.com/
     username: pascalpoizat
   dblp:
-    url: http://www.informatik.uni-trier.de/~ley/pers/hd/
+    url: https://dblp.org/pid/
     username: p/Poizat:Pascal
 
 bio:
-  with-logos: false
+  with-logos: true
 
 contacts:
   research:
