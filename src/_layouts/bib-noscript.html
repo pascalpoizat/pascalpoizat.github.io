@@ -57,15 +57,35 @@
         </div>
         {% endif %}
 
-        {% if entry.pdf %}
+        {% if entry.pdf or entry.opttool or entry.optdata %}
         <div class="btn-group">
             {% if entry.pdf %}
-            <a href="{{ entry.optlink }}">
+            <a href="{{ entry.pdf }}">
                 <button type="button"
                         class="btn {{site.publications_btn_color}} {{site.publications_btn_size}}"
                         data-toggle="dropdown" aria-haspopup="true"
                         aria-expanded="false">
                     <span class="{{site.publications_btn_textcolor}}">pdf</span>
+                </button>
+            </a>
+            {% endif %}
+            {% if entry.opttool %}
+            <a href="{{ entry.opttool }}">
+                <button type="button"
+                        class="btn {{site.publications_btn_color}} {{site.publications_btn_size}}"
+                        data-toggle="dropdown" aria-haspopup="true"
+                        aria-expanded="false">
+                    <span class="{{site.publications_btn_textcolor}}">tool</span>
+                </button>
+            </a>
+            {% endif %}
+            {% if entry.optdata %}
+            <a href="{{ entry.optdata }}">
+                <button type="button"
+                        class="btn {{site.publications_btn_color}} {{site.publications_btn_size}}"
+                        data-toggle="dropdown" aria-haspopup="true"
+                        aria-expanded="false">
+                    <span class="{{site.publications_btn_textcolor}}">data / experiments</span>
                 </button>
             </a>
             {% endif %}

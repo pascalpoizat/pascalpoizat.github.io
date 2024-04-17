@@ -11685,10 +11685,10 @@ pre code {
   border-color: #424242; }
 
 .personal-picture > img {
-  width: 180px;
+  width: 170px;
   height: auto;
-  margin-left: -14px;
-  margin-top: 0px; }
+  margin-left: 0px;
+  margin-top: -10px; }
 
 .post-meta {
   color: #828282; }

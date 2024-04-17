@@ -50,14 +50,20 @@
 
             <div class="btn-group">
                 <button type="button"
-                        class="btn {% if entry.pdf %}{{site.publications_btn_color}} {% else %}btn-default disabled{% endif %} dropdown-toggle {{site.publications_btn_size}}"
+                        class="btn {% if entry.pdf or entry.opttool or entry.optdata %}{{site.publications_btn_color}} {% else %}btn-default disabled{% endif %} dropdown-toggle {{site.publications_btn_size}}"
                         data-toggle="dropdown" aria-haspopup="true"
                         aria-expanded="false">
-                    <span class="{% if entry.pdf %}{{site.publications_btn_textcolor}}{% endif %}">files <span class="caret"></span></span>
+                    <span class="{% if entry.pdf or entry.opttool or entry.optdata %}{{site.publications_btn_textcolor}}{% endif %}">open science <span class="caret"></span></span>
                 </button>
                 <ul class="dropdown-menu">
                     {% if entry.pdf %}
                     <li><a href="{{ entry.pdf }}">pdf</a></li>
+                    {% endif %}
+                    {% if entry.opttool %}
+                    <li><a href="{{ entry.opttool }}">tool</a></li>
+                    {% endif %}
+                    {% if entry.optdata %}
+                    <li><a href="{{ entry.optdata }}">data / experiments</a></li>
                     {% endif %}
                 </ul>
             </div>
