@@ -9,6 +9,8 @@
 % - HAL_ID : the HAL URL of the bib item
 % - OPTLINK : the link to a page about the bib item (if not on DOI or HAL)
 % - PDF : the link to the PDF of the bib item
+% - OPTTOOL: the link to the tool
+% - OPTDATA: the link to the data / experiments
 % - PP_KIND : the kind of bib item (for sorting based on it) {international, national}
 % - PP_RANK : the rank of the bib item in the year (for sorting based on it)
 % - PP_SHORTBOOKTITLE : for conferences/workshops, abbreviation of it
@@ -21,6 +23,8 @@
 %    PP_KIND = {international/national},
 %    PP_RANK = {1/2/3...},
 %    PP_SHORTBOOKTITLE = {xxx},
+%    OPTTOOL = {...},
+%    OPTDATA = {...},
 
 @String{LNCS = "Lecture Notes in Computer Science"}
 
@@ -65,6 +69,7 @@
     PDF = {https://hal.inria.fr/hal-01920273/document},
     PP_KIND = {international},
     PP_RANK = {1},
+    OPTTOOL = {https://pascalpoizat.github.io/vbpmn-web},
 }
 
 @Article{PP_GPSY16,
@@ -80,6 +85,7 @@
     PDF = {https://hal.inria.fr/hal-01198918/document},
     PP_KIND = {international},
     PP_RANK = {1},
+    OPTTOOL = {http://pascalpoizat.github.io/verchor-web},
 }
 
 % TODO : add PDF on HAL
@@ -287,7 +293,7 @@
     PP_KIND = {international},
     PP_RANK = {2},
     PP_SHORTBOOKTITLE = {IFM},
-    PDF = {https://hal.inria.fr/hal-01591665/document}
+    PDF = {https://hal.inria.fr/hal-01591665/document},
 }
 
 @InProceedings{PP_PSK16,
@@ -304,7 +310,7 @@
     PP_KIND = {international},
     PP_RANK = {2},
     PP_SHORTBOOKTITLE = {FACS},
-    PDF = {https://hal.inria.fr/hal-01366641/document}
+    PDF = {https://hal.inria.fr/hal-01366641/document},
 }
 
 % TODO : move PDF to HAL
