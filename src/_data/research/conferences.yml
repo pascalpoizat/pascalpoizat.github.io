@@ -4,6 +4,22 @@
       url: https://bpm2024.agh.edu.pl
       role: PC
       category: INTCONF
+    - name: ASYDE
+      url: https://asyde-series.github.io/asyde2024/
+      role: SC
+      category: INTWK
+    - name: CoMinDs
+      url: https://pros.unicam.it/cominds/
+      role: PC
+      category: INTWK
+    - name: FM-BPM
+      url: https://fm-bpm2024.github.io
+      role: PC
+      category: INTWK
+    - name: AFADL
+      url: https://gdrgpl2024.sciencesconf.org/resource/page/id/4
+      role: PC
+      category: NATCONF
 - year: 2023
   values:
     - name: BPM
