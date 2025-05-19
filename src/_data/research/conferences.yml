@@ -1,3 +1,13 @@
+- year: 2025
+  values:
+    - name: BPM
+      url: https://www.bpm2025seville.org
+      role: PC
+      category: INTCONF
+    - name: MSR Mining Challenge
+      url: https://2025.msrconf.org/track/msr-2025-mining-challenge?
+      role: PC
+      category: INTCONF
 - year: 2024
   values:
     - name: BPM

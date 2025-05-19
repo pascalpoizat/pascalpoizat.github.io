@@ -24,6 +24,21 @@
     role: Member
     at: Université Paris Nanterre
 
+  - period: 2025
+    name: CS Recruitment Committee | CoS Sect. 27
+    role: President
+    at: INP Toulouse
+
+  - period: 2025
+    name: CS Recruitment Committee | CoS Sect. 27
+    role: Member
+    at: IUT Nantes
+
+  - period: 2025
+    name: CS Recruitment Committee | CoS Sect. 27
+    role: Member
+    at: Université Paris Saclay
+
 - name: technical
   values:
 
