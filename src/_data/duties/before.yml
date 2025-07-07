@@ -81,10 +81,30 @@
 - name: scientific (other)
   values:
 
-  - period: 2020-2021
+  - period: 2021-2025
     name: GDR GPL PhD Price | Prix de thèse du GDR GPL
-    role: Co-President of the Jury
+    role: President of the jury (2021-2024)<br/>Co-president of the Jury (2020-2021, 2024-2025)
     at: GDR GPL
+
+  - period: 2025
+    name: CS Recruitment Committee | CoS Sect. 27
+    role: President
+    at: INP Toulouse
+
+  - period: 2025
+    name: CS Recruitment Committee | CoS Sect. 27
+    role: Member
+    at: IUT Nantes
+
+  - period: 2025
+    name: CS Recruitment Committee | CoS Sect. 27
+    role: Member
+    at: Université Paris Saclay
+
+  - period: 2013-2025
+    name: CS Consultative Committee | Comité Consultatif de Discipline Sect. 27
+    role: Member
+    at: Université Paris Nanterre
 
   - period: 2018-2021
     name: Gilles Kahn PhD Price | Prix de thèse Gilles Kahn

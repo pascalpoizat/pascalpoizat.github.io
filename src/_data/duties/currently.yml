@@ -9,33 +9,13 @@
 - name: scientific
   values:
 
-  - period: since 2022
-    name: CS Consultative Commission | Commission Consultative de Spécialistes de l'Université Sect. 27
-    role: Member
-    at: Université Paris Sud
-
-  - period: since 2021
-    name: GDR GPL PhD Price | Prix de thèse du GDR GPL
-    role: President of the Jury
-    at: GDR GPL
-
-  - period: since 2013
+  - period: since 2025
     name: CS Consultative Committee | Comité Consultatif de Discipline Sect. 27
-    role: Member
+    role: President
     at: Université Paris Nanterre
 
-  - period: 2025
-    name: CS Recruitment Committee | CoS Sect. 27
-    role: President
-    at: INP Toulouse
-
-  - period: 2025
-    name: CS Recruitment Committee | CoS Sect. 27
-    role: Member
-    at: IUT Nantes
-
-  - period: 2025
-    name: CS Recruitment Committee | CoS Sect. 27
+  - period: since 2022
+    name: CS Consultative Commission | Commission Consultative de Spécialistes de l'Université Sect. 27
     role: Member
     at: Université Paris Saclay
 
