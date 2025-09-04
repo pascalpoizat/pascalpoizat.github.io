@@ -2,6 +2,11 @@
 - name: pedagogic
   values:
 
+  - period: 2020-2025
+    name: Départment de Mathématiques et Informatique
+    role: Deputy Director (Computer Science)
+    at: Université Paris Nanterre
+
   - period: 2012-2020
     name: Master MIAGE (Formation initiale et formation professionnelle)
     role: Director
@@ -43,7 +48,7 @@
   - period: 2011-2015
     name: COSMAL Working Group
     role: Co-head
-    at: Software Engineering Research Group of the CNRS (GDR GPL)
+    at: Software Sciences National Research Network (GDR GPL)
 
   - period: 2010-2013
     name: ANR PIMI project

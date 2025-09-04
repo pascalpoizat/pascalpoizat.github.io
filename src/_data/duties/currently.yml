@@ -1,13 +1,15 @@
-- name: pedagogic
-  values:
-
-    - period: since 2020
-      name: Départment de Mathématiques et Informatique
-      role: Deputy Director (Computer Science)
-      at: Université Paris Nanterre
-
 - name: scientific
   values:
+
+  - period: since 2026
+    name: Software Sciences National Research Network | GDR SciLog
+    role: Co-Director
+    at: CNRS
+
+  - period: since 2025
+    name: National Committee for Scientific Research | CoNRS 2
+    role: Member
+    at: CNRS
 
   - period: since 2025
     name: CS Consultative Committee | Comité Consultatif de Discipline Sect. 27
