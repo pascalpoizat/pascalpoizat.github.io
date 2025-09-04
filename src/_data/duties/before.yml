@@ -40,6 +40,11 @@
 - name: scientific (projects and working groups)
   values:
 
+  - period: 2021-2024
+    name: Academia-Industry PhD funding (CIFRE) LIP6-SAP
+    role: Scientific coordinator for the LIP6 lab.
+    at: CIFRE Programme, Research and Technology National Association
+
   - period: 2017-2021
     name: ANR PARDI project # http://pardi.enseeiht.fr
     role: Scientific coordinator for the LIP6 lab.
