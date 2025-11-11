@@ -159,6 +159,11 @@
 - name: technical
   values:
 
+  - period: 2017-2020
+    name: Digital Experts Commission | Commission d'Experts du Numérique
+    role: Member
+    at: Université Paris Nanterre
+    
   - period: 2014
     name: Publication Support Commission
     role: Member

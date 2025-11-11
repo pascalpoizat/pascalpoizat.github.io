@@ -20,11 +20,3 @@
     name: CS Consultative Commission | Commission Consultative de Spécialistes de l'Université Sect. 27
     role: Member
     at: Université Paris Saclay
-
-- name: technical
-  values:
-
-  - period: since 2017
-    name: Digital Experts Commission | Commission d'Experts du Numérique
-    role: Member
-    at: Université Paris Nanterre
