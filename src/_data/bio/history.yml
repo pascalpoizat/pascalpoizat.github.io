@@ -1,6 +1,12 @@
-- period: since 2012
+- period: since 2017
   kind: position
-  role: Professor | Professeur des universités
+  role: Professor | Professeur des universités (PU1)
+  at: Université Paris Nanterre, LIP6 lab.
+  logo: [../images/logo_universite_paris_nanterre.png, 30px, 4px, 8px, 4px]
+
+- period: 2012-2017
+  kind: position
+  role: Professor | Professeur des universités (PU2)
   at: Université Paris Nanterre, LIP6 lab.
   logo: [../images/logo_universite_paris_nanterre.png, 30px, 4px, 8px, 4px]
 
@@ -12,7 +18,7 @@
 
 - period: 2001-2012
   kind: position
-  role: Associate Professor | Maître de conférences
+  role: Associate Professor | Maître de conférences (MCF CN)
   at: Université d'Evry
   logo: [../images/logo_universite_evry_couleur.png, 60px, -6px, 4px, 0px]
   sub-periods:
