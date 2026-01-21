@@ -29,6 +29,9 @@ picture: images/pascalpoizat.jpg
 email: firstname.lastname@gmail.com
 
 networks:
+  linkedin:
+   url: https://www.linkedin.com/in/
+   username: pascalpoizat
   twitter:
     url: https://twitter.com/
     username: pascalpoizat
