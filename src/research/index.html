@@ -4,10 +4,14 @@ title: research
 rank: 2
 ---
 
-{% if site.research.presentation.overview %}
-<h2><span class="text-primary">Overview</span></h2>
-{% include research_overview.html %}
-{% endif %}
+<div class="row">
+    <div class="col-md-12">
+        {% if site.research.presentation.overview %}
+        <h2 id="Overview"><span class="text-primary">Overview</span></h2>
+        {% include research_overview.html %}
+        {% endif %}
+    </div>
+</div>
 
 <div class="row">
 
