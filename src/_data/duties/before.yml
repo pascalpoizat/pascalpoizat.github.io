@@ -91,6 +91,11 @@
 - name: scientific (other)
   values:
 
+  - period: 2022-2025
+    name: CS Consultative Commission | Commission Consultative de Spécialistes de l'Université Sect. 27
+    role: Member
+    at: Université Paris Saclay
+
   - period: 2021-2025
     name: GDR GPL PhD Price | Prix de thèse du GDR GPL
     role: President of the jury (2021-2024)<br/>Co-president of the Jury (2020-2021, 2024-2025)
