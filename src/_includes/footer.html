@@ -27,6 +27,12 @@
                         {{ site.networks.github.username }}
                     </a><br/>
                     {% endif %}
+                    {% if site.networks.zenodo %}
+                    <i class="fa fa-database"></i>
+                    <a href="{{ site.networks.zenodo.query | prepend: site.networks.zenodo.url }}">
+                        {{ site.networks.zenodo.username }}
+                    </a><br/>
+                    {% endif %}
                     {% if site.networks.linkedin %}
                     <i class="fa fa-linkedin"></i>
                     <a href="{{ site.networks.linkedin.username | prepend: site.networks.linkedin.url }}">

@@ -5,7 +5,7 @@
     <dt>{{ duty.period }}</dt>
     <dd>
         <span class="text-primary"><strong>{{ duty.name }}</strong></span><br/>
-        {{ duty.at }}<br/>
+        <small class="text-muted">at {{ duty.at }}</small><br/>
         <em>{{ duty.role }}</em>
     </dd>
     {% endfor %}

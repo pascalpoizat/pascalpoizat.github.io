@@ -41,6 +41,10 @@ networks:
   dblp:
     url: https://dblp.org/pid/
     username: p/Poizat:Pascal
+  zenodo:
+    url: https://zenodo.org/
+    username: Pascal Poizat
+    query: search?q=metadata.creators.person_or_org.name%3A%22Poizat%2C%20Pascal%22&l=list&p=1&s=10&sort=publication-desc
 
 bio:
   with-logos: true

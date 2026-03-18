@@ -1,3 +1,9 @@
+- year: 2026
+  values:
+    - name: BPM
+      url: https://www.yorku.ca/events/bpm2026/
+      role: PC
+      category: INTCONF
 - year: 2025
   values:
     - name: BPM
