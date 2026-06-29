@@ -7,3 +7,4 @@
 | base teaching load  | 192       | 192       | 192       | 192       | 192       |
 | additional hours    | 158       | 146       | 103       | 38        | 72        |
 {: .with-total-line }
+{: .with-header-line }
