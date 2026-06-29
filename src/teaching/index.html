@@ -25,14 +25,40 @@ rank: 1
             </p>
         </div>
 
-        <h4>2025-2026</h4>
-        <ul>
-            <li>teaching: 196h (eqTD)</li>
-            <li>administrative (CCD 27 + CoNRS + Master recruiting): 28h (eqTD)</li>
-            <li>M1-M2 student advisory: 40h (eqTD)</li>
-        </ul>
+        <div class="table-spaced">
+        <style>            
+            .table-spaced table {
+            border-collapse: separate;
+            border-spacing: 4px 2px;
+            width: max-content;
+            margin: 0 auto;
+            }
+            .table-spaced th,
+            .table-spaced td {
+            padding: 0.2em 0.7em;
+            text-align: right;
+            }
+            .table-spaced th:first-child,
+            .table-spaced td:first-child {
+            text-align: left;
+            padding-left: 1.8rem;
+            }
+            .with-total-line tr:last-child td {
+            border-top: 2px solid black;
+            padding-top: 0.4em;
+            }
+        </style>
+        {% capture snippet %}{% include recapitulatif.md %}{% endcapture %}
+        {{ snippet | markdownify }}
+        </div>
+        <div style="text-align: center;">
+            <em>Overview of the last 5 years, in hours (eqTD).<br/>
+                *: in 2024-2025, part of the administrative duties achieved at the university were compensated via RIPEC C2 instead of additional hours.
+            </em>
+        </div>
         <br/>
 
+        <h4>2025-2026</h4>
         {% include courses.html courses=site.data.teaching.courses year=2025 %}
 
     </div>
