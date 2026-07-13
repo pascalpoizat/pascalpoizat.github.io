@@ -64,7 +64,7 @@ contacts:
       map: http://maps.google.fr/maps?q=LIP6,+Place+Jussieu,+Paris&hl=fr&ll=48.846954,2.354357&spn=0.003392,0.004823&sll=48.847111,2.357037&sspn=0.006785,0.009645&oq=LIP6&hq=LIP6,+Place+Jussieu,+Paris&radius=15000&t=m&z=18
       public_transportation:
         stop: Jussieu
-        link: http://www.ratp.fr/itineraires/en/ratp/recherche-avancee?end=Jussieu+%28METRO%29%2C+Paris
+        link: https://www.ratp.fr/en/itineraires/%26Jussieu_%2075005%20Paris
   teaching:
     email: firstname.lastname@parisnanterre.fr
     address: >
@@ -79,7 +79,7 @@ contacts:
       map: https://www.google.fr/maps/place/U.F.R.+Sciences+Économiques,+Gestion,+Mathématiques,+Informatique/@48.9037822,2.2150113,17z/data=!4m2!3m1!1s0x0:0xade365e28caa2d74
       public_transportation:
         stop: Nanterre Université
-        link: http://www.ratp.fr/itineraires/en/ratp/recherche-avancee?end=Nanterre-Universite+%28RER%29%2C+Nanterre
+        link: https://www.ratp.fr/en/itineraires/Nanterre%20-%20Université_%2092000%20Nanterre%26
 
 # research
 
