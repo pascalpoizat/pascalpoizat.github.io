@@ -91,6 +91,21 @@
 - name: scientific (other)
   values:
 
+  - period: 2026
+    name: Operational Research, Algorithmics, Computing, and Programming PhD Grants Committee
+    role: President
+    at: EDITE Doctoral School
+
+  - period: 2026
+    name: CS Recruitment Committee | CoS Sect. 27
+    role: Member
+    at: IUT Nantes
+
+  - period: 2026
+    name: CS Recruitment Committee | CoS Sect. 27
+    role: Member
+    at: Université Grenoble Alpes
+
   - period: 2022-2025
     name: CS Consultative Commission | Commission Consultative de Spécialistes de l'Université Sect. 27
     role: Member
