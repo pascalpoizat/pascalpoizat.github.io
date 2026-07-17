@@ -1,3 +1,96 @@
+# 2026-2027
+
+- year: 2026
+  cursus: M2M MIAGE
+  code: CTAQ
+  volume:
+    total:  36
+    eqtd:   45
+    cm:     18
+    td:     18
+  name: Contrats, tests et assurance qualité
+  note: 2nd year of master - Contracts, Tests, and Quality Assurance
+  parts: [lectures, practical work]
+  contents: [Test theory and practice, Software quality, Formal Specification with Alloy and TLA+]
+
+- year: 2026
+  cursus: M2A MIAGE
+  code: RD2
+  volume:
+    total:  12
+    eqtd:   15
+    cm:     6
+    td:     6
+  name: Recherche et développement (M2)
+  note: 2nd year or master - Research and Development / Experiments
+  parts: [lectures, practical work]
+  contents: [Experimentation in (Software Engineering) Research, Mining (Software) Repositories]
+
+- year: 2026
+  cursus: M1M MIAGE
+  code: RD1
+  volume:
+    total:  12
+    eqtd:   15
+    cm:     6
+    td:     6
+  name: Recherche et développement (M1)
+  note: 1st year or master - Research and Development / Rigorous Literature Analysis
+  parts: [lectures, practical work]
+  contents: [Systematic Mapping Study, Systematic Literature Review, Rapid Literature Review]
+
+- year: 2026
+  cursus: M1M MIAGE
+  code: PFP
+  volume:
+    total:  24
+    eqtd:   30
+    cm:     12
+    td:     12
+  name: Programmation fonctionnelle et pipelines
+  note: 1st year of master - Functional Programming and Pipelines
+  parts: [lectures, practical work]
+  contents: [Functional programming, Applications in Java and Scala, Data analysis pipelines]
+
+- year: 2026
+  cursus: M1M MIAGE
+  code: PRJ
+  volume:
+    total:  24
+    eqtd:   24
+    cm:     0
+    td:     24
+  name: Projet
+  note: 1st year of master - Project
+  parts: [project]
+  contents: [Project, Project Management, Agility, DevOps]
+
+- year: 2026
+  cursus: L3A MIAGE
+  code: CMO
+  volume:
+    total:  32
+    eqtd:   40
+    cm:     16
+    td:     16
+  name: Conception et modélisation objet
+  note: 3rd year of licence - Object-Oriented Design and Modelling
+  parts: [lectures, practical work]
+  contents: [Software Architecture Quality, Code Smells, Design Patterns]
+
+- year: 2026
+  cursus: L3M MIAGE
+  code: CMO
+  volume:
+    total:  16
+    eqtd:   24
+    cm:     16
+    td:     0
+  name: Conception et modélisation objet
+  note: 3rd year of licence - Object-Oriented Design and Modelling
+  parts: [lectures]
+  contents: [Software Architecture Quality, Code Smells, Design Patterns]
+
 # 2025-2026
 
 - year: 2025
