@@ -37,6 +37,11 @@ rank: 2
 
     <div class="col-md-4">
 
+        {% if site.research.presentation.advising %}
+        <h2 id="Advisory"><span class="text-primary">Advisory (ongoing)</span></h2>
+        {% include print_advisory.html %}
+        {% endif %}
+
         {% if site.research.presentation.conferences %}
         <h2 id="Conferences"><span class="text-primary">Committees</span></h2>
         {% assign interval=site.research.restriction.conferences %}

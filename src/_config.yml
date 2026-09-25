@@ -89,6 +89,7 @@ research:
     publications: true
     talks:  false
     conferences: true
+    advising: true
   restriction:
       publications: 5
       conferences: 10

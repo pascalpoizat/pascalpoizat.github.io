@@ -4,38 +4,72 @@
 # first of the advisors is the director
 # references refer to references.bib in _bibliography
 
-- name: "Sara Houhou"
-  title: "Vérification paramétrée et dérivation de code à partir de spécifications formelles pour les systèmes embarqués"
-  begin: "01/2017"
-  end: "12/2019"
+- name: "Louadni"
+  firstname: "Chaimaa"
+  title: "Modelling, Automation, and Meta-Orchestration of Business Processes: Requirements, Capabilities and Constraints"
+  begin: "10/2026"
+  end: "ongoing"
+  funding: "ANRT CIFRE with Axway"
+  advisors: ["Jacques Malenfant": 50, "Pascal Poizat": 50]
+  publication: []
+  url: "https://www.linkedin.com/in/chaimaa-louadni/"
+
+- name: "Mehari"
+  firstname: "Fanuel"
+  title: "Analysis and Repair in Software Supply Chains"
+  begin: "10/2025"
+  end: "ongoing"
+  funding: "EDITE Doctoral School Grant"
+  advisors: ["Pascal Poizat": 50, "Joyce El Haddad": 50]
+  publication: []
+  url: "https://www.linkedin.com/in/fanuel-mehari-a53764233/"
+
+- name: "Jaime"
+  firstname: "Damien"
+  title: "Analysis and evolution of dependencies in software ecosystems"
+  begin: "TBD" # TODO
+  end: "06/2025"
+  funding: "ANRT CIFRE with SAP France"
+  advisors: ["Pascal Poizat": 50, "Joyce El Haddad": 50]
+  publication: [] # TODO
+  url: "" # TODO
+
+- name: "Houhou"
+  firstname: "Sara"
+  title: "Parameterised Verification from Formal Specifications of Information Systems"
+  begin: "01/2017" # CHECK
+  end: "12/2019" # CHECK
   funding: "co-funding with Algeria + ANR PARDI project"
   advisors: ["Laid Kahloul": 50, "Pascal Poizat": 25, "Souheib Baarir": 25]
-  publication: []
+  publication: [] # TODO
   url: "" # TODO
 
-- name: "Rania Khéfifi"
+- name: "Khéfifi"
+  firstname: "Rania"
   title: "Informations personnelles sensibles aux contextes : modélisation, interrogation et composition"
-  begin: "10/2010"
-  end: "09/2014"
-  funding: "ANR PIMI project"
+  begin: "10/2010" # CHECK
+  end: "09/2014" # CHECK
+  funding: "ANR PIMI Project"
   advisors: ["Pascal Poizat": 50, "Fatiha Saïs": 50]
-  publications: ["PP_KPS12a","PP_KPS12b","PP_KPS13"]
+  publications: ["PP_KPS12a","PP_KPS12b","PP_KPS13"] # CHECK
   url: "" # TODO
 
-- name: "Huu Nghia Nguyen"
-  title: "A Symbolic Approach for the Verification and the Test of Service Choreographies"
-  begin: "01/2010"
-  end: "10/2013"
-  funding: "allocation doctorale"
+- name: "Nguyen"
+  firstname: "Huu Nghia"
+  title: "A symbolic approach for the verification and the test of service choreographies"
+  begin: "01/2010" # CHECK
+  end: "10/2013" # CHECK
+  funding: "Doctoral School Grant"
   advisors: ["Fatiha Zaïdi": 50, "Pascal Poizat": 50]
-  publications: ["PP_NPZ12a","PP_NPZ12b","PP_NPZ12c","PP_NPZ13"]
+  publications: ["PP_NPZ12a","PP_NPZ12b","PP_NPZ12c","PP_NPZ13"] # CHECK
   url: "" # TODO
 
-- name: "Lina Bentakouk"
-  title: "Test symbolique de services Web composites"
-  begin: "12/2007"
-  end: "12/2011"
-  funding: "ANR WEBMOV project"
+- name: "Bentakouk"
+  firstname: "Lina"
+  title: "Symbolic Testing Approach of Composite Web Services" # CHECK
+  begin: "12/2007" # CHECK
+  end: "12/2011" # CHECK
+  funding: "ANR WEBMOV Project"
   advisors: ["Marie-Claude Gaudel": 20, "Pascal Poizat": 40, "Fatiha Zaïdi": 40]
-  publications: ["PP_BPZ09","PP_BPZ11"]
+  publications: ["PP_BPZ09","PP_BPZ11"] # CHECK
   url: "" # TODO

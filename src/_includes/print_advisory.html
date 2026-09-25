@@ -1,0 +1,29 @@
+<p>
+    <a href="https://theses.fr/100530303">record at theses.fr</a><br/>
+    (PhD students and PhD jury membership in France)
+</p>
+
+<dl>
+    {% assign advisories=site.data.research.advisory | sort: 'name' %}
+    {% for item in advisories %}
+    {% if item.end == "ongoing" %}
+    <dt><a href="{{ item.url }}">{{ item.firstname }} {{ item.name }}</a> (since {{ item.begin }})</dt>
+    <dd>
+            <p>
+                <div>{{ item.title }}</div>
+                <div>
+                {% assign advisor_names = "" | split: "" %}
+                {% for advisor in item.advisors %}
+                    {% for pair in advisor %}
+                        {% if pair[0] != "Pascal Poizat" %}
+                            {% assign advisor_names = advisor_names | push: pair[0] %}
+                        {% endif %}
+                    {% endfor %}
+                {% endfor %}
+                <span class="small">co-advised with {{ advisor_names | array_to_sentence_string: "and" }}</span>
+                </div>
+            </p>
+    </dd>
+    {% endif %}
+    {% endfor %}
+</dl>
